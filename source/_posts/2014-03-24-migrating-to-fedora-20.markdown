@@ -15,7 +15,7 @@ To be honest, I was too scared to move on to a different O.S. because of the com
 
 - Extra media/function keys don't work</li>
 - Battery Applet can't detect change in battery-charging status
-- Linux goes into kernel-panic if connected with Bluetooth Mobile Internet ([DUN](http://en.wikipedia.org/wiki/Bluetooth_profile#Dial-up_Networking_Profile_.28DUN.29DUN))
+- Linux goes into kernel-panic if connected with Bluetooth Mobile Internet ([DUN](http://en.wikipedia.org/wiki/Bluetooth_profile#Dial-up_Networking_Profile_.28DUN.29))
 - ~~Wrong Resolution detected by X ~~(Bug Resolved after an update)
 - Wi-fi cannot connect to Ad-Hoc network
 - Wi-fi cannot create Hotspot
@@ -63,6 +63,7 @@ The best thing about Fedora 20 is the new Gnome-Shell 3.10 with much more cleane
 - **That damn Nautilus :**Nautilus is a big setback. They have disabled the backspace key and the search is now recursive. They have also disabled the Split-View. In short they have removed everything I loved about Nautilus.
 
 I could find only one solution to fix all the problems - Degrade to the previous version.
+
 **Note: You can fix the backspace feature [(Ask Ubuntu)](http://askubuntu.com/questions/289535/bring-back-backspace-keyboard-shortcuts-on-nautilus-and-thunar")**
 
 I'm sure to find some more bugs as I move Along ,and this page will be updated :stuck_out_tongue:
