@@ -13,9 +13,9 @@ footer: true
 <span>I am Umar, an engineer (atleast <span id="grad">3</span>/4, as of now) and an open-source enthusiasts. I love to learn new technologies and share it with people. I am currently pursuing my Bachelor-Degree in Computer Engineering from [Jamia Millia Islamia](http://www.jmi.ac.in).
 I see myself as a geek who his amazed by the wonders and marvel of technology.
 I'm also a part of an Open-Source society [JMI-LUG](http://www.jmilug.org) because of my admiration for the FOSS culture.
-I blog with a selfish reason to log software development ,my thoughts and my works, which I can easily refer back later.
+I blog with a selfish reason to log software development ,my thoughts and my works, which I can easily refer back later.</span>
 
-You can find me on [![Github](/images/github_alt.png)](https://www.github.com/gleek) and <a href="https://profiles.google.com/103949851787406544998?rel=author" rel="author">Google+</a>
+You can find me on [:octocat:](https://www.github.com/gleek) and <a href="https://profiles.google.com/103949851787406544998?rel=author" rel="author">Google+</a>
 
 <a href="http://stackoverflow.com/users/2558897/umar-ahmad">
 <img title="profile for Umar Ahmad at Stack Overflow, Q&amp;A for professional and enthusiast programmers" src="http://stackoverflow.com/users/flair/2558897.png" alt="profile for Umar Ahmad at Stack Overflow, Q&amp;A for professional and enthusiast programmers" width="208" height="58" />

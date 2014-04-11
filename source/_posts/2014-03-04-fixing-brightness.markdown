@@ -6,7 +6,7 @@ comments: true
 tags: [backlight, brightness, bug, changing brightness, display, fedora, fn, gnome-shell, keys, shortcut, ubuntu ]
 categories: 
 ---
-####You can find the said applications/scripts in my [![alt text](/images/github_alt.png "Github")](https://github.com/Gleek/linux-brightness-hack)####
+####You can find the said applications/scripts in my [:octocat:](https://github.com/Gleek/linux-brightness-hack)####
  <img style=" display:block;margin:auto;" src="/images/fixing-brightness0.png" height="240" width="240" alt="Brightness Gnome" />
  
 This is a problem which I faced since the beginning I installed Linux. My system neither recognized my display settings nor those damn shortcut keys (the combination of <kbd>fn</kbd> keys) worked , so I ended up getting a dark screen (with zero brightness) every time the system starts-up. I couldn't even change the brightness with those faulty shortcut keys!!
