@@ -14,6 +14,9 @@
                 <li {% if page.navbar == 'Blog' %}class="active"{% endif %}>
                     <a href="{{ root_url }}/">Blog</a>
                 </li>
+		<li {% if page.navbar == 'About' %}class="active"{% endif %}>
+                    <a href="{{ root_url }}/about/">About Me</a>
+                </li>
                 <li {% if page.navbar == 'Archives' %}class="active"{% endif %}>
                     <a href="{{ root_url }}/blog/archives">Archives</a>
                 </li>
