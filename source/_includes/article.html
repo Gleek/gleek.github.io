@@ -24,13 +24,13 @@
   </header>
 {% endunless %}
 {% if index %}
-  <div class="entry-content clearfix">{{ content | excerpt }}</div>
-  {% capture excerpted %}{{ content | has_excerpt }}{% endcapture %}
+  <div class="entry-content clearfix">{{ content | excerpt | emojify }}</div>
+  {% capture excerpted %}{{ content | has_excerpt |emojify }}{% endcapture %}
   {% if excerpted == 'true' %}
     <footer>
       <a class="btn btn-default" rel="full-article" href="{{ root_url }}{{ post.url }}">{{ site.excerpt_link }}</a>
     </footer>
   {% endif %}
 {% else %}
-<div class="entry-content clearfix">{{ content }}</div>
+<div class="entry-content clearfix">{{ content |emojify }}</div>
 {% endif %}

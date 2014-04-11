@@ -23,7 +23,7 @@ layout: default
         </header>
       {% endunless %}
       <div class="entry-content">
-        {{ content }}
+        {{ content | emojify }}
       </div>
       {% unless page.footer == false %}
         <footer>
