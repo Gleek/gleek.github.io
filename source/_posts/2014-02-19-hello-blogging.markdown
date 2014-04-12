@@ -3,6 +3,8 @@ layout: post
 title: "Hello Blogging...."
 date: 2014-02-19 16:20:21 +0530
 comments: true
+keywords: blogging, why
+description: Detail of why I started blogging
 categories: Life
 ---
 ![alt text](/images/hello_blogging.jpg =300x255 "Hello World")

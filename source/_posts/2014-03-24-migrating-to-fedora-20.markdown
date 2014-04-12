@@ -3,7 +3,8 @@ layout: post
 title: "Migrating to Fedora 20"
 date: 2014-03-24 20:32:50 +0530
 comments: true
-tags: [fedora, fedora 17, fedora 20, upgrading, pre-upgrade, customizing, fed-up]
+keywords: fedora, fedora 17, fedora 20, upgrading, pre-upgrade, customizing, fed-up
+description: Guide to upgrade to Fedora 20 from Fedora 17
 categories: [Life, Linux]
 ---
 <a href="http://fedoraproject.org/get-fedora"><img src="http://fedoraproject.org/w/uploads/5/54/Release-2.png" alt="Fedora 20" style=" display:block;margin:auto;"></a>
@@ -27,13 +28,14 @@ Well, all things die with time and so did Fedora 17. Updates started depleting a
 ###How ?###
 Once I decided to move on to Fedora 20 , I went researching about the methods and issues people had while upgrading fedora. Most of it was concerned with efi the new 'use only Windows' policy of the hardware vendors...but that wasn't the case with me. So I moved on.
 I found many ways to upgrade to f20:
-- Using (Fedup)[http://fedoraproject.org/wiki/FedUp] (Recommended, but sadly not available for F17 :disappointed: )
-- Using (yum)[http://fedoraproject.org/wiki/Upgrading_Fedora_using_yum] (Highly unstable...not recommended)
-- Using (pre-upgrade)[https://fedoraproject.org/wiki/How_to_use_PreUpgrade]
+
+- Using [Fedup](http://fedoraproject.org/wiki/FedUp) (Recommended, but sadly not available for F17 :disappointed: )
+- Using [yum](http://fedoraproject.org/wiki/Upgrading_Fedora_using_yum) (Highly unstable...not recommended)
+- Using [pre-upgrade](https://fedoraproject.org/wiki/How_to_use_PreUpgrade)
 - Installing with boot-media
 
 The first two options were rejected instantly because of lack of support.
-**Pre-Upgrade**; looked nice, but **even a fully-updated system didn't show any new releases of Fedora** in the Pre-Upgrade Window.
+**Pre-Upgrade**: looked nice, but **even a fully-updated system didn't show any new releases of Fedora** in the Pre-Upgrade Window.
 Since I was left with no choice, I adapted the old-school method of formatting the partition and re-installing everything...
 Since I was too desperate to try F20 I didn't think of the consequences and went on with the method.
 
