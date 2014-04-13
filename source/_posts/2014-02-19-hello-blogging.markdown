@@ -7,7 +7,7 @@ keywords: blogging, why
 description: Detail of why I started blogging
 categories: Life
 ---
-![alt text](/images/hello_blogging.jpg =300x255 "Hello World")
+![Hello World](/images/hello_blogging.jpg =300x255 "Hello World")
 
 So how did it start...Well what can I say, it was nothing more than a small pulse that waved through my brain....
 <h4>But why exactly ?</h4>

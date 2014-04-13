@@ -7,7 +7,7 @@ keywords: bot, community, drupal, irc, jmilug
 description: Guide to add an IRC bot to a channel
 categories: [Web, Usability]
 ---
-[![alt text](/images/irc.jpg "IRC Screen")](http://www.flickr.com/photos/kalleboo/2215471286/sizes/o/in/photostream/)
+[![IRC](/images/irc.jpg "IRC Screen")](http://www.flickr.com/photos/kalleboo/2215471286/sizes/o/in/photostream/)
 
 One of the main drawbacks of IRC-chat is the absence of logging. This was the main reason why our community JMI-LUG almost stopped using the channel for any discussion, as there was nothing to refer to later.
   There was a need for a kind of a bot which could save all the logs of the chats we had. Hence, I began my search for any open-source IRC bot to cater our needs.

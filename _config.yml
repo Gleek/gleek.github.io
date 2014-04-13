@@ -7,8 +7,8 @@ title: Umar Ahmad
 subtitle: Smoke Tests. Logs. and other Boring Stuff!!!
 author: Umar Ahmad
 simple_search: http://google.com/search
-description: 
-
+description: Software development, Web Hacking, Tips, Tricks and Life of a newbie programmer
+keywords: linux, foss, open-source, drupal, web, hack, noob, programming, utility, usability
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
 # http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime
@@ -64,7 +64,7 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 
 # Github repositories
 github_user: gleek
-github_repo_count:
+github_repo_count: 5
 github_show_profile_link: true
 github_skip_forks: true
 
@@ -73,7 +73,7 @@ twitter_user:
 twitter_tweet_button: true
 
 # Google +1
-google_plus_one: false
+google_plus_one: true
 google_plus_one_size: medium
 
 # Google Plus Profile
@@ -90,11 +90,11 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name: iamumr
-disqus_show_comment_count: false
+disqus_short_name: umar-ahmad
+disqus_show_comment_count: true
 
 # Google Analytics
 google_analytics_tracking_id: UA-49953720-1
 
 # Facebook Like
-facebook_like: false
+facebook_like: true

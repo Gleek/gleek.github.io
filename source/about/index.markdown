@@ -8,7 +8,7 @@ sharing: true
 footer: true
 ---
 
-![alt text](http://www.gravatar.com/avatar/4e1fea590dae0abb4fcb5a256e7b8a2f.png "Umar Ahmad")
+![Me](http://www.gravatar.com/avatar/4e1fea590dae0abb4fcb5a256e7b8a2f.png "Umar Ahmad")
 
 <span>I am Umar, an engineer (atleast <span id="grad">3</span>/4, as of now) and an open-source enthusiasts. I love to learn new technologies and share it with people. I am currently pursuing my Bachelor-Degree in Computer Engineering from [Jamia Millia Islamia](http://www.jmi.ac.in).
 I see myself as a geek who his amazed by the wonders and marvel of technology.

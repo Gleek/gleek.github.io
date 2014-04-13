@@ -5,7 +5,7 @@ date: 2014-03-04 23:51:09 +0530
 comments: true
 keywords: backlight, brightness, bug, changing brightness, display, fedora, fn, gnome-shell, keys, shortcut, ubuntu
 description: Tutorial to fix the screen backlight problems with linux
-categories: 
+categories: Linux, Bugs, Fix
 ---
 ####You can find the said applications/scripts in my [:octocat:](https://github.com/Gleek/linux-brightness-hack)####
  <img style=" display:block;margin:auto;" src="/images/fixing-brightness0.png" height="240" width="240" alt="Brightness Gnome" />
@@ -58,5 +58,5 @@ If you're having problems with your default brightness setting i.e. your brightn
 There are many ways you can add application at start-up they are given [here](http://askubuntu.com/questions/48321/how-do-i-start-applications-automatically-on-login) and [here](http://stackoverflow.com/questions/7221757/run-automatically-program-on-startup-under-linux-ubuntu) but what I find simplest is using `gnome-session-properties` and simply adding the application.
 Once you've made those changes, you're ready to feel the magic of automatic brightness.
 
-![alt text](/images/master_joda.png =256x256 "Master Joda")
+![Joda](/images/master_joda.png =256x256 "Master Joda")
 
