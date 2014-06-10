@@ -114,9 +114,12 @@ task :new_post, :title do |t, args|
     post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
     post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}"
     post.puts "comments: true"
+    post.puts "keywords: "
+    post.puts "description: "
     post.puts "categories: "
     post.puts "---"
   end
+  system "emacs \"#{filename}\""
 end
 
 # usage rake new_page[my-new-page] or rake new_page[my-new-page.html] or rake new_page (defaults to "new-page.markdown")
@@ -210,6 +213,45 @@ task :update_source, :theme do |t, args|
   puts "## Updated #{source_dir} ##"
 end
 
+#usage rake notify
+desc 'Ping pingomatic'
+task :pingomatic do
+  begin
+    require 'xmlrpc/client'
+    puts '* Pinging ping-o-matic'
+    XMLRPC::Client.new('rpc.pingomatic.com', '/').call('weblogUpdates.extendedPing', 'Umar Ahmad' , 'http://gleek.github.io', 'http://gleek.github.io/atom.xml')
+  rescue LoadError
+    puts '! Could not ping ping-o-matic, because XMLRPC::Client could not be found.'
+  end
+end
+
+desc 'Notify Google of the new sitemap'
+task :sitemapgoogle do
+  begin
+    require 'net/http'
+    require 'uri'
+    puts '* Pinging Google about our sitemap'
+    Net::HTTP.get('www.google.com', '/webmasters/tools/ping?sitemap=' + URI.escape('http://gleek.github.io/sitemap.xml'))
+  rescue LoadError
+    puts '! Could not ping Google about our sitemap, because Net::HTTP or URI could not be found.'
+  end
+end
+
+desc 'Notify Bing of the new sitemap'
+task :sitemapbing do
+  begin
+    require 'net/http'
+    require 'uri'
+    puts '* Pinging Bing about our sitemap'
+    Net::HTTP.get('www.bing.com', '/webmaster/ping.aspx?siteMap=' + URI.escape('http://gleek.github.io/sitemap.xml'))
+  rescue LoadError
+    puts '! Could not ping Bing about our sitemap, because Net::HTTP or URI could not be found.'
+  end
+end
+
+desc "Notify various services about new content"
+task :notify => [:pingomatic, :sitemapgoogle, :sitemapbing] do
+end
 ##############
 # Deploying  #
 ##############

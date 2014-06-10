@@ -1,0 +1,30 @@
+---
+layout: post
+title: "GSF Hacks"
+date: 2014-05-08 03:01:30 +0530
+comments: true
+keywords: gsfindia, hackathon, 
+description: Account of fun in GSF India hacks hackathon
+categories: [Life, Web]
+---
+
+<img src="/images/hackyoursoul.jpg" style=" display:block;margin:auto;" width="370"/>
+
+Last month some of my friends and I went to a hackathon organized by [GSF India](http://www.gsfindia.com/hacks/). This hackathon was particularly interesting since almost all the participants were amongst the top ranked from [Hacker Earth](http://www.hackerearth.com/) and thus a tough competition was expected.
+
+The participating teams had to choose one challenge to compete. Our team chose shine.com challenge which involved improving their registration system in an innovative manner.
+
+[Shine.com](http://www.shine.com) is a website for job finding. We could easily see problems with the registration system, which could be solved. What we built was a utility which involved an IVR, Voice Recognition system, Resume Parsing (PDF/DOC) and an Android App for smart phones as well as not so smart phones.
+
+- [Kookoo](http://www.kookoo.in/) API and AT&T voice parsing API was used in the **IVR system**. The Kookoo system recorded the voice of a person *by a simple phone call* and AT&T API helped us parse it. Thus making it suitable for any mobile phone.
+
+- We also made a **CV/Resume Parser** with a help of small `cURL` hack on rchilli CV Parser. It allowed the user to upload his resume and getting his details automagically filled in the form.
+
+- On the top of everything we also made an **Android App** which again does all the above things.
+
+**You can find the code on [Github](https://github.com/Gleek/gsfhack)**
+
+The good thing is that our hard work paid off and we won the challenge.
+What's better than a 2 days of coding with free food , infinite Red-Bulls, a cool tablet and a little cash. Well other than that we also got a cool sipper and a t-shirt.
+
+You can find the photos on [Facebook](https://www.facebook.com/GSFINDIAACCELERATOR/albums/719167938135941/) and some media coverage at [YourStory](http://yourstory.com/2014/04/gsfhacks/)

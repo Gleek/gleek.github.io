@@ -98,3 +98,6 @@ google_analytics_tracking_id: UA-49953720-1
 
 # Facebook Like
 facebook_like: true
+
+#Tapir Token inst:https://github.com/blimey85/octopress-tapir
+tapir_token: 535179114ceafd0200000003
