@@ -3,7 +3,7 @@ layout: post
 title: "Fixing Brightness Problems in Linux"
 date: 2014-03-04 23:51:09 +0530
 comments: true
-tags: backlight, brightness, bug, changing brightness, display, fedora, fn, gnome-shell, keys, shortcut, ubuntu
+tags: backlight brightness bug changing brightness display fedora fn gnome-shell keys shortcut ubuntu
 description: Tutorial to fix the screen backlight problems with linux
 categories: [Linux, Bugs, Fix]
 ---

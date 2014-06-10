@@ -17,7 +17,7 @@
 {% endcapture %}
   <meta name="description" content="{{ description | strip_html | condense_spaces | truncate:150 }}">
 
-  {% if page.tags %}<meta name="keywords" content="{{ page.tags }}">{% else %}
+  {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% else %}
   <meta name="keywords" content="{{ site.keyword }}">{% endif %}
 
   <!-- http://t.co/dKP3o1e -->

@@ -3,7 +3,7 @@ layout: post
 title: "Migrating to Fedora 20"
 date: 2014-03-24 20:32:50 +0530
 comments: true
-tags: fedora, fedora-17, fedora-20, upgrading , pre-upgrade, customizing, fed-up
+tags: fedora fedora-17 fedora-20 upgrading pre-upgrade customizing fed-up
 description: Guide to upgrade to Fedora 20 from Fedora 17
 categories: [Life, Linux]
 ---

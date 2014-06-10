@@ -3,7 +3,7 @@ layout: post
 title: "Adding Drupal IRC-Bot to #jmilug"
 date: 2014-03-24 22:45:47 +0530
 comments: true
-tags: bot, community, drupal, irc, jmilug
+tags: bot community drupal irc jmilug
 description: Guide to add an IRC bot to a channel
 categories: [Web, Usability]
 ---

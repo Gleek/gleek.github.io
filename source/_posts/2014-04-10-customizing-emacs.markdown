@@ -3,7 +3,7 @@ layout: post
 title: "Customizing Emacs"
 date: 2014-04-10 18:32:50 +0530
 comments: true
-tags: editor, elisp, emacs, environment
+tags: editor elisp emacs customize
 description: customize emacs for better and faster development
 categories: Usability
 ---

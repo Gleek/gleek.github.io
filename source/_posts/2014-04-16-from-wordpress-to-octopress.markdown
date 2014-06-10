@@ -3,7 +3,7 @@ layout: post
 title: "From WordPress to Octopress"
 date: 2014-04-18 20:07:03 +0530
 comments: true
-tags: blog, platform, wordpress, octopress
+tags: blog platform wordpress octopress
 description: Why I moved from WordPress hosted blog to Octopress
 categories: [Life, Usability]
 ---
