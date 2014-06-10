@@ -3,7 +3,7 @@ layout: post
 title: "Hello Blogging...."
 date: 2014-02-19 16:20:21 +0530
 comments: true
-keywords: blogging, why
+tags: blogging, why
 description: Detail of why I started blogging
 categories: Life
 ---

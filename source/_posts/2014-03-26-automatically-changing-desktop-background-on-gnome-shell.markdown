@@ -3,7 +3,7 @@ layout: post
 title: "Automatically Changing desktop background on gnome-shell"
 date: 2014-03-26 17:53:27 +0530
 comments: true
-keywords: automatic, background, shell-script, command, cron, fedora, gnome-shell, linux, opensuse, ubuntu, wallpaper
+tags: automatic, background, shell-script, command, cron, fedora, gnome-shell, linux, opensuse, ubuntu, wallpaper
 description: Guide and Shell Script to automatically change desktop background
 categories: Linux
 ---
