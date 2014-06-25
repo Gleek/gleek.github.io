@@ -12,7 +12,7 @@ categories: [Web, Usability]
 One of the main drawbacks of IRC-chat is the absence of logging. This was the main reason why our community JMI-LUG almost stopped using the channel for any discussion, as there was nothing to refer to later.
   There was a need for a kind of a bot which could save all the logs of the chats we had. Hence, I began my search for any open-source IRC bot to cater our needs.
 I found [many bots](http://en.wikipedia.org/wiki/Comparison_of_Internet_Relay_Chat_bots) which could do the task. 
-
+<!-- more -->
 In my research I found a [bot](https://drupal.org/project/bot) which could be integrated with Drupal and can be installed as a simple Module. As a matter of fact it is already used to log all official Drupal Channels (you can find it [here](http://druplicon.info)). Since, the JMI-LUG website is already on Drupal it was a nice idea to use this one.
 ####Installing####
 

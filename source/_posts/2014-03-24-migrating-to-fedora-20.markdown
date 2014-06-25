@@ -9,7 +9,7 @@ categories: [Life, Linux]
 ---
 <a href="http://fedoraproject.org/get-fedora"><img src="http://fedoraproject.org/w/uploads/5/54/Release-2.png" alt="Fedora 20" style=" display:block;margin:auto;"></a>
 
-I've been a Fedora Fan-boy ever-since I started using it three years ago and Fedora 17 is the only Linux Based Distro which lasted for more than a year on my laptop. But just as every good thing has to come to an end, my company with Fedora 17 had completed it's lifetime.
+I've been a Fedora Fan-boy ever-since I started using it three years ago and Fedora 17 is the only Linux Based Distro which lasted for more than a year on my laptop. But just as every good thing has to come to an end, my company with Fedora 17 had completed it's lifetime. <!-- more -->
 
 ####Why did I stick with it ?####
 To be honest, I was too scared to move on to a different O.S. because of the compatibility issues which my system has with Linux. To name the few:

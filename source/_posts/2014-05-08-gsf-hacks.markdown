@@ -11,7 +11,7 @@ categories: [Life, Web]
 <img src="/images/hackyoursoul.jpg" style=" display:block;margin:auto;" width="370"/>
 
 Last month some of my friends and I went to a hackathon organized by [GSF India](http://www.gsfindia.com/hacks/). This hackathon was particularly interesting since almost all the participants were amongst the top ranked from [Hacker Earth](http://www.hackerearth.com/) and thus a tough competition was expected.
-
+<!-- more -->
 The participating teams had to choose one challenge to compete. Our team chose shine.com challenge which involved improving their registration system in an innovative manner.
 
 [Shine.com](http://www.shine.com) is a website for job finding. We could easily see problems with the registration system, which could be solved. What we built was a utility which involved an IVR, Voice Recognition system, Resume Parsing (PDF/DOC) and an Android App for smart phones as well as not so smart phones.

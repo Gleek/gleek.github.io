@@ -7,13 +7,13 @@ tags: automatic background shell-script command cron fedora gnome-shell linux op
 description: Guide and Shell Script to automatically change desktop background
 categories: Linux
 ---
-###Click [here](https://github.com/Gleek/gnome_wall_changer/archive/master.zip "gnome_wall_change.zip(Github)") to download the scripts directly, or view them on [Github](https://github.com/Gleek/gnome_wall_changer)###
+*Click [here](https://github.com/Gleek/gnome_wall_changer/archive/master.zip "gnome_wall_change.zip(Github)") to download the scripts directly, or view them on [Github](https://github.com/Gleek/gnome_wall_changer)*
 <img src="/images/246523.jpg" style=" display:block;margin:auto;" width="370"/>
 
 One of the main attractions about a system is the desktop background. We tend to choose our background which identifies our interests , are aesthetically pleasing or remind us of our good times.
 
 But the thing with consistency is that it gets boring with time. Wallpapers we once loved, becomes a burden and we find it hard to come back to that wallpaper after getting it on 24×7.
-
+<!-- more -->
 This is the problem I had. I cancelled out each wallpaper from my list of all wallpapers I had, after I completely sucked out the goodness of a wallpaper with my eyes.
 
 I came up with the idea of automatically changing the wallpaper randomly via some sort of shell script. It's implementation used <code>gsettings</code> to change the desktop wallpaper. It was supposed to run automatically as a cron-job but I couldn't make the cron work. The current implementation uses <code>sleep</code> to get the delay

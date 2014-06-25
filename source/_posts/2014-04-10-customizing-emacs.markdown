@@ -8,7 +8,7 @@ description: customize emacs for better and faster development
 categories: Usability
 ---
 I believe the environment in which one works is directly responsible for one's productivity. It's the reason I think, it's important to choose the right editor, font, etc.
-
+<!-- more -->
 I used notepad, notepad++ in my Windows days. I have to say I spent a lot of time with notepad++ and it was my favorite at that time. My notepad++ days ended when one of my friends recommended <a title="Sublime Text" href="http://www.sublimetext.com/" target="_blank">Sublime Text</a> to me. It was the best editor I ever had encountered till that time. The most important thing was that 'it was cross-platform'.
 ###Switching to Emacs###
 I switched to Emacs mainly because of it's philosophy, as I am willing to put up with a much steeper learning curve if it makes me more productive or more comfortable in general. Now that some time has passed I'm much faster with Emacs than on any other text editor I use (namely Sublime Text, gedit and Vim). The other reason is it's features. Emacs has tonnes of features which are very hard to replicate in other text editors. These may include from Shell mode to IRC-Chat to E-mail to even playing games inside Emacs.

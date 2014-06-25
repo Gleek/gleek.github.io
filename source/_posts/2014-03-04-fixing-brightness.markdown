@@ -7,11 +7,11 @@ tags: backlight brightness bug changing brightness display fedora fn gnome-shell
 description: Tutorial to fix the screen backlight problems with linux
 categories: [Linux, Bugs, Fix]
 ---
-####You can find the said applications/scripts in my [:octocat:](https://github.com/Gleek/linux-brightness-hack)####
+*You can find the said applications/scripts in my [github repository](https://github.com/Gleek/linux-brightness-hack)*
  <img style=" display:block;margin:auto;" src="/images/fixing-brightness0.png" height="240" width="240" alt="Brightness Gnome" />
  
 This is a problem which I faced since the beginning I installed Linux. My system neither recognized my display settings nor those damn shortcut keys (the combination of <kbd>fn</kbd> keys) worked , so I ended up getting a dark screen (with zero brightness) every time the system starts-up. I couldn't even change the brightness with those faulty shortcut keys!!
-
+<!-- more -->
 So the obvious question was:
 ####How the hell did I work with no display?####
 I worked in recovery mode!! To be honest I started to hate my Fedora 'cause of that bulgy screen I would get in 800×600 resolution mode. Since I was a noobier noob at that time I decided to work with that. Later I found a silly workaround by "practicing" changing brightness in recovery mode and then "actually" changing brightness without the display on normal mode to get the display :astonished: ...Yeah..Lame!

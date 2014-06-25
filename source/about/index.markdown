@@ -19,7 +19,11 @@ You can find me on [:octocat:](https://www.github.com/gleek) and <a href="https:
 
 <a href="http://stackoverflow.com/users/2558897/umar-ahmad">
 <img title="profile for Umar Ahmad at Stack Overflow, Q&amp;A for professional and enthusiast programmers" src="http://stackoverflow.com/users/flair/2558897.png" alt="profile for Umar Ahmad at Stack Overflow, Q&amp;A for professional and enthusiast programmers" width="208" height="58" />
-</a>
+</a><br><br>
+**Contact**
+
+- IRC - #jmilug, #drupal
+- E-Mail - ahmad[dot]umar2008[at]yahoo[dot]in
 
 <script type="text/javascript">
 var curTime = Date.now()/1000;

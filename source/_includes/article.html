@@ -25,7 +25,7 @@
 {% endunless %}
 {% if index %}
   <div class="entry-content clearfix">{{ content | excerpt | emojify }}</div>
-  {% capture excerpted %}{{ content | has_excerpt |emojify }}{% endcapture %}
+  {% capture excerpted %}{{ content | has_excerpt }}{% endcapture %}
   {% if excerpted == 'true' %}
     <footer>
       <a class="btn btn-default" rel="full-article" href="{{ root_url }}{{ post.url }}">{{ site.excerpt_link }}</a>

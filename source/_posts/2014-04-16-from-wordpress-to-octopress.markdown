@@ -10,7 +10,7 @@ categories: [Life, Usability]
 *This post is about choosing Octopress over **WordPress hosted** blog, it does not talk about WordPress as a framework.*
 
 It has been a very few days I started this blog. Now I feel a bit of a weird pride in announcing that this may be the last post on the wordpress, it's now hosted on github - [http://gleek.github.io](http://gleek.github.io/) , and powered by Octopress.
-
+<!-- more -->
 ###Why I chose WordPress?###
 When I first thought about blogging, the first thing that came to my mind was choosing the right framework for it. Three of them came to my mind, namely Drupal, Wordpress and Octopress. Since I didn't have any reliable hosting at that time and had previous experience with WordPress, I decided to go with blog hosted on Wordpress.com.
 

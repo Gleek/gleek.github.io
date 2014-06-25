@@ -9,7 +9,7 @@ categories: Life
 ---
 ![Hello World](/images/hello_blogging.jpg =300x255 "Hello World")
 
-So how did it start...Well what can I say, it was nothing more than a small pulse that waved through my brain....
+So how did it start...Well what can I say, it was nothing more than a small pulse that waved through my brain....<!-- more -->
 <h4>But why exactly ?</h4>
 I think the answer to that will be same as the answer of the question that
 <blockquote>Why do people ever blog ?</blockquote>
