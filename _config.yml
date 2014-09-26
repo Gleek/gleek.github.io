@@ -16,8 +16,8 @@ keywords: linux, foss, open-source, drupal, web, hack, noob, programming, utilit
 date_format: "ordinal"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
-subscribe_rss: /atom.xml
-subscribe_email:
+subscribe_rss: http://feeds.feedburner.com/UmarAhmad
+subscribe_email: https://feedburner.google.com/fb/a/mailverify?uri=UmarAhmad&amp;loc=en_US
 # RSS feeds can list your email address if you like
 email:
 
