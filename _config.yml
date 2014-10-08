@@ -34,7 +34,7 @@ plugins: plugins
 code_dir: downloads/code
 category_dir: blog/categories
 tag_dir: blog/tags
-tag_title_prefix: "keywords:"
+tag_title_prefix: "tags:"
 markdown: rdiscount
 rdiscount:
   extensions:

@@ -3,7 +3,7 @@ layout: post
 title: "Fixing Brightness Problems in Linux"
 date: 2014-03-04 23:51:09 +0530
 comments: true
-tags: backlight brightness bug changing brightness display fedora fn gnome-shell keys shortcut ubuntu
+tags: backlight brightness bug changing display fedora fn gnome-shell keys shortcut ubuntu
 description: Tutorial to fix the screen backlight problems with linux
 categories: [Linux, Bugs, Fix]
 ---
@@ -33,15 +33,15 @@ The problem here was that I wasn't able to give a script root access without it 
 Recently, I figured out the way to give the scripts root access by editing `/etc/sudoers/` file and adding
 
 ```bash
-$user ALL = (ALL) NOPASSWD: $path_to_script;
+$user ALL=(ALL) NOPASSWD: $path_to_script
 ```
 
 where `$user` is the user-name and `$path_to_script` is what it says it is!
 ###Method II: Making a Python Script###
 After some researching I found out about the [dbus module of python](http://www.freedesktop.org/wiki/Software/dbus/), which basically could help me `get` or `set` the brightness. Using this and a little argument parsing I was successfully able to make a script which changed the brightness.
-**Update:**This method doesn't work on Gnome-Shell v3.10 :worried: . I will update a patch soon.
+**Update:** *This method doesn't work on Gnome-Shell v3.10 :worried: . I will update a patch soon.*
 ###Method III :Emulating brightness keys with xdotool###
-The [Xdotool](http://www.semicomplete.com/projects/xdotool/)can be used to emulate the brightness virtual key `xdotool key XF86MonBrightnessUp` to increase the brightness and `xdotool key XF86MonBrightnessDown` to decrease the brightness.
+The [Xdotool](http://www.semicomplete.com/projects/xdotool/) can be used to emulate the brightness virtual key `xdotool key XF86MonBrightnessUp` to increase the brightness and `xdotool key XF86MonBrightnessDown` to decrease the brightness.
 ###Method IV :Using xbacklight###
 [xbacklight](http://linux.die.net/man/1/xbacklight) is a tool adjust backlight brightness using RandR extension. It's the easiest way to change the brightness, without getting into details. It can be installed from the repository by a simple `yum` or `apt-get` command. Brightness can be changed using `xbacklight inc 10` to increase brightness by 10% and `xbacklight dec 10` to decrease the brightness by the same amount.
 ###Method V :When everything else fails...(using xrandr)###

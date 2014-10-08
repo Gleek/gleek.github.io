@@ -1,0 +1,61 @@
+---
+layout: post
+title: "GSOC Meetup 2014"
+date: 2014-09-05 04:20:39 +0530
+comments: true
+tags: gsoc jmilug meetup 
+description: Account of the GSOC Meetup organized by JMILUG
+categories: [Meetup]
+---
+<img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10653655_10201528908063906_397194149140104331_n.jpg?oh=cb2a2ec6d9ae4e384fe989c1a5689a94&amp;oe=54A3F304&amp;__gda__=1415311933_018fb8f15ca99ae2d0695e580b832ef3" style="display:block;margin:auto; height:450px;">
+<br>
+On August 23rd, we, at [JMILUG](http://jmilug.org/), hosted a GSOC Meetup at [Jamia Millia Millia Islamia University, New Delhi](http://jmi.ac.in/), home of JMILUG. The GSOC meetup was an opportunity to meet and learn from past and present GSOC students who’ve actively contributed to Open Source projects in collaboration with developers from all over the world.
+<!--more-->
+This acted as a platform for other budding developers who’re ready to get their hands dirty and contribute to real time projects.
+
+####**Why?**
+
+Over the last 2 years, 9 JMILUG members have been selected in GSOC thanks to the exposure provided to Open Source communities and projects as a result of various meetups and conferences every year. So we felt that it was time to give something back to the GSOC and Open Source community of India.
+
+Organizing a meetup for GSOC participants and other Opensource enthusiasts seemed like a good option.
+<br>
+####**Preparations**
+
+We started accepting proposals from potential speakers for the event and built a basic website
+
+We also wanted that only the best proposals among all the proposals should be selected for the event and for that to happen we built a voting application and the proposals were chosen by the voting procedure. We established a criteria that only the people who were related to GSOC get to vote.
+
+The speakers from the top voted sessions were finally called to give a talk, which were mostly GSOC students.
+
+We received an overwhelming number of registrations, but our college administration was kind enough to lend us our Faculty Auditorium for the event.
+
+<br>
+####**When the day came**
+
+We saw nearly 190 attendees in the event, from all kinds of academic level and from far-off cities. We started with registrations followed by
+
+- [Vipul](http://vipulnayyar.com/) and [Me](http://gleek.github.io/about) giving a short introduction of JMILUG and the day’s schedule.
+- [Gaurav Saini](http://gauravsaini.me/), who worked with [Mifos](https://mifos.org/), talked about his GSOC Experience and explained using [AngularJS](http://angularjs.org/) in android applications using [Apache Cordova](http://cordova.apache.org/).
+- [Ishan Khanna](http://www.ishankhanna.in/), who was again a student under Mifos, explained the [REST API](http://en.wikipedia.org/wiki/Representational_state_transfer) consumption in Android
+- [Anshul Sharma](https://www.linkedin.com/pub/anshul-sharma/31/250/737), one of the members of JMILUG, explained to us the importance of [Git](http://git-scm.com/) and some of it’s working via an hands-on session.
+- [Sachin Gaur](http://www.mixorg.com/author/sachin_gaur/), Co-founder of Mobile Harvest, enlightened us with emerging industries and current IT market of India and the rest.
+- [Shaumik Daityari](https://github.com/sdaityari), from Inclusive Design Institute, gave an awesome talk on building websites with better accessibility.
+- [Shadab Zafar](http://dufferzafar.github.io/), who worked under MusicBrainz and also a member of JMILUG, talked about his project and how MusicBrainz helps storing metadata for songs.
+- [Shubhamoy](http://www.shubhamoy.com/), founder of [Dynofy](http://dynofy.com/) and an opensource enthusiasts, also shared about his experience in building his startup.
+- [Rajat Goyal](https://www.facebook.com/rajat93), an aspiring GSoCer, gave a talk about the awesomeness of [ipython](http://ipython.org/).
+- [Saleem Ansari](http://tuxdna.in/),one of the founders of [JMILUG](http://jmilug.org/), talked about the history of JMILUG and our journey to the day.
+
+Our final talk was about *"Getting into GSOC"* with the focus on the question answer session, with questions intended for all the GSOCers.
+<img src="https://scontent-b-sin.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/1912002_10201528887903402_4456059995292543791_n.jpg?oh=580830073120822b0f345022521e8f86&amp;oe=54902EAE" style="display:block;margin:auto; height:300px;">
+<br>
+We ended the day’s talk with distributing Certificates to speakers and T-shirts to the two most active audience members and two people selected randomly from the audience. Thanks to `Math.random().`
+
+We also distributed official GSOC pens to three audience members, after every talk, if they answered the questions by speakers correctly.
+
+All the goodies including Pens, T-Shirts and stickers was generously given to us by the [Google Opensource Programs office](https://developers.google.com/open-source/).
+
+<br>
+####**Links**
+
+- [GSOC Meetup Official Website](http://gsoc.jmilug.org/)
+- [Photo Gallery](https://www.facebook.com/vipulnayyar/albums/10201552533654531/)

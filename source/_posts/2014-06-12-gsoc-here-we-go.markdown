@@ -18,7 +18,7 @@ Initially my expectations of being accepted were very low, but I also had nothin
 
 ####Getting with Drupal and fluxpocket####
 
-I quickly glanced through the [projects list](https://groups.drupal.org/node/407793) with a lot of cool projects, but one of them caught my attention. It was the integration of the Pocket API with [fluxkraft](www.fluxkraft.com). I prepared a proposal, discussed the prospects of the project with the mentors and the next thing I know is that my name popped in the list of 13 [accepted students](http://www.google-melange.com/gsoc/projects/list/google/gsoc2014) from drupal. :relaxed: 
+I quickly glanced through the [projects list](https://groups.drupal.org/node/407793) with a lot of cool projects, but one of them caught my attention. It was the integration of the Pocket API with [fluxkraft](http://www.fluxkraft.com). I prepared a proposal, discussed the prospects of the project with the mentors and the next thing I know is that my name popped in the list of 13 [accepted students](http://www.google-melange.com/gsoc/projects/list/google/gsoc2014) from drupal. :relaxed: 
 
 ####What am I doing? ####
 Fluxkraft is a module suite and distribution for automating your social media work flows! It is an OpenSource alternative to services like [IfTtT](http://ifttt.com), [Zapier](https://zapier.com/) or [Cloudwork](https://cloudwork.com/). For really becoming a usable alternative more and more services should be integrated to Fluxkraft.
