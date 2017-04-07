@@ -7,7 +7,7 @@ tags: linux fedora fedy gnome firefox extensions tweak
 description: Installing proprietary packages quickly after installing fedora 20
 categories: Linux
 ---
- <img style=" display:block;margin:auto;height:240px" src="http://sd.keepcalm-o-matic.co.uk/i/keep-calm-and-yum-install.png"   alt="Keep Calm and yum install" /><br>
+ <img style=" display:block;margin:auto;height:240px" src="https://lh3.googleusercontent.com/JCYMcJb5M-08b9FtHvKDsX8hedPz5UsD_rXxeSm0LkLl16YJuizEG2EuEFhi1CXOprcc6hesH8E8YPOd2sIfZbB6rfZm8h0eO-CDHhw4YQ_HHNqR3rU7d2OzSs1nSnhwvxZmXHpqTwTsaQSxYx4mcsi2QFIrJ9o3s3MQPIgg3qbqOusdJxjmuylQePuNm-aKMF4vTXwd_Xl7Sl9PQWUFG7GttxkbPa9sEJP-qm0velNcDh_Frzcd69SKLBjup-AV33ddUs_nat19pITobGS3MGk1BEYOfIzj8KfZzESeisvysiionFZfcbk6oaAhzsdoogfIPE2WIjH8x8MS23__AfKysOiZ6Cr7jTw5nMjdR7STzbLKZEslHyCKlvmXoIMrjkI9ZGrJ_54-cPMw0IFnXa1myCf3ob_AkgrjxhEPmGeu_cbnQG6wlQr_9SnObOJOyiDfc66epMTz_pOBSOdcJ74RLoqeqvBXIeK8yMCQ6fJTx9X0Zr5Do8ax_Harh-Mr_B5LewIqDo_pXiForMCBOJW9yPwnheM4SjIHX6WPm5voc5qsqcBW57y3hePPbZiNul4QzNMRfcXaC_DiIXCdAyyKJqVD6a3RpXsQM6gxKOdVuiHeRGeV3fdqKyJZWA5goDuqTZ9em9ku7zia6faJ9nLbshesjnXL9SoMCaDaUQ=w600-h700-no"   alt="Keep Calm and yum install" /><br>
 Getting the right packages after a fresh install is a headache. That is exactly what I had when I had to do a fresh installation of my Fedora after I accidentally corrupted my entire disk :frowning:.
 
 I didn't want to spend days installing the packages this time. This time I wanted to do it smart and quick.

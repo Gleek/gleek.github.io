@@ -8,7 +8,7 @@ description: Guide and Shell Script to automatically change desktop background
 categories: Linux
 ---
 *Click [here](https://github.com/Gleek/gnome_wall_changer/archive/master.zip "gnome_wall_change.zip(Github)") to download the scripts directly, or view them on [Github](https://github.com/Gleek/gnome_wall_changer)*
-<img src="/images/246523.jpg" style=" display:block;margin:auto;" width="370"/>
+<img src="https://lh3.googleusercontent.com/NGCDBc6q7d4KsJ5OQft2nhe0RnglzsBVbgOGZpdEMunjopdwxg5CmzMbgYA-7GpkHX3P5xVFOOR2k300r3smFScPSX-xWsaBOmHuJL5r24OstQDIuqFbsUZ0pxwjcCoV0jQvD2azdKkCWwX7IB4wB78M8_xlW6wb4fLTn26uHzSHltTAtuapfJE5pMvzuPAMb5Af0A2I8bn-6KvjoVazUT_qMhBFcIqBLT_OjSKK8f04sDbVarExlNA5cvxwujLgNLFKrLneYNkXBV72g_8AiY3Sj20vEOG-Nqbt4FY0sxBavgWuE62bfngKaWpcIuEdlgJDzXVb0hLsO_XHulyWKZqsEnZmPTpeZTXbgwXOW831bU7FU9zWamsCxDAyQJP9361V-xqMIut-5jnT2g86ESIks1xVZxkO83RClmKiwmM3b1rq9hZuMR9DVuVFjDBdQcvVBIEWyKPAIi39-26AkblTir_AXZcEeAju_dNamBiyQuZ6-Pf_wykzTNZlXt1aR8LzoIYABCc5CrZxrft4rnj2U7M3_v4-SVmzq3bqqV5OKIONgZkMHpAZxTnGEzToNThcyxZt1Q_lr050p-a8opmObnudB6UElg2x_MdrztotI6Dpsjs6TiHIdLWfur4Zh92uvsedkmV1zY5TKazLMTttGY2yMkVY3YpVAy64gQ=s370" style=" display:block;margin:auto;" width="370"/>
 
 One of the main attractions about a system is the desktop background. We tend to choose our background which identifies our interests , are aesthetically pleasing or remind us of our good times.
 

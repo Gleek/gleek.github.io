@@ -7,7 +7,7 @@ tags: gsoc drupal
 description: Details of my selection in Google Summer of Code (GSOC) 2014 this year.
 categories: [Web, Life]
 ---
-![GSOC 2014](http://2.bp.blogspot.com/-AMh71WrZAyY/U4SgMMpFF9I/AAAAAAAAXiM/_EKiHquqgj0/s1600/2014+summer+of+code.png)
+![GSOC 2014](https://lh3.googleusercontent.com/-_eXnV87hecb2o5FZfatpmppOXSBupYVE2Xr8WIdxbi4tJqYW-iH-Y-ptJ2zDItA3N8XYuT71fmdxkP5RBWMJIxh2wGEPnOyaohoLbxxaT8cSNc67QQH2581_7ov2-rTPC5t9ro1UxN92jY8eNCF1mw-m879yjWX_H9vhZJVdVnrQRCEw5GHLL_k_Any-hYsIhOl06Paafst7kd4e-1rTORw6-TReVjZZQs6uYZSS2HTqB0g-_h2Zkp9g3UXcrrKcNucr-CYtilEIK_PRi_lUeRdNtU1rsGWrakkMDUXMuKy-ReIlBxUgc5Mj8iDde1RGqFf663lKQ5JhZb6nIiQuTnnqzg1MoynXFkqJsDaztSanuEm7uSWhwQ_gVDQjcGK7eVykXCa4JBZnucDlZBYVurJDk7wfUASCp5LvPXD3Ord3kAyLVZupq9bdjC28zGyGc8H6QC-LrUTxOkgyAoxjaifSlxTbcFao5snSSYPf-Whxj73Vzt2c2p0uHR_ySuBfRlSJL6Ul8cnp3KYEkiMQbAwYuAVlTSka-0Ch3uppYGS57dztOpyVawV-v2W4ipXj3fpmRYSC7jJA29ztsrCYZQKahhBaQREqrtJRgG5_zqCryLyn7vrzgoVXYOeX5MUW_P--Np4KEChrnTGp1C0Of2H4Jn26Ja4_Its7XEC_A=w924-h156-no)
 <br>
 ####What?###
 Google Summer of Code is happening this year with over [190 participating organizations](http://www.google-melange.com/gsoc/org/list/public/google/gsoc2014) and with a total of [1307 students](http://google-opensource.blogspot.in/2014/05/google-summer-of-code-2014-by-numbers.html) selected all round the globe, and being one of them is truly awesome :sunglasses:. <!-- more -->

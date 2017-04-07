@@ -8,8 +8,8 @@ description: Tutorial to fix the screen backlight problems with linux
 categories: [Linux, Bugs, Fix]
 ---
 *You can find the said applications/scripts in my [github repository](https://github.com/Gleek/linux-brightness-hack)*
- <img style=" display:block;margin:auto;" src="/images/fixing-brightness0.png" height="240" width="240" alt="Brightness Gnome" />
- 
+ <img style=" display:block;margin:auto;" src="https://lh3.googleusercontent.com/FtDEhFz8XUmpm-kK2gXko-Y6y9SojmlX8TQPmFht1Xx15GY__hKAANFn9kcI-6wuC1sXVfRpIBE3oo-20kHJqkk0DKtQoliaT9_ruWfQVdYOEE3COC0Sc1uHL5q0X8UoCMTZuYUfNeFT1Yoe6wJVK8OOY3QlLGfvUSaUlK32PUnIb-5isnpWbwi2ZfedUYUaFmLJU1MNR3MgslxbJ4Q0TSX2BcSRWu2l_ilCf2CB3zPmXNPkOlPXLPhADIJUVlZsqtNhv7q4s8t9uvTZuMU0NpsXOooN7s7VyvpJ3YOQEYimyMB1Pz7YMNSo3nV5lCXPBn63XkIkigQ9HoYZn5oKW5CLTu3wSqMh2zYoEfvbZIrB0KEA6EMTjiirc4BnKvcs0IOTYahm5r2Ws2x7N2Pr6KnSlOWB1rHVA7dw9cRCKV2qA_tJsjKJSvlPUngWn2STRtuprHvigclTX-hMn7V24P6QTHbPilB3uQRN91iYOrNo7pkLhgo-WmGo6sABukUM4ETwUVSUUgTSsxYrD9aBoZz7WOOZo0Z4awGcDQgNXCzg5Rza81TVmRxa7cwbIEMu21TZUaaEN9Kot3f6q1iaYnos_zFTMhrau4lQVzZRNbrVxx5pY8IjT8i3dix8zPDv-RZgcpm7ExPrxr8_zcSXJbdgay-9cN7AP7yFZxbR9w=s240-no" height="240" width="240" alt="Brightness Gnome" />
+
 This is a problem which I faced since the beginning I installed Linux. My system neither recognized my display settings nor those damn shortcut keys (the combination of <kbd>fn</kbd> keys) worked , so I ended up getting a dark screen (with zero brightness) every time the system starts-up. I couldn't even change the brightness with those faulty shortcut keys!!
 <!-- more -->
 So the obvious question was:
@@ -58,5 +58,5 @@ If you're having problems with your default brightness setting i.e. your brightn
 There are many ways you can add application at start-up they are given [here](http://askubuntu.com/questions/48321/how-do-i-start-applications-automatically-on-login) and [here](http://stackoverflow.com/questions/7221757/run-automatically-program-on-startup-under-linux-ubuntu) but what I find simplest is using `gnome-session-properties` and simply adding the application.
 Once you've made those changes, you're ready to feel the magic of automatic brightness.
 
-![Joda](/images/master_joda.png =256x256 "Master Joda")
+![Joda](https://lh3.googleusercontent.com/FCv0ym7w-1XAVZasBSuIjfElzXyEn-SG1N9WwSY7ai_OV2zeRHKS0-g00vmgLwlf1XyLlQHilYRjXbGIXxxsod4gmAfCIxdCDAj_xH7rUjCErdkJWlTbmoMBwO0ldFFZiMjgbbz4wFxk-DVU73iO3sKvjp6ykgGFHMaPaJhYlzZ9COxGmYYPRG1qGzw12NbYHj3fnoU1HNEDDPDqpUODtLofFzMNcMHj8plG9vtcUfK_Aw-RzZ_bmE-x1-c7F_EUtUYa5AOGiOW3h3moyjE53CQBd2vb1lxrByEVsfx-c8RJ-JYKjfbLcvAOu-ZWdgavz6Sg6WQduWRV-0ls6XErcPDQsXaVFiQ2rBgQeOoFu-YnbsIzK7Pm5pQ6d9EwN5ZCfswhpQyNJ1lP1wxof5bhZQJWLGPZQSIKGg5ItL72GaDpH0hPjmTmQHe8eHF0k9KCe84PKoB61cFXt9R1G8Y8ToRg2uDWadbMgMKw7Zpm2Jk6y2-687qeMexmGzexIpVge5-sJhOC7aQu6pt7AbqEvustP7x3cmNVq0s230U7z3PkfsDS_SWzJ6kNFVX6FZDOioNKcc8FGg3xcnhID16FkrpNOqM6wEmuDfnwx9FVWvx56FZU2pFYv8L2VVEBjcdszDk4FwYcGavpUE3iHk8jZPj_CUID_JDcC4ChGSOcgQ=s256-no =256x256 "Master Joda")
 

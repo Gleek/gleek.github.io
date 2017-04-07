@@ -7,7 +7,7 @@ tags: gsoc jmilug meetup
 description: Account of the GSOC Meetup organized by JMILUG
 categories: [Meetup]
 ---
-<img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10653655_10201528908063906_397194149140104331_n.jpg?oh=cb2a2ec6d9ae4e384fe989c1a5689a94&amp;oe=54A3F304&amp;__gda__=1415311933_018fb8f15ca99ae2d0695e580b832ef3" style="display:block;margin:auto; height:450px;">
+<img src="https://lh3.googleusercontent.com/e2fih0IuM8f-R7zU5rhRsdQx2DY8T_izv8XnDl3yRyAGZPMxo8QimbtUty0_U3b1HqsSfNk7Ts70lkZV9nADD65cTXw3sC8FhJKk6TPzw4kBHpIjPRmcMwkSseqM_5FFnPUm1tybTMD-Jp8O_LVfhAVccNbWnKwqIH24-Nupobe8C-qa8SfW3LSH3QrfrDiSzcy-OGq-VJmItUzzB0OKzoiGBzMEs0s23LDwtK-anp3r2plwmXsC55UYG7QeqW794LAl_tC6fWiObFrTMRNFAPRR0aJN4F5C438X8gnoWs27TJQEOHjEMIx1ONmBKhPtWAeLgjcIivKAQfwjCUzMepMYMepBLXSW3h1FIyW1GXZK7j0J244UTjJ42hfnmTawIvr1DD7zX8tLJxEf9x_E8VYIogAKywJweEzN100W9rW-KjpbsY4mLTPBAfaBoyIatMocLZGi1RtXF1y8gHQAdNOC9E3vnwFAxey2Lw30l1cSnPw8YYBHZecjekuvR0LwAlq0Lpo8nTsSsZU6blgXFFd1kg8Wd7ybr9WzuXlpdSOD6VEiD85_fFErPSoYsfSRJzn_N1J3P7T53hNBERYpx92D_D0R1YRGbVGx07gds_dnO_uiOrD_ujwedi1ucvWexIoIPgzmDZLOTbyKHeQtZwDZM-GNeqpriCYuaaInqQ=w1137-h758-no" style="display:block;margin:auto; height:450px;">
 <br>
 On August 23rd, we, at [JMILUG](http://jmilug.org/), hosted a GSOC Meetup at [Jamia Millia Millia Islamia University, New Delhi](http://jmi.ac.in/), home of JMILUG. The GSOC meetup was an opportunity to meet and learn from past and present GSOC students who’ve actively contributed to Open Source projects in collaboration with developers from all over the world.
 <!--more-->
@@ -46,7 +46,7 @@ We saw nearly 190 attendees in the event, from all kinds of academic level and f
 - [Saleem Ansari](http://tuxdna.in/),one of the founders of [JMILUG](http://jmilug.org/), talked about the history of JMILUG and our journey to the day.
 
 Our final talk was about *"Getting into GSOC"* with the focus on the question answer session, with questions intended for all the GSOCers.
-<img src="https://scontent-b-sin.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/1912002_10201528887903402_4456059995292543791_n.jpg?oh=580830073120822b0f345022521e8f86&amp;oe=54902EAE" style="display:block;margin:auto; height:300px;">
+<img src="https://lh3.googleusercontent.com/7zdU5CSwB9s2B22FAPmpqohXF4kDOI9GrLWDIjLEnsCuNUrzbRUsC2kqNow6OuCFuykhd2Suy3p0JfWrfH12Gj2rX4volzOP2HCuFG6Orje4eQHMk_-3BmFr80UWjFTzhpmmd3qA0iYkaUnyhX3PIxUuIgfxeTjHxNHKQf46DMVY4OV_oZ9eV5pPBY4VdBhzfsjPRnFkuSPo8-kuAT1dMPubwTBB8HUekm3GgPR24vHkllmFVcaSFBwrZpmEcSl1_xvsr_U4x7KHw7MOfYQT-0TOb8KIJzi30IfWBIiUUSShyMj-20-oUGs3u2go7qLn8AaLVqWUr3TIZl4eO_rqnehMtjZFj9WTdH-F-aWn3XGlDD2W7iIjAJ3-WTqNmhv6YYrcvAgM_YRXGQznbn8UBEklLy7TkmTyJ-Ypy76N9zt6on-qVFFU24Zcdsn0Vp3w1hDtfjD3fvt6uilTCLbGMn7sOFeUeHMRvWm1-DbYIQ2yFryvZa8kB7Tobzmyw2Dn2QH8CqjiELfoGYgFD6rSQjpV4Wrf0aF-gHHRDCfCYFKljfapTp6AFzYJfICjSGoQblf8dZDfnmEAayQFSAd05G2A299dpH_GCC06y4h2bIUy_UPI88gjprtSrM3JjEp4tpWm8MXv9A2dXI2YdfyPt3gPMpgUfjw4nmdav8VHTA=s500" style="display:block;margin:auto; height:300px;">
 <br>
 We ended the day’s talk with distributing Certificates to speakers and T-shirts to the two most active audience members and two people selected randomly from the audience. Thanks to `Math.random().`
 

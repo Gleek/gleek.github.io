@@ -7,7 +7,7 @@ tags: fedora fedora-17 fedora-20 upgrading pre-upgrade customizing fed-up
 description: Guide to upgrade to Fedora 20 from Fedora 17
 categories: [Life, Linux]
 ---
-<a href="http://fedoraproject.org/get-fedora"><img src="http://fedoraproject.org/w/uploads/5/54/Release-2.png" alt="Fedora 20" style=" display:block;margin:auto;"></a>
+<a href="http://fedoraproject.org/get-fedora"><img src="https://lh3.googleusercontent.com/uqGbIS_J6m_AloaEhWeG0IZ6G4iWSYBUDMJ8kX3aRRxLHhiruma365lgbRW877VHiSbMP1ivNISekZl1aUQGw13Z6SIcZEJ2nqp_Lt-I0UuPfmiypBz7iM8m3vvWD9ijUSB8u0Fa4IbJaXgQdlGCjAP1hBVvPcfVvDgQ4--LvLl18fOLV-5vk-l4zPU4calXUlOaNDGw_dCPLM0RO42YllDiAN669vFCR1g9PIftUhKCE271lXeOZmo4hp_AICCQNppWpQS-mD7I8zYx_BAqvTPdwhPzkHYG-ZU33Jz2N3-uqEGpefU7QaklxXVpBG3-_VmOmwXUNBhOa0LHUVpcTa4JA_lz2D5AcwhwAGMyEbjaTAAOjI2zxrg9wuF6R8nitmQREcfs4R1I5DwLjuOlHLYdgWLHx_AHSd-aB4Lp6Slx29vUvVtgD6MIMQUB_sH60bvT81LM-OTlQbO35yyHXI5ETyePfzcSeblRUN96Ecu3D67xMLdujDfje3t8_7gQkC5IcUpfgYVOukd_bi6kgqMaF2c5_KXD1tpt7PhbnZ9N7hQ8W1uveUdurWZik1NcFs7hMMmJgZjf-0eSqo56vX12_k4D391EAxe1L6hSE9UHzmYFKSZj_FDtD_Q97yg5hn2CC6exVqQZSnVRqkKPXO1vvQRnZFHpvhGapvPIgg=w200-h100-no" alt="Fedora 20" style=" display:block;margin:auto;"></a>
 
 I've been a Fedora Fan-boy ever-since I started using it three years ago and Fedora 17 is the only Linux Based Distro which lasted for more than a year on my laptop. But just as every good thing has to come to an end, my company with Fedora 17 had completed it's lifetime. <!-- more -->
 

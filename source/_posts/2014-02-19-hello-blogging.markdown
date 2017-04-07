@@ -7,7 +7,7 @@ tags: blogging
 description: Detail of why I started blogging
 categories: Life
 ---
-![Hello World](/images/hello_blogging.jpg =300x255 "Hello World")
+![Hello World](https://lh3.googleusercontent.com/8KrC30EJ7aomCKVOKCcPj7PwvqroHH_uuQ0MJKZJwRyptJGUTm9Q_euyV1RvHmPu6CXqxTApGgAgZcjMeQn2lEE3XI6q7pU--tbzNIdEYqLbY6c-6HTdr6V5cdlxgPdSS-duaLd899h1elO3gJRodqnOENLeehHLbJAxQRqDnk9_B8Hl5IVQUmBVtoy-5tr284-n2Radm70OUhZWL1863I_53wLLxKd0TxGWCwpCc7UX4rwj0nZ5A-CjZn3eLJYUx1i6fQoik64eR7wuWyRui8sj2vPCUMQ4N0TKXmt2E1dpfocJwQ6pP2ImkgTNqrRG1cCN_FHl7R_Gd5Z9bk_-YcXE1O3P2qObS9BqzssCldbSrtLvYmDUOvfAiM1uuissxiqBx5pmmLU89wiuh9QSvKy5TwF233oMlCCIS-hDBY7TEKBlgUhFfzpG-ZJNB3xa_R4-f4qeWocPNZ1Bg7Qb1LXweGisES3eYXUV48CrIZ0EJnIxx8IH6K9nrEi4LdARzFxuJIoowVkESQfp4lMzNaZDUzcCShtfdbGAn0eVH-lsrj5-gtIzNy576S0Yk-fQqGuNuXw9Fb2d-bwOuOMe4aSfAkQXwm8RpFabwZ6jZDluKtSdAevA4iC3v8RZgnhodPSu0s2YMPP3RPUzPNL6Gvdnlk3bDh-ze4UiTHtd-w=s300 =300x255 "Hello World")
 
 So how did it start...Well what can I say, it was nothing more than a small pulse that waved through my brain....<!-- more -->
 <h4>But why exactly ?</h4>

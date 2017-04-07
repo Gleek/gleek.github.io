@@ -7,7 +7,7 @@ tags: editor elisp emacs customize
 description: customize emacs for better and faster development
 categories: Usability
 ---
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Emacs-logo.svg/270px-Emacs-logo.svg.png" style="display:block;margin:auto; "><br>
+<img src="https://lh3.googleusercontent.com/ARlXYE_wnAvftBBl2UEvu-z9SpH-q3lyYNukRnNRwbUnXt6fGTP304OloJ3sJ3pSlMr_9QnPr_RxKamv65BFkEUqUEKB0TftIzNuOaiabipF1DNMYLzYReB_40Qr2TbbDndKYzeY5-MPUNmyzH9xmsuhWxmpywT4U5ayHJo2-dGy1W7wRlY2kY7QtTvneNt4OqGGZlqsSZLYM3WVcVwWFxBeJzPxirItCLPzRoRNPfdZZRy6k31JS65TU3WYW-7hvOcTuoZ6vDJSj2K3HyD73dpJ7YjNUwmJB9tjNzy7bqUXm5ftnuG14qPKs1Gtz1jpAGESfgafhUeLQL1pvDWP-VBQDLIwYaXr-XFTatPTgalAAPNd66J-cJ_J0O1OkF1DM-KM4RjqDhLkMOT9-RM5fkrG5_Rnibw32yJho_cGYTyk7523_CnePswMWjMtmMrTI4zyrsaRYVqBjfRxwznHExq1nAwuR-NSmP2EeeLvPYFP6ZSyMWyZCga2K0LH6J9-Qa8aHdkneuQ9ti6w0QGEJHr9HinsGuWBuALKd2H0ZlPxrwhOdKSyEIaWgq2mkt0vL653PCK4sN5zGZZte3kc7LL3I4WZhlN1oaRsXbIRTJaLEYhQTYj4BrRDS-59IHAwl2Ddf_AzsF9r7c6cKs-A2DQL2QpM2Nb5gU5Ae05pIw=w270-h217-no" style="display:block;margin:auto; "><br>
 I believe the environment in which one works is directly responsible for one's productivity. It's the reason I think, it's important to choose the right editor, font, etc.
 <!-- more -->
 I used notepad, notepad++ in my Windows days. I have to say I spent a lot of time with notepad++ and it was my favorite at that time. My notepad++ days ended when one of my friends recommended <a title="Sublime Text" href="http://www.sublimetext.com/" target="_blank">Sublime Text</a> to me. It was the best editor I ever had encountered till that time. The most important thing was that 'it was cross-platform'.
