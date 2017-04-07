@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags:jmilug | Umar Ahmad]]></title>
+  <link href="http://gleek.github.io/blog/tags/jmilug/atom.xml" rel="self"/>
+  <link href="http://gleek.github.io/"/>
+  <updated>2017-04-08T01:35:17+05:30</updated>
+  <id>http://gleek.github.io/</id>
+  <author>
+    <name><![CDATA[Umar Ahmad]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[GSOC Meetup 2014]]></title>
+    <link href="http://gleek.github.io/blog/2014/09/05/gsoc-meetup-2014/"/>
+    <updated>2014-09-05T04:20:39+05:30</updated>
+    <id>http://gleek.github.io/blog/2014/09/05/gsoc-meetup-2014</id>
+    <content type="html"><![CDATA[<p><img src="https://lh3.googleusercontent.com/e2fih0IuM8f-R7zU5rhRsdQx2DY8T_izv8XnDl3yRyAGZPMxo8QimbtUty0_U3b1HqsSfNk7Ts70lkZV9nADD65cTXw3sC8FhJKk6TPzw4kBHpIjPRmcMwkSseqM_5FFnPUm1tybTMD-Jp8O_LVfhAVccNbWnKwqIH24-Nupobe8C-qa8SfW3LSH3QrfrDiSzcy-OGq-VJmItUzzB0OKzoiGBzMEs0s23LDwtK-anp3r2plwmXsC55UYG7QeqW794LAl_tC6fWiObFrTMRNFAPRR0aJN4F5C438X8gnoWs27TJQEOHjEMIx1ONmBKhPtWAeLgjcIivKAQfwjCUzMepMYMepBLXSW3h1FIyW1GXZK7j0J244UTjJ42hfnmTawIvr1DD7zX8tLJxEf9x_E8VYIogAKywJweEzN100W9rW-KjpbsY4mLTPBAfaBoyIatMocLZGi1RtXF1y8gHQAdNOC9E3vnwFAxey2Lw30l1cSnPw8YYBHZecjekuvR0LwAlq0Lpo8nTsSsZU6blgXFFd1kg8Wd7ybr9WzuXlpdSOD6VEiD85_fFErPSoYsfSRJzn_N1J3P7T53hNBERYpx92D_D0R1YRGbVGx07gds_dnO_uiOrD_ujwedi1ucvWexIoIPgzmDZLOTbyKHeQtZwDZM-GNeqpriCYuaaInqQ=w1137-h758-no" style="display:block;margin:auto; height:450px;"></p>
+
+<br>
+
+
+<p>On August 23rd, we, at <a href="http://jmilug.org/">JMILUG</a>, hosted a GSOC Meetup at <a href="http://jmi.ac.in/">Jamia Millia Millia Islamia University, New Delhi</a>, home of JMILUG. The GSOC meetup was an opportunity to meet and learn from past and present GSOC students who’ve actively contributed to Open Source projects in collaboration with developers from all over the world.</p>
+
+<!--more-->
+
+
+<p>This acted as a platform for other budding developers who’re ready to get their hands dirty and contribute to real time projects.</p>
+
+<h4><strong>Why?</strong></h4>
+
+<p>Over the last 2 years, 9 JMILUG members have been selected in GSOC thanks to the exposure provided to Open Source communities and projects as a result of various meetups and conferences every year. So we felt that it was time to give something back to the GSOC and Open Source community of India.</p>
+
+<p>Organizing a meetup for GSOC participants and other Opensource enthusiasts seemed like a good option.</p>
+
+<br>
+
+
+<h4><strong>Preparations</strong></h4>
+
+<p>We started accepting proposals from potential speakers for the event and built a basic website</p>
+
+<p>We also wanted that only the best proposals among all the proposals should be selected for the event and for that to happen we built a voting application and the proposals were chosen by the voting procedure. We established a criteria that only the people who were related to GSOC get to vote.</p>
+
+<p>The speakers from the top voted sessions were finally called to give a talk, which were mostly GSOC students.</p>
+
+<p>We received an overwhelming number of registrations, but our college administration was kind enough to lend us our Faculty Auditorium for the event.</p>
+
+<br>
+
+
+<h4><strong>When the day came</strong></h4>
+
+<p>We saw nearly 190 attendees in the event, from all kinds of academic level and from far-off cities. We started with registrations followed by</p>
+
+<ul>
+<li><a href="http://vipulnayyar.com/">Vipul</a> and <a href="http://gleek.github.io/about">Me</a> giving a short introduction of JMILUG and the day’s schedule.</li>
+<li><a href="http://gauravsaini.me/">Gaurav Saini</a>, who worked with <a href="https://mifos.org/">Mifos</a>, talked about his GSOC Experience and explained using <a href="http://angularjs.org/">AngularJS</a> in android applications using <a href="http://cordova.apache.org/">Apache Cordova</a>.</li>
+<li><a href="http://www.ishankhanna.in/">Ishan Khanna</a>, who was again a student under Mifos, explained the <a href="http://en.wikipedia.org/wiki/Representational_state_transfer">REST API</a> consumption in Android</li>
+<li><a href="https://www.linkedin.com/pub/anshul-sharma/31/250/737">Anshul Sharma</a>, one of the members of JMILUG, explained to us the importance of <a href="http://git-scm.com/">Git</a> and some of it’s working via an hands-on session.</li>
+<li><a href="http://www.mixorg.com/author/sachin_gaur/">Sachin Gaur</a>, Co-founder of Mobile Harvest, enlightened us with emerging industries and current IT market of India and the rest.</li>
+<li><a href="https://github.com/sdaityari">Shaumik Daityari</a>, from Inclusive Design Institute, gave an awesome talk on building websites with better accessibility.</li>
+<li><a href="http://dufferzafar.github.io/">Shadab Zafar</a>, who worked under MusicBrainz and also a member of JMILUG, talked about his project and how MusicBrainz helps storing metadata for songs.</li>
+<li><a href="http://www.shubhamoy.com/">Shubhamoy</a>, founder of <a href="http://dynofy.com/">Dynofy</a> and an opensource enthusiasts, also shared about his experience in building his startup.</li>
+<li><a href="https://www.facebook.com/rajat93">Rajat Goyal</a>, an aspiring GSoCer, gave a talk about the awesomeness of <a href="http://ipython.org/">ipython</a>.</li>
+<li><a href="http://tuxdna.in/">Saleem Ansari</a>,one of the founders of <a href="http://jmilug.org/">JMILUG</a>, talked about the history of JMILUG and our journey to the day.</li>
+</ul>
+
+
+<p>Our final talk was about <em>&ldquo;Getting into GSOC&rdquo;</em> with the focus on the question answer session, with questions intended for all the GSOCers.
+<img src="https://lh3.googleusercontent.com/7zdU5CSwB9s2B22FAPmpqohXF4kDOI9GrLWDIjLEnsCuNUrzbRUsC2kqNow6OuCFuykhd2Suy3p0JfWrfH12Gj2rX4volzOP2HCuFG6Orje4eQHMk_-3BmFr80UWjFTzhpmmd3qA0iYkaUnyhX3PIxUuIgfxeTjHxNHKQf46DMVY4OV_oZ9eV5pPBY4VdBhzfsjPRnFkuSPo8-kuAT1dMPubwTBB8HUekm3GgPR24vHkllmFVcaSFBwrZpmEcSl1_xvsr_U4x7KHw7MOfYQT-0TOb8KIJzi30IfWBIiUUSShyMj-20-oUGs3u2go7qLn8AaLVqWUr3TIZl4eO_rqnehMtjZFj9WTdH-F-aWn3XGlDD2W7iIjAJ3-WTqNmhv6YYrcvAgM_YRXGQznbn8UBEklLy7TkmTyJ-Ypy76N9zt6on-qVFFU24Zcdsn0Vp3w1hDtfjD3fvt6uilTCLbGMn7sOFeUeHMRvWm1-DbYIQ2yFryvZa8kB7Tobzmyw2Dn2QH8CqjiELfoGYgFD6rSQjpV4Wrf0aF-gHHRDCfCYFKljfapTp6AFzYJfICjSGoQblf8dZDfnmEAayQFSAd05G2A299dpH_GCC06y4h2bIUy_UPI88gjprtSrM3JjEp4tpWm8MXv9A2dXI2YdfyPt3gPMpgUfjw4nmdav8VHTA=s500" style="display:block;margin:auto; height:300px;"></p>
+
+<br>
+
+
+<p>We ended the day’s talk with distributing Certificates to speakers and T-shirts to the two most active audience members and two people selected randomly from the audience. Thanks to <code>Math.random().</code></p>
+
+<p>We also distributed official GSOC pens to three audience members, after every talk, if they answered the questions by speakers correctly.</p>
+
+<p>All the goodies including Pens, T-Shirts and stickers was generously given to us by the <a href="https://developers.google.com/open-source/">Google Opensource Programs office</a>.</p>
+
+<br>
+
+
+<h4><strong>Links</strong></h4>
+
+<ul>
+<li><a href="http://gsoc.jmilug.org/">GSOC Meetup Official Website</a></li>
+<li><a href="https://www.facebook.com/vipulnayyar/albums/10201552533654531/">Photo Gallery</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Adding Drupal IRC-Bot to #jmilug]]></title>
+    <link href="http://gleek.github.io/blog/2014/03/24/adding-drupal-irc-bot-to-number-jmilug/"/>
+    <updated>2014-03-24T22:45:47+05:30</updated>
+    <id>http://gleek.github.io/blog/2014/03/24/adding-drupal-irc-bot-to-number-jmilug</id>
+    <content type="html"><![CDATA[<p><img src="https://lh3.googleusercontent.com/AsBXtPDzWf-Mf9c5sMP4TdzOU_S7dZK7bl8Ly69FFn_wXGoPvos3kPOpmWMaWvMjjItBzbuZwZ-rbhshyasU9RUN_2mLswzfJWsBbmFGReZ-epr8F68KTaEK39qscEeqDIyx9os_4PXNNH-uT_iUuv49_buca3ViqEmKXGJvq0N23fmgj7Lx0zy5SQGQBoCzpbIKMNczMIeIM1ihIx1xyp5TvRblxqDpA-y0mEM34cXIKk1PoMJyt0iT4RSEEhAxWuPIwHECdUP8v2mC5OqaAKDVkIKH8DK7JX8XF19hcNTbtWIHxNXdHEbVC5lf3phrZpmdArWIfga3jOTuRFEmz5Xp8Sqan54h9S62I1n_Lf3__rqT0kawXR3NS0OVUlv45xh-0UUguym2sg1PLaVtXVxiaVtw6vGGko7mSVH6lM5WoUq9XTs3Po7Cz_fdxbsI-dkUIX7mP8Ry1fQ4ltwQXz1DJSDoEeRDMmbqyOkWnBDeSQMxXeaUWYcTqkzxYliASsPuB4CPhEi5pRwPlMjLKaZV1x_xm2BOCwugMNx_p_L1jJh1CtAQXV5WY9-SHgq8Fzc1QZ6oDCpTJVgSGZWZFcXkWSs9l44ISI1FVZtm-RuBJ99Zcrtx=w256-h159-no" title="IRC Screen" alt="IRC" /></p>
+
+<p>One of the main drawbacks of IRC-chat is the absence of logging. This was the main reason why our community JMI-LUG almost stopped using the channel for any discussion, as there was nothing to refer to later.
+  There was a need for a kind of a bot which could save all the logs of the chats we had. Hence, I began my search for any open-source IRC bot to cater our needs.
+I found <a href="http://en.wikipedia.org/wiki/Comparison_of_Internet_Relay_Chat_bots">many bots</a> which could do the task.</p>
+
+<!-- more -->
+
+
+<p>In my research I found a <a href="https://drupal.org/project/bot">bot</a> which could be integrated with Drupal and can be installed as a simple Module. As a matter of fact it is already used to log all official Drupal Channels (you can find it <a href="http://druplicon.info">here</a>). Since, the JMI-LUG website is already on Drupal it was a nice idea to use this one.</p>
+
+<h4>Installing</h4>
+
+<ul>
+<li>Bot can be installed via update manager module of drupal or can be <code>git clone</code>d in the <code>/sites/all/modules/</code> directory.</li>
+<li>Installing the Net_SmartIRC libraries with <code>pear install Net_SmartIRC</code> (make sure to change the owner of the installed libraries)</li>
+<li>Configure the Bot Settings from the configuration Menu.</li>
+<li>Change the permissions from the Modules list.</li>
+<li>Use shell to run <code>drush bot-start &amp;</code> from the Drupal installation directory to start the bot</li>
+</ul>
+
+
+<p>Bang, you&rsquo;re done, have fun with your new bot. The bot can be trained using Botagotchi and adding factoids from the chat.</p>
+]]></content>
+  </entry>
+  
+</feed>

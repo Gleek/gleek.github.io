@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags:gsoc | Umar Ahmad]]></title>
+  <link href="http://gleek.github.io/blog/tags/gsoc/atom.xml" rel="self"/>
+  <link href="http://gleek.github.io/"/>
+  <updated>2017-04-08T01:35:17+05:30</updated>
+  <id>http://gleek.github.io/</id>
+  <author>
+    <name><![CDATA[Umar Ahmad]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[GSOC Meetup 2014]]></title>
+    <link href="http://gleek.github.io/blog/2014/09/05/gsoc-meetup-2014/"/>
+    <updated>2014-09-05T04:20:39+05:30</updated>
+    <id>http://gleek.github.io/blog/2014/09/05/gsoc-meetup-2014</id>
+    <content type="html"><![CDATA[<p><img src="https://lh3.googleusercontent.com/e2fih0IuM8f-R7zU5rhRsdQx2DY8T_izv8XnDl3yRyAGZPMxo8QimbtUty0_U3b1HqsSfNk7Ts70lkZV9nADD65cTXw3sC8FhJKk6TPzw4kBHpIjPRmcMwkSseqM_5FFnPUm1tybTMD-Jp8O_LVfhAVccNbWnKwqIH24-Nupobe8C-qa8SfW3LSH3QrfrDiSzcy-OGq-VJmItUzzB0OKzoiGBzMEs0s23LDwtK-anp3r2plwmXsC55UYG7QeqW794LAl_tC6fWiObFrTMRNFAPRR0aJN4F5C438X8gnoWs27TJQEOHjEMIx1ONmBKhPtWAeLgjcIivKAQfwjCUzMepMYMepBLXSW3h1FIyW1GXZK7j0J244UTjJ42hfnmTawIvr1DD7zX8tLJxEf9x_E8VYIogAKywJweEzN100W9rW-KjpbsY4mLTPBAfaBoyIatMocLZGi1RtXF1y8gHQAdNOC9E3vnwFAxey2Lw30l1cSnPw8YYBHZecjekuvR0LwAlq0Lpo8nTsSsZU6blgXFFd1kg8Wd7ybr9WzuXlpdSOD6VEiD85_fFErPSoYsfSRJzn_N1J3P7T53hNBERYpx92D_D0R1YRGbVGx07gds_dnO_uiOrD_ujwedi1ucvWexIoIPgzmDZLOTbyKHeQtZwDZM-GNeqpriCYuaaInqQ=w1137-h758-no" style="display:block;margin:auto; height:450px;"></p>
+
+<br>
+
+
+<p>On August 23rd, we, at <a href="http://jmilug.org/">JMILUG</a>, hosted a GSOC Meetup at <a href="http://jmi.ac.in/">Jamia Millia Millia Islamia University, New Delhi</a>, home of JMILUG. The GSOC meetup was an opportunity to meet and learn from past and present GSOC students who’ve actively contributed to Open Source projects in collaboration with developers from all over the world.</p>
+
+<!--more-->
+
+
+<p>This acted as a platform for other budding developers who’re ready to get their hands dirty and contribute to real time projects.</p>
+
+<h4><strong>Why?</strong></h4>
+
+<p>Over the last 2 years, 9 JMILUG members have been selected in GSOC thanks to the exposure provided to Open Source communities and projects as a result of various meetups and conferences every year. So we felt that it was time to give something back to the GSOC and Open Source community of India.</p>
+
+<p>Organizing a meetup for GSOC participants and other Opensource enthusiasts seemed like a good option.</p>
+
+<br>
+
+
+<h4><strong>Preparations</strong></h4>
+
+<p>We started accepting proposals from potential speakers for the event and built a basic website</p>
+
+<p>We also wanted that only the best proposals among all the proposals should be selected for the event and for that to happen we built a voting application and the proposals were chosen by the voting procedure. We established a criteria that only the people who were related to GSOC get to vote.</p>
+
+<p>The speakers from the top voted sessions were finally called to give a talk, which were mostly GSOC students.</p>
+
+<p>We received an overwhelming number of registrations, but our college administration was kind enough to lend us our Faculty Auditorium for the event.</p>
+
+<br>
+
+
+<h4><strong>When the day came</strong></h4>
+
+<p>We saw nearly 190 attendees in the event, from all kinds of academic level and from far-off cities. We started with registrations followed by</p>
+
+<ul>
+<li><a href="http://vipulnayyar.com/">Vipul</a> and <a href="http://gleek.github.io/about">Me</a> giving a short introduction of JMILUG and the day’s schedule.</li>
+<li><a href="http://gauravsaini.me/">Gaurav Saini</a>, who worked with <a href="https://mifos.org/">Mifos</a>, talked about his GSOC Experience and explained using <a href="http://angularjs.org/">AngularJS</a> in android applications using <a href="http://cordova.apache.org/">Apache Cordova</a>.</li>
+<li><a href="http://www.ishankhanna.in/">Ishan Khanna</a>, who was again a student under Mifos, explained the <a href="http://en.wikipedia.org/wiki/Representational_state_transfer">REST API</a> consumption in Android</li>
+<li><a href="https://www.linkedin.com/pub/anshul-sharma/31/250/737">Anshul Sharma</a>, one of the members of JMILUG, explained to us the importance of <a href="http://git-scm.com/">Git</a> and some of it’s working via an hands-on session.</li>
+<li><a href="http://www.mixorg.com/author/sachin_gaur/">Sachin Gaur</a>, Co-founder of Mobile Harvest, enlightened us with emerging industries and current IT market of India and the rest.</li>
+<li><a href="https://github.com/sdaityari">Shaumik Daityari</a>, from Inclusive Design Institute, gave an awesome talk on building websites with better accessibility.</li>
+<li><a href="http://dufferzafar.github.io/">Shadab Zafar</a>, who worked under MusicBrainz and also a member of JMILUG, talked about his project and how MusicBrainz helps storing metadata for songs.</li>
+<li><a href="http://www.shubhamoy.com/">Shubhamoy</a>, founder of <a href="http://dynofy.com/">Dynofy</a> and an opensource enthusiasts, also shared about his experience in building his startup.</li>
+<li><a href="https://www.facebook.com/rajat93">Rajat Goyal</a>, an aspiring GSoCer, gave a talk about the awesomeness of <a href="http://ipython.org/">ipython</a>.</li>
+<li><a href="http://tuxdna.in/">Saleem Ansari</a>,one of the founders of <a href="http://jmilug.org/">JMILUG</a>, talked about the history of JMILUG and our journey to the day.</li>
+</ul>
+
+
+<p>Our final talk was about <em>&ldquo;Getting into GSOC&rdquo;</em> with the focus on the question answer session, with questions intended for all the GSOCers.
+<img src="https://lh3.googleusercontent.com/7zdU5CSwB9s2B22FAPmpqohXF4kDOI9GrLWDIjLEnsCuNUrzbRUsC2kqNow6OuCFuykhd2Suy3p0JfWrfH12Gj2rX4volzOP2HCuFG6Orje4eQHMk_-3BmFr80UWjFTzhpmmd3qA0iYkaUnyhX3PIxUuIgfxeTjHxNHKQf46DMVY4OV_oZ9eV5pPBY4VdBhzfsjPRnFkuSPo8-kuAT1dMPubwTBB8HUekm3GgPR24vHkllmFVcaSFBwrZpmEcSl1_xvsr_U4x7KHw7MOfYQT-0TOb8KIJzi30IfWBIiUUSShyMj-20-oUGs3u2go7qLn8AaLVqWUr3TIZl4eO_rqnehMtjZFj9WTdH-F-aWn3XGlDD2W7iIjAJ3-WTqNmhv6YYrcvAgM_YRXGQznbn8UBEklLy7TkmTyJ-Ypy76N9zt6on-qVFFU24Zcdsn0Vp3w1hDtfjD3fvt6uilTCLbGMn7sOFeUeHMRvWm1-DbYIQ2yFryvZa8kB7Tobzmyw2Dn2QH8CqjiELfoGYgFD6rSQjpV4Wrf0aF-gHHRDCfCYFKljfapTp6AFzYJfICjSGoQblf8dZDfnmEAayQFSAd05G2A299dpH_GCC06y4h2bIUy_UPI88gjprtSrM3JjEp4tpWm8MXv9A2dXI2YdfyPt3gPMpgUfjw4nmdav8VHTA=s500" style="display:block;margin:auto; height:300px;"></p>
+
+<br>
+
+
+<p>We ended the day’s talk with distributing Certificates to speakers and T-shirts to the two most active audience members and two people selected randomly from the audience. Thanks to <code>Math.random().</code></p>
+
+<p>We also distributed official GSOC pens to three audience members, after every talk, if they answered the questions by speakers correctly.</p>
+
+<p>All the goodies including Pens, T-Shirts and stickers was generously given to us by the <a href="https://developers.google.com/open-source/">Google Opensource Programs office</a>.</p>
+
+<br>
+
+
+<h4><strong>Links</strong></h4>
+
+<ul>
+<li><a href="http://gsoc.jmilug.org/">GSOC Meetup Official Website</a></li>
+<li><a href="https://www.facebook.com/vipulnayyar/albums/10201552533654531/">Photo Gallery</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[GSOC Midterms: Half Over is Half Left]]></title>
+    <link href="http://gleek.github.io/blog/2014/06/29/gsoc-midterms-half-over-is-half-left/"/>
+    <updated>2014-06-29T16:30:07+05:30</updated>
+    <id>http://gleek.github.io/blog/2014/06/29/gsoc-midterms-half-over-is-half-left</id>
+    <content type="html"><![CDATA[<div align="center">
+<img src="https://lh3.googleusercontent.com/O2hQSeV_aZFFQH0PQgh-AV5c9b3Gvzx8U3_O2OLidJXUOCnWGPLN6DyE7KdOXXWG1KZuSGer-0sDzHXoHjv2bGtPnXtE4jVoygB7IhFoharxvP-GGul4UAe68sL7Jp8O0y7PG9VneRwmhFOuIFFeXAVy4fpBbJ-DDV4ymv-VwnQFh31BEMokAHwDb2E2jB3R4PHWKN-GptRNHWG8SGbndLXREoi-lyRUo9DSMEAeiUyrCwhc4-UFU4hvE8JksEs8tXSL-rQ6dgO9Qjw7u1jYidXRX8kRKaj1t0RV0R4PjvJhkn6-u_1ODqWfIMGfx_MQ_uCS1FQv503oAC1BArzbRwEjLX0sp7RhKf0-EeWuna3UDLlbanOJd5alAFbj0Z2HKRmD58rStwQIvLheLpjCGmKdeXEo3xB5fHHtx8zJLksjU2cCxFgAC71tXiUeeLZ2WYWups5Q7U72B1mXzGqXUQFH1E-GtfXaD1tZuHJ5I-n13A-lKvPCEK5hWYF8ImRAa3Kg2vv3tVnvUIPWcMcuoQO1RJDZik5YImF8F7SU_FCHavtaEJz5AGaQYn3r8DVYHM2WePN_htsPV7Gt-KNPfd9wMbVHY5keT_iTRQ0rYPhhKPojx2Rq7mkGPtq_SVdOScX5quCjjRzaFzx836GLqeyhim7cn9RB9KHvQu_b8g=w600-h160-no"/>
+</div>
+
+
+<br>
+
+
+<p>GSOC Midterms ended few days back and it&rsquo;s been fun so far. In my previous post I briefly touched upon my project, <strong><a href="https://www.github.com/gleek/fluxpocket">fluxpocket</a></strong> , which is an extended service for <strong><a href="http://www.drupal.org/project/fluxservice">fluxservices</a></strong>, which is based upon <strong><a href="http://www.fluxkraft.com">fluxkraft</a></strong>, which runs on <strong><a href="http://www.drupal.org/project/rules">rules</a></strong>, which is based on <strong><a href="http://www.drupal.org">Drupal</a></strong>!!</p>
+
+<!-- more -->
+
+
+<div align="center">
+<img src="https://lh3.googleusercontent.com/ogTFYEpIzoDLq1yNZWVxpd0WCcoAclC8x5bCqGrO1n7B8TPirtTKVwQ3Xc0ccvLa8bOT7WRV7aFlT-ut1ldluZQw7Zdc-I8SMFSemoMZGAbHUheeLxQPQElr5hz0DtPpqMqNcE22ZFT4REP9BGHHbXospKBsZGo6F-h8D_t6zOMpHWsa_jt-A74huWTOied0-YLTK-F20Byl-pBdjefga60uDP3BiN0SVBEPkovWigv8-GLAiGw6v_zxtmqUXq3bYc8pKxiAqTu8r0RCKBO5OfUE8yqLfFpb9Qm_dX5y6pyIofEw__du1ORg2D7HxBjfNFU-6VXJkE_JGSt-SHF9s0vAK15_nLJIDFAM92aLTjupzmhgp8z-tcPMNPjRyY3KeYyfdUsMEnXFNd2KXGnejvJn80B3E3_3mOgMHYa-zfcdNo7tVg38935IgFwrZDjZ6HqD98_f-ra2wpr8LzxRH7lF0ObWWM-67aGKkdK7JC2zmndQqu265gLyY8CgqWorGr1SdN9KeFANnJ84ZQoZt_SeMpxcAjojFgsnbS7O2hhKbAIiIWI7ITeospKVJu-0E-GLNZee9eIEkiY0W6E-e0fWC-pX-E5AA2TuBITAC99YiGhvRUII2xEPq4JzBPG_6jkCZuM3IUAF31SQ3R-UsYv4myJLoeQK1Z3ygG9UWA=s300" width="300"/>
+</div>
+
+
+<br>
+
+
+<p>Well, it gets a bit confusing sometimes. But for making things easier, <a href="https://ifttt.com/recipes?channel=pocket#popular">consider these ifttt services</a>, (take a minute for that), now imagine these running on your own server or website and all the keys to your valuable data secured &ndash; and most importantly &ndash; under your control!</p>
+
+<h3>What Works so far</h3>
+
+<p><strong>The Actions</strong>. You can perform almost all the actions supported by Pocket through the API. Thus some examples of what you can do so far are:</p>
+
+<ul>
+<li>Posting your Posts simultaneously to Drupal and Pocket</li>
+<li>Getting your new Feeds directly in Pocket</li>
+<li>Posting links to favorite tweets to Pocket
+&hellip;.list goes on, but you get the idea :wink:</li>
+</ul>
+
+
+<h3>What&rsquo;s left</h3>
+
+<p><strong>The Events</strong>. The events or triggers are currently under-development and will be under my focus for most of the left-over period. The Events are the portion which react to the changes in the pocket, such as addition of new URL. It will be done by polling the pocket server for any changes in the pocket list after specified interval.</p>
+
+<p><strong>Documentation</strong>. The fluxservices are not yet properly documented. This will be my priority after I finish up with the Events.</p>
+
+<h3>How&rsquo;s everything else?</h3>
+
+<p>I have done some changes on how I manage things regarding the project , for instance, I now use <a href="https://github.com/Gleek/fluxpocket/issues">github milestones and issues</a> to track my progress instead of completely depending on titanpad for that.</p>
+
+<p>I&rsquo;ve also stopped pushing my code to my <a href="https://www.drupal.org/node/2282655">drupal sandbox</a> and I only update my <a href="https://www.github.com/fluxpocket">github repository</a> now. I&rsquo;ll transfer it to drupal when the project&rsquo;s complete.</p>
+
+<p>Other than that I&rsquo;ve started to track my time using <a href="https://github.com/projecthamster/hamster">hamster</a> which tells me that I spend more time researching than actual coding. It also tells me that T.V. is a real time killer :grimacing:.
+(P.S. I don&rsquo;t track the sleeping hours&hellip;the long ones)</p>
+
+<p><img src="https://lh3.googleusercontent.com/HOlEm2-_EvezvAO4CEUKdBGT8bh5O2ZMcY4ukToz_mt5XDYn2jLQIRqMLQKOnAzzEGPUpxbrPpT2PpcO2iQzwLIneSzggaxw41d2q6io84TzE53Hhc8m-4fqW1bFzH2FB3cWqpkx2eZZp9NC80kDw1Yy37zv4--fzCc9TTD8xCcOb2iVLWJtovj_uRcbYcjKUPFdBw8c3e-iiLjQ-henqDk2HXDRbOlwlo22w0XAwqfW2S5s1zrT4GIgFxjEZmXoguQxV5dYw7sTb3hBAgdJ9KVhduYi3LvMaOuLHnBwzfwYfRKFCmv_k6DzevvLA9goDE0WDEdWpXbrSzSbJXhQaHNgpyomiPEpDgrOqu0yadVF-NuKbn-raEtT0DWaes53CxiDUKIHyPa_hqfddsNq8kNSG0bzC2Wr1HqU1d-81sjwjYm4-go1cN2vWh_rOlKmeTNP1PjRlMxsX1UccRk5qH0Wkn7A7i--O46wlH0yyOocjXDo1ooQUTLLbNShM6xMymrB_vA-o4EBUXEZRKhw0YLgz19lZXQ8pGldbcwVPBZvTf9W_IXP2Oo7NThCUeT-qRM-2MZD9tslPZF2pf-A9ctdQkJVc1gvhHiUHaY2e567_ryW-O1L=w1286-h422-no" alt="time overview" /></p>
+
+<p>Other than that I might have misconfigured my mind&rsquo;s clock cycle. I am usually sleeping when the &lsquo;normal&rsquo; humans work and work when they sleep.. and it&rsquo;s really hard to get rid of this schedule.</p>
+
+<p>I wish to write more but <a href="https://github.com/projecthamster/hamster">hamster</a> tells  me that I&rsquo;ve spend far more time on this than originally anticipated. So I&rsquo;m gonna switch back to coding and hope everything works out in the end.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[GSOC - Here We Go]]></title>
+    <link href="http://gleek.github.io/blog/2014/06/12/gsoc-here-we-go/"/>
+    <updated>2014-06-12T05:45:04+05:30</updated>
+    <id>http://gleek.github.io/blog/2014/06/12/gsoc-here-we-go</id>
+    <content type="html"><![CDATA[<p><img src="https://lh3.googleusercontent.com/-_eXnV87hecb2o5FZfatpmppOXSBupYVE2Xr8WIdxbi4tJqYW-iH-Y-ptJ2zDItA3N8XYuT71fmdxkP5RBWMJIxh2wGEPnOyaohoLbxxaT8cSNc67QQH2581_7ov2-rTPC5t9ro1UxN92jY8eNCF1mw-m879yjWX_H9vhZJVdVnrQRCEw5GHLL_k_Any-hYsIhOl06Paafst7kd4e-1rTORw6-TReVjZZQs6uYZSS2HTqB0g-_h2Zkp9g3UXcrrKcNucr-CYtilEIK_PRi_lUeRdNtU1rsGWrakkMDUXMuKy-ReIlBxUgc5Mj8iDde1RGqFf663lKQ5JhZb6nIiQuTnnqzg1MoynXFkqJsDaztSanuEm7uSWhwQ_gVDQjcGK7eVykXCa4JBZnucDlZBYVurJDk7wfUASCp5LvPXD3Ord3kAyLVZupq9bdjC28zGyGc8H6QC-LrUTxOkgyAoxjaifSlxTbcFao5snSSYPf-Whxj73Vzt2c2p0uHR_ySuBfRlSJL6Ul8cnp3KYEkiMQbAwYuAVlTSka-0Ch3uppYGS57dztOpyVawV-v2W4ipXj3fpmRYSC7jJA29ztsrCYZQKahhBaQREqrtJRgG5_zqCryLyn7vrzgoVXYOeX5MUW_P--Np4KEChrnTGp1C0Of2H4Jn26Ja4_Its7XEC_A=w924-h156-no" alt="GSOC 2014" /></p>
+
+<br>
+
+
+<h4>What?</h4>
+
+<p>Google Summer of Code is happening this year with over <a href="http://www.google-melange.com/gsoc/org/list/public/google/gsoc2014">190 participating organizations</a> and with a total of <a href="http://google-opensource.blogspot.in/2014/05/google-summer-of-code-2014-by-numbers.html">1307 students</a> selected all round the globe, and being one of them is truly awesome :sunglasses:. <!-- more --></p>
+
+<h4>How?</h4>
+
+<p>Initially my expectations of being accepted were very low, but I also had nothing to lose. With this thought and a little persuasion from one of my friends I decided to <em>at least check the organizations and there proposals</em>. Being a Web maniac I quickly searched for organizations based on Web Technologies and found Drupal to be one of the organizations I was already familiar.</p>
+
+<h4>Getting with Drupal and fluxpocket</h4>
+
+<p>I quickly glanced through the <a href="https://groups.drupal.org/node/407793">projects list</a> with a lot of cool projects, but one of them caught my attention. It was the integration of the Pocket API with <a href="http://www.fluxkraft.com">fluxkraft</a>. I prepared a proposal, discussed the prospects of the project with the mentors and the next thing I know is that my name popped in the list of 13 <a href="http://www.google-melange.com/gsoc/projects/list/google/gsoc2014">accepted students</a> from drupal. :relaxed:</p>
+
+<h4>What am I doing?</h4>
+
+<p>Fluxkraft is a module suite and distribution for automating your social media work flows! It is an OpenSource alternative to services like <a href="http://ifttt.com">IfTtT</a>, <a href="https://zapier.com/">Zapier</a> or <a href="https://cloudwork.com/">Cloudwork</a>. For really becoming a usable alternative more and more services should be integrated to Fluxkraft.</p>
+
+<p>The <a href="http://getpocket.com">Pocket</a>(formerly Read It Later) application allows the user to save an article or web page to read later. The article is then sent to the user&rsquo;s Pocket list (synced to all of their devices) for offline reading. Pocket removes clutter from articles and allows the user to adjust text settings for easier reading. With over 9 million Pocket users and more than 240 million saves, Pocket automation as a fluxkraft service has a very high potential.</p>
+
+<p>As a result of the Project there should be a Drupal Module that adds Pocket functionality to fluxkraft. For example making it possible to retrieve and post articles to Pocket, filtering stored items by tag and adding and removing tags to items, Modifying the existing state of items etc. The goal is also to update the documentation to support other developers for implementing new services like Youtube, Github, Yammer etc.</p>
+
+<h4>Links</h4>
+
+<ul>
+<li>You might find my <strong><a href="http://goo.gl/g5UpZY">proposal</a></strong> a bit more helpful as far as technical details are concerned.</li>
+<li><a href="https://drupal.org/u/umar-ahmad">My drupal user account</a></li>
+<li>You can find the <strong>code in my <a href="https://github.com/Gleek/fluxpocket">github repository</a> and as a <a href="https://drupal.org/node/2282655">sandbox project on drupal</a></strong></li>
+</ul>
+
+
+<p>I&rsquo;ll be posting my experiences, journey, success and failures <a href="/blog/tags/gsoc">here</a> on my blog. Hoping to have an exciting summer.</p>
+]]></content>
+  </entry>
+  
+</feed>

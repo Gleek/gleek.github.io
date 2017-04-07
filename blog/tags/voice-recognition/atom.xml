@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[tags:voice-recognition | Umar Ahmad]]></title>
+  <link href="http://gleek.github.io/blog/tags/voice-recognition/atom.xml" rel="self"/>
+  <link href="http://gleek.github.io/"/>
+  <updated>2017-04-08T01:35:17+05:30</updated>
+  <id>http://gleek.github.io/</id>
+  <author>
+    <name><![CDATA[Umar Ahmad]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[GSF Hacks]]></title>
+    <link href="http://gleek.github.io/blog/2014/05/08/gsf-hacks/"/>
+    <updated>2014-05-08T03:01:30+05:30</updated>
+    <id>http://gleek.github.io/blog/2014/05/08/gsf-hacks</id>
+    <content type="html"><![CDATA[<p><img src="https://lh3.googleusercontent.com/7zBCup0aXx-KUJveJNOxISqBj3JXPaPY9u05q9Akw3EqIICRgExww1BMImw25FkodIVfACX6cC7OepuQz4kpvkniONdYjrb9fwTqRI06e3OwMtQyzew9zviROsNkWi49fC_5C0wb3AVEGg55HvpBLTkVdMT1nsu2HwaleXumrALCPmbaNjsO_dcnNoVwmNmVALbXuMUDM87MSpz9Lt746gU1HiV8XnFxroGCv_AdQ3rA3h7eNWjQIyS-wqFiuamL7EF6jdXo0LUVGDJWSuzShCwHGXKwwZ4ixY3RVerIG8jJ7zupxT94DshLMzMU_jYQk6pLm7qLFnCntEB8hakWZWLShUpKrBl_4gJ4RlW9dH3fVsqbnzOKW3HnVZpIAErQOctUDtbmqgW-_WGrmBbFI8Jk5cfBjCC9SXs9wAqZt2R-BwvYXR__ahl9rDiJRdPXB1GQQNpnRgB_dCyMTBrW-KnqWoI_KN4kwSHI1ARYDNC3v1OM-tc_3nPIsjy_JwoxZ4sG4cTsHbefXt6BL2HnETD77GmYCx9TWZb-j_wnnY0xHRBNU8kOHOZCFJ8_B0Z3S4rhTKBCV9U9s6B5UgChO_DhtlOdv1dgisSgPYXahpo1chmtSNluBBIfdSQ5odHBNJVITuLRDqUod8Dm-LzmJdcBQmpgse-VUDvCFe7qMA=s370" style=" display:block;margin:auto;" width="370"/></p>
+
+<p>Last month some of my friends and I went to a hackathon organized by <a href="http://www.gsfindia.com/hacks/">GSF India</a>. This hackathon was particularly interesting since almost all the participants were amongst the top ranked from <a href="http://www.hackerearth.com/">Hacker Earth</a> and thus a tough competition was expected.</p>
+
+<!-- more -->
+
+
+<p>The participating teams had to choose one challenge to compete. Our team chose shine.com challenge which involved improving their registration system in an innovative manner.</p>
+
+<p><a href="http://www.shine.com">Shine.com</a> is a website for job finding. We could easily see problems with the registration system, which could be solved. What we built was a utility which involved an IVR, Voice Recognition system, Resume Parsing (PDF/DOC) and an Android App for smart phones as well as not so smart phones.</p>
+
+<ul>
+<li><p><a href="http://www.kookoo.in/">Kookoo</a> API and AT&amp;T voice parsing API was used in the <strong>IVR system</strong>. The Kookoo system recorded the voice of a person <em>by a simple phone call</em> and AT&amp;T API helped us parse it. Thus making it suitable for any mobile phone.</p></li>
+<li><p>We also made a <strong>CV/Resume Parser</strong> with a help of small <code>cURL</code> hack on rchilli CV Parser. It allowed the user to upload his resume and getting his details automagically filled in the form.</p></li>
+<li><p>On the top of everything we also made an <strong>Android App</strong> which again does all the above things.</p></li>
+</ul>
+
+
+<p><strong>You can find the code on <a href="https://github.com/Gleek/gsfhack">Github</a></strong></p>
+
+<p>The good thing is that our hard work paid off and we won the challenge.
+What&rsquo;s better than a 2 days of coding with free food , infinite Red-Bulls, a cool tablet and a little cash. Well other than that we also got a cool sipper and a t-shirt.</p>
+
+<p>Here&rsquo;s a photo of our team with two of the judges</p>
+
+<p><img src="https://lh3.googleusercontent.com/e6tC7XObOye9I067tEV_k0Hhl5KggZ7V62u1KsWAak6YRSDH3q61c4bVaOen_NaNpD0T_PyEeSiVe-lrrGTivNrTq5EaYKQRZ-gD_oJygYQXiK2LGmkv3wH8lKWxVlB0FGoAy57PCK19m1fIF-C3Vho9fLoIT_MyQFTVihhV_FT6bEL16WwfY_un99vuJSdPRu_ipOf0sijwZJ2g12-bDLJgvfbXw9VHRw9lWe72DSHEh4sE5x5aIOzR_OraKF2isC6lBSTKHvnAdzQu0O2d-sm92w3CJT8QQpklEb-P9bZuUi075lNzhtRdmusL503TlRPY7bvJYHsrlQTTIaLQ2VnTUcdaejI13vxul8XKbxOynVewB9c5rVV61bt9JAG7yx-VKK7IUqGZ2gMhhbvE4E76rX9rvjr0qGjdYG7-2Nk8FMSJGcfdUxiHr790W2TOn5aIXwEnqMyeQHd0V5jCkvSOgivTQSinXZuBst5Lpung2ax-joCVCmWWfUigLaBSNa8roRum6xdhSfUzOqbVle5CgPlThVMc6JkT1qSsQ2cMBRVyKmTyZMluYs0RBIUoztM_YzVHQqvbtLgXIxdKkm6WNZjS6upMng6JO2m0BWmbOhWKezsDalnBLuVJiGuGANGrbz-pvOFKtefjbl9J-82blWUPAd1cj4pQA87xcw=w1016-h366-no" alt="Team Octane" /></p>
+
+<p>You can find the photos on <a href="https://www.facebook.com/GSFINDIAACCELERATOR/albums/719167938135941/">Facebook</a> and some media coverage at <a href="http://yourstory.com/2014/04/gsfhacks/">YourStory</a></p>
+]]></content>
+  </entry>
+  
+</feed>

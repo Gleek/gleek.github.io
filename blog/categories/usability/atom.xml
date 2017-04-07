@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Usability | Umar Ahmad]]></title>
+  <link href="http://gleek.github.io/blog/categories/usability/atom.xml" rel="self"/>
+  <link href="http://gleek.github.io/"/>
+  <updated>2017-04-08T01:35:17+05:30</updated>
+  <id>http://gleek.github.io/</id>
+  <author>
+    <name><![CDATA[Umar Ahmad]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[From WordPress to Octopress]]></title>
+    <link href="http://gleek.github.io/blog/2014/04/18/from-wordpress-to-octopress/"/>
+    <updated>2014-04-18T20:07:03+05:30</updated>
+    <id>http://gleek.github.io/blog/2014/04/18/from-wordpress-to-octopress</id>
+    <content type="html"><![CDATA[<p><em>This post is about choosing Octopress over <strong>WordPress hosted</strong> blog, it does not talk about WordPress as a framework.</em></p>
+
+<p>It has been a very few days I started this blog. Now I feel a bit of a weird pride in announcing that this may be the last post on the wordpress, it&rsquo;s now hosted on github &ndash; <a href="http://gleek.github.io/">http://gleek.github.io</a> , and powered by Octopress.</p>
+
+<!-- more -->
+
+
+<h3>Why I chose WordPress?</h3>
+
+<p>When I first thought about blogging, the first thing that came to my mind was choosing the right framework for it. Three of them came to my mind, namely Drupal, Wordpress and Octopress. Since I didn&rsquo;t have any reliable hosting at that time and had previous experience with WordPress, I decided to go with blog hosted on Wordpress.com.</p>
+
+<h3>The problems</h3>
+
+<p>What I didn&rsquo;t realize at that time was that <strong>installing and using wordpress, on an owned server, was a lot different that hosting a blog on Wordpress.com.</strong></p>
+
+<p>The main problem is that <strong>I have no desire to empty my pockets on a blog, but still demand full control over it.</strong></p>
+
+<p>WordPress sets up a free blog with a theme, but I had to pay even for the slightest tweak. So most of my problems which weren&rsquo;t expected initially were:</p>
+
+<ul>
+<li>There are a lot of themes which were usable for free, but tweaking the themes is not tolerated without costing you some bucks.</li>
+<li>I couldn&rsquo;t control the back-end of the blog. (I expected that, actually :grin: )</li>
+<li>You can&rsquo;t write JavaScript</li>
+<li>You can&rsquo;t write your CSS without paying a little something. I had to write some inline CSS to make something a little prettier.</li>
+<li>WordPress puts its advertisements at the end of every blog post.</li>
+<li>Custom WordPress plugins cannot be used in the blog.</li>
+</ul>
+
+
+<h3>Switching to Octopress</h3>
+
+<p>Disappointed by WordPress, hosting my blog on Github or Heroku with Octopress seemed to be the only option. Since I keep almost all my projects on github, I chose the same for the blog. There were some initial problems while setting up the blog. But <a href="https://github.com/imathis/octopress/issues">issue queue</a> helped me in solving them.</p>
+
+<p> <strong>Pros</strong></p>
+
+<ul>
+<li>I get the content control over my website. Above mentioned problems in wordpress site such as no JS/CSS support is now solved.</li>
+<li>It&rsquo;s not necessary to be online while you write the blog</li>
+<li>Git is used to manage the blog which makes it easy to manage.</li>
+<li>Static pages makes it incredibly fast.</li>
+<li>Posts are written in Markdown</li>
+</ul>
+
+
+<p><strong>Cons</strong></p>
+
+<ul>
+<li>Initial installation and setup is a bit time-taking.</li>
+<li>Your blog is restricted to your local machine. To use a different machine to blog, you&rsquo;ll have to clone entire blog on it.(Which also eliminates using mobiles for blogging)</li>
+<li>For large websites generating the pages can take some time, though using <code>rake isolate[path/to/post.markdown]</code> and <code>rake integrate</code> may solve the problem if you are working on a single post. Find more on <a href="http://blog.pixelingene.com/2011/09/tips-for-speeding-up-octopress-site-generation/">Pavan&rsquo;s blog</a></li>
+</ul>
+
+
+<p>You can take a look at performance aspect of Octopress on <a href="http://decodize.com/html/moving-from-wordpress-to-octopress/">Praveen&rsquo;s Blog</a>.</p>
+
+<h3>Summary</h3>
+
+<p>Choosing a framework for a Blog is a matter of choice. As far as I am concerned I&rsquo;m satisfied with the results Octopress is giving me. I might remind you that this post was on my experience in blogging at <a href="http://noobpanic.wordpress.com">WordPress</a> and on <a href="http://gleek.github.io">Octopress</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Customizing Emacs]]></title>
+    <link href="http://gleek.github.io/blog/2014/04/10/customizing-emacs/"/>
+    <updated>2014-04-10T18:32:50+05:30</updated>
+    <id>http://gleek.github.io/blog/2014/04/10/customizing-emacs</id>
+    <content type="html"><![CDATA[<p><img src="https://lh3.googleusercontent.com/ARlXYE_wnAvftBBl2UEvu-z9SpH-q3lyYNukRnNRwbUnXt6fGTP304OloJ3sJ3pSlMr_9QnPr_RxKamv65BFkEUqUEKB0TftIzNuOaiabipF1DNMYLzYReB_40Qr2TbbDndKYzeY5-MPUNmyzH9xmsuhWxmpywT4U5ayHJo2-dGy1W7wRlY2kY7QtTvneNt4OqGGZlqsSZLYM3WVcVwWFxBeJzPxirItCLPzRoRNPfdZZRy6k31JS65TU3WYW-7hvOcTuoZ6vDJSj2K3HyD73dpJ7YjNUwmJB9tjNzy7bqUXm5ftnuG14qPKs1Gtz1jpAGESfgafhUeLQL1pvDWP-VBQDLIwYaXr-XFTatPTgalAAPNd66J-cJ_J0O1OkF1DM-KM4RjqDhLkMOT9-RM5fkrG5_Rnibw32yJho_cGYTyk7523_CnePswMWjMtmMrTI4zyrsaRYVqBjfRxwznHExq1nAwuR-NSmP2EeeLvPYFP6ZSyMWyZCga2K0LH6J9-Qa8aHdkneuQ9ti6w0QGEJHr9HinsGuWBuALKd2H0ZlPxrwhOdKSyEIaWgq2mkt0vL653PCK4sN5zGZZte3kc7LL3I4WZhlN1oaRsXbIRTJaLEYhQTYj4BrRDS-59IHAwl2Ddf_AzsF9r7c6cKs-A2DQL2QpM2Nb5gU5Ae05pIw=w270-h217-no" style="display:block;margin:auto; "><br>
+I believe the environment in which one works is directly responsible for one&rsquo;s productivity. It&rsquo;s the reason I think, it&rsquo;s important to choose the right editor, font, etc.</p>
+
+<!-- more -->
+
+
+<p>I used notepad, notepad++ in my Windows days. I have to say I spent a lot of time with notepad++ and it was my favorite at that time. My notepad++ days ended when one of my friends recommended <a title="Sublime Text" href="http://www.sublimetext.com/" target="_blank">Sublime Text</a> to me. It was the best editor I ever had encountered till that time. The most important thing was that &lsquo;it was cross-platform&rsquo;.</p>
+
+<h3>Switching to Emacs</h3>
+
+<p>I switched to Emacs mainly because of it&rsquo;s philosophy, as I am willing to put up with a much steeper learning curve if it makes me more productive or more comfortable in general. Now that some time has passed I&rsquo;m much faster with Emacs than on any other text editor I use (namely Sublime Text, gedit and Vim). The other reason is it&rsquo;s features. Emacs has tonnes of features which are very hard to replicate in other text editors. These may include from Shell mode to IRC-Chat to E-mail to even playing games inside Emacs.</p>
+
+<h3>Things to do after installation</h3>
+
+<ul>
+<li><strong><a href="http://www.emacswiki.org/emacs/CuaMode">Enable CUA Mode</a></strong>:  This basically enables <kbd>Ctrl</kbd>+<kbd>X</kbd>, <kbd>Ctrl</kbd>+<kbd>C</kbd>, <kbd>Ctrl</kbd>+<kbd>V</kbd>, <kbd>Ctrl</kbd>+<kbd>Z</kbd>, <kbd>Shift</kbd>+<kbd>Arrow</kbd> keys. Different key-bindings for such commands are sometimes annoying. Easiest way to do it is Options > Use CUA Keys.</li>
+<li><strong>Hide the Toolbar</strong>: The Toolbar is pretty much useless if you are well versed with the key-bindings. Also it frees up a lot of writing space. You can even disable the Menu Bar (can be accessed by <kbd>F10</kbd>  from inside Emacs).</li>
+<li><strong><a href="http://melpa.milkbox.net">Adding Melpa package Archive</a></strong>: This gives you tonnes of packages you won&rsquo;t find on default archives. There are other managers out there like <a href="http://marmalade-repo.org/" target="_blank">Marmalade</a> which you can add too, but I feel that it&rsquo;s not that frequently updated. But nonetheless you can add both of them.</li>
+<li><strong>Choosing the right theme</strong>: I recommend using a theme which is a bit easy on the eyes such as <a href="http://melpa.milkbox.net/packages/monokai-theme-20140310.1330.el">Monokai</a>, <a href="http://melpa.milkbox.net/packages/zenburn-theme-20140402.547.el" title="">Zenburn</a> or <a href="http://melpa.milkbox.net/packages/solarized-theme-20140409.338.tar">Solarized</a> themes. I recommend you install them from the package manager.</li>
+<li><strong>Choosing the right font</strong>: This is more of a personal choice actually. Any monospace font would do the job. You can refer to <a href="http://hivelogic.com/articles/top-10-programming-fonts">Dan&rsquo;s article</a> or <a href="http://blog.codinghorror.com/revisiting-programming-fonts">Jeff&rsquo;s Blog</a> for more details.</li>
+<li><strong>Making your scroll smooth</strong>: Emacs Scroll will seem a bit weird to some people who are new to it. To remove the jumpy effect of scroll you can add following lines in your .emacs file</li>
+</ul>
+
+
+<p><code>scheme
+(setq redisplay-dont-pause t
+  scroll-margin 1
+  scroll-step 1
+  scroll-conservatively 10000
+  scroll-preserve-screen-position 1)
+</code></p>
+
+<p>Well these are some basic customization which should be done by everyone using Emacs. You can add more features to Emacs by simply searching the package archive.</p>
+
+<p>If you&rsquo;re a confused with the basic key-bindings for navigation, you may refer to the <a href="http://www.emacswiki.org/emacs/EmacsNewbieKeyReference">Emacs Wiki page</a>.</p>
+
+<p>Finally, once you really get the hang of Emacs, it&rsquo;s basically like dark magic. Check out some videos on the <a href="http://emacsrocks.com">Emacs rocks page</a> to see this magic in action.</p>
+
+<p>If you&rsquo;re addicted to vi there&rsquo;s a funny song on GNU&rsquo;s website : <a href="http://www.gnu.org/fun/jokes/vi.song.html">&lsquo;Addicted to vi&rsquo;</a> :stuck_out_tongue:</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Adding Drupal IRC-Bot to #jmilug]]></title>
+    <link href="http://gleek.github.io/blog/2014/03/24/adding-drupal-irc-bot-to-number-jmilug/"/>
+    <updated>2014-03-24T22:45:47+05:30</updated>
+    <id>http://gleek.github.io/blog/2014/03/24/adding-drupal-irc-bot-to-number-jmilug</id>
+    <content type="html"><![CDATA[<p><img src="https://lh3.googleusercontent.com/AsBXtPDzWf-Mf9c5sMP4TdzOU_S7dZK7bl8Ly69FFn_wXGoPvos3kPOpmWMaWvMjjItBzbuZwZ-rbhshyasU9RUN_2mLswzfJWsBbmFGReZ-epr8F68KTaEK39qscEeqDIyx9os_4PXNNH-uT_iUuv49_buca3ViqEmKXGJvq0N23fmgj7Lx0zy5SQGQBoCzpbIKMNczMIeIM1ihIx1xyp5TvRblxqDpA-y0mEM34cXIKk1PoMJyt0iT4RSEEhAxWuPIwHECdUP8v2mC5OqaAKDVkIKH8DK7JX8XF19hcNTbtWIHxNXdHEbVC5lf3phrZpmdArWIfga3jOTuRFEmz5Xp8Sqan54h9S62I1n_Lf3__rqT0kawXR3NS0OVUlv45xh-0UUguym2sg1PLaVtXVxiaVtw6vGGko7mSVH6lM5WoUq9XTs3Po7Cz_fdxbsI-dkUIX7mP8Ry1fQ4ltwQXz1DJSDoEeRDMmbqyOkWnBDeSQMxXeaUWYcTqkzxYliASsPuB4CPhEi5pRwPlMjLKaZV1x_xm2BOCwugMNx_p_L1jJh1CtAQXV5WY9-SHgq8Fzc1QZ6oDCpTJVgSGZWZFcXkWSs9l44ISI1FVZtm-RuBJ99Zcrtx=w256-h159-no" title="IRC Screen" alt="IRC" /></p>
+
+<p>One of the main drawbacks of IRC-chat is the absence of logging. This was the main reason why our community JMI-LUG almost stopped using the channel for any discussion, as there was nothing to refer to later.
+  There was a need for a kind of a bot which could save all the logs of the chats we had. Hence, I began my search for any open-source IRC bot to cater our needs.
+I found <a href="http://en.wikipedia.org/wiki/Comparison_of_Internet_Relay_Chat_bots">many bots</a> which could do the task.</p>
+
+<!-- more -->
+
+
+<p>In my research I found a <a href="https://drupal.org/project/bot">bot</a> which could be integrated with Drupal and can be installed as a simple Module. As a matter of fact it is already used to log all official Drupal Channels (you can find it <a href="http://druplicon.info">here</a>). Since, the JMI-LUG website is already on Drupal it was a nice idea to use this one.</p>
+
+<h4>Installing</h4>
+
+<ul>
+<li>Bot can be installed via update manager module of drupal or can be <code>git clone</code>d in the <code>/sites/all/modules/</code> directory.</li>
+<li>Installing the Net_SmartIRC libraries with <code>pear install Net_SmartIRC</code> (make sure to change the owner of the installed libraries)</li>
+<li>Configure the Bot Settings from the configuration Menu.</li>
+<li>Change the permissions from the Modules list.</li>
+<li>Use shell to run <code>drush bot-start &amp;</code> from the Drupal installation directory to start the bot</li>
+</ul>
+
+
+<p>Bang, you&rsquo;re done, have fun with your new bot. The bot can be trained using Botagotchi and adding factoids from the chat.</p>
+]]></content>
+  </entry>
+  
+</feed>

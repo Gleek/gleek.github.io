@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Drush It! - Umar Ahmad</title>
+  <meta name="author" content="Umar Ahmad">
+
+  <meta name="description" content=" My encounter with the drush utility of drupal ">
+
+  <meta name="keywords" content="drupal, drush">
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://gleek.github.io/blog/2014/07/09/drush-it">
+  <link href="/favicon.png" type="image/png" rel="icon">
+  <link href="http://feeds.feedburner.com/UmarAhmad" rel="alternate" title="Umar Ahmad" type="application/atom+xml">
+
+  <link href="/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/assets/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+<!--<link href="/assets/bootstrap/dist/css/flatly.min.css" rel="stylesheet" type="text/css"> -->
+<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+
+  <script src="/javascripts/libs/jquery/jquery-2.0.3.min.js"></script>
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-49953720-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+  
+<script id="search-results-template" type="text/x-handlebars-template">
+  {{#entries}}
+    <article>
+      <h3>
+         <small><time datetime="{{date}}" pubdate>{{date}}</time></small>
+         <a href="{{url}}">{{title}}</a>
+         <!-- <p>tagged: {{ tags }} | category: <a href="/categories/{{category }}">{{category}}</a></p> -->
+      </h3>
+    </article>
+  {{/entries}}
+</script>
+
+
+</head>
+
+  <body   >
+    <div id="wrap" itemtype="http://schema.org/Article">
+      <header role="banner">
+        <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Umar Ahmad</a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="/">Blog</a>
+                </li>
+		<li >
+                    <a href="/about/">About Me</a>
+                </li>
+                <li >
+                    <a href="/blog/archives">Archives</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="subscribe-rss" href="http://feeds.feedburner.com/UmarAhmad" title="subscribe via RSS">
+                        <span class="visible-xs">RSS</span>
+                        <img class="hidden-xs" src="/images/rss.png" alt="RSS">
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="subscribe-email" href="https://feedburner.google.com/fb/a/mailverify?uri=UmarAhmad&amp;loc=en_US" title="subscribe via email">
+                        <span class="visible-xs">Email</span>
+                        <img class="hidden-xs" src="/images/email.png" alt="Email">
+                    </a>
+                </li>
+                
+            </ul>
+            
+            
+              <form class="search navbar-form navbar-right" action="/search" method="get">
+  <fieldset role ="search">
+      <input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off" class="search form-control" />
+  </fieldset>
+</form>
+
+            
+	        
+            <script type="text/javascript">console.log("%c\n\n\n\t\t\tHi there geek!\n\n\t\t\tYou can find the complete source of this blog on http://www.github.com/gleek/gleek.github.io\n\t\t\tRefer to humans.txt for more details\n\n\t\t\tThanks!\n\n\n\n","color: brown; font-size: 18px");</script>
+        </div>
+    </div>
+</nav>
+
+
+      </header>
+      <div id="main" class="container">
+        <div id="content">
+          <div class="row">
+  <div class="page-content col-md-9">
+    <article class="hentry" role="article">
+      
+  <header class="page-header">
+    
+      <p class="meta text-muted text-uppercase">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-07-09T00:54:05+05:30" pubdate data-updated="true">Jul 9<span>th</span>, 2014</time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://gleek.github.io">Comments</a>
+        
+      </p>
+    
+    
+    <h1 class="entry-title">
+        Drush It!
+        
+    </h1>
+    
+  </header>
+
+
+<div class="entry-content clearfix"><p><img src="https://lh3.googleusercontent.com/LWK3VdQ8CcrC4bIDnlrJRCJAZpjBDvFg-SnX0lZNu1GXNcKi2j0jA8ubCdBZIoz6hFOBzJmJ75OD2DvGfvxi1sGRY6qdrT4-iwgxAnRZFTOb3OE5-N33y4lEJBMfDhGYWWQAroZ9Wbe2Ho1dy4MI8ZntRVO1DrSyCS8AjMcil_m3UrJhsjz9IqMyMny1sIZ6JSJIfx7Pp6CN_iVgXO9ccpZf_aZC-0MGq8i5VGUTVGoy7asAHBnQPbbZJK4X8WilpFVqPmJAwsNKXoA-9GZasxjG9Kw3HyEK0jN83K3bRYYDYUAqZeLf5fJckpY8NZztQ0EoDGxHjb7UsD_aLYwMQmsg-U5e3ziv7Rs7POTkljWBngT4yMWy6HtCNJhr92xF7OLriyu3VdtRz3m1S_OrPcTOltWa4LlSiwAqVYR0-0JhYu1Ewq4fQvCoTy6ywEBbC7D-eGYk9plS2tiCTSH2WISVGTGZwh0ihUSgjsXSl6EZ22xnXd8zySzczp4WDzeabJfat97e7PFanrQn5Y5sxsiqYpCbbQgJx_bPaZF01xP2UqRLK2lEGiLS23cMlDOTrGCMJDWbRv3-grYVIApMzdw-nOkEmF26YpCTc_WQo-R_8dhBzmTcHKTswD2GadtGOg3LwqZFNwoxCw5TpnKHz9IdwTi9kjn6soBNF8xcjw=w218-h215-no" alt="Drush" /></p>
+
+<br>
+
+
+<p>In the words of the maintainers of Drush:</p>
+
+<blockquote><p>Drush is a command-line shell and scripting interface for Drupal,
+a veritable Swiss Army knife designed to make life easier for those who spend
+their working hours hacking away at the command prompt.</p></blockquote>
+
+<p>It&rsquo;s just been few weeks I&rsquo;ve started using Drush and I&rsquo;m already a fan.
+If you are a drupal developer or a site maintainer and still haven&rsquo;t heard of Drush <a href="https://github.com/drush-ops/drush">go check it out</a>.</p>
+
+<!-- more -->
+
+
+<p>Drush combines the best of shell and drupal to provide a tool which can help you download and install modules and much more anything, without even opening a browser window and within a fraction of time.</p>
+
+<p>Lately I&rsquo;ve made some improvements with the way I use drush. Some of them are:</p>
+
+<h3>Using Aliases and Autocompletion</h3>
+
+<p><strong>Aliases</strong> greatly improve the productivity by assigning short names to complex commands and for commands you use a lot and need a shorter version of them.
+This can be done by using <code>alias</code> builtin. The aliases are normally created inside <code>.bashrc</code> or <code>.bash_profile</code>.
+Some of the aliases I use are:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">alias </span><span class="nv">dr</span><span class="o">=</span><span class="s1">&#39;drush&#39;</span>
+</span><span class='line'><span class="nb">alias </span><span class="nv">drcc</span><span class="o">=</span><span class="s1">&#39;drush cache-clear all&#39;</span>
+</span><span class='line'><span class="nb">alias </span><span class="nv">drdb</span><span class="o">=</span><span class="s1">&#39;drush updb &amp;&amp; drush cc all&#39;</span>
+</span><span class='line'><span class="nb">alias </span><span class="nv">dren</span><span class="o">=</span><span class="s1">&#39;drush pm-enable&#39;</span>
+</span><span class='line'><span class="nb">alias </span><span class="nv">drdis</span><span class="o">=</span><span class="s1">&#39;drush pm-disable&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You may add other aliases depending on the <a href="http://drush.ws/">other commands</a> you frequently use.</p>
+
+<p>The <strong>Autocompletion</strong> is also another great option <a href="">bash</a>. This option requires you to only partially enter the commands and pressing <code>TAB</code> to complete it.</p>
+
+<p>There is already a script for autocompletion on a <a href="https://www.drupal.org/node/437568">drupal issue page</a> which simply needs to be added in your <code>/etc/bash_completion.d/</code> directory.</p>
+
+<p>You might find <a href="http://www.debian-administration.org/articles/316">this textbook for bash completions</a> helpful if you want a farther insight.</p>
+
+<h3>Using Drush Make</h3>
+
+<p><a href="http://drupal.org/project/drush_make"><code>drush make</code></a> performs a time taking tasks of assembling Drupal directories for each site or a multi-site base instance</p>
+
+<p>You can create decent make files using <a href="http://drushmake.me/">drushmake.me</a>. It provides options to add some popular or custom modules and themes to your make file.</p>
+
+<p>This  will save you from the hassle of searching for each and every module.
+It also gives you a list of some popular modules; some of which you may not have known.</p>
+
+<h3>Porting Databases</h3>
+
+<p>Backing up the database is very easy with <code>drush</code>. <a href="https://drupal.org/project/backup_migrate">Backup and migrate module</a> might solve the problem for small sites,
+but there are some reported problems of it on large databases. That&rsquo;s where drush comes to the rescue.</p>
+
+<p>You can always run</p>
+
+<p><code>mysqldump -u root -p[root_password] [database_name] | gzip &gt; dumpfilename.sql</code></p>
+
+<p>but it&rsquo;s easier using drush by just doing</p>
+
+<p><code>drush sql-dump --gzip --result-file</code></p>
+
+<p>There is also an awesome drush utility &ndash; <a href="https://www.drupal.org/project/drush_sql_sync_pipe">Drush Sql Sync Pipe</a> for importing databases.</p>
+
+<p>You can even install drupal from scratch using</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>drush dl drupal
+</span><span class='line'>drush si standard --db-url<span class="o">=</span>mysql://<span class="o">[</span>dbuser<span class="o">]</span>:<span class="o">[</span>dbpass<span class="o">]</span>@localhost/<span class="o">[</span>dbname<span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>with the username and password as <em>admin</em> and <em>admin</em>.<br>You can later create login links with <code>drush uli</code> which are also great for testing.</p>
+
+<p>You may need to seperately specify <code>.htaccess</code> though!</p>
+
+<p>I&rsquo;m still unaware of most of the functionality drush provides but I hope I&rsquo;ll get the hang of it after some time.
+Till then,</p>
+
+<p>Happy Drupaling <img alt="smile" src="/images/emoji/smile.png" class="emoji no-border" /></p>
+</div>
+
+
+      <footer>
+        <p class="meta text-muted">
+          
+  
+
+<span class="glyphicon glyphicon-user"></span> <span class="byline author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person">Posted by <span class="fn" itemprop="name">Umar Ahmad</span></span>
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-07-09T00:54:05+05:30" pubdate data-updated="true">Jul 9<span>th</span>, 2014</time>
+          
+
+<span class="glyphicon glyphicon-tags"></span>&nbsp;
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/web/'>Web</a>
+  
+</span>
+
+
+	  <!--
+
+<span class="tags">
+  
+    <a class='tag' href='/blog/tags/drupal/'>drupal</a>, <a class='tag' href='/blog/tags/drush/'>drush</a>
+  
+</span>
+
+-->
+        </p>
+        
+          <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://gleek.github.io/blog/2014/07/09/drush-it/" data-via="" data-counturl="http://gleek.github.io/blog/2014/07/09/drush-it/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+        
+        
+          <ul class="meta text-muted pager">
+            
+            <li class="previous"><a href="/blog/2014/06/29/gsoc-midterms-half-over-is-half-left/" title="Previous Post: GSOC Midterms: Half Over is Half Left">&laquo; GSOC Midterms: Half Over is Half Left</a></li>
+            
+            
+            <li class="next"><a href="/blog/2014/09/05/gsoc-meetup-2014/" title="Next Post: GSOC Meetup 2014">GSOC Meetup 2014 &raquo;</a></li>
+            
+          </ul>
+        
+      </footer>
+    </article>
+    
+      <section>
+        <h1>Comments</h1>
+        <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+      </section>
+    
+  </div>
+
+  
+  <aside class="sidebar col-md-3">
+    
+      <section class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">About Me</h3>
+  </div>
+  <div class="panel-body">
+    <img src="http://www.gravatar.com/avatar/4e1fea590dae0abb4fcb5a256e7b8a2f.png" alt="Me" class="img-circle" style="display: block; float: left; margin-right: 10px;">
+    <span>Hi,I'm Umar, a web geek!</span><br>
+    <a href="/about/index.html">Read all the boring stuff...</a>
+    <div style="display: none;">
+      
+    </div>
+  </div>
+</section>
+<section class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Recent Posts</h3>
+  </div>
+  
+  <div id="recent_posts" class="list-group">
+    
+    <a class="list-group-item " href="/blog/2014/09/27/things-to-do-after-installing-fedora/">Things to Do After Installing Fedora</a>
+    
+    <a class="list-group-item " href="/blog/2014/09/05/gsoc-meetup-2014/">GSOC Meetup 2014</a>
+    
+    <a class="list-group-item active" href="/blog/2014/07/09/drush-it/">Drush It!</a>
+    
+    <a class="list-group-item " href="/blog/2014/06/29/gsoc-midterms-half-over-is-half-left/">GSOC Midterms: Half Over Is Half Left</a>
+    
+    <a class="list-group-item " href="/blog/2014/06/12/gsoc-here-we-go/">GSOC - Here We Go</a>
+    
+  </div>
+</section>
+<section class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Tags</h3>
+  </div>
+  <div class="panel-body">
+
+ <ul class="tag-cloud list-inline">
+<li><a style="font-size: 165%" href="/blog/tags/drupal/">drupal</a></li>
+<li><a style="font-size: 165%" href="/blog/tags/fedora/">fedora</a></li>
+<li><a style="font-size: 112%" href="/blog/tags/gnome-shell/">gnome-shell</a></li>
+<li><a style="font-size: 143%" href="/blog/tags/gsoc/">gsoc</a></li>
+<li><a style="font-size: 112%" href="/blog/tags/jmilug/">jmilug</a></li>
+<li><a style="font-size: 112%" href="/blog/tags/linux/">linux</a></li>
+<li><a style="font-size: 60%" href="/blog/tags/meetup/">meetup</a></li>
+<li><a style="font-size: 112%" href="/blog/tags/ubuntu/">ubuntu</a></li>
+
+ </ul>
+<a href="/blog/archives/tags.html"><strong>More&gt;&gt;</strong></a>
+</section>
+
+<section class="panel panel-default clearfix">
+  <div class="panel-heading">
+      <h3 class="panel-title">GitHub Repos</h3>
+  </div>
+  <div class="list-group" id="gh_repos">
+    <p class="loading">Status updating...</p>
+  </div>
+  
+    <div class="gh-profile-link pull-right text-muted">
+      <a href="https://github.com/gleek">@gleek</a> on GitHub
+    </div>
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'gleek',
+            count: 10,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+<section class="googleplus googleplus-hidden panel panel-default">
+  <div class="panel-body">
+    <h1>
+      <a href="https://plus.google.com/103949851787406544998?rel=author">
+        <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+        Google+
+      </a>
+    </h1>
+  </div>
+</section>
+
+
+
+    
+  </aside>
+  
+</div>
+
+        </div>
+      </div>
+    </div>
+    <footer role="contentinfo"><div class="container">
+    <p class="text-muted credits">
+  Copyleft <span style="-moz-transform: scaleX(-1); -o-transform: scaleX(-1); -webkit-transform: scaleX(-1); transform: scaleX(-1); display: inline-block;">©</span> 2017 - Umar Ahmad<br>
+  <small>
+      <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>,
+  </small>
+</p>
+
+</div>
+</footer>
+    <script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/javascripts/modernizr-2.0.js"></script>
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'umar-ahmad';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://gleek.github.io/blog/2014/07/09/drush-it/';
+        var disqus_url = 'http://gleek.github.io/blog/2014/07/09/drush-it/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+  </body>
+</html>

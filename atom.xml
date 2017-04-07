@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Umar Ahmad]]></title>
+  <link href="http://gleek.github.io/atom.xml" rel="self"/>
+  <link href="http://gleek.github.io/"/>
+  <updated>2017-04-08T01:35:17+05:30</updated>
+  <id>http://gleek.github.io/</id>
+  <author>
+    <name><![CDATA[Umar Ahmad]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Things to do after installing Fedora]]></title>
+    <link href="http://gleek.github.io/blog/2014/09/27/things-to-do-after-installing-fedora/"/>
+    <updated>2014-09-27T18:34:37+05:30</updated>
+    <id>http://gleek.github.io/blog/2014/09/27/things-to-do-after-installing-fedora</id>
+    <content type="html"><![CDATA[<p> <img style=" display:block;margin:auto;height:240px" src="https://lh3.googleusercontent.com/JCYMcJb5M-08b9FtHvKDsX8hedPz5UsD_rXxeSm0LkLl16YJuizEG2EuEFhi1CXOprcc6hesH8E8YPOd2sIfZbB6rfZm8h0eO-CDHhw4YQ_HHNqR3rU7d2OzSs1nSnhwvxZmXHpqTwTsaQSxYx4mcsi2QFIrJ9o3s3MQPIgg3qbqOusdJxjmuylQePuNm-aKMF4vTXwd_Xl7Sl9PQWUFG7GttxkbPa9sEJP-qm0velNcDh_Frzcd69SKLBjup-AV33ddUs_nat19pITobGS3MGk1BEYOfIzj8KfZzESeisvysiionFZfcbk6oaAhzsdoogfIPE2WIjH8x8MS23__AfKysOiZ6Cr7jTw5nMjdR7STzbLKZEslHyCKlvmXoIMrjkI9ZGrJ_54-cPMw0IFnXa1myCf3ob_AkgrjxhEPmGeu_cbnQG6wlQr_9SnObOJOyiDfc66epMTz_pOBSOdcJ74RLoqeqvBXIeK8yMCQ6fJTx9X0Zr5Do8ax_Harh-Mr_B5LewIqDo_pXiForMCBOJW9yPwnheM4SjIHX6WPm5voc5qsqcBW57y3hePPbZiNul4QzNMRfcXaC_DiIXCdAyyKJqVD6a3RpXsQM6gxKOdVuiHeRGeV3fdqKyJZWA5goDuqTZ9em9ku7zia6faJ9nLbshesjnXL9SoMCaDaUQ=w600-h700-no"   alt="Keep Calm and yum install" /><br>
+Getting the right packages after a fresh install is a headache. That is exactly what I had when I had to do a fresh installation of my Fedora after I accidentally corrupted my entire disk :frowning:.</p>
+
+<p>I didn&rsquo;t want to spend days installing the packages this time. This time I wanted to do it smart and quick.</p>
+
+<p>The problem here was that I couldn&rsquo;t just <code>yum install</code> everything, that&rsquo;s because Fedora community adheres to free software principles and doesn’t offer non-free codecs and drivers from it’s repositories. But there are 3rd party repositories which allow Fedora users to get non-free components.</p>
+
+<!--more-->
+
+
+<p>Here is a list of few things you should do after a fresh install of Fedora 20:
+<a name="fedy"></a></p>
+
+<h3>Installing Fedy</h3>
+
+<blockquote><p>Fedy lets you install multimedia codecs and additional software that Fedora doesn&rsquo;t want to ship, like mp3 support, Adobe Flash, Oracle Java etc., and much more with just a few clicks.</p></blockquote>
+
+<p>Install it via</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>su -c <span class="s2">&quot;curl https://satya164.github.io/fedy/fedy-installer -o fedy-installer &amp;&amp; chmod +x fedy-installer &amp;&amp; ./fedy-installer&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You can download any of the packages from this point onwards but I feel some of them are essential:</p>
+
+<ul>
+<li>Tweaks and Task
+
+<ul>
+<li>Install Adobe Flash</li>
+<li>Set SELinux to permissive mode</li>
+<li>Configure sudo for current user</li>
+<li>Install multimedia codecs</li>
+<li>Configure RPM Fusion repositories</li>
+</ul>
+</li>
+<li>Additional Software
+
+<ul>
+<li>Google Talk Plugin</li>
+</ul>
+</li>
+</ul>
+
+
+<p><a name="template"></a></p>
+
+<h3>Creating a Template File</h3>
+
+<p>Template file is a file in the <code>Templates</code> folder of the home directory. Files added here will appear in the <em>New Documents Menu</em>.
+Do it via typing this in the terminal</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>touch ~/Templates/Empty<span class="se">\ </span>File
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You can add other types of files in the templates folder and add some default content to it.</p>
+
+<p>For example you can add a <code>new.c</code> file there and write various header files, you usually use, in it.
+This would **save the hassle of writing it yourself everytime you create a new &lsquo;c&rsquo; file.</p>
+
+<p><a name="yumex"></a></p>
+
+<h3>Installing Yumex</h3>
+
+<p>I personally don&rsquo;t like the new Software manager in Fedora. It has nice UI but often takes a lot of time in loading packages and installing them.
+Yumex (Yum Extender) on the other hand is a graphical package management tool** which utilizes the power of yum and makes it a bit &lsquo;user-friendly&rsquo;.
+I also feel it&rsquo;s much more easy to use and is a bit more transparent in it&rsquo;s functionality than the former manager</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo yum install yumex
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You might update your full system after this, as yumex will prompt you for that on it&rsquo;s start.</p>
+
+<p>From this point onward you can simply search for a package inside yumex, instead of googling the exact package name to be used with <code>yum install</code>.
+<a name="gnometweak"></a></p>
+
+<h3>Gnome-Tweak Tool</h3>
+
+<p>This is one of my favorite tools for Gnome Shell. This helps to customize Gnome 3 very easily. It also provides an easy way to install extensions and enable themes
+Few of the extensions that I&rsquo;ve are:</p>
+
+<ul>
+<li><a href="https://extensions.gnome.org/extension/19/user-themes/">User Themes</a> &ndash; Load Shell Themes from user directory</li>
+<li><a href="https://extensions.gnome.org/extension/55/media-player-indicator/">Media Player Indicator</a> &ndash; Control Media Players from the Top Bar</li>
+<li><a href="https://extensions.gnome.org/extension/277/impatience/">Impatience</a>&ndash; Speed up the animation speed of Gnome-Shell</li>
+<li><a href="https://extensions.gnome.org/extension/442/drop-down-terminal/">Drop Down Terminal</a> &ndash; A Handy utility to quickly jump to terminal and mininmize it with just a single button</li>
+<li><a href="https://extensions.gnome.org/extension/307/dash-to-dock/">Dash To Dock</a> &ndash; Makes the dash bar act as a dock</li>
+<li><a href="https://extensions.gnome.org/extension/294/shellshape/">Shell Shape</a> &ndash; A tilling window extension</li>
+<li><a href="https://extensions.gnome.org/extension/496/show-desktop-from-overview/">Show Desktop From Overview</a> &ndash; Show desktop on clicking on empty space in overview</li>
+<li><a href="https://extensions.gnome.org/extension/111/calculator/">Calculator</a> &ndash; A simple calculator in search overview</li>
+<li><a href="https://extensions.gnome.org/extension/851/flash-fullscreen-fix/">Flash FullScreen Fix</a> &ndash; Fixes the bug encountered while making flash videos full screen</li>
+</ul>
+
+
+<p>You can find more extensions on the <a href="https://extensions.gnome.org/">official page</a>.</p>
+
+<p>Some of my other settings include enabling <em>Icons on Desktop</em> and reducing the <em>Scaling Factor</em> to 0.9. I also use <a href="http://www.fontsquirrel.com/fonts/droid-sans">Droid Sans</a>, <a href="http://www.fontsquirrel.com/fonts/roboto">Roboto</a> and <a href="http://www.microsoft.com/typography/fonts/font.aspx?FMID=1924">Consolas</a> as my primary fonts.</p>
+
+<p>There is another tool called <code>dconf editor</code> which is basically a GUI version of the <code>gsettings</code> tool.
+It also provides some customizations of gnome shell and other applications.</p>
+
+<p><a name="bleachbit"></a></p>
+
+<h3>Installing Bleach Bit and Ailurus</h3>
+
+<p>After a while a system starts getting cluttered via junk files and caches. Bleach Bit does the task of remove this clutter and useless files easily with a single click of a button. It can be Installed with</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo yum install bleachbit
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Ailurus is a tool to install new Softwares and provide clean-up of caches. It also helps to tweak firefox and RPM Recovery. It can be installed via</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sudo yum install ailurus
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><a name="firefoxext"></a></p>
+
+<h3>Getting Firefox Extensions</h3>
+
+<p>There are some extensions which are vital for a firefox user. Some of them are:</p>
+
+<ul>
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/">Adblock Plus</a> &ndash; Blocks annoying advertisements</li>
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/ghostery/">Ghostery</a> &ndash; Blocks various tracking applications, widgets and social media buttons which might track you</li>
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/">Greasemonkey</a> &ndash; An awesome extension to run custom user scripts for various tasks</li>
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/htitle/">HTitle</a>&ndash; Removes the useless title bar, thus increasing screen space.</li>
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/omnibar/">Omnibar</a> and <a href="https://addons.mozilla.org/en-US/firefox/addon/omnibar-plus/">OmnibarPlus</a> &ndash; Unites the Address Bar and search bar to provide a single Bar for search as well for opening websites</li>
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/the-addon-bar/">The Addon Bar</a>  &ndash; A toolbar which bring back the Addon Bar, listing all the addons for easy access.</li>
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/downthemall/">DownloadThemAll</a> &ndash; A download accelarator inside firefox.</li>
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/vimperator/">Vimperator</a> or <a href="https://addons.mozilla.org/en-US/firefox/addon/pentadactyl/">Pentadactyl</a> &ndash; Completely transforms firefox to behave similarly to Vim Editor. This makes working completely mouseless and also gives a clean UI. If you are a <strong>Emacs</strong> users you might find these <a href="https://gist.githubusercontent.com/avendael/7028513/raw/40abf0e8bfb7d4fc72bd224f8c6c4694a1e33456/.vimperatorrc">.vimperatorrc</a> or the <a href="http://www.jnanam.net/pentadactylemacs/.pentadactylrc">.pentadactylrc</a> files useful.</li>
+</ul>
+
+
+<p>These settings will provide a system which is good enough for daily use. You might want to install some other applications depending on your use. Some of the other applications include <a href="http://www.gimp.org/">GIMP</a>, <a href="http://www.gnu.org/software/emacs/">Emacs</a>, <a href="http://www.videolan.org/vlc/index.html">VLC Media Player</a>, <a href="https://www.virtualbox.org/">Virtual Box</a>, <a href="http://gparted.org/">GParted</a>, <a href="https://www.winehq.org/">Wine</a>, <a href="http://www.dosbox.com/">DosBox</a>, etc. to name a few. You can find all the packages by searching for them in <a href="#yumex">yumex</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[GSOC Meetup 2014]]></title>
+    <link href="http://gleek.github.io/blog/2014/09/05/gsoc-meetup-2014/"/>
+    <updated>2014-09-05T04:20:39+05:30</updated>
+    <id>http://gleek.github.io/blog/2014/09/05/gsoc-meetup-2014</id>
+    <content type="html"><![CDATA[<p><img src="https://lh3.googleusercontent.com/e2fih0IuM8f-R7zU5rhRsdQx2DY8T_izv8XnDl3yRyAGZPMxo8QimbtUty0_U3b1HqsSfNk7Ts70lkZV9nADD65cTXw3sC8FhJKk6TPzw4kBHpIjPRmcMwkSseqM_5FFnPUm1tybTMD-Jp8O_LVfhAVccNbWnKwqIH24-Nupobe8C-qa8SfW3LSH3QrfrDiSzcy-OGq-VJmItUzzB0OKzoiGBzMEs0s23LDwtK-anp3r2plwmXsC55UYG7QeqW794LAl_tC6fWiObFrTMRNFAPRR0aJN4F5C438X8gnoWs27TJQEOHjEMIx1ONmBKhPtWAeLgjcIivKAQfwjCUzMepMYMepBLXSW3h1FIyW1GXZK7j0J244UTjJ42hfnmTawIvr1DD7zX8tLJxEf9x_E8VYIogAKywJweEzN100W9rW-KjpbsY4mLTPBAfaBoyIatMocLZGi1RtXF1y8gHQAdNOC9E3vnwFAxey2Lw30l1cSnPw8YYBHZecjekuvR0LwAlq0Lpo8nTsSsZU6blgXFFd1kg8Wd7ybr9WzuXlpdSOD6VEiD85_fFErPSoYsfSRJzn_N1J3P7T53hNBERYpx92D_D0R1YRGbVGx07gds_dnO_uiOrD_ujwedi1ucvWexIoIPgzmDZLOTbyKHeQtZwDZM-GNeqpriCYuaaInqQ=w1137-h758-no" style="display:block;margin:auto; height:450px;"></p>
+
+<br>
+
+
+<p>On August 23rd, we, at <a href="http://jmilug.org/">JMILUG</a>, hosted a GSOC Meetup at <a href="http://jmi.ac.in/">Jamia Millia Millia Islamia University, New Delhi</a>, home of JMILUG. The GSOC meetup was an opportunity to meet and learn from past and present GSOC students who’ve actively contributed to Open Source projects in collaboration with developers from all over the world.</p>
+
+<!--more-->
+
+
+<p>This acted as a platform for other budding developers who’re ready to get their hands dirty and contribute to real time projects.</p>
+
+<h4><strong>Why?</strong></h4>
+
+<p>Over the last 2 years, 9 JMILUG members have been selected in GSOC thanks to the exposure provided to Open Source communities and projects as a result of various meetups and conferences every year. So we felt that it was time to give something back to the GSOC and Open Source community of India.</p>
+
+<p>Organizing a meetup for GSOC participants and other Opensource enthusiasts seemed like a good option.</p>
+
+<br>
+
+
+<h4><strong>Preparations</strong></h4>
+
+<p>We started accepting proposals from potential speakers for the event and built a basic website</p>
+
+<p>We also wanted that only the best proposals among all the proposals should be selected for the event and for that to happen we built a voting application and the proposals were chosen by the voting procedure. We established a criteria that only the people who were related to GSOC get to vote.</p>
+
+<p>The speakers from the top voted sessions were finally called to give a talk, which were mostly GSOC students.</p>
+
+<p>We received an overwhelming number of registrations, but our college administration was kind enough to lend us our Faculty Auditorium for the event.</p>
+
+<br>
+
+
+<h4><strong>When the day came</strong></h4>
+
+<p>We saw nearly 190 attendees in the event, from all kinds of academic level and from far-off cities. We started with registrations followed by</p>
+
+<ul>
+<li><a href="http://vipulnayyar.com/">Vipul</a> and <a href="http://gleek.github.io/about">Me</a> giving a short introduction of JMILUG and the day’s schedule.</li>
+<li><a href="http://gauravsaini.me/">Gaurav Saini</a>, who worked with <a href="https://mifos.org/">Mifos</a>, talked about his GSOC Experience and explained using <a href="http://angularjs.org/">AngularJS</a> in android applications using <a href="http://cordova.apache.org/">Apache Cordova</a>.</li>
+<li><a href="http://www.ishankhanna.in/">Ishan Khanna</a>, who was again a student under Mifos, explained the <a href="http://en.wikipedia.org/wiki/Representational_state_transfer">REST API</a> consumption in Android</li>
+<li><a href="https://www.linkedin.com/pub/anshul-sharma/31/250/737">Anshul Sharma</a>, one of the members of JMILUG, explained to us the importance of <a href="http://git-scm.com/">Git</a> and some of it’s working via an hands-on session.</li>
+<li><a href="http://www.mixorg.com/author/sachin_gaur/">Sachin Gaur</a>, Co-founder of Mobile Harvest, enlightened us with emerging industries and current IT market of India and the rest.</li>
+<li><a href="https://github.com/sdaityari">Shaumik Daityari</a>, from Inclusive Design Institute, gave an awesome talk on building websites with better accessibility.</li>
+<li><a href="http://dufferzafar.github.io/">Shadab Zafar</a>, who worked under MusicBrainz and also a member of JMILUG, talked about his project and how MusicBrainz helps storing metadata for songs.</li>
+<li><a href="http://www.shubhamoy.com/">Shubhamoy</a>, founder of <a href="http://dynofy.com/">Dynofy</a> and an opensource enthusiasts, also shared about his experience in building his startup.</li>
+<li><a href="https://www.facebook.com/rajat93">Rajat Goyal</a>, an aspiring GSoCer, gave a talk about the awesomeness of <a href="http://ipython.org/">ipython</a>.</li>
+<li><a href="http://tuxdna.in/">Saleem Ansari</a>,one of the founders of <a href="http://jmilug.org/">JMILUG</a>, talked about the history of JMILUG and our journey to the day.</li>
+</ul>
+
+
+<p>Our final talk was about <em>&ldquo;Getting into GSOC&rdquo;</em> with the focus on the question answer session, with questions intended for all the GSOCers.
+<img src="https://lh3.googleusercontent.com/7zdU5CSwB9s2B22FAPmpqohXF4kDOI9GrLWDIjLEnsCuNUrzbRUsC2kqNow6OuCFuykhd2Suy3p0JfWrfH12Gj2rX4volzOP2HCuFG6Orje4eQHMk_-3BmFr80UWjFTzhpmmd3qA0iYkaUnyhX3PIxUuIgfxeTjHxNHKQf46DMVY4OV_oZ9eV5pPBY4VdBhzfsjPRnFkuSPo8-kuAT1dMPubwTBB8HUekm3GgPR24vHkllmFVcaSFBwrZpmEcSl1_xvsr_U4x7KHw7MOfYQT-0TOb8KIJzi30IfWBIiUUSShyMj-20-oUGs3u2go7qLn8AaLVqWUr3TIZl4eO_rqnehMtjZFj9WTdH-F-aWn3XGlDD2W7iIjAJ3-WTqNmhv6YYrcvAgM_YRXGQznbn8UBEklLy7TkmTyJ-Ypy76N9zt6on-qVFFU24Zcdsn0Vp3w1hDtfjD3fvt6uilTCLbGMn7sOFeUeHMRvWm1-DbYIQ2yFryvZa8kB7Tobzmyw2Dn2QH8CqjiELfoGYgFD6rSQjpV4Wrf0aF-gHHRDCfCYFKljfapTp6AFzYJfICjSGoQblf8dZDfnmEAayQFSAd05G2A299dpH_GCC06y4h2bIUy_UPI88gjprtSrM3JjEp4tpWm8MXv9A2dXI2YdfyPt3gPMpgUfjw4nmdav8VHTA=s500" style="display:block;margin:auto; height:300px;"></p>
+
+<br>
+
+
+<p>We ended the day’s talk with distributing Certificates to speakers and T-shirts to the two most active audience members and two people selected randomly from the audience. Thanks to <code>Math.random().</code></p>
+
+<p>We also distributed official GSOC pens to three audience members, after every talk, if they answered the questions by speakers correctly.</p>
+
+<p>All the goodies including Pens, T-Shirts and stickers was generously given to us by the <a href="https://developers.google.com/open-source/">Google Opensource Programs office</a>.</p>
+
+<br>
+
+
+<h4><strong>Links</strong></h4>
+
+<ul>
+<li><a href="http://gsoc.jmilug.org/">GSOC Meetup Official Website</a></li>
+<li><a href="https://www.facebook.com/vipulnayyar/albums/10201552533654531/">Photo Gallery</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Drush It!]]></title>
+    <link href="http://gleek.github.io/blog/2014/07/09/drush-it/"/>
+    <updated>2014-07-09T00:54:05+05:30</updated>
+    <id>http://gleek.github.io/blog/2014/07/09/drush-it</id>
+    <content type="html"><![CDATA[<p><img src="https://lh3.googleusercontent.com/LWK3VdQ8CcrC4bIDnlrJRCJAZpjBDvFg-SnX0lZNu1GXNcKi2j0jA8ubCdBZIoz6hFOBzJmJ75OD2DvGfvxi1sGRY6qdrT4-iwgxAnRZFTOb3OE5-N33y4lEJBMfDhGYWWQAroZ9Wbe2Ho1dy4MI8ZntRVO1DrSyCS8AjMcil_m3UrJhsjz9IqMyMny1sIZ6JSJIfx7Pp6CN_iVgXO9ccpZf_aZC-0MGq8i5VGUTVGoy7asAHBnQPbbZJK4X8WilpFVqPmJAwsNKXoA-9GZasxjG9Kw3HyEK0jN83K3bRYYDYUAqZeLf5fJckpY8NZztQ0EoDGxHjb7UsD_aLYwMQmsg-U5e3ziv7Rs7POTkljWBngT4yMWy6HtCNJhr92xF7OLriyu3VdtRz3m1S_OrPcTOltWa4LlSiwAqVYR0-0JhYu1Ewq4fQvCoTy6ywEBbC7D-eGYk9plS2tiCTSH2WISVGTGZwh0ihUSgjsXSl6EZ22xnXd8zySzczp4WDzeabJfat97e7PFanrQn5Y5sxsiqYpCbbQgJx_bPaZF01xP2UqRLK2lEGiLS23cMlDOTrGCMJDWbRv3-grYVIApMzdw-nOkEmF26YpCTc_WQo-R_8dhBzmTcHKTswD2GadtGOg3LwqZFNwoxCw5TpnKHz9IdwTi9kjn6soBNF8xcjw=w218-h215-no" alt="Drush" /></p>
+
+<br>
+
+
+<p>In the words of the maintainers of Drush:</p>
+
+<blockquote><p>Drush is a command-line shell and scripting interface for Drupal,
+a veritable Swiss Army knife designed to make life easier for those who spend
+their working hours hacking away at the command prompt.</p></blockquote>
+
+<p>It&rsquo;s just been few weeks I&rsquo;ve started using Drush and I&rsquo;m already a fan.
+If you are a drupal developer or a site maintainer and still haven&rsquo;t heard of Drush <a href="https://github.com/drush-ops/drush">go check it out</a>.</p>
+
+<!-- more -->
+
+
+<p>Drush combines the best of shell and drupal to provide a tool which can help you download and install modules and much more anything, without even opening a browser window and within a fraction of time.</p>
+
+<p>Lately I&rsquo;ve made some improvements with the way I use drush. Some of them are:</p>
+
+<h3>Using Aliases and Autocompletion</h3>
+
+<p><strong>Aliases</strong> greatly improve the productivity by assigning short names to complex commands and for commands you use a lot and need a shorter version of them.
+This can be done by using <code>alias</code> builtin. The aliases are normally created inside <code>.bashrc</code> or <code>.bash_profile</code>.
+Some of the aliases I use are:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">alias </span><span class="nv">dr</span><span class="o">=</span><span class="s1">&#39;drush&#39;</span>
+</span><span class='line'><span class="nb">alias </span><span class="nv">drcc</span><span class="o">=</span><span class="s1">&#39;drush cache-clear all&#39;</span>
+</span><span class='line'><span class="nb">alias </span><span class="nv">drdb</span><span class="o">=</span><span class="s1">&#39;drush updb &amp;&amp; drush cc all&#39;</span>
+</span><span class='line'><span class="nb">alias </span><span class="nv">dren</span><span class="o">=</span><span class="s1">&#39;drush pm-enable&#39;</span>
+</span><span class='line'><span class="nb">alias </span><span class="nv">drdis</span><span class="o">=</span><span class="s1">&#39;drush pm-disable&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You may add other aliases depending on the <a href="http://drush.ws/">other commands</a> you frequently use.</p>
+
+<p>The <strong>Autocompletion</strong> is also another great option <a href="">bash</a>. This option requires you to only partially enter the commands and pressing <code>TAB</code> to complete it.</p>
+
+<p>There is already a script for autocompletion on a <a href="https://www.drupal.org/node/437568">drupal issue page</a> which simply needs to be added in your <code>/etc/bash_completion.d/</code> directory.</p>
+
+<p>You might find <a href="http://www.debian-administration.org/articles/316">this textbook for bash completions</a> helpful if you want a farther insight.</p>
+
+<h3>Using Drush Make</h3>
+
+<p><a href="http://drupal.org/project/drush_make"><code>drush make</code></a> performs a time taking tasks of assembling Drupal directories for each site or a multi-site base instance</p>
+
+<p>You can create decent make files using <a href="http://drushmake.me/">drushmake.me</a>. It provides options to add some popular or custom modules and themes to your make file.</p>
+
+<p>This  will save you from the hassle of searching for each and every module.
+It also gives you a list of some popular modules; some of which you may not have known.</p>
+
+<h3>Porting Databases</h3>
+
+<p>Backing up the database is very easy with <code>drush</code>. <a href="https://drupal.org/project/backup_migrate">Backup and migrate module</a> might solve the problem for small sites,
+but there are some reported problems of it on large databases. That&rsquo;s where drush comes to the rescue.</p>
+
+<p>You can always run</p>
+
+<p><code>mysqldump -u root -p[root_password] [database_name] | gzip &gt; dumpfilename.sql</code></p>
+
+<p>but it&rsquo;s easier using drush by just doing</p>
+
+<p><code>drush sql-dump --gzip --result-file</code></p>
+
+<p>There is also an awesome drush utility &ndash; <a href="https://www.drupal.org/project/drush_sql_sync_pipe">Drush Sql Sync Pipe</a> for importing databases.</p>
+
+<p>You can even install drupal from scratch using</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>drush dl drupal
+</span><span class='line'>drush si standard --db-url<span class="o">=</span>mysql://<span class="o">[</span>dbuser<span class="o">]</span>:<span class="o">[</span>dbpass<span class="o">]</span>@localhost/<span class="o">[</span>dbname<span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>with the username and password as <em>admin</em> and <em>admin</em>.<br>You can later create login links with <code>drush uli</code> which are also great for testing.</p>
+
+<p>You may need to seperately specify <code>.htaccess</code> though!</p>
+
+<p>I&rsquo;m still unaware of most of the functionality drush provides but I hope I&rsquo;ll get the hang of it after some time.
+Till then,</p>
+
+<p>Happy Drupaling :smile:</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[GSOC Midterms: Half Over is Half Left]]></title>
+    <link href="http://gleek.github.io/blog/2014/06/29/gsoc-midterms-half-over-is-half-left/"/>
+    <updated>2014-06-29T16:30:07+05:30</updated>
+    <id>http://gleek.github.io/blog/2014/06/29/gsoc-midterms-half-over-is-half-left</id>
+    <content type="html"><![CDATA[<div align="center">
+<img src="https://lh3.googleusercontent.com/O2hQSeV_aZFFQH0PQgh-AV5c9b3Gvzx8U3_O2OLidJXUOCnWGPLN6DyE7KdOXXWG1KZuSGer-0sDzHXoHjv2bGtPnXtE4jVoygB7IhFoharxvP-GGul4UAe68sL7Jp8O0y7PG9VneRwmhFOuIFFeXAVy4fpBbJ-DDV4ymv-VwnQFh31BEMokAHwDb2E2jB3R4PHWKN-GptRNHWG8SGbndLXREoi-lyRUo9DSMEAeiUyrCwhc4-UFU4hvE8JksEs8tXSL-rQ6dgO9Qjw7u1jYidXRX8kRKaj1t0RV0R4PjvJhkn6-u_1ODqWfIMGfx_MQ_uCS1FQv503oAC1BArzbRwEjLX0sp7RhKf0-EeWuna3UDLlbanOJd5alAFbj0Z2HKRmD58rStwQIvLheLpjCGmKdeXEo3xB5fHHtx8zJLksjU2cCxFgAC71tXiUeeLZ2WYWups5Q7U72B1mXzGqXUQFH1E-GtfXaD1tZuHJ5I-n13A-lKvPCEK5hWYF8ImRAa3Kg2vv3tVnvUIPWcMcuoQO1RJDZik5YImF8F7SU_FCHavtaEJz5AGaQYn3r8DVYHM2WePN_htsPV7Gt-KNPfd9wMbVHY5keT_iTRQ0rYPhhKPojx2Rq7mkGPtq_SVdOScX5quCjjRzaFzx836GLqeyhim7cn9RB9KHvQu_b8g=w600-h160-no"/>
+</div>
+
+
+<br>
+
+
+<p>GSOC Midterms ended few days back and it&rsquo;s been fun so far. In my previous post I briefly touched upon my project, <strong><a href="https://www.github.com/gleek/fluxpocket">fluxpocket</a></strong> , which is an extended service for <strong><a href="http://www.drupal.org/project/fluxservice">fluxservices</a></strong>, which is based upon <strong><a href="http://www.fluxkraft.com">fluxkraft</a></strong>, which runs on <strong><a href="http://www.drupal.org/project/rules">rules</a></strong>, which is based on <strong><a href="http://www.drupal.org">Drupal</a></strong>!!</p>
+
+<!-- more -->
+
+
+<div align="center">
+<img src="https://lh3.googleusercontent.com/ogTFYEpIzoDLq1yNZWVxpd0WCcoAclC8x5bCqGrO1n7B8TPirtTKVwQ3Xc0ccvLa8bOT7WRV7aFlT-ut1ldluZQw7Zdc-I8SMFSemoMZGAbHUheeLxQPQElr5hz0DtPpqMqNcE22ZFT4REP9BGHHbXospKBsZGo6F-h8D_t6zOMpHWsa_jt-A74huWTOied0-YLTK-F20Byl-pBdjefga60uDP3BiN0SVBEPkovWigv8-GLAiGw6v_zxtmqUXq3bYc8pKxiAqTu8r0RCKBO5OfUE8yqLfFpb9Qm_dX5y6pyIofEw__du1ORg2D7HxBjfNFU-6VXJkE_JGSt-SHF9s0vAK15_nLJIDFAM92aLTjupzmhgp8z-tcPMNPjRyY3KeYyfdUsMEnXFNd2KXGnejvJn80B3E3_3mOgMHYa-zfcdNo7tVg38935IgFwrZDjZ6HqD98_f-ra2wpr8LzxRH7lF0ObWWM-67aGKkdK7JC2zmndQqu265gLyY8CgqWorGr1SdN9KeFANnJ84ZQoZt_SeMpxcAjojFgsnbS7O2hhKbAIiIWI7ITeospKVJu-0E-GLNZee9eIEkiY0W6E-e0fWC-pX-E5AA2TuBITAC99YiGhvRUII2xEPq4JzBPG_6jkCZuM3IUAF31SQ3R-UsYv4myJLoeQK1Z3ygG9UWA=s300" width="300"/>
+</div>
+
+
+<br>
+
+
+<p>Well, it gets a bit confusing sometimes. But for making things easier, <a href="https://ifttt.com/recipes?channel=pocket#popular">consider these ifttt services</a>, (take a minute for that), now imagine these running on your own server or website and all the keys to your valuable data secured &ndash; and most importantly &ndash; under your control!</p>
+
+<h3>What Works so far</h3>
+
+<p><strong>The Actions</strong>. You can perform almost all the actions supported by Pocket through the API. Thus some examples of what you can do so far are:</p>
+
+<ul>
+<li>Posting your Posts simultaneously to Drupal and Pocket</li>
+<li>Getting your new Feeds directly in Pocket</li>
+<li>Posting links to favorite tweets to Pocket
+&hellip;.list goes on, but you get the idea :wink:</li>
+</ul>
+
+
+<h3>What&rsquo;s left</h3>
+
+<p><strong>The Events</strong>. The events or triggers are currently under-development and will be under my focus for most of the left-over period. The Events are the portion which react to the changes in the pocket, such as addition of new URL. It will be done by polling the pocket server for any changes in the pocket list after specified interval.</p>
+
+<p><strong>Documentation</strong>. The fluxservices are not yet properly documented. This will be my priority after I finish up with the Events.</p>
+
+<h3>How&rsquo;s everything else?</h3>
+
+<p>I have done some changes on how I manage things regarding the project , for instance, I now use <a href="https://github.com/Gleek/fluxpocket/issues">github milestones and issues</a> to track my progress instead of completely depending on titanpad for that.</p>
+
+<p>I&rsquo;ve also stopped pushing my code to my <a href="https://www.drupal.org/node/2282655">drupal sandbox</a> and I only update my <a href="https://www.github.com/fluxpocket">github repository</a> now. I&rsquo;ll transfer it to drupal when the project&rsquo;s complete.</p>
+
+<p>Other than that I&rsquo;ve started to track my time using <a href="https://github.com/projecthamster/hamster">hamster</a> which tells me that I spend more time researching than actual coding. It also tells me that T.V. is a real time killer :grimacing:.
+(P.S. I don&rsquo;t track the sleeping hours&hellip;the long ones)</p>
+
+<p><img src="https://lh3.googleusercontent.com/HOlEm2-_EvezvAO4CEUKdBGT8bh5O2ZMcY4ukToz_mt5XDYn2jLQIRqMLQKOnAzzEGPUpxbrPpT2PpcO2iQzwLIneSzggaxw41d2q6io84TzE53Hhc8m-4fqW1bFzH2FB3cWqpkx2eZZp9NC80kDw1Yy37zv4--fzCc9TTD8xCcOb2iVLWJtovj_uRcbYcjKUPFdBw8c3e-iiLjQ-henqDk2HXDRbOlwlo22w0XAwqfW2S5s1zrT4GIgFxjEZmXoguQxV5dYw7sTb3hBAgdJ9KVhduYi3LvMaOuLHnBwzfwYfRKFCmv_k6DzevvLA9goDE0WDEdWpXbrSzSbJXhQaHNgpyomiPEpDgrOqu0yadVF-NuKbn-raEtT0DWaes53CxiDUKIHyPa_hqfddsNq8kNSG0bzC2Wr1HqU1d-81sjwjYm4-go1cN2vWh_rOlKmeTNP1PjRlMxsX1UccRk5qH0Wkn7A7i--O46wlH0yyOocjXDo1ooQUTLLbNShM6xMymrB_vA-o4EBUXEZRKhw0YLgz19lZXQ8pGldbcwVPBZvTf9W_IXP2Oo7NThCUeT-qRM-2MZD9tslPZF2pf-A9ctdQkJVc1gvhHiUHaY2e567_ryW-O1L=w1286-h422-no" alt="time overview" /></p>
+
+<p>Other than that I might have misconfigured my mind&rsquo;s clock cycle. I am usually sleeping when the &lsquo;normal&rsquo; humans work and work when they sleep.. and it&rsquo;s really hard to get rid of this schedule.</p>
+
+<p>I wish to write more but <a href="https://github.com/projecthamster/hamster">hamster</a> tells  me that I&rsquo;ve spend far more time on this than originally anticipated. So I&rsquo;m gonna switch back to coding and hope everything works out in the end.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[GSOC - Here We Go]]></title>
+    <link href="http://gleek.github.io/blog/2014/06/12/gsoc-here-we-go/"/>
+    <updated>2014-06-12T05:45:04+05:30</updated>
+    <id>http://gleek.github.io/blog/2014/06/12/gsoc-here-we-go</id>
+    <content type="html"><![CDATA[<p><img src="https://lh3.googleusercontent.com/-_eXnV87hecb2o5FZfatpmppOXSBupYVE2Xr8WIdxbi4tJqYW-iH-Y-ptJ2zDItA3N8XYuT71fmdxkP5RBWMJIxh2wGEPnOyaohoLbxxaT8cSNc67QQH2581_7ov2-rTPC5t9ro1UxN92jY8eNCF1mw-m879yjWX_H9vhZJVdVnrQRCEw5GHLL_k_Any-hYsIhOl06Paafst7kd4e-1rTORw6-TReVjZZQs6uYZSS2HTqB0g-_h2Zkp9g3UXcrrKcNucr-CYtilEIK_PRi_lUeRdNtU1rsGWrakkMDUXMuKy-ReIlBxUgc5Mj8iDde1RGqFf663lKQ5JhZb6nIiQuTnnqzg1MoynXFkqJsDaztSanuEm7uSWhwQ_gVDQjcGK7eVykXCa4JBZnucDlZBYVurJDk7wfUASCp5LvPXD3Ord3kAyLVZupq9bdjC28zGyGc8H6QC-LrUTxOkgyAoxjaifSlxTbcFao5snSSYPf-Whxj73Vzt2c2p0uHR_ySuBfRlSJL6Ul8cnp3KYEkiMQbAwYuAVlTSka-0Ch3uppYGS57dztOpyVawV-v2W4ipXj3fpmRYSC7jJA29ztsrCYZQKahhBaQREqrtJRgG5_zqCryLyn7vrzgoVXYOeX5MUW_P--Np4KEChrnTGp1C0Of2H4Jn26Ja4_Its7XEC_A=w924-h156-no" alt="GSOC 2014" /></p>
+
+<br>
+
+
+<h4>What?</h4>
+
+<p>Google Summer of Code is happening this year with over <a href="http://www.google-melange.com/gsoc/org/list/public/google/gsoc2014">190 participating organizations</a> and with a total of <a href="http://google-opensource.blogspot.in/2014/05/google-summer-of-code-2014-by-numbers.html">1307 students</a> selected all round the globe, and being one of them is truly awesome :sunglasses:. <!-- more --></p>
+
+<h4>How?</h4>
+
+<p>Initially my expectations of being accepted were very low, but I also had nothing to lose. With this thought and a little persuasion from one of my friends I decided to <em>at least check the organizations and there proposals</em>. Being a Web maniac I quickly searched for organizations based on Web Technologies and found Drupal to be one of the organizations I was already familiar.</p>
+
+<h4>Getting with Drupal and fluxpocket</h4>
+
+<p>I quickly glanced through the <a href="https://groups.drupal.org/node/407793">projects list</a> with a lot of cool projects, but one of them caught my attention. It was the integration of the Pocket API with <a href="http://www.fluxkraft.com">fluxkraft</a>. I prepared a proposal, discussed the prospects of the project with the mentors and the next thing I know is that my name popped in the list of 13 <a href="http://www.google-melange.com/gsoc/projects/list/google/gsoc2014">accepted students</a> from drupal. :relaxed:</p>
+
+<h4>What am I doing?</h4>
+
+<p>Fluxkraft is a module suite and distribution for automating your social media work flows! It is an OpenSource alternative to services like <a href="http://ifttt.com">IfTtT</a>, <a href="https://zapier.com/">Zapier</a> or <a href="https://cloudwork.com/">Cloudwork</a>. For really becoming a usable alternative more and more services should be integrated to Fluxkraft.</p>
+
+<p>The <a href="http://getpocket.com">Pocket</a>(formerly Read It Later) application allows the user to save an article or web page to read later. The article is then sent to the user&rsquo;s Pocket list (synced to all of their devices) for offline reading. Pocket removes clutter from articles and allows the user to adjust text settings for easier reading. With over 9 million Pocket users and more than 240 million saves, Pocket automation as a fluxkraft service has a very high potential.</p>
+
+<p>As a result of the Project there should be a Drupal Module that adds Pocket functionality to fluxkraft. For example making it possible to retrieve and post articles to Pocket, filtering stored items by tag and adding and removing tags to items, Modifying the existing state of items etc. The goal is also to update the documentation to support other developers for implementing new services like Youtube, Github, Yammer etc.</p>
+
+<h4>Links</h4>
+
+<ul>
+<li>You might find my <strong><a href="http://goo.gl/g5UpZY">proposal</a></strong> a bit more helpful as far as technical details are concerned.</li>
+<li><a href="https://drupal.org/u/umar-ahmad">My drupal user account</a></li>
+<li>You can find the <strong>code in my <a href="https://github.com/Gleek/fluxpocket">github repository</a> and as a <a href="https://drupal.org/node/2282655">sandbox project on drupal</a></strong></li>
+</ul>
+
+
+<p>I&rsquo;ll be posting my experiences, journey, success and failures <a href="http://gleek.github.io/blog/tags/gsoc">here</a> on my blog. Hoping to have an exciting summer.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[GSF Hacks]]></title>
+    <link href="http://gleek.github.io/blog/2014/05/08/gsf-hacks/"/>
+    <updated>2014-05-08T03:01:30+05:30</updated>
+    <id>http://gleek.github.io/blog/2014/05/08/gsf-hacks</id>
+    <content type="html"><![CDATA[<p><img src="https://lh3.googleusercontent.com/7zBCup0aXx-KUJveJNOxISqBj3JXPaPY9u05q9Akw3EqIICRgExww1BMImw25FkodIVfACX6cC7OepuQz4kpvkniONdYjrb9fwTqRI06e3OwMtQyzew9zviROsNkWi49fC_5C0wb3AVEGg55HvpBLTkVdMT1nsu2HwaleXumrALCPmbaNjsO_dcnNoVwmNmVALbXuMUDM87MSpz9Lt746gU1HiV8XnFxroGCv_AdQ3rA3h7eNWjQIyS-wqFiuamL7EF6jdXo0LUVGDJWSuzShCwHGXKwwZ4ixY3RVerIG8jJ7zupxT94DshLMzMU_jYQk6pLm7qLFnCntEB8hakWZWLShUpKrBl_4gJ4RlW9dH3fVsqbnzOKW3HnVZpIAErQOctUDtbmqgW-_WGrmBbFI8Jk5cfBjCC9SXs9wAqZt2R-BwvYXR__ahl9rDiJRdPXB1GQQNpnRgB_dCyMTBrW-KnqWoI_KN4kwSHI1ARYDNC3v1OM-tc_3nPIsjy_JwoxZ4sG4cTsHbefXt6BL2HnETD77GmYCx9TWZb-j_wnnY0xHRBNU8kOHOZCFJ8_B0Z3S4rhTKBCV9U9s6B5UgChO_DhtlOdv1dgisSgPYXahpo1chmtSNluBBIfdSQ5odHBNJVITuLRDqUod8Dm-LzmJdcBQmpgse-VUDvCFe7qMA=s370" style=" display:block;margin:auto;" width="370"/></p>
+
+<p>Last month some of my friends and I went to a hackathon organized by <a href="http://www.gsfindia.com/hacks/">GSF India</a>. This hackathon was particularly interesting since almost all the participants were amongst the top ranked from <a href="http://www.hackerearth.com/">Hacker Earth</a> and thus a tough competition was expected.</p>
+
+<!-- more -->
+
+
+<p>The participating teams had to choose one challenge to compete. Our team chose shine.com challenge which involved improving their registration system in an innovative manner.</p>
+
+<p><a href="http://www.shine.com">Shine.com</a> is a website for job finding. We could easily see problems with the registration system, which could be solved. What we built was a utility which involved an IVR, Voice Recognition system, Resume Parsing (PDF/DOC) and an Android App for smart phones as well as not so smart phones.</p>
+
+<ul>
+<li><p><a href="http://www.kookoo.in/">Kookoo</a> API and AT&amp;T voice parsing API was used in the <strong>IVR system</strong>. The Kookoo system recorded the voice of a person <em>by a simple phone call</em> and AT&amp;T API helped us parse it. Thus making it suitable for any mobile phone.</p></li>
+<li><p>We also made a <strong>CV/Resume Parser</strong> with a help of small <code>cURL</code> hack on rchilli CV Parser. It allowed the user to upload his resume and getting his details automagically filled in the form.</p></li>
+<li><p>On the top of everything we also made an <strong>Android App</strong> which again does all the above things.</p></li>
+</ul>
+
+
+<p><strong>You can find the code on <a href="https://github.com/Gleek/gsfhack">Github</a></strong></p>
+
+<p>The good thing is that our hard work paid off and we won the challenge.
+What&rsquo;s better than a 2 days of coding with free food , infinite Red-Bulls, a cool tablet and a little cash. Well other than that we also got a cool sipper and a t-shirt.</p>
+
+<p>Here&rsquo;s a photo of our team with two of the judges</p>
+
+<p><img src="https://lh3.googleusercontent.com/e6tC7XObOye9I067tEV_k0Hhl5KggZ7V62u1KsWAak6YRSDH3q61c4bVaOen_NaNpD0T_PyEeSiVe-lrrGTivNrTq5EaYKQRZ-gD_oJygYQXiK2LGmkv3wH8lKWxVlB0FGoAy57PCK19m1fIF-C3Vho9fLoIT_MyQFTVihhV_FT6bEL16WwfY_un99vuJSdPRu_ipOf0sijwZJ2g12-bDLJgvfbXw9VHRw9lWe72DSHEh4sE5x5aIOzR_OraKF2isC6lBSTKHvnAdzQu0O2d-sm92w3CJT8QQpklEb-P9bZuUi075lNzhtRdmusL503TlRPY7bvJYHsrlQTTIaLQ2VnTUcdaejI13vxul8XKbxOynVewB9c5rVV61bt9JAG7yx-VKK7IUqGZ2gMhhbvE4E76rX9rvjr0qGjdYG7-2Nk8FMSJGcfdUxiHr790W2TOn5aIXwEnqMyeQHd0V5jCkvSOgivTQSinXZuBst5Lpung2ax-joCVCmWWfUigLaBSNa8roRum6xdhSfUzOqbVle5CgPlThVMc6JkT1qSsQ2cMBRVyKmTyZMluYs0RBIUoztM_YzVHQqvbtLgXIxdKkm6WNZjS6upMng6JO2m0BWmbOhWKezsDalnBLuVJiGuGANGrbz-pvOFKtefjbl9J-82blWUPAd1cj4pQA87xcw=w1016-h366-no" alt="Team Octane" /></p>
+
+<p>You can find the photos on <a href="https://www.facebook.com/GSFINDIAACCELERATOR/albums/719167938135941/">Facebook</a> and some media coverage at <a href="http://yourstory.com/2014/04/gsfhacks/">YourStory</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[From WordPress to Octopress]]></title>
+    <link href="http://gleek.github.io/blog/2014/04/18/from-wordpress-to-octopress/"/>
+    <updated>2014-04-18T20:07:03+05:30</updated>
+    <id>http://gleek.github.io/blog/2014/04/18/from-wordpress-to-octopress</id>
+    <content type="html"><![CDATA[<p><em>This post is about choosing Octopress over <strong>WordPress hosted</strong> blog, it does not talk about WordPress as a framework.</em></p>
+
+<p>It has been a very few days I started this blog. Now I feel a bit of a weird pride in announcing that this may be the last post on the wordpress, it&rsquo;s now hosted on github &ndash; <a href="http://gleek.github.io/">http://gleek.github.io</a> , and powered by Octopress.</p>
+
+<!-- more -->
+
+
+<h3>Why I chose WordPress?</h3>
+
+<p>When I first thought about blogging, the first thing that came to my mind was choosing the right framework for it. Three of them came to my mind, namely Drupal, Wordpress and Octopress. Since I didn&rsquo;t have any reliable hosting at that time and had previous experience with WordPress, I decided to go with blog hosted on Wordpress.com.</p>
+
+<h3>The problems</h3>
+
+<p>What I didn&rsquo;t realize at that time was that <strong>installing and using wordpress, on an owned server, was a lot different that hosting a blog on Wordpress.com.</strong></p>
+
+<p>The main problem is that <strong>I have no desire to empty my pockets on a blog, but still demand full control over it.</strong></p>
+
+<p>WordPress sets up a free blog with a theme, but I had to pay even for the slightest tweak. So most of my problems which weren&rsquo;t expected initially were:</p>
+
+<ul>
+<li>There are a lot of themes which were usable for free, but tweaking the themes is not tolerated without costing you some bucks.</li>
+<li>I couldn&rsquo;t control the back-end of the blog. (I expected that, actually :grin: )</li>
+<li>You can&rsquo;t write JavaScript</li>
+<li>You can&rsquo;t write your CSS without paying a little something. I had to write some inline CSS to make something a little prettier.</li>
+<li>WordPress puts its advertisements at the end of every blog post.</li>
+<li>Custom WordPress plugins cannot be used in the blog.</li>
+</ul>
+
+
+<h3>Switching to Octopress</h3>
+
+<p>Disappointed by WordPress, hosting my blog on Github or Heroku with Octopress seemed to be the only option. Since I keep almost all my projects on github, I chose the same for the blog. There were some initial problems while setting up the blog. But <a href="https://github.com/imathis/octopress/issues">issue queue</a> helped me in solving them.</p>
+
+<p> <strong>Pros</strong></p>
+
+<ul>
+<li>I get the content control over my website. Above mentioned problems in wordpress site such as no JS/CSS support is now solved.</li>
+<li>It&rsquo;s not necessary to be online while you write the blog</li>
+<li>Git is used to manage the blog which makes it easy to manage.</li>
+<li>Static pages makes it incredibly fast.</li>
+<li>Posts are written in Markdown</li>
+</ul>
+
+
+<p><strong>Cons</strong></p>
+
+<ul>
+<li>Initial installation and setup is a bit time-taking.</li>
+<li>Your blog is restricted to your local machine. To use a different machine to blog, you&rsquo;ll have to clone entire blog on it.(Which also eliminates using mobiles for blogging)</li>
+<li>For large websites generating the pages can take some time, though using <code>rake isolate[path/to/post.markdown]</code> and <code>rake integrate</code> may solve the problem if you are working on a single post. Find more on <a href="http://blog.pixelingene.com/2011/09/tips-for-speeding-up-octopress-site-generation/">Pavan&rsquo;s blog</a></li>
+</ul>
+
+
+<p>You can take a look at performance aspect of Octopress on <a href="http://decodize.com/html/moving-from-wordpress-to-octopress/">Praveen&rsquo;s Blog</a>.</p>
+
+<h3>Summary</h3>
+
+<p>Choosing a framework for a Blog is a matter of choice. As far as I am concerned I&rsquo;m satisfied with the results Octopress is giving me. I might remind you that this post was on my experience in blogging at <a href="http://noobpanic.wordpress.com">WordPress</a> and on <a href="http://gleek.github.io">Octopress</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Customizing Emacs]]></title>
+    <link href="http://gleek.github.io/blog/2014/04/10/customizing-emacs/"/>
+    <updated>2014-04-10T18:32:50+05:30</updated>
+    <id>http://gleek.github.io/blog/2014/04/10/customizing-emacs</id>
+    <content type="html"><![CDATA[<p><img src="https://lh3.googleusercontent.com/ARlXYE_wnAvftBBl2UEvu-z9SpH-q3lyYNukRnNRwbUnXt6fGTP304OloJ3sJ3pSlMr_9QnPr_RxKamv65BFkEUqUEKB0TftIzNuOaiabipF1DNMYLzYReB_40Qr2TbbDndKYzeY5-MPUNmyzH9xmsuhWxmpywT4U5ayHJo2-dGy1W7wRlY2kY7QtTvneNt4OqGGZlqsSZLYM3WVcVwWFxBeJzPxirItCLPzRoRNPfdZZRy6k31JS65TU3WYW-7hvOcTuoZ6vDJSj2K3HyD73dpJ7YjNUwmJB9tjNzy7bqUXm5ftnuG14qPKs1Gtz1jpAGESfgafhUeLQL1pvDWP-VBQDLIwYaXr-XFTatPTgalAAPNd66J-cJ_J0O1OkF1DM-KM4RjqDhLkMOT9-RM5fkrG5_Rnibw32yJho_cGYTyk7523_CnePswMWjMtmMrTI4zyrsaRYVqBjfRxwznHExq1nAwuR-NSmP2EeeLvPYFP6ZSyMWyZCga2K0LH6J9-Qa8aHdkneuQ9ti6w0QGEJHr9HinsGuWBuALKd2H0ZlPxrwhOdKSyEIaWgq2mkt0vL653PCK4sN5zGZZte3kc7LL3I4WZhlN1oaRsXbIRTJaLEYhQTYj4BrRDS-59IHAwl2Ddf_AzsF9r7c6cKs-A2DQL2QpM2Nb5gU5Ae05pIw=w270-h217-no" style="display:block;margin:auto; "><br>
+I believe the environment in which one works is directly responsible for one&rsquo;s productivity. It&rsquo;s the reason I think, it&rsquo;s important to choose the right editor, font, etc.</p>
+
+<!-- more -->
+
+
+<p>I used notepad, notepad++ in my Windows days. I have to say I spent a lot of time with notepad++ and it was my favorite at that time. My notepad++ days ended when one of my friends recommended <a title="Sublime Text" href="http://www.sublimetext.com/" target="_blank">Sublime Text</a> to me. It was the best editor I ever had encountered till that time. The most important thing was that &lsquo;it was cross-platform&rsquo;.</p>
+
+<h3>Switching to Emacs</h3>
+
+<p>I switched to Emacs mainly because of it&rsquo;s philosophy, as I am willing to put up with a much steeper learning curve if it makes me more productive or more comfortable in general. Now that some time has passed I&rsquo;m much faster with Emacs than on any other text editor I use (namely Sublime Text, gedit and Vim). The other reason is it&rsquo;s features. Emacs has tonnes of features which are very hard to replicate in other text editors. These may include from Shell mode to IRC-Chat to E-mail to even playing games inside Emacs.</p>
+
+<h3>Things to do after installation</h3>
+
+<ul>
+<li><strong><a href="http://www.emacswiki.org/emacs/CuaMode">Enable CUA Mode</a></strong>:  This basically enables <kbd>Ctrl</kbd>+<kbd>X</kbd>, <kbd>Ctrl</kbd>+<kbd>C</kbd>, <kbd>Ctrl</kbd>+<kbd>V</kbd>, <kbd>Ctrl</kbd>+<kbd>Z</kbd>, <kbd>Shift</kbd>+<kbd>Arrow</kbd> keys. Different key-bindings for such commands are sometimes annoying. Easiest way to do it is Options > Use CUA Keys.</li>
+<li><strong>Hide the Toolbar</strong>: The Toolbar is pretty much useless if you are well versed with the key-bindings. Also it frees up a lot of writing space. You can even disable the Menu Bar (can be accessed by <kbd>F10</kbd>  from inside Emacs).</li>
+<li><strong><a href="http://melpa.milkbox.net">Adding Melpa package Archive</a></strong>: This gives you tonnes of packages you won&rsquo;t find on default archives. There are other managers out there like <a href="http://marmalade-repo.org/" target="_blank">Marmalade</a> which you can add too, but I feel that it&rsquo;s not that frequently updated. But nonetheless you can add both of them.</li>
+<li><strong>Choosing the right theme</strong>: I recommend using a theme which is a bit easy on the eyes such as <a href="http://melpa.milkbox.net/packages/monokai-theme-20140310.1330.el">Monokai</a>, <a href="http://melpa.milkbox.net/packages/zenburn-theme-20140402.547.el" title="">Zenburn</a> or <a href="http://melpa.milkbox.net/packages/solarized-theme-20140409.338.tar">Solarized</a> themes. I recommend you install them from the package manager.</li>
+<li><strong>Choosing the right font</strong>: This is more of a personal choice actually. Any monospace font would do the job. You can refer to <a href="http://hivelogic.com/articles/top-10-programming-fonts">Dan&rsquo;s article</a> or <a href="http://blog.codinghorror.com/revisiting-programming-fonts">Jeff&rsquo;s Blog</a> for more details.</li>
+<li><strong>Making your scroll smooth</strong>: Emacs Scroll will seem a bit weird to some people who are new to it. To remove the jumpy effect of scroll you can add following lines in your .emacs file</li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='scheme'><span class='line'><span class="p">(</span><span class="nf">setq</span> <span class="nv">redisplay-dont-pause</span> <span class="nv">t</span>
+</span><span class='line'>  <span class="nv">scroll-margin</span> <span class="mi">1</span>
+</span><span class='line'>  <span class="nv">scroll-step</span> <span class="mi">1</span>
+</span><span class='line'>  <span class="nv">scroll-conservatively</span> <span class="mi">10000</span>
+</span><span class='line'>  <span class="nv">scroll-preserve-screen-position</span> <span class="mi">1</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Well these are some basic customization which should be done by everyone using Emacs. You can add more features to Emacs by simply searching the package archive.</p>
+
+<p>If you&rsquo;re a confused with the basic key-bindings for navigation, you may refer to the <a href="http://www.emacswiki.org/emacs/EmacsNewbieKeyReference">Emacs Wiki page</a>.</p>
+
+<p>Finally, once you really get the hang of Emacs, it&rsquo;s basically like dark magic. Check out some videos on the <a href="http://emacsrocks.com">Emacs rocks page</a> to see this magic in action.</p>
+
+<p>If you&rsquo;re addicted to vi there&rsquo;s a funny song on GNU&rsquo;s website : <a href="http://www.gnu.org/fun/jokes/vi.song.html">&lsquo;Addicted to vi&rsquo;</a> :stuck_out_tongue:</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Automatically Changing desktop background on gnome-shell]]></title>
+    <link href="http://gleek.github.io/blog/2014/03/26/automatically-changing-desktop-background-on-gnome-shell/"/>
+    <updated>2014-03-26T17:53:27+05:30</updated>
+    <id>http://gleek.github.io/blog/2014/03/26/automatically-changing-desktop-background-on-gnome-shell</id>
+    <content type="html"><![CDATA[<p><em>Click <a href="https://github.com/Gleek/gnome_wall_changer/archive/master.zip" title="gnome_wall_change.zip(Github)">here</a> to download the scripts directly, or view them on <a href="https://github.com/Gleek/gnome_wall_changer">Github</a></em>
+<img src="https://lh3.googleusercontent.com/NGCDBc6q7d4KsJ5OQft2nhe0RnglzsBVbgOGZpdEMunjopdwxg5CmzMbgYA-7GpkHX3P5xVFOOR2k300r3smFScPSX-xWsaBOmHuJL5r24OstQDIuqFbsUZ0pxwjcCoV0jQvD2azdKkCWwX7IB4wB78M8_xlW6wb4fLTn26uHzSHltTAtuapfJE5pMvzuPAMb5Af0A2I8bn-6KvjoVazUT_qMhBFcIqBLT_OjSKK8f04sDbVarExlNA5cvxwujLgNLFKrLneYNkXBV72g_8AiY3Sj20vEOG-Nqbt4FY0sxBavgWuE62bfngKaWpcIuEdlgJDzXVb0hLsO_XHulyWKZqsEnZmPTpeZTXbgwXOW831bU7FU9zWamsCxDAyQJP9361V-xqMIut-5jnT2g86ESIks1xVZxkO83RClmKiwmM3b1rq9hZuMR9DVuVFjDBdQcvVBIEWyKPAIi39-26AkblTir_AXZcEeAju_dNamBiyQuZ6-Pf_wykzTNZlXt1aR8LzoIYABCc5CrZxrft4rnj2U7M3_v4-SVmzq3bqqV5OKIONgZkMHpAZxTnGEzToNThcyxZt1Q_lr050p-a8opmObnudB6UElg2x_MdrztotI6Dpsjs6TiHIdLWfur4Zh92uvsedkmV1zY5TKazLMTttGY2yMkVY3YpVAy64gQ=s370" style=" display:block;margin:auto;" width="370"/></p>
+
+<p>One of the main attractions about a system is the desktop background. We tend to choose our background which identifies our interests , are aesthetically pleasing or remind us of our good times.</p>
+
+<p>But the thing with consistency is that it gets boring with time. Wallpapers we once loved, becomes a burden and we find it hard to come back to that wallpaper after getting it on 24×7.</p>
+
+<!-- more -->
+
+
+<p>This is the problem I had. I cancelled out each wallpaper from my list of all wallpapers I had, after I completely sucked out the goodness of a wallpaper with my eyes.</p>
+
+<p>I came up with the idea of automatically changing the wallpaper randomly via some sort of shell script. It&rsquo;s implementation used <code>gsettings</code> to change the desktop wallpaper. It was supposed to run automatically as a cron-job but I couldn&rsquo;t make the cron work. The current implementation uses <code>sleep</code> to get the delay</p>
+
+<p>So a simple wall paper changing script looked like:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c">#!/bin/bash</span>
+</span><span class='line'><span class="nv">image_path</span><span class="o">=</span><span class="nv">$1</span>
+</span><span class='line'><span class="c">#Setting up a path for local storage</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">if</span> <span class="o">[</span> ! -d <span class="s2">&quot;$image_path&quot;</span> <span class="o">]</span>; <span class="k">then</span>
+</span><span class='line'><span class="k">  </span><span class="nb">echo</span> <span class="s2">&quot;Path doesn&#39;t exist (Pass absolute path as parameter)&quot;</span> 1&gt;&amp;2
+</span><span class='line'>  <span class="nb">exit</span>
+</span><span class='line'><span class="k">fi</span>
+</span><span class='line'><span class="nv">local_dir</span><span class="o">=</span><span class="s2">&quot;/home/$(whoami)/.local/wall_change&quot;</span>
+</span><span class='line'><span class="c">#creating local directory</span>
+</span><span class='line'>mkdir -p <span class="nv">$local_dir</span>
+</span><span class='line'><span class="c">#getting name of the picture</span>
+</span><span class='line'><span class="nv">pic</span><span class="o">=</span><span class="k">$(</span>find <span class="nv">$image_path</span> -regextype posix-extended -regex <span class="s2">&quot;(.*\.jpg)|(.*\.png)&quot;</span>|shuf -n1<span class="k">)</span>
+</span><span class='line'><span class="nb">echo</span> <span class="nv">$pic</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">#Storing image in local_dir</span>
+</span><span class='line'><span class="nv">filename</span><span class="o">=</span><span class="k">$(</span>basename <span class="s2">&quot;$pic&quot;</span><span class="k">)</span>
+</span><span class='line'><span class="nv">extension</span><span class="o">=</span><span class="s2">&quot;.${filename##*.}&quot;</span>
+</span><span class='line'><span class="nv">local_wallpaper</span><span class="o">=</span><span class="nv">$local_dir</span>/mywallpaper<span class="nv">$extension</span>
+</span><span class='line'><span class="c">#setting the wallpaper</span>
+</span><span class='line'>cp <span class="s2">&quot;$pic&quot;</span> <span class="nv">$local_wallpaper</span>
+</span><span class='line'><span class="c">#echo $local_wallpaper</span>
+</span><span class='line'><span class="c">#Adding bogus wallpaper (don&#39;t know if this is a gsettings bug or i&#39;m doing some basic flaw)</span>
+</span><span class='line'>gsettings <span class="nb">set </span>org.gnome.desktop.background picture-uri file:/<span class="nv">$local_wallpaper</span>
+</span><span class='line'><span class="c">#try increasing the sleep if wallpaper doesn&#39;t change</span>
+</span><span class='line'>sleep 1;
+</span><span class='line'>gsettings <span class="nb">set </span>org.gnome.desktop.background picture-uri file://<span class="nv">$local_wallpaper</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>You can find the rest of the files on <a href="https://github.com/Gleek/gnome_wall_changer/">Github</a></strong></p>
+
+<p>Have fun with your wallpapers :wink:</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Adding Drupal IRC-Bot to #jmilug]]></title>
+    <link href="http://gleek.github.io/blog/2014/03/24/adding-drupal-irc-bot-to-number-jmilug/"/>
+    <updated>2014-03-24T22:45:47+05:30</updated>
+    <id>http://gleek.github.io/blog/2014/03/24/adding-drupal-irc-bot-to-number-jmilug</id>
+    <content type="html"><![CDATA[<p><img src="https://lh3.googleusercontent.com/AsBXtPDzWf-Mf9c5sMP4TdzOU_S7dZK7bl8Ly69FFn_wXGoPvos3kPOpmWMaWvMjjItBzbuZwZ-rbhshyasU9RUN_2mLswzfJWsBbmFGReZ-epr8F68KTaEK39qscEeqDIyx9os_4PXNNH-uT_iUuv49_buca3ViqEmKXGJvq0N23fmgj7Lx0zy5SQGQBoCzpbIKMNczMIeIM1ihIx1xyp5TvRblxqDpA-y0mEM34cXIKk1PoMJyt0iT4RSEEhAxWuPIwHECdUP8v2mC5OqaAKDVkIKH8DK7JX8XF19hcNTbtWIHxNXdHEbVC5lf3phrZpmdArWIfga3jOTuRFEmz5Xp8Sqan54h9S62I1n_Lf3__rqT0kawXR3NS0OVUlv45xh-0UUguym2sg1PLaVtXVxiaVtw6vGGko7mSVH6lM5WoUq9XTs3Po7Cz_fdxbsI-dkUIX7mP8Ry1fQ4ltwQXz1DJSDoEeRDMmbqyOkWnBDeSQMxXeaUWYcTqkzxYliASsPuB4CPhEi5pRwPlMjLKaZV1x_xm2BOCwugMNx_p_L1jJh1CtAQXV5WY9-SHgq8Fzc1QZ6oDCpTJVgSGZWZFcXkWSs9l44ISI1FVZtm-RuBJ99Zcrtx=w256-h159-no" title="IRC Screen" alt="IRC" /></p>
+
+<p>One of the main drawbacks of IRC-chat is the absence of logging. This was the main reason why our community JMI-LUG almost stopped using the channel for any discussion, as there was nothing to refer to later.
+  There was a need for a kind of a bot which could save all the logs of the chats we had. Hence, I began my search for any open-source IRC bot to cater our needs.
+I found <a href="http://en.wikipedia.org/wiki/Comparison_of_Internet_Relay_Chat_bots">many bots</a> which could do the task.</p>
+
+<!-- more -->
+
+
+<p>In my research I found a <a href="https://drupal.org/project/bot">bot</a> which could be integrated with Drupal and can be installed as a simple Module. As a matter of fact it is already used to log all official Drupal Channels (you can find it <a href="http://druplicon.info">here</a>). Since, the JMI-LUG website is already on Drupal it was a nice idea to use this one.</p>
+
+<h4>Installing</h4>
+
+<ul>
+<li>Bot can be installed via update manager module of drupal or can be <code>git clone</code>d in the <code>/sites/all/modules/</code> directory.</li>
+<li>Installing the Net_SmartIRC libraries with <code>pear install Net_SmartIRC</code> (make sure to change the owner of the installed libraries)</li>
+<li>Configure the Bot Settings from the configuration Menu.</li>
+<li>Change the permissions from the Modules list.</li>
+<li>Use shell to run <code>drush bot-start &amp;</code> from the Drupal installation directory to start the bot</li>
+</ul>
+
+
+<p>Bang, you&rsquo;re done, have fun with your new bot. The bot can be trained using Botagotchi and adding factoids from the chat.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Migrating to Fedora 20]]></title>
+    <link href="http://gleek.github.io/blog/2014/03/24/migrating-to-fedora-20/"/>
+    <updated>2014-03-24T20:32:50+05:30</updated>
+    <id>http://gleek.github.io/blog/2014/03/24/migrating-to-fedora-20</id>
+    <content type="html"><![CDATA[<p><a href="http://fedoraproject.org/get-fedora"><img src="https://lh3.googleusercontent.com/uqGbIS_J6m_AloaEhWeG0IZ6G4iWSYBUDMJ8kX3aRRxLHhiruma365lgbRW877VHiSbMP1ivNISekZl1aUQGw13Z6SIcZEJ2nqp_Lt-I0UuPfmiypBz7iM8m3vvWD9ijUSB8u0Fa4IbJaXgQdlGCjAP1hBVvPcfVvDgQ4--LvLl18fOLV-5vk-l4zPU4calXUlOaNDGw_dCPLM0RO42YllDiAN669vFCR1g9PIftUhKCE271lXeOZmo4hp_AICCQNppWpQS-mD7I8zYx_BAqvTPdwhPzkHYG-ZU33Jz2N3-uqEGpefU7QaklxXVpBG3-_VmOmwXUNBhOa0LHUVpcTa4JA_lz2D5AcwhwAGMyEbjaTAAOjI2zxrg9wuF6R8nitmQREcfs4R1I5DwLjuOlHLYdgWLHx_AHSd-aB4Lp6Slx29vUvVtgD6MIMQUB_sH60bvT81LM-OTlQbO35yyHXI5ETyePfzcSeblRUN96Ecu3D67xMLdujDfje3t8_7gQkC5IcUpfgYVOukd_bi6kgqMaF2c5_KXD1tpt7PhbnZ9N7hQ8W1uveUdurWZik1NcFs7hMMmJgZjf-0eSqo56vX12_k4D391EAxe1L6hSE9UHzmYFKSZj_FDtD_Q97yg5hn2CC6exVqQZSnVRqkKPXO1vvQRnZFHpvhGapvPIgg=w200-h100-no" alt="Fedora 20" style=" display:block;margin:auto;"></a></p>
+
+<p>I&rsquo;ve been a Fedora Fan-boy ever-since I started using it three years ago and Fedora 17 is the only Linux Based Distro which lasted for more than a year on my laptop. But just as every good thing has to come to an end, my company with Fedora 17 had completed it&rsquo;s lifetime. <!-- more --></p>
+
+<h4>Why did I stick with it ?</h4>
+
+<p>To be honest, I was too scared to move on to a different O.S. because of the compatibility issues which my system has with Linux. To name the few:</p>
+
+<ul>
+<li>Extra media/function keys don&rsquo;t work</li></li>
+<li>Battery Applet can&rsquo;t detect change in battery-charging status</li>
+<li>Linux goes into kernel-panic if connected with Bluetooth Mobile Internet (<a href="http://en.wikipedia.org/wiki/Bluetooth_profile#Dial-up_Networking_Profile_.28DUN.29">DUN</a>)</li>
+<li><del>Wrong Resolution detected by X </del>(Bug Resolved after an update)</li>
+<li>Wi-fi cannot connect to Ad-Hoc network</li>
+<li>Wi-fi cannot create Hotspot</li>
+<li>and many more minor bugs&hellip;..</li>
+</ul>
+
+
+<p>The problem is that every time I install a new linux distro I have to fight with some new even more puzzling bugs, and that is some tough battle to fight. So once I finally settled myself with Fedora 17, I never dared to move to some other O.S.</p>
+
+<h3>Why did I upgrade ?</h3>
+
+<p>Well, all things die with time and so did Fedora 17. Updates started depleting and new packages stalled. Considering these points and applaud for Fedora 20 helped me to move.</p>
+
+<h3>How ?</h3>
+
+<p>Once I decided to move on to Fedora 20 , I went researching about the methods and issues people had while upgrading fedora. Most of it was concerned with efi the new &lsquo;use only Windows&rsquo; policy of the hardware vendors&hellip;but that wasn&rsquo;t the case with me. So I moved on.
+I found many ways to upgrade to f20:</p>
+
+<ul>
+<li>Using <a href="http://fedoraproject.org/wiki/FedUp">Fedup</a> (Recommended, but sadly not available for F17 :disappointed: )</li>
+<li>Using <a href="http://fedoraproject.org/wiki/Upgrading_Fedora_using_yum">yum</a> (Highly unstable&hellip;not recommended)</li>
+<li>Using <a href="https://fedoraproject.org/wiki/How_to_use_PreUpgrade">pre-upgrade</a></li>
+<li>Installing with boot-media</li>
+</ul>
+
+
+<p>The first two options were rejected instantly because of lack of support.
+<strong>Pre-Upgrade</strong>: looked nice, but <strong>even a fully-updated system didn&rsquo;t show any new releases of Fedora</strong> in the Pre-Upgrade Window.
+Since I was left with no choice, I adapted the old-school method of formatting the partition and re-installing everything&hellip;
+Since I was too desperate to try F20 I didn&rsquo;t think of the consequences and went on with the method.</p>
+
+<ul>
+<li>I backed up my home folder</li>
+<li>Got the name of every package installed with <code>rpm  -qa --qf '%{NAME}\n'</code></li>
+</ul>
+
+
+<p>and when on to format the partition.</p>
+
+<h3>The Dumb Review</h3>
+
+<h4>What&rsquo;s awesome?</h4>
+
+<p>The best thing about Fedora 20 is the new Gnome-Shell 3.10 with much more cleaner interface. The gnome apps are awesome, and lots of bugs have been fixed.
+&ndash; The applications list is sorted out and grouped in a better manner.</li>
+&ndash; I don&rsquo;t know how but all the applications which had problem running on previous versions of Fedora, such as Wine or Conky, worked fine now.</li></p>
+
+<h4>What&rsquo;s not so awesome</h4>
+
+<ul>
+<li>My old GTK+ and Gnome-Shell themes don&rsquo;t work anymore. I had to tweak every old thing a bit.</li></li>
+<li>The top-bar is a bit too compact for me. I would have loved some more options such as my current connectivity status, etc.</li></li>
+<li>It&rsquo;s still a tiring task to actually edit the application list. It would be better if there could be options to add applications to the list.</li></li>
+</ul>
+
+
+<h4>What Sucks?</h4>
+
+<ul>
+<li><strong>That damn Nautilus :</strong>Nautilus is a big setback. They have disabled the backspace key and the search is now recursive. They have also disabled the Split-View. In short they have removed everything I loved about Nautilus.</li>
+</ul>
+
+
+<p>I could find only one solution to fix all the problems &ndash; Degrade to the previous version.</p>
+
+<p><strong>Note: You can fix the backspace feature <a href="http://askubuntu.com/questions/289535/bring-back-backspace-keyboard-shortcuts-on-nautilus-and-thunar" title="">(Ask Ubuntu)</a></strong></p>
+
+<p>I&rsquo;m sure to find some more bugs as I move Along ,and this page will be updated :stuck_out_tongue:</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Fixing Brightness Problems in Linux]]></title>
+    <link href="http://gleek.github.io/blog/2014/03/04/fixing-brightness/"/>
+    <updated>2014-03-04T23:51:09+05:30</updated>
+    <id>http://gleek.github.io/blog/2014/03/04/fixing-brightness</id>
+    <content type="html"><![CDATA[<p><em>You can find the said applications/scripts in my <a href="https://github.com/Gleek/linux-brightness-hack">github repository</a></em>
+ <img style=" display:block;margin:auto;" src="https://lh3.googleusercontent.com/FtDEhFz8XUmpm-kK2gXko-Y6y9SojmlX8TQPmFht1Xx15GY__hKAANFn9kcI-6wuC1sXVfRpIBE3oo-20kHJqkk0DKtQoliaT9_ruWfQVdYOEE3COC0Sc1uHL5q0X8UoCMTZuYUfNeFT1Yoe6wJVK8OOY3QlLGfvUSaUlK32PUnIb-5isnpWbwi2ZfedUYUaFmLJU1MNR3MgslxbJ4Q0TSX2BcSRWu2l_ilCf2CB3zPmXNPkOlPXLPhADIJUVlZsqtNhv7q4s8t9uvTZuMU0NpsXOooN7s7VyvpJ3YOQEYimyMB1Pz7YMNSo3nV5lCXPBn63XkIkigQ9HoYZn5oKW5CLTu3wSqMh2zYoEfvbZIrB0KEA6EMTjiirc4BnKvcs0IOTYahm5r2Ws2x7N2Pr6KnSlOWB1rHVA7dw9cRCKV2qA_tJsjKJSvlPUngWn2STRtuprHvigclTX-hMn7V24P6QTHbPilB3uQRN91iYOrNo7pkLhgo-WmGo6sABukUM4ETwUVSUUgTSsxYrD9aBoZz7WOOZo0Z4awGcDQgNXCzg5Rza81TVmRxa7cwbIEMu21TZUaaEN9Kot3f6q1iaYnos_zFTMhrau4lQVzZRNbrVxx5pY8IjT8i3dix8zPDv-RZgcpm7ExPrxr8_zcSXJbdgay-9cN7AP7yFZxbR9w=s240-no" height="240" width="240" alt="Brightness Gnome" /></p>
+
+<p>This is a problem which I faced since the beginning I installed Linux. My system neither recognized my display settings nor those damn shortcut keys (the combination of <kbd>fn</kbd> keys) worked , so I ended up getting a dark screen (with zero brightness) every time the system starts-up. I couldn&rsquo;t even change the brightness with those faulty shortcut keys!!</p>
+
+<!-- more -->
+
+
+<p>So the obvious question was:</p>
+
+<h4>How the hell did I work with no display?</h4>
+
+<p>I worked in recovery mode!! To be honest I started to hate my Fedora &lsquo;cause of that bulgy screen I would get in 800×600 resolution mode. Since I was a noobier noob at that time I decided to work with that. Later I found a silly workaround by &ldquo;practicing&rdquo; changing brightness in recovery mode and then &ldquo;actually&rdquo; changing brightness without the display on normal mode to get the display :astonished: &hellip;Yeah..Lame!</p>
+
+<h2>The actual workaround..</h2>
+
+<p>I had to find a way to change the brightness of the display by a script of some sort, which can be automated later by a keyboard shortcut or at system start-up.</p>
+
+<h3>Method I : Editing the brightness file</h3>
+
+<p>I found out that the actual brightness file was</p>
+
+<p><code>/sys/class/backlight/acpi_video0/brightness</code></p>
+
+<p>or</p>
+
+<p><code>/sys/class/backlight/intel_backlight/brightness</code></p>
+
+<p>and changing them with root access changes the brightness.
+The problem here was that I wasn&rsquo;t able to give a script root access without it prompting for a password. I moved the other way since I couldn&rsquo;t figure that out.</p>
+
+<p>Recently, I figured out the way to give the scripts root access by editing <code>/etc/sudoers/</code> file and adding</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$user</span> <span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">)</span> NOPASSWD: <span class="nv">$path_to_script</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>where <code>$user</code> is the user-name and <code>$path_to_script</code> is what it says it is!</p>
+
+<h3>Method II: Making a Python Script</h3>
+
+<p>After some researching I found out about the <a href="http://www.freedesktop.org/wiki/Software/dbus/">dbus module of python</a>, which basically could help me <code>get</code> or <code>set</code> the brightness. Using this and a little argument parsing I was successfully able to make a script which changed the brightness.
+<strong>Update:</strong> <em>This method doesn&rsquo;t work on Gnome-Shell v3.10 :worried: . I will update a patch soon.</em></p>
+
+<h3>Method III :Emulating brightness keys with xdotool</h3>
+
+<p>The <a href="http://www.semicomplete.com/projects/xdotool/">Xdotool</a> can be used to emulate the brightness virtual key <code>xdotool key XF86MonBrightnessUp</code> to increase the brightness and <code>xdotool key XF86MonBrightnessDown</code> to decrease the brightness.</p>
+
+<h3>Method IV :Using xbacklight</h3>
+
+<p><a href="http://linux.die.net/man/1/xbacklight">xbacklight</a> is a tool adjust backlight brightness using RandR extension. It&rsquo;s the easiest way to change the brightness, without getting into details. It can be installed from the repository by a simple <code>yum</code> or <code>apt-get</code> command. Brightness can be changed using <code>xbacklight inc 10</code> to increase brightness by 10% and <code>xbacklight dec 10</code> to decrease the brightness by the same amount.</p>
+
+<h3>Method V :When everything else fails&hellip;(using xrandr)</h3>
+
+<p>Recently one of my friends brought his laptop to me with a problem with similar nature, yet was very different. His brightness keys were fully functional but due to some bug his brightness didn&rsquo;t change on changing the brightness through the default applet or the keys. On googling about it a bit, I found that it was a known <a href="https://bugzilla.redhat.com/show_bug.cgi?id=753012">bug</a> with a shell script solution in one of the <a href="https://bugzilla.redhat.com/show_bug.cgi?id=753012#c10">comments</a> using <code>xrandr</code>. I modified the shell script to make it work with keyboard shortcuts and it solved his problem 8) .</p>
+
+<h2>Finally&hellip;Adding keyboard shortcut</h2>
+
+<p>Once you&rsquo;ve got your script ready and working you need to automate it using a keyboard shortcut.
+This can easily be done by Settings&gt;Keyboard&gt;Shortcuts&gt;Custom Shortcuts
+and add your application
+(Warning:Your keyboard shortcut shouldn&rsquo;t overlap with already mapped shortcuts. Example: You can set options such as <kbd>Ctrl</kbd> + <kbd>F3</kbd> to increase and <kbd>Ctrl</kbd>+<kbd>F2</kbd> to decrease brightness)
+<strong>Tip:</strong>You can use <code>gconf-editor</code> for advanced options.</p>
+
+<h3>Adding Scripts at start-up</h3>
+
+<p>If you&rsquo;re having problems with your default brightness setting i.e. your brightness is either too low or too high or maybe you don&rsquo;t require a keyboard shortcut, just a way to change script automatically at start-up. You can add applications at start-up without worrying to add keyboard shortcuts like in the previous method.</p>
+
+<p>There are many ways you can add application at start-up they are given <a href="http://askubuntu.com/questions/48321/how-do-i-start-applications-automatically-on-login">here</a> and <a href="http://stackoverflow.com/questions/7221757/run-automatically-program-on-startup-under-linux-ubuntu">here</a> but what I find simplest is using <code>gnome-session-properties</code> and simply adding the application.
+Once you&rsquo;ve made those changes, you&rsquo;re ready to feel the magic of automatic brightness.</p>
+
+<p><img src="https://lh3.googleusercontent.com/FCv0ym7w-1XAVZasBSuIjfElzXyEn-SG1N9WwSY7ai_OV2zeRHKS0-g00vmgLwlf1XyLlQHilYRjXbGIXxxsod4gmAfCIxdCDAj_xH7rUjCErdkJWlTbmoMBwO0ldFFZiMjgbbz4wFxk-DVU73iO3sKvjp6ykgGFHMaPaJhYlzZ9COxGmYYPRG1qGzw12NbYHj3fnoU1HNEDDPDqpUODtLofFzMNcMHj8plG9vtcUfK_Aw-RzZ_bmE-x1-c7F_EUtUYa5AOGiOW3h3moyjE53CQBd2vb1lxrByEVsfx-c8RJ-JYKjfbLcvAOu-ZWdgavz6Sg6WQduWRV-0ls6XErcPDQsXaVFiQ2rBgQeOoFu-YnbsIzK7Pm5pQ6d9EwN5ZCfswhpQyNJ1lP1wxof5bhZQJWLGPZQSIKGg5ItL72GaDpH0hPjmTmQHe8eHF0k9KCe84PKoB61cFXt9R1G8Y8ToRg2uDWadbMgMKw7Zpm2Jk6y2-687qeMexmGzexIpVge5-sJhOC7aQu6pt7AbqEvustP7x3cmNVq0s230U7z3PkfsDS_SWzJ6kNFVX6FZDOioNKcc8FGg3xcnhID16FkrpNOqM6wEmuDfnwx9FVWvx56FZU2pFYv8L2VVEBjcdszDk4FwYcGavpUE3iHk8jZPj_CUID_JDcC4ChGSOcgQ=s256-no" height="256" width="256" title="Master Joda" alt="Joda" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hello Blogging....]]></title>
+    <link href="http://gleek.github.io/blog/2014/02/19/hello-blogging/"/>
+    <updated>2014-02-19T16:20:21+05:30</updated>
+    <id>http://gleek.github.io/blog/2014/02/19/hello-blogging</id>
+    <content type="html"><![CDATA[<p><img src="https://lh3.googleusercontent.com/8KrC30EJ7aomCKVOKCcPj7PwvqroHH_uuQ0MJKZJwRyptJGUTm9Q_euyV1RvHmPu6CXqxTApGgAgZcjMeQn2lEE3XI6q7pU--tbzNIdEYqLbY6c-6HTdr6V5cdlxgPdSS-duaLd899h1elO3gJRodqnOENLeehHLbJAxQRqDnk9_B8Hl5IVQUmBVtoy-5tr284-n2Radm70OUhZWL1863I_53wLLxKd0TxGWCwpCc7UX4rwj0nZ5A-CjZn3eLJYUx1i6fQoik64eR7wuWyRui8sj2vPCUMQ4N0TKXmt2E1dpfocJwQ6pP2ImkgTNqrRG1cCN_FHl7R_Gd5Z9bk_-YcXE1O3P2qObS9BqzssCldbSrtLvYmDUOvfAiM1uuissxiqBx5pmmLU89wiuh9QSvKy5TwF233oMlCCIS-hDBY7TEKBlgUhFfzpG-ZJNB3xa_R4-f4qeWocPNZ1Bg7Qb1LXweGisES3eYXUV48CrIZ0EJnIxx8IH6K9nrEi4LdARzFxuJIoowVkESQfp4lMzNaZDUzcCShtfdbGAn0eVH-lsrj5-gtIzNy576S0Yk-fQqGuNuXw9Fb2d-bwOuOMe4aSfAkQXwm8RpFabwZ6jZDluKtSdAevA4iC3v8RZgnhodPSu0s2YMPP3RPUzPNL6Gvdnlk3bDh-ze4UiTHtd-w=s300" height="255" width="300" title="Hello World" alt="Hello World" /></p>
+
+<p>So how did it start&hellip;Well what can I say, it was nothing more than a small pulse that waved through my brain&hellip;.<!-- more --></p>
+
+<h4>But why exactly ?</h4>
+
+
+<p>I think the answer to that will be same as the answer of the question that</p>
+
+<blockquote>Why do people ever blog ?</blockquote>
+
+
+<p>It should just be a sack-load of time wasted writing the things you already know. This question vexed my mind too and that&rsquo;s why I turned to my Guru, <a href="https://www.google.com/search?q=why+do+you+blog">Google</a>, just to find my answer <a href="http://www.becomingminimalist.com/15-reasons-i-think-you-should-blog/">here</a>. The only point which intrigued me was the comparisons of blog to a journal.
+Well yeah, I&rsquo;ve always been thinking about a way I could</p>
+
+<blockquote><b>Save everything on what I think and am working on</b></blockquote>
+
+
+<p>maybe this is the way it is supposed to be done. I can simply document my work through a public blog-post, which I can easily find and refer to later. Hopefully other people will find these posts helpful, relevant, or interesting.</p>
+]]></content>
+  </entry>
+  
+</feed>
