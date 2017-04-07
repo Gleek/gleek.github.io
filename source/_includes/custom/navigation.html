@@ -38,22 +38,24 @@
                 {% endif %}
             </ul>
             {% if site.simple_search %}
-                <!--<form class="search navbar-form navbar-right" action="{{ site.simple_search }}" method="GET">
-                    <input type="hidden" name="q" value="site:{{ site.url | shorthand_url }}">
-                    <div class="form-group">
-                        <input class="form-control" type="text" name="q" placeholder="Search">
-                    </div>
-                </form>-->
+              <form class="search navbar-form navbar-right" action="{{ site.simple_search }}" method="GET">
+                <input type="hidden" name="q" value="site:{{ site.url | shorthand_url }}">
+                <div class="form-group">
+                  <input class="form-control" type="text" name="q" placeholder="Search">
+                </div>
+              </form>
             {% endif %}
-	    {% if site.tapir_token %}
-		<form class="search navbar-form navbar-right" method="get" action="{{ root_url }}/search.html">
-		  <fieldset role="search">
-		    <input class="search form-control" name="query" type="text" placeholder="Search" x-webkit-speech />
-		  </fieldset>
-		</form>
-	    {% endif %}
-                <script type="text/javascript">console.log("%c\n\n\n\t\t\tHi there geek!\n\n\t\t\tYou can find the complete source of this blog on http://www.github.com/gleek/gleek.github.io\n\t\t\tRefer to humans.txt for more details\n\n\t\t\tThanks!\n\n\n\n","color: brown; font-size: 18px");</script>
-
+            {% if site.lunr_search == true %}
+              {% include custom/lunr-search/search-form.html %}
+            {% endif %}
+	        {% if site.tapir_token %}
+		      <form class="search navbar-form navbar-right" method="get" action="{{ root_url }}/search.html">
+		        <fieldset role="search">
+		          <input class="search form-control" name="query" type="text" placeholder="Search" x-webkit-speech />
+		        </fieldset>
+		      </form>
+	        {% endif %}
+            <script type="text/javascript">console.log("%c\n\n\n\t\t\tHi there geek!\n\n\t\t\tYou can find the complete source of this blog on http://www.github.com/gleek/gleek.github.io\n\t\t\tRefer to humans.txt for more details\n\n\t\t\tThanks!\n\n\n\n","color: brown; font-size: 18px");</script>
         </div>
     </div>
 </nav>
