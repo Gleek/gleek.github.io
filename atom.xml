@@ -4,7 +4,7 @@
   <title><![CDATA[Umar Ahmad]]></title>
   <link href="http://gleek.github.io/atom.xml" rel="self"/>
   <link href="http://gleek.github.io/"/>
-  <updated>2017-04-08T01:35:17+05:30</updated>
+  <updated>2017-04-09T18:58:33+05:30</updated>
   <id>http://gleek.github.io/</id>
   <author>
     <name><![CDATA[Umar Ahmad]]></name>
@@ -12,6 +12,200 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Installing Fedora on MacBook]]></title>
+    <link href="http://gleek.github.io/blog/2017/04/09/installing-fedora-on-macbook/"/>
+    <updated>2017-04-09T17:03:02+05:30</updated>
+    <id>http://gleek.github.io/blog/2017/04/09/installing-fedora-on-macbook</id>
+    <content type="html"><![CDATA[<p>Recently, I&rsquo;ve been using MacBook Air along with its default OS <a href="https://www.apple.com/in/macos/sierra/">macOS Sierra</a> for about a year.
+I decided to switch back to <a href="https://getfedora.org/">Fedora</a> once I started noticing the decreasing customizability after every update.
+Also there were a lot of API level changes that somehow always ended up breaking my workflow.<!-- more --></p>
+
+<p>The following are the steps with which I got Fedora completely working on my machine.</p>
+
+<h3>Prerequisites</h3>
+
+<ul>
+<li>Get <a href="https://getfedora.org/fmw/FedoraMediaWriter-osx-4.0.8.dmg">Fedora Media Writer</a> and <a href="https://download.fedoraproject.org/pub/fedora/linux/releases/25/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-25-1.3.iso">Fedora Workstation</a> and install the disk image onto a USB</li>
+</ul>
+
+
+<p>Alternatively, you can use <code>dd</code> utility to do the same without the Fedora Media Writer by doing</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>    diskutil list <span class="c"># get the disk name from the output which is something like /dev/disk1</span>
+</span><span class='line'>    diskutil unmountDisk /dev/disk1
+</span><span class='line'>    sudo dd <span class="k">if</span><span class="o">=</span>/Users/umar/Downloads/Fedora-Workstation.iso <span class="nv">of</span><span class="o">=</span>/dev/rdisk1 <span class="nv">bs</span><span class="o">=</span>512k <span class="c"># notice the prepended r in the disk name</span>
+</span><span class='line'>    diskutil unmountDisk /dev/disk1
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Create a partition using DiskUtility
+Mac Hardrive > Partition > + >  Name= Fedora, Size = 30~50 GB</li>
+</ul>
+
+
+<p>Keep in mind, since Mac will only allow a single more partition to be added, keep the partition size as high as possible if you&rsquo;re going to use fedora as your primary OS.</p>
+
+<p>Click on Apply and Confirm to get a new partition.</p>
+
+<h3>Installation</h3>
+
+<ul>
+<li>Insert the USB and reboot the system while pressing the opt/alt key</li>
+</ul>
+
+
+<p>Select the USB disk and Select Start fedora live.</p>
+
+<p>The following screens should be fairly simple</p>
+
+<ul>
+<li>For the installation destination select the main hard-drive and select &ldquo;I would like to make additional space available&rdquo;.</li>
+</ul>
+
+
+<p>Select the Fedora Disk partition click &ldquo;Delete&rdquo; and then on &ldquo;Reclaim space&rdquo; this will automatically reclaim the space and create space for Fedora.</p>
+
+<ul>
+<li>Proceed with installation along with creating a user with password and root password.</li>
+</ul>
+
+
+<h3>Post-Installation</h3>
+
+<ul>
+<li><p>To get the Wi-Fi working by <a href="https://gist.github.com/jamespamplin/7a803fd5be61d4f93e0c5dcdea3f99ee">installing the broadcom drivers</a>
+(You&rsquo;ll need to connect to internet via bluetooth/USB tethering, which thankfully work).</p></li>
+<li><p>Update fedora by running <code>sudo dnf update</code></p></li>
+<li><p>Fix the camera by installing the reverse-engineered <a href="https://github.com/patjak/bcwc_pcie">FaceTime HD drivers</a> by running the following</p></li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">cd</span> /usr/src
+</span><span class='line'>wget https://github.com/patjak/bcwc_pcie/archive/master.zip
+</span><span class='line'>unzip master.zip
+</span><span class='line'>mv bcwc_pcie-master bcwc_pcie
+</span><span class='line'><span class="nb">cd</span> /usr/src/bcwc_pcie/firmware
+</span><span class='line'>make
+</span><span class='line'>sudo make install
+</span><span class='line'><span class="nb">cd</span> /usr/src/bcwc_pcie/
+</span><span class='line'>make clean
+</span><span class='line'>make
+</span><span class='line'>sudo make install
+</span><span class='line'>sudo depmod
+</span><span class='line'>sudo modprobe facetimehd
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Check it by running <a href="https://wiki.gnome.org/Apps/Cheese">Cheese</a>.</p>
+
+<ul>
+<li>Run the following commands to fix the keyboard bugs</li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>xmodmap -e <span class="s2">&quot;keycode  94 = grave asciitilde&quot;</span>
+</span><span class='line'>xset r rate 200 38 <span class="c"># Increase keyboard repeat rate</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You can optionally switch control and CapsLock and make Return act like control when long-pressed by installing <a href="https://github.com/alols/xcape">xcape</a>
+and running</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>setxkbmap -option ctrl:nocaps
+</span><span class='line'>xmodmap -e <span class="s2">&quot;remove Control = Control_R&quot;</span>
+</span><span class='line'>xmodmap -e <span class="s2">&quot;keycode 0x69 = Return&quot;</span>
+</span><span class='line'>xmodmap -e <span class="s2">&quot;keycode 0x24 = Control_R&quot;</span>
+</span><span class='line'>xmodmap -e <span class="s2">&quot;add Control = Control_R&quot;</span>
+</span><span class='line'>xcape -t 10000 -e <span class="s2">&quot;Control_R=Return&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Install Gnome Tweak tool by <code>sudo dnf install gnome-tweak-tool</code></li>
+</ul>
+
+
+<p>Typing > Alt/Win behavior > Alt is Swapped with Win</p>
+
+<ul>
+<li><p>Install Gestures for trackpad by installing <a href="https://github.com/bulletmark/libinput-gestures">libinput gestures</a></p></li>
+<li><p>For battery optimizations install powertop</p></li>
+</ul>
+
+
+<p>Create <code>/etc/systemd/system/powertop.service</code> with this content</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="o">[</span>Unit<span class="o">]</span>
+</span><span class='line'><span class="nv">Description</span><span class="o">=</span>Powertop tunings
+</span><span class='line'>
+</span><span class='line'><span class="o">[</span>Service<span class="o">]</span>
+</span><span class='line'><span class="nv">Type</span><span class="o">=</span>oneshot
+</span><span class='line'><span class="nv">ExecStart</span><span class="o">=</span>/sbin/powertop --auto-tune
+</span><span class='line'>
+</span><span class='line'><span class="o">[</span>Install<span class="o">]</span>
+</span><span class='line'><span class="nv">WantedBy</span><span class="o">=</span>multi-user.target
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Followed by <code>sudo systemctl enable powertop.service</code></p>
+
+<ul>
+<li>Mount the Mac Disk by <code>sudo mount -t "hfsplus" /dev/sda2 /media/mac</code></li>
+</ul>
+
+
+<p>You can get the name of the disk by the Disks program. To have write access to the mount partition</p>
+
+<ul>
+<li><p>Reboot into Mac (by holding the option/alt key)</p></li>
+<li><p>Running <code>diskutil disableJournal /Volumes/TheMacVolumeName</code></p></li>
+<li><p>Reboot into Fedora</p></li>
+<li><p>Then <code>chown</code>, <code>chmod</code> all the files Recursively</p></li>
+</ul>
+
+
+<p>Also you can add it to the your <a href="https://help.ubuntu.com/community/Fstab">fstab</a></p>
+
+<p>You can now enjoy your Fedora install and carry on to install some <a href="http://gleek.github.io/blog/2014/09/27/things-to-do-after-installing-fedora/">other utilities on Fedora</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Things to do after installing Fedora]]></title>
