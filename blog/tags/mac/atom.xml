@@ -4,7 +4,7 @@
   <title><![CDATA[tags:Mac | Umar Ahmad]]></title>
   <link href="http://gleek.github.io/blog/tags/mac/atom.xml" rel="self"/>
   <link href="http://gleek.github.io/"/>
-  <updated>2017-04-09T18:58:33+05:30</updated>
+  <updated>2017-04-15T19:56:51+05:30</updated>
   <id>http://gleek.github.io/</id>
   <author>
     <name><![CDATA[Umar Ahmad]]></name>
@@ -74,7 +74,7 @@ Mac Hardrive > Partition > + >  Name= Fedora, Size = 30~50 GB</p>
 <h3>Post-Installation</h3>
 
 <ul>
-<li><p>To get the Wi-Fi working by <a href="https://gist.github.com/jamespamplin/7a803fd5be61d4f93e0c5dcdea3f99ee">installing the broadcom drivers</a>
+<li><p>Get the Wi-Fi working by <a href="https://gist.github.com/jamespamplin/7a803fd5be61d4f93e0c5dcdea3f99ee">installing the broadcom drivers</a>
 (You&rsquo;ll need to connect to internet via bluetooth/USB tethering, which thankfully work).</p></li>
 <li><p>Update fedora by running <code>sudo dnf update</code></p></li>
 <li><p>Fix the camera by installing the reverse-engineered <a href="https://github.com/patjak/bcwc_pcie">FaceTime HD drivers</a> by running the following</p></li>
@@ -129,7 +129,7 @@ xcape -t 10000 -e "Control_R=Return"
 
 <ul>
 <li><p>Install Gestures for trackpad by installing <a href="https://github.com/bulletmark/libinput-gestures">libinput gestures</a></p></li>
-<li><p>For battery optimizations install powertop</p></li>
+<li><p>For battery optimizations install <code>powertop</code></p></li>
 </ul>
 
 
@@ -163,7 +163,7 @@ Followed by</code>sudo systemctl enable powertop.service`</p>
 </ul>
 
 
-<p>Also you can add it to the your <a href="https://help.ubuntu.com/community/Fstab">fstab</a></p>
+<p>Also, you can add it to the your <a href="https://help.ubuntu.com/community/Fstab">fstab</a></p>
 
 <p>You can now enjoy your Fedora install and carry on to install some <a href="/blog/2014/09/27/things-to-do-after-installing-fedora/">other utilities on Fedora</a>.</p>
 ]]></content>
