@@ -8,8 +8,8 @@ subtitle: Smoke Tests. Logs. and other Boring Stuff!!!
 author: Umar Ahmad
 lunr_search: true
 # simple_search: http://google.com/search
-description: Software development, Web Hacking, Tips, Tricks and Life of a newbie programmer
-keywords: linux, foss, open-source, drupal, web, hack, noob, programming, utility, usability
+description: Software engineering, Web Hacking, Emacs, Tips and Tricks.
+keywords: linux, foss, open-source, drupal, web, hack, programming, utility, usability, emacs
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
 # http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime
