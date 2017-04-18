@@ -268,21 +268,6 @@
   },
   {
     "id": 14,
-    "title": null,
-    "category": null,
-    "tags": [
-
-    ],
-    "url": "/blog/2017/04/11/editing-remote-code-with-emacs/",
-    "content": "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n\t\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n\n<head>\n<title>2017-04-11-editing-remote-code-with-emacs.html</title>\n\n</head>\n\n<body>\n\nzsh:1: command not found: markdown\n\n</body>\n</html>\n",
-    "date": {
-      "year": "2017",
-      "month": "April",
-      "day": "11"
-    }
-  },
-  {
-    "id": 15,
     "title": "Editing remote code with Emacs",
     "category": "Emacs",
     "tags": [

@@ -4,7 +4,7 @@
   <title><![CDATA[Umar Ahmad]]></title>
   <link href="http://gleek.github.io/atom.xml" rel="self"/>
   <link href="http://gleek.github.io/"/>
-  <updated>2017-04-17T20:54:59+05:30</updated>
+  <updated>2017-04-18T12:32:53+05:30</updated>
   <id>http://gleek.github.io/</id>
   <author>
     <name><![CDATA[Umar Ahmad]]></name>
@@ -218,31 +218,6 @@ I prefer installing Emacs on the server and using <code>emacsclient</code> to op
 When working on code, unless it&rsquo;s not fairly large repository, I prefer <code>sshfs</code>.
 Since the current scenario requires me to work on a large codebase where sshfs (kind of) breaks
 I keep everything copied locally and in sync with the server.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Editing Remote Code With Emacs]]></title>
-    <link href="http://gleek.github.io/blog/2017/04/11/editing-remote-code-with-emacs/"/>
-    <updated>2017-04-11T00:00:00+05:30</updated>
-    <id>http://gleek.github.io/blog/2017/04/11/editing-remote-code-with-emacs</id>
-    <content type="html"><![CDATA[<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-<title>2017-04-11-editing-remote-code-with-emacs.html</title>
-
-</head>
-
-<body>
-
-zsh:1: command not found: markdown
-
-</body>
-</html>
 ]]></content>
   </entry>
   
