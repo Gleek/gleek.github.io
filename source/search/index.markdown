@@ -5,19 +5,20 @@ footer: false
 ---
 
 {% include custom/lunr-search/entries.html %}
-
-<script type="text/javascript" src="{{ root_url }}/javascripts/lunr_search.js"></script>
-<script>
-$(document).ready(function() {
+<script type="text/javascript">
+ loadScript("{{ root_url }}/javascripts/lunr_search.js", function() {
+   $(document).ready(function() {
      return new LunrSearch(
-         "#search-query",
-         {
-             indexUrl:"/search.json",
-             results:"#search-results",
-             entries:".entries",
-             template:"#search-results-template"
-         }
+       "#search-query",
+       {
+         indexUrl:"/search.json",
+         results:"#search-results",
+         entries:".entries",
+         template:"#search-results-template"
+       }
      )
- })
+   })
+ }, true);
 </script>
+
 

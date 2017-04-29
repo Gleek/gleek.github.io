@@ -63,10 +63,8 @@
    }
    function deferJquery(method) {
      if (window.jQuery) {
-       console.log('jquery loaded');
        method();
-     }
-     else {
+     } else {
        setTimeout(function() { deferJquery(method) }, 50);
      }
    }
