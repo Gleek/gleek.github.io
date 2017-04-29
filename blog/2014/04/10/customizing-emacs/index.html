@@ -54,10 +54,8 @@
    }
    function deferJquery(method) {
      if (window.jQuery) {
-       console.log('jquery loaded');
        method();
-     }
-     else {
+     } else {
        setTimeout(function() { deferJquery(method) }, 50);
      }
    }
@@ -392,14 +390,6 @@ I believe the environment in which one works is directly responsible for one&rsq
   <script defer type="text/javascript">
    loadScript("/javascripts/github.js", function() {
        $(document).ready(function(){
-           if (!window.jXHR){
-               var jxhr = document.createElement('script');
-               jxhr.type = 'text/javascript';
-               jxhr.src = '/javascripts/libs/jXHR.js';
-               var s = document.getElementsByTagName('script')[0];
-               s.parentNode.insertBefore(jxhr, s);
-           }
-
            github.showRepos({
                user: 'gleek',
                count: 10,

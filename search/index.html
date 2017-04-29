@@ -55,10 +55,8 @@
    }
    function deferJquery(method) {
      if (window.jQuery) {
-       console.log('jquery loaded');
        method();
-     }
-     else {
+     } else {
        setTimeout(function() { deferJquery(method) }, 50);
      }
    }
@@ -184,21 +182,20 @@
   </div>
 </section></p>
 
-<script type="text/javascript" src="/javascripts/lunr_search.js"></script>
-
-
-<script>
-$(document).ready(function() {
+<script type="text/javascript">
+ loadScript("/javascripts/lunr_search.js", function() {
+   $(document).ready(function() {
      return new LunrSearch(
-         "#search-query",
-         {
-             indexUrl:"/search.json",
-             results:"#search-results",
-             entries:".entries",
-             template:"#search-results-template"
-         }
+       "#search-query",
+       {
+         indexUrl:"/search.json",
+         results:"#search-results",
+         entries:".entries",
+         template:"#search-results-template"
+       }
      )
- })
+   })
+ }, true);
 </script>
 
 
@@ -280,14 +277,6 @@ $(document).ready(function() {
   <script defer type="text/javascript">
    loadScript("/javascripts/github.js", function() {
        $(document).ready(function(){
-           if (!window.jXHR){
-               var jxhr = document.createElement('script');
-               jxhr.type = 'text/javascript';
-               jxhr.src = '/javascripts/libs/jXHR.js';
-               var s = document.getElementsByTagName('script')[0];
-               s.parentNode.insertBefore(jxhr, s);
-           }
-
            github.showRepos({
                user: 'gleek',
                count: 10,
