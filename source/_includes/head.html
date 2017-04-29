@@ -30,7 +30,10 @@
   <link href="{{ root_url }}/favicon.png" type="image/png" rel="icon">
   <link href="{{ site.subscribe_rss }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
   <script type="text/javascript">
-   function loadScript(url, callback) {
+   function loadScript(url, callback, requireJquery) {
+     if (typeof requireJquery === 'undefined') {
+       requireJquery = false;
+     }
      var script = document.createElement("script")
      script.type = "text/javascript";
 
@@ -39,22 +42,38 @@
          if (script.readyState == "loaded" ||
              script.readyState == "complete"){
            script.onreadystatechange = null;
-           callback();
+           if (requireJquery) {
+             deferJquery(callback);
+           } else {
+             callback();
+           }
          }
        };
      } else {  //Others
        script.onload = function(){
-         callback();
+         if (requireJquery) {
+           deferJquery(callback);
+         } else {
+           callback();
+         }
        };
      }
-
      script.src = url;
      document.body.appendChild(script);
+   }
+   function deferJquery(method) {
+     if (window.jQuery) {
+       console.log('jquery loaded');
+       method();
+     }
+     else {
+       setTimeout(function() { deferJquery(method) }, 50);
+     }
    }
   </script>
 
   {% include custom/head.html %}
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <!-- <script src="{{ root_url }}/javascripts/libs/jquery/jquery-2.0.3.min.js"></script> -->
   {% include google_analytics.html %}
   {% include custom/lunr-search/search-results-template.html %}
