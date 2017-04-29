@@ -118,7 +118,7 @@ wget https://github.com/bcpierce00/unison/archive/2.48.4.tar.gz
 tar -zxvf 2.48.4.tar.gz
 cd unison-2.48.4
 make NATIVE=true UISTYLE=text
-sudo cp src/fsmonitor.py /usr/local/bin
+sudo cp src/unison-fsmonitor /usr/local/bin
 sudo cp src/unison /usr/local/bin
 hash -r
 ```

@@ -29,10 +29,33 @@
   <link rel="canonical" href="{{ canonical }}">
   <link href="{{ root_url }}/favicon.png" type="image/png" rel="icon">
   <link href="{{ site.subscribe_rss }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
+  <script type="text/javascript">
+   function loadScript(url, callback) {
+     var script = document.createElement("script")
+     script.type = "text/javascript";
+
+     if (script.readyState){  //IE
+       script.onreadystatechange = function(){
+         if (script.readyState == "loaded" ||
+             script.readyState == "complete"){
+           script.onreadystatechange = null;
+           callback();
+         }
+       };
+     } else {  //Others
+       script.onload = function(){
+         callback();
+       };
+     }
+
+     script.src = url;
+     document.body.appendChild(script);
+   }
+  </script>
 
   {% include custom/head.html %}
-
-  <script src="{{ root_url }}/javascripts/libs/jquery/jquery-2.0.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <!-- <script src="{{ root_url }}/javascripts/libs/jquery/jquery-2.0.3.min.js"></script> -->
   {% include google_analytics.html %}
   {% include custom/lunr-search/search-results-template.html %}
 </head>

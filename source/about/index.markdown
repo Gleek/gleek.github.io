@@ -8,7 +8,7 @@ sharing: true
 footer: true
 ---
 
-![Me](http://www.gravatar.com/avatar/4e1fea590dae0abb4fcb5a256e7b8a2f.png "Umar Ahmad")
+![Me](https://www.gravatar.com/avatar/4e1fea590dae0abb4fcb5a256e7b8a2f.png "Umar Ahmad")
 
 I am Umar, a web geek, currently working as a Software Engineer at [Zomato](https://www.zomato.com).
 I love to build and learn new things (also breaking stuff in the process).
