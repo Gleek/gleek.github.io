@@ -22,9 +22,8 @@
   <link href="http://feeds.feedburner.com/UmarAhmad" rel="alternate" title="Umar Ahmad" type="application/atom+xml">
   <script type="text/javascript">
    function loadScript(url, callback, requireJquery) {
-     if (typeof requireJquery === 'undefined') {
-       requireJquery = false;
-     }
+     requireJquery = requireJquery || false;
+     callback = callback || function() {};
      var script = document.createElement("script")
      script.type = "text/javascript";
 
@@ -483,6 +482,9 @@
     <!-- <script async src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script> -->
 <!-- <script async src="/javascripts/modernizr-2.0.js"></script> -->
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+<script defer type="text/javascript">
+ deferJquery(function() {loadScript("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js")});
+</script>
 
 
 <script async type="text/javascript">
