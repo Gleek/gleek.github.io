@@ -59,6 +59,18 @@
        setTimeout(function() { deferJquery(method) }, 50);
      }
    }
+
+   function loadStyle(url) {
+     var cb = function() {
+       var l = document.createElement('link'); l.rel = 'stylesheet';
+       l.href = url;
+       var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+     };
+     var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+               webkitRequestAnimationFrame || msRequestAnimationFrame;
+     if (raf) raf(cb);
+     else window.addEventListener('load', cb);
+   }
   </script>
 
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css" /> -->
@@ -66,7 +78,10 @@
 <!-- <link href="/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
 <!-- <link href="/assets/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"> -->
 <!-- <link href="/assets/bootstrap/dist/css/simplex.min.css" rel="stylesheet" type="text/css"> -->
-<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+<!-- <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css"> -->
+<script type="text/javascript">
+ loadStyle("/stylesheets/screen.css");
+</script>
 
   <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <!-- <script src="/javascripts/libs/jquery/jquery-2.0.3.min.js"></script> -->
