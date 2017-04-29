@@ -21,7 +21,10 @@
   <link href="/favicon.png" type="image/png" rel="icon">
   <link href="http://feeds.feedburner.com/UmarAhmad" rel="alternate" title="Umar Ahmad" type="application/atom+xml">
   <script type="text/javascript">
-   function loadScript(url, callback) {
+   function loadScript(url, callback, requireJquery) {
+     if (typeof requireJquery === 'undefined') {
+       requireJquery = false;
+     }
      var script = document.createElement("script")
      script.type = "text/javascript";
 
@@ -30,26 +33,44 @@
          if (script.readyState == "loaded" ||
              script.readyState == "complete"){
            script.onreadystatechange = null;
-           callback();
+           if (requireJquery) {
+             deferJquery(callback);
+           } else {
+             callback();
+           }
          }
        };
      } else {  //Others
        script.onload = function(){
-         callback();
+         if (requireJquery) {
+           deferJquery(callback);
+         } else {
+           callback();
+         }
        };
      }
-
      script.src = url;
      document.body.appendChild(script);
    }
+   function deferJquery(method) {
+     if (window.jQuery) {
+       console.log('jquery loaded');
+       method();
+     }
+     else {
+       setTimeout(function() { deferJquery(method) }, 50);
+     }
+   }
   </script>
 
-  <link href="/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css" /> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/simplex/bootstrap.min.css" />
+<!-- <link href="/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
 <!-- <link href="/assets/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"> -->
-<link href="/assets/bootstrap/dist/css/simplex.min.css" rel="stylesheet" type="text/css">
+<!-- <link href="/assets/bootstrap/dist/css/simplex.min.css" rel="stylesheet" type="text/css"> -->
 <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <!-- <script src="/javascripts/libs/jquery/jquery-2.0.3.min.js"></script> -->
   
   <script async type="text/javascript">
@@ -178,7 +199,7 @@
   </header>
 
 
-<div class="entry-content clearfix"><p><img src="https://lh3.googleusercontent.com/e2fih0IuM8f-R7zU5rhRsdQx2DY8T_izv8XnDl3yRyAGZPMxo8QimbtUty0_U3b1HqsSfNk7Ts70lkZV9nADD65cTXw3sC8FhJKk6TPzw4kBHpIjPRmcMwkSseqM_5FFnPUm1tybTMD-Jp8O_LVfhAVccNbWnKwqIH24-Nupobe8C-qa8SfW3LSH3QrfrDiSzcy-OGq-VJmItUzzB0OKzoiGBzMEs0s23LDwtK-anp3r2plwmXsC55UYG7QeqW794LAl_tC6fWiObFrTMRNFAPRR0aJN4F5C438X8gnoWs27TJQEOHjEMIx1ONmBKhPtWAeLgjcIivKAQfwjCUzMepMYMepBLXSW3h1FIyW1GXZK7j0J244UTjJ42hfnmTawIvr1DD7zX8tLJxEf9x_E8VYIogAKywJweEzN100W9rW-KjpbsY4mLTPBAfaBoyIatMocLZGi1RtXF1y8gHQAdNOC9E3vnwFAxey2Lw30l1cSnPw8YYBHZecjekuvR0LwAlq0Lpo8nTsSsZU6blgXFFd1kg8Wd7ybr9WzuXlpdSOD6VEiD85_fFErPSoYsfSRJzn_N1J3P7T53hNBERYpx92D_D0R1YRGbVGx07gds_dnO_uiOrD_ujwedi1ucvWexIoIPgzmDZLOTbyKHeQtZwDZM-GNeqpriCYuaaInqQ=w1137-h758-no" style="display:block;margin:auto; height:450px;"></p>
+<div class="entry-content clearfix"><p><img src="https://lh3.googleusercontent.com/e2fih0IuM8f-R7zU5rhRsdQx2DY8T_izv8XnDl3yRyAGZPMxo8QimbtUty0_U3b1HqsSfNk7Ts70lkZV9nADD65cTXw3sC8FhJKk6TPzw4kBHpIjPRmcMwkSseqM_5FFnPUm1tybTMD-Jp8O_LVfhAVccNbWnKwqIH24-Nupobe8C-qa8SfW3LSH3QrfrDiSzcy-OGq-VJmItUzzB0OKzoiGBzMEs0s23LDwtK-anp3r2plwmXsC55UYG7QeqW794LAl_tC6fWiObFrTMRNFAPRR0aJN4F5C438X8gnoWs27TJQEOHjEMIx1ONmBKhPtWAeLgjcIivKAQfwjCUzMepMYMepBLXSW3h1FIyW1GXZK7j0J244UTjJ42hfnmTawIvr1DD7zX8tLJxEf9x_E8VYIogAKywJweEzN100W9rW-KjpbsY4mLTPBAfaBoyIatMocLZGi1RtXF1y8gHQAdNOC9E3vnwFAxey2Lw30l1cSnPw8YYBHZecjekuvR0LwAlq0Lpo8nTsSsZU6blgXFFd1kg8Wd7ybr9WzuXlpdSOD6VEiD85_fFErPSoYsfSRJzn_N1J3P7T53hNBERYpx92D_D0R1YRGbVGx07gds_dnO_uiOrD_ujwedi1ucvWexIoIPgzmDZLOTbyKHeQtZwDZM-GNeqpriCYuaaInqQ=h450-no" style="display:block;margin:auto;"></p>
 
 <br>
 
@@ -416,7 +437,7 @@
                target: '#gh_repos'
            });
        });
-   });
+   }, true);
   </script>
 </section>
 
@@ -454,8 +475,9 @@
 
 </div>
 </footer>
-    <script async src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="/javascripts/modernizr-2.0.js"></script>
+    <!-- <script async src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script> -->
+<!-- <script async src="/javascripts/modernizr-2.0.js"></script> -->
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 
 
 <script async type="text/javascript">

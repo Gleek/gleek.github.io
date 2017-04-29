@@ -22,7 +22,10 @@
   <link href="/favicon.png" type="image/png" rel="icon">
   <link href="http://feeds.feedburner.com/UmarAhmad" rel="alternate" title="Umar Ahmad" type="application/atom+xml">
   <script type="text/javascript">
-   function loadScript(url, callback) {
+   function loadScript(url, callback, requireJquery) {
+     if (typeof requireJquery === 'undefined') {
+       requireJquery = false;
+     }
      var script = document.createElement("script")
      script.type = "text/javascript";
 
@@ -31,26 +34,44 @@
          if (script.readyState == "loaded" ||
              script.readyState == "complete"){
            script.onreadystatechange = null;
-           callback();
+           if (requireJquery) {
+             deferJquery(callback);
+           } else {
+             callback();
+           }
          }
        };
      } else {  //Others
        script.onload = function(){
-         callback();
+         if (requireJquery) {
+           deferJquery(callback);
+         } else {
+           callback();
+         }
        };
      }
-
      script.src = url;
      document.body.appendChild(script);
    }
+   function deferJquery(method) {
+     if (window.jQuery) {
+       console.log('jquery loaded');
+       method();
+     }
+     else {
+       setTimeout(function() { deferJquery(method) }, 50);
+     }
+   }
   </script>
 
-  <link href="/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css" /> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/simplex/bootstrap.min.css" />
+<!-- <link href="/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
 <!-- <link href="/assets/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"> -->
-<link href="/assets/bootstrap/dist/css/simplex.min.css" rel="stylesheet" type="text/css">
+<!-- <link href="/assets/bootstrap/dist/css/simplex.min.css" rel="stylesheet" type="text/css"> -->
 <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <!-- <script src="/javascripts/libs/jquery/jquery-2.0.3.min.js"></script> -->
   
   <script async type="text/javascript">
@@ -396,7 +417,7 @@
                target: '#gh_repos'
            });
        });
-   });
+   }, true);
   </script>
 </section>
 
@@ -434,8 +455,9 @@
 
 </div>
 </footer>
-    <script async src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="/javascripts/modernizr-2.0.js"></script>
+    <!-- <script async src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script> -->
+<!-- <script async src="/javascripts/modernizr-2.0.js"></script> -->
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 
 
 <script async type="text/javascript">
