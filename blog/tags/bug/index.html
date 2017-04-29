@@ -21,16 +21,39 @@
   <link rel="canonical" href="http://gleek.github.ioblog/tags/bug">
   <link href="/favicon.png" type="image/png" rel="icon">
   <link href="http://feeds.feedburner.com/UmarAhmad" rel="alternate" title="Umar Ahmad" type="application/atom+xml">
+  <script type="text/javascript">
+   function loadScript(url, callback) {
+     var script = document.createElement("script")
+     script.type = "text/javascript";
+
+     if (script.readyState){  //IE
+       script.onreadystatechange = function(){
+         if (script.readyState == "loaded" ||
+             script.readyState == "complete"){
+           script.onreadystatechange = null;
+           callback();
+         }
+       };
+     } else {  //Others
+       script.onload = function(){
+         callback();
+       };
+     }
+
+     script.src = url;
+     document.body.appendChild(script);
+   }
+  </script>
 
   <link href="/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <!-- <link href="/assets/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"> -->
 <link href="/assets/bootstrap/dist/css/simplex.min.css" rel="stylesheet" type="text/css">
 <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 
-
-  <script src="/javascripts/libs/jquery/jquery-2.0.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <!-- <script src="/javascripts/libs/jquery/jquery-2.0.3.min.js"></script> -->
   
-  <script type="text/javascript">
+  <script async type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-49953720-1']);
     _gaq.push(['_trackPageview']);
@@ -111,7 +134,7 @@
 
             
 	        
-            <script type="text/javascript">console.log("%c\n\n\n\t\t\tHi there geek!\n\n\t\t\tYou can find the complete source of this blog on http://www.github.com/gleek/gleek.github.io\n\t\t\tRefer to humans.txt for more details\n\n\t\t\tThanks!\n\n\n\n","color: brown; font-size: 18px");</script>
+            <script async type="text/javascript">console.log("%c\n\n\n\t\t\tHi there geek!\n\n\t\t\tYou can find the complete source of this blog on http://www.github.com/gleek/gleek.github.io\n\t\t\tRefer to humans.txt for more details\n\n\t\t\tThanks!\n\n\n\n","color: brown; font-size: 18px");</script>
         </div>
     </div>
 </nav>
@@ -191,7 +214,7 @@
     <h3 class="panel-title">About Me</h3>
   </div>
   <div class="panel-body">
-    <img src="http://www.gravatar.com/avatar/4e1fea590dae0abb4fcb5a256e7b8a2f.png" alt="Me" class="img-circle" style="display: block; float: left; margin-right: 10px;">
+    <img src="https://www.gravatar.com/avatar/4e1fea590dae0abb4fcb5a256e7b8a2f.png" alt="Me" class="img-circle" style="display: block; float: left; margin-right: 10px;">
     <span>Hi,I'm Umar, a web geek!</span><br>
     <a href="/about/index.html">Read all the boring stuff...</a>
     <div style="display: none;">
@@ -250,25 +273,26 @@
       <a href="https://github.com/gleek">@gleek</a> on GitHub
     </div>
   
-  <script type="text/javascript">
-    $(document).ready(function(){
-        if (!window.jXHR){
-            var jxhr = document.createElement('script');
-            jxhr.type = 'text/javascript';
-            jxhr.src = '/javascripts/libs/jXHR.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(jxhr, s);
-        }
+  <script defer type="text/javascript">
+   loadScript("/javascripts/github.js", function() {
+       $(document).ready(function(){
+           if (!window.jXHR){
+               var jxhr = document.createElement('script');
+               jxhr.type = 'text/javascript';
+               jxhr.src = '/javascripts/libs/jXHR.js';
+               var s = document.getElementsByTagName('script')[0];
+               s.parentNode.insertBefore(jxhr, s);
+           }
 
-        github.showRepos({
-            user: 'gleek',
-            count: 10,
-            skip_forks: true,
-            target: '#gh_repos'
-        });
-    });
+           github.showRepos({
+               user: 'gleek',
+               count: 10,
+               skip_forks: true,
+               target: '#gh_repos'
+           });
+       });
+   });
   </script>
-  <script src="/javascripts/github.js" type="text/javascript"> </script>
 </section>
 
 
@@ -278,7 +302,7 @@
   <div class="panel-body">
     <h1>
       <a href="https://plus.google.com/103949851787406544998?rel=author">
-        <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+        <img src="https://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
         Google+
       </a>
     </h1>
@@ -305,11 +329,11 @@
 
 </div>
 </footer>
-    <script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script async src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/javascripts/modernizr-2.0.js"></script>
 
 
-<script type="text/javascript">
+<script async type="text/javascript">
       var disqus_shortname = 'umar-ahmad';
       
         
