@@ -1,24 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Umar Ahmad</title>
+    <title>Blog on Umar Ahmad</title>
     <link>https://umarahmad.xyz/</link>
-    <description>Recent content on Umar Ahmad</description>
+    <description>Recent content in Blog on Umar Ahmad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 11 Apr 2017 22:56:54 +0530</lastBuildDate><atom:link href="https://umarahmad.xyz/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About</title>
-      <link>https://umarahmad.xyz/about/</link>
-      <pubDate>Sat, 23 Jan 2021 05:35:22 +0530</pubDate>
-      
-      <guid>https://umarahmad.xyz/about/</guid>
-      <description>My name is Umar Ahmad. I work as a software engineer in Zomato.
- I spend most of my time inside Emacs. Discovering and learning something new almost every time I sit down for change in my config. Hopefully, this blog will contain some of those learnings.
- Speaking of config, you can find my dotfiles and my emacs config on github
-Blog   This blog is built with Hugo and uses a slightly modified BearBlog theme.</description>
-    </item>
-    
     <item>
       <title>Editing remote code with Emacs</title>
       <link>https://umarahmad.xyz/blog/editing-remote-code-with-emacs/</link>
