@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Automatically Changing desktop background on gnome-shell | Umar Ahmad</title>
+<meta name="title" content="Automatically Changing desktop background on gnome-shell" />
+<meta name="description" content="Guide and Shell Script to automatically change desktop background" />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="Automatically Changing desktop background on gnome-shell" />
+<meta property="og:description" content="Guide and Shell Script to automatically change desktop background" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://umarahmad.xyz/blog/automatically-changing-desktop-background-on-gnome-shell/" />
+<meta property="article:published_time" content="2014-03-26T17:53:27+05:30" />
+<meta property="article:modified_time" content="2014-03-26T17:53:27+05:30" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Automatically Changing desktop background on gnome-shell"/>
+<meta name="twitter:description" content="Guide and Shell Script to automatically change desktop background"/>
+
+
+
+<meta itemprop="name" content="Automatically Changing desktop background on gnome-shell">
+<meta itemprop="description" content="Guide and Shell Script to automatically change desktop background">
+<meta itemprop="datePublished" content="2014-03-26T17:53:27+05:30" />
+<meta itemprop="dateModified" content="2014-03-26T17:53:27+05:30" />
+<meta itemprop="wordCount" content="297">
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+ body {
+     font-family: Verdana, sans-serif;
+     margin: auto;
+     padding: 20px;
+     max-width: 720px;
+     text-align: left;
+     word-wrap: break-word;
+     overflow-wrap: break-word;
+     line-height: 1.5;
+     background-color: #333;
+     color: #ddd;
+ }
+
+ 
+ 
+ .title {
+     text-decoration: none;
+     border: 0;
+ }
+
+ .title span {
+     font-weight: 400;
+ }
+
+ nav a {
+     margin-right: 10px;
+ }
+
+ textarea {
+     width: 100%;
+     font-size: 16px;
+ }
+
+ input {
+     font-size: 16px;
+ }
+
+ content {
+     line-height: 1.6;
+ }
+
+ table {
+     width: 100%;
+ }
+
+ img {
+     max-width: 100%;
+ }
+
+ code {
+     padding: 2px 5px;
+ }
+
+ pre code {
+     display: block;
+     padding: 20px;
+     white-space: pre-wrap;
+     font-size: 14px;
+ }
+
+ blockquote {
+     border-left: 1px solid #999;
+     color: #ccc;
+     padding-left: 20px;
+     font-style: italic;
+ }
+
+ footer {
+     padding: 25px;
+     text-align: center;
+     color:#808080;
+ }
+
+ .helptext {
+     font-size: small;
+ }
+
+ .errorlist {
+     color: #eba613;
+     font-size: small;
+ }
+
+  
+ ul.blog-posts {
+     list-style-type: none;
+     padding: unset;
+ }
+
+ ul.blog-posts li {
+     display: flex;
+     padding: 2px;
+ }
+
+ ul.blog-posts li span {
+     flex: 0 0 130px;
+ }
+
+ ul.blog-posts li a:visited {
+     color: #8b6fcb;
+ }
+
+
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ strong,
+ b {
+     color: #eee;
+ }
+
+ a {
+     color: #8cc2dd;
+ }
+
+ code {
+     background-color: #282c34;
+ }
+
+ pre code {
+     color: #ddd;
+ }
+
+ 
+ textarea,
+ input {
+     background-color: #252525;
+     color: #ddd;
+ }
+
+ .helptext {
+     color: #aaa;
+ }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Umar Ahmad</h2>
+</a>
+<nav><a href="/">Blog</a>
+
+<a href="/about">About</a>
+</nav>
+</header>
+  <main>
+<h1>Automatically Changing desktop background on gnome-shell</h1>
+<p>
+  <i>
+    <time datetime='2014-03-26' pubdate>
+      26 Mar, 2014
+    </time>
+  </i>
+</p>
+<content>
+  <p><em>Click <a href="https://github.com/Gleek/gnome_wall_changer/archive/master.zip" title="gnome_wall_change.zip(Github)">here</a> to download the scripts directly, or view them on <a href="https://github.com/Gleek/gnome_wall_changer">Github</a></em>
+<img src="https://lh3.googleusercontent.com/NGCDBc6q7d4KsJ5OQft2nhe0RnglzsBVbgOGZpdEMunjopdwxg5CmzMbgYA-7GpkHX3P5xVFOOR2k300r3smFScPSX-xWsaBOmHuJL5r24OstQDIuqFbsUZ0pxwjcCoV0jQvD2azdKkCWwX7IB4wB78M8_xlW6wb4fLTn26uHzSHltTAtuapfJE5pMvzuPAMb5Af0A2I8bn-6KvjoVazUT_qMhBFcIqBLT_OjSKK8f04sDbVarExlNA5cvxwujLgNLFKrLneYNkXBV72g_8AiY3Sj20vEOG-Nqbt4FY0sxBavgWuE62bfngKaWpcIuEdlgJDzXVb0hLsO_XHulyWKZqsEnZmPTpeZTXbgwXOW831bU7FU9zWamsCxDAyQJP9361V-xqMIut-5jnT2g86ESIks1xVZxkO83RClmKiwmM3b1rq9hZuMR9DVuVFjDBdQcvVBIEWyKPAIi39-26AkblTir_AXZcEeAju_dNamBiyQuZ6-Pf_wykzTNZlXt1aR8LzoIYABCc5CrZxrft4rnj2U7M3_v4-SVmzq3bqqV5OKIONgZkMHpAZxTnGEzToNThcyxZt1Q_lr050p-a8opmObnudB6UElg2x_MdrztotI6Dpsjs6TiHIdLWfur4Zh92uvsedkmV1zY5TKazLMTttGY2yMkVY3YpVAy64gQ=s370" alt=""></p>
+<p>One of the main attractions about a system is the desktop background. We tend to choose our background which identifies our interests , are aesthetically pleasing or remind us of our good times.</p>
+<p>But the thing with consistency is that it gets boring with time. Wallpapers we once loved, becomes a burden and we find it hard to come back to that wallpaper after getting it on 24×7.</p>
+<p>This is the problem I had. I cancelled out each wallpaper from my list of all wallpapers I had, after I completely sucked out the goodness of a wallpaper with my eyes.</p>
+<p>I came up with the idea of automatically changing the wallpaper randomly via some sort of shell script. It&rsquo;s implementation used <!-- raw HTML omitted -->gsettings<!-- raw HTML omitted --> to change the desktop wallpaper. It was supposed to run automatically as a cron-job but I couldn&rsquo;t make the cron work. The current implementation uses <!-- raw HTML omitted -->sleep<!-- raw HTML omitted --> to get the delay</p>
+<p>So a simple wall paper changing script looked like:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
+<span style="color:#75715e">#!/bin/bash</span>
+image_path<span style="color:#f92672">=</span>$1
+<span style="color:#75715e"># Setting up a path for local storage</span>
+
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> ! -d <span style="color:#e6db74">&#34;</span>$image_path<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+  echo <span style="color:#e6db74">&#34;Path doesn&#39;t exist (Pass absolute path as parameter)&#34;</span> 1&gt;&amp;<span style="color:#ae81ff">2</span>
+  exit
+<span style="color:#66d9ef">fi</span>
+local_dir<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/home/</span><span style="color:#66d9ef">$(</span>whoami<span style="color:#66d9ef">)</span><span style="color:#e6db74">/.local/wall_change&#34;</span>
+<span style="color:#75715e"># creating local directory</span>
+mkdir -p $local_dir
+<span style="color:#75715e"># getting name of the picture</span>
+pic<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>find $image_path -regextype posix-extended -regex <span style="color:#e6db74">&#34;(.*\.jpg)|(.*\.png)&#34;</span>|shuf -n1<span style="color:#66d9ef">)</span>
+echo $pic
+
+<span style="color:#75715e"># Storing image in local_dir</span>
+filename<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>basename <span style="color:#e6db74">&#34;</span>$pic<span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">)</span>
+extension<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;.</span><span style="color:#e6db74">${</span>filename##*.<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+local_wallpaper<span style="color:#f92672">=</span>$local_dir/mywallpaper$extension
+<span style="color:#75715e"># setting the wallpaper</span>
+cp <span style="color:#e6db74">&#34;</span>$pic<span style="color:#e6db74">&#34;</span> $local_wallpaper
+<span style="color:#75715e"># echo $local_wallpaper</span>
+<span style="color:#75715e"># Adding bogus wallpaper (don&#39;t know if this is a gsettings bug or i&#39;m doing some basic flaw)</span>
+gsettings set org.gnome.desktop.background picture-uri file:/$local_wallpaper
+<span style="color:#75715e"># try increasing the sleep if wallpaper doesn&#39;t change</span>
+sleep 1;
+gsettings set org.gnome.desktop.background picture-uri file://$local_wallpaper
+
+</code></pre></div><p><strong>You can find the rest of the files on <a href="https://github.com/Gleek/gnome_wall_changer/">Github</a></strong></p>
+<p>Have fun with your wallpapers :wink:</p>
+</content>
+<p>
+  
+</p>
+<script src="https://utteranc.es/client.js"
+        repo="gleek/gleek.github.io"
+        issue-term="pathname"
+        label="comment"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+  </main>
+  <footer><small>Copyright(c) - Umar Ahmad. Under GPL or CC BY-SA</small>
+</footer>
+
+    
+</body>
+
+</html>

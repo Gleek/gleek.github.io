@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Migrating to Fedora 20 | Umar Ahmad</title>
+<meta name="title" content="Migrating to Fedora 20" />
+<meta name="description" content="Guide to upgrade to Fedora 20 from Fedora 17" />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="Migrating to Fedora 20" />
+<meta property="og:description" content="Guide to upgrade to Fedora 20 from Fedora 17" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://umarahmad.xyz/blog/migrating-to-fedora-20/" />
+<meta property="article:published_time" content="2014-03-24T20:32:50+05:30" />
+<meta property="article:modified_time" content="2014-03-24T20:32:50+05:30" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Migrating to Fedora 20"/>
+<meta name="twitter:description" content="Guide to upgrade to Fedora 20 from Fedora 17"/>
+
+
+
+<meta itemprop="name" content="Migrating to Fedora 20">
+<meta itemprop="description" content="Guide to upgrade to Fedora 20 from Fedora 17">
+<meta itemprop="datePublished" content="2014-03-24T20:32:50+05:30" />
+<meta itemprop="dateModified" content="2014-03-24T20:32:50+05:30" />
+<meta itemprop="wordCount" content="621">
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+ body {
+     font-family: Verdana, sans-serif;
+     margin: auto;
+     padding: 20px;
+     max-width: 720px;
+     text-align: left;
+     word-wrap: break-word;
+     overflow-wrap: break-word;
+     line-height: 1.5;
+     background-color: #333;
+     color: #ddd;
+ }
+
+ 
+ 
+ .title {
+     text-decoration: none;
+     border: 0;
+ }
+
+ .title span {
+     font-weight: 400;
+ }
+
+ nav a {
+     margin-right: 10px;
+ }
+
+ textarea {
+     width: 100%;
+     font-size: 16px;
+ }
+
+ input {
+     font-size: 16px;
+ }
+
+ content {
+     line-height: 1.6;
+ }
+
+ table {
+     width: 100%;
+ }
+
+ img {
+     max-width: 100%;
+ }
+
+ code {
+     padding: 2px 5px;
+ }
+
+ pre code {
+     display: block;
+     padding: 20px;
+     white-space: pre-wrap;
+     font-size: 14px;
+ }
+
+ blockquote {
+     border-left: 1px solid #999;
+     color: #ccc;
+     padding-left: 20px;
+     font-style: italic;
+ }
+
+ footer {
+     padding: 25px;
+     text-align: center;
+     color:#808080;
+ }
+
+ .helptext {
+     font-size: small;
+ }
+
+ .errorlist {
+     color: #eba613;
+     font-size: small;
+ }
+
+  
+ ul.blog-posts {
+     list-style-type: none;
+     padding: unset;
+ }
+
+ ul.blog-posts li {
+     display: flex;
+     padding: 2px;
+ }
+
+ ul.blog-posts li span {
+     flex: 0 0 130px;
+ }
+
+ ul.blog-posts li a:visited {
+     color: #8b6fcb;
+ }
+
+
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ strong,
+ b {
+     color: #eee;
+ }
+
+ a {
+     color: #8cc2dd;
+ }
+
+ code {
+     background-color: #282c34;
+ }
+
+ pre code {
+     color: #ddd;
+ }
+
+ 
+ textarea,
+ input {
+     background-color: #252525;
+     color: #ddd;
+ }
+
+ .helptext {
+     color: #aaa;
+ }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Umar Ahmad</h2>
+</a>
+<nav><a href="/">Blog</a>
+
+<a href="/about">About</a>
+</nav>
+</header>
+  <main>
+<h1>Migrating to Fedora 20</h1>
+<p>
+  <i>
+    <time datetime='2014-03-24' pubdate>
+      24 Mar, 2014
+    </time>
+  </i>
+</p>
+<content>
+  <p><img src="https://lh3.googleusercontent.com/uqGbIS_J6m_AloaEhWeG0IZ6G4iWSYBUDMJ8kX3aRRxLHhiruma365lgbRW877VHiSbMP1ivNISekZl1aUQGw13Z6SIcZEJ2nqp_Lt-I0UuPfmiypBz7iM8m3vvWD9ijUSB8u0Fa4IbJaXgQdlGCjAP1hBVvPcfVvDgQ4--LvLl18fOLV-5vk-l4zPU4calXUlOaNDGw_dCPLM0RO42YllDiAN669vFCR1g9PIftUhKCE271lXeOZmo4hp_AICCQNppWpQS-mD7I8zYx_BAqvTPdwhPzkHYG-ZU33Jz2N3-uqEGpefU7QaklxXVpBG3-_VmOmwXUNBhOa0LHUVpcTa4JA_lz2D5AcwhwAGMyEbjaTAAOjI2zxrg9wuF6R8nitmQREcfs4R1I5DwLjuOlHLYdgWLHx_AHSd-aB4Lp6Slx29vUvVtgD6MIMQUB_sH60bvT81LM-OTlQbO35yyHXI5ETyePfzcSeblRUN96Ecu3D67xMLdujDfje3t8_7gQkC5IcUpfgYVOukd_bi6kgqMaF2c5_KXD1tpt7PhbnZ9N7hQ8W1uveUdurWZik1NcFs7hMMmJgZjf-0eSqo56vX12_k4D391EAxe1L6hSE9UHzmYFKSZj_FDtD_Q97yg5hn2CC6exVqQZSnVRqkKPXO1vvQRnZFHpvhGapvPIgg=w200-h100-no" alt=""></p>
+<p>I&rsquo;ve been a Fedora Fan-boy ever-since I started using it three years ago and Fedora 17 is the only Linux Based Distro which lasted for more than a year on my laptop. But just as every good thing has to come to an end, my company with Fedora 17 had completed it&rsquo;s lifetime.</p>
+<h4 id="why-did-i-stick-with-it-">Why did I stick with it ?</h4>
+<p>To be honest, I was too scared to move on to a different O.S. because of the compatibility issues which my system has with Linux. To name the few:</p>
+<ul>
+<li>Extra media/function keys don&rsquo;t work</li>
+<li>Battery Applet can&rsquo;t detect change in battery-charging status</li>
+<li>Linux goes into kernel-panic if connected with Bluetooth Mobile Internet ([DUN](<a href="http://en.wikipedia.org/wiki/Bluetooth_profile#">http://en.wikipedia.org/wiki/Bluetooth_profile#</a> Dial-up_Networking_Profile_.28DUN.29))</li>
+<li><del>Wrong Resolution detected by X</del>(Bug Resolved after an update)</li>
+<li>Wi-fi cannot connect to Ad-Hoc network</li>
+<li>Wi-fi cannot create Hotspot</li>
+<li>and many more minor bugs&hellip;..</li>
+</ul>
+<p>The problem is that every time I install a new linux distro I have to fight with some new even more puzzling bugs, and that is some tough battle to fight. So once I finally settled myself with Fedora 17, I never dared to move to some other O.S.</p>
+<h3 id="why-did-i-upgrade-">Why did I upgrade ?</h3>
+<p>Well, all things die with time and so did Fedora 17. Updates started depleting and new packages stalled. Considering these points and applaud for Fedora 20 helped me to move.</p>
+<h3 id="how-">How ?</h3>
+<p>Once I decided to move on to Fedora 20 , I went researching about the methods and issues people had while upgrading fedora. Most of it was concerned with efi the new &lsquo;use only Windows&rsquo; policy of the hardware vendors&hellip;but that wasn&rsquo;t the case with me. So I moved on.
+I found many ways to upgrade to f20:</p>
+<ul>
+<li>Using <a href="http://fedoraproject.org/wiki/FedUp">Fedup</a> (Recommended, but sadly not available for F17 :disappointed: )</li>
+<li>Using <a href="http://fedoraproject.org/wiki/Upgrading_Fedora_using_yum">yum</a> (Highly unstable&hellip;not recommended)</li>
+<li>Using <a href="https://fedoraproject.org/wiki/How_to_use_PreUpgrade">pre-upgrade</a></li>
+<li>Installing with boot-media</li>
+</ul>
+<p>The first two options were rejected instantly because of lack of support.
+<strong>Pre-Upgrade</strong>: looked nice, but <strong>even a fully-updated system didn&rsquo;t show any new releases of Fedora</strong> in the Pre-Upgrade Window.
+Since I was left with no choice, I adapted the old-school method of formatting the partition and re-installing everything&hellip;
+Since I was too desperate to try F20 I didn&rsquo;t think of the consequences and went on with the method.</p>
+<ul>
+<li>I backed up my home folder</li>
+<li>Got the name of every package installed with <code>rpm  -qa --qf '%{NAME}\n'</code></li>
+</ul>
+<p>and when on to format the partition.</p>
+<h3 id="the-dumb-review">The Dumb Review</h3>
+<h4 id="whats-awesome">What&rsquo;s awesome?</h4>
+<p>The best thing about Fedora 20 is the new Gnome-Shell 3.10 with much more cleaner interface. The gnome apps are awesome, and lots of bugs have been fixed.</p>
+<ul>
+<li>The applications list is sorted out and grouped in a better manner.</li>
+<li>I don&rsquo;t know how but all the applications which had problem running on previous versions of Fedora, such as Wine or Conky, worked fine now.</li>
+</ul>
+<h4 id="whats-not-so-awesome">What&rsquo;s not so awesome</h4>
+<ul>
+<li>My old GTK+ and Gnome-Shell themes don&rsquo;t work anymore. I had to tweak every old thing a bit.</li>
+<li>The top-bar is a bit too compact for me. I would have loved some more options such as my current connectivity status, etc.</li>
+<li>It&rsquo;s still a tiring task to actually edit the application list. It would be better if there could be options to add applications to the list.</li>
+</ul>
+<h4 id="what-sucks">What Sucks?</h4>
+<ul>
+<li>**That damn Nautilus :**Nautilus is a big setback. They have disabled the backspace key and the search is now recursive. They have also disabled the Split-View. In short they have removed everything I loved about Nautilus.</li>
+</ul>
+<p>I could find only one solution to fix all the problems - Degrade to the previous version.</p>
+<p><strong>Note: You can fix the backspace feature <a href="http://askubuntu.com/questions/289535/bring-back-backspace-keyboard-shortcuts-on-nautilus-and-thunar%22">(Ask Ubuntu)</a></strong></p>
+<p>I&rsquo;m sure to find some more bugs as I move Along ,and this page will be updated :stuck_out_tongue:</p>
+</content>
+<p>
+  
+</p>
+<script src="https://utteranc.es/client.js"
+        repo="gleek/gleek.github.io"
+        issue-term="pathname"
+        label="comment"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+  </main>
+  <footer><small>Copyright(c) - Umar Ahmad. Under GPL or CC BY-SA</small>
+</footer>
+
+    
+</body>
+
+</html>

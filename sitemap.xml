@@ -1,93 +1,98 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
-    <url>
-        <loc>http://gleek.github.io/blog/2014/02/19/hello-blogging/</loc>
-        <lastmod>2017-04-07T23:26:55+05:30</lastmod>
-    </url>
-    <url>
-        <loc>http://gleek.github.io/blog/2014/03/04/fixing-brightness/</loc>
-        <lastmod>2017-04-07T23:26:55+05:30</lastmod>
-    </url>
-    <url>
-        <loc>http://gleek.github.io/blog/2014/03/24/migrating-to-fedora-20/</loc>
-        <lastmod>2017-04-07T23:26:55+05:30</lastmod>
-    </url>
-    <url>
-        <loc>http://gleek.github.io/blog/2014/03/24/adding-drupal-irc-bot-to-number-jmilug/</loc>
-        <lastmod>2017-04-07T23:26:55+05:30</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://gleek.github.io/blog/2014/03/26/automatically-changing-desktop-background-on-gnome-shell/
-        </loc>
-        <lastmod>2017-04-07T23:26:55+05:30</lastmod>
-    </url>
-    <url>
-        <loc>http://gleek.github.io/blog/2014/04/10/customizing-emacs/</loc>
-        <lastmod>2017-04-07T23:26:55+05:30</lastmod>
-    </url>
-    <url>
-        <loc>http://gleek.github.io/blog/2014/04/18/from-wordpress-to-octopress/</loc>
-        <lastmod>2017-04-07T23:26:55+05:30</lastmod>
-    </url>
-    <url>
-        <loc>http://gleek.github.io/blog/2014/05/08/gsf-hacks/</loc>
-        <lastmod>2017-04-07T23:26:55+05:30</lastmod>
-    </url>
-    <url>
-        <loc>http://gleek.github.io/blog/2014/06/12/gsoc-here-we-go/</loc>
-        <lastmod>2017-04-07T23:26:55+05:30</lastmod>
-    </url>
-    <url>
-        <loc>http://gleek.github.io/blog/2014/06/29/gsoc-midterms-half-over-is-half-left/</loc>
-        <lastmod>2017-04-07T23:26:55+05:30</lastmod>
-    </url>
-    <url>
-        <loc>http://gleek.github.io/blog/2014/07/09/drush-it/</loc>
-        <lastmod>2017-04-07T23:26:55+05:30</lastmod>
-    </url>
-    <url>
-        <loc>http://gleek.github.io/blog/2014/09/05/gsoc-meetup-2014/</loc>
-        <lastmod>2017-04-29T14:31:52+05:30</lastmod>
-    </url>
-    <url>
-        <loc>http://gleek.github.io/blog/2014/09/27/things-to-do-after-installing-fedora/</loc>
-        <lastmod>2017-04-07T23:26:55+05:30</lastmod>
-    </url>
-    <url>
-        <loc>http://gleek.github.io/blog/2017/04/09/installing-fedora-on-macbook/</loc>
-        <lastmod>2017-04-09T19:48:10+05:30</lastmod>
-    </url>
-    <url>
-        <loc>http://gleek.github.io/blog/2017/04/11/editing-remote-code-with-emacs/</loc>
-        <lastmod>2017-04-17T20:54:07+05:30</lastmod>
-    </url>
-    <url>
-        <loc>http://gleek.github.io/search/</loc>
-        <lastmod>2017-04-29T15:06:16+05:30</lastmod>
-    </url>
-    <url>
-        <loc>http://gleek.github.io/robots.txt</loc>
-        <lastmod>2017-04-07T23:26:55+05:30</lastmod>
-    </url>
-    <url>
-        <loc>http://gleek.github.io/atom_search.xml</loc>
-        <lastmod>2017-04-07T23:26:55+05:30</lastmod>
-    </url>
-    <url>
-        <loc>http://gleek.github.io/</loc>
-        <lastmod>2017-04-29T14:31:52+05:30</lastmod>
-    </url>
-    <url>
-        <loc>http://gleek.github.io/about/</loc>
-        <lastmod>2017-04-29T12:05:53+05:30</lastmod>
-    </url>
-    <url>
-        <loc>http://gleek.github.io/blog/archives/tags.html</loc>
-        <lastmod>2017-04-07T23:26:55+05:30</lastmod>
-    </url>
-    <url>
-        <loc>http://gleek.github.io/blog/archives/</loc>
-        <lastmod>2017-04-29T14:31:52+05:30</lastmod>
-    </url>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://umarahmad.xyz/</loc>
+    <lastmod>2017-04-11T22:56:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umarahmad.xyz/blog/editing-remote-code-with-emacs/</loc>
+    <lastmod>2017-04-11T22:56:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umarahmad.xyz/</loc>
+    <lastmod>2017-04-11T22:56:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umarahmad.xyz/blog/installing-fedora-on-macbook/</loc>
+    <lastmod>2017-04-09T17:03:02+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umarahmad.xyz/blog/things-to-do-after-installing-fedora/</loc>
+    <lastmod>2014-09-27T18:34:37+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umarahmad.xyz/blog/gsoc-meetup-2014/</loc>
+    <lastmod>2014-09-05T04:20:39+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umarahmad.xyz/blog/drush-it/</loc>
+    <lastmod>2014-07-09T00:54:05+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umarahmad.xyz/blog/gsoc-midterms-half-over-is-half-left/</loc>
+    <lastmod>2014-06-29T16:30:07+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umarahmad.xyz/blog/gsoc-here-we-go/</loc>
+    <lastmod>2014-06-12T05:45:04+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umarahmad.xyz/blog/gsf-hacks/</loc>
+    <lastmod>2014-05-08T03:01:30+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umarahmad.xyz/blog/from-wordpress-to-octopress/</loc>
+    <lastmod>2014-04-18T20:07:03+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umarahmad.xyz/blog/customizing-emacs/</loc>
+    <lastmod>2014-04-10T18:32:50+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umarahmad.xyz/blog/automatically-changing-desktop-background-on-gnome-shell/</loc>
+    <lastmod>2014-03-26T17:53:27+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umarahmad.xyz/blog/adding-drupal-irc-bot-to-number-jmilug/</loc>
+    <lastmod>2014-03-24T22:45:47+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umarahmad.xyz/blog/migrating-to-fedora-20/</loc>
+    <lastmod>2014-03-24T20:32:50+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umarahmad.xyz/blog/fixing-brightness/</loc>
+    <lastmod>2014-03-04T23:51:09+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umarahmad.xyz/blog/hello-blogging/</loc>
+    <lastmod>2014-02-19T16:20:21+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umarahmad.xyz/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://umarahmad.xyz/tags/</loc>
+  </url>
+  
 </urlset>

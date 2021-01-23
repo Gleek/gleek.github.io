@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fixing Brightness Problems in Linux | Umar Ahmad</title>
+<meta name="title" content="Fixing Brightness Problems in Linux" />
+<meta name="description" content="Tutorial to fix the screen backlight problems with linux" />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="Fixing Brightness Problems in Linux" />
+<meta property="og:description" content="Tutorial to fix the screen backlight problems with linux" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://umarahmad.xyz/blog/fixing-brightness/" />
+<meta property="article:published_time" content="2014-03-04T23:51:09+05:30" />
+<meta property="article:modified_time" content="2014-03-04T23:51:09+05:30" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Fixing Brightness Problems in Linux"/>
+<meta name="twitter:description" content="Tutorial to fix the screen backlight problems with linux"/>
+
+
+
+<meta itemprop="name" content="Fixing Brightness Problems in Linux">
+<meta itemprop="description" content="Tutorial to fix the screen backlight problems with linux">
+<meta itemprop="datePublished" content="2014-03-04T23:51:09+05:30" />
+<meta itemprop="dateModified" content="2014-03-04T23:51:09+05:30" />
+<meta itemprop="wordCount" content="708">
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+ body {
+     font-family: Verdana, sans-serif;
+     margin: auto;
+     padding: 20px;
+     max-width: 720px;
+     text-align: left;
+     word-wrap: break-word;
+     overflow-wrap: break-word;
+     line-height: 1.5;
+     background-color: #333;
+     color: #ddd;
+ }
+
+ 
+ 
+ .title {
+     text-decoration: none;
+     border: 0;
+ }
+
+ .title span {
+     font-weight: 400;
+ }
+
+ nav a {
+     margin-right: 10px;
+ }
+
+ textarea {
+     width: 100%;
+     font-size: 16px;
+ }
+
+ input {
+     font-size: 16px;
+ }
+
+ content {
+     line-height: 1.6;
+ }
+
+ table {
+     width: 100%;
+ }
+
+ img {
+     max-width: 100%;
+ }
+
+ code {
+     padding: 2px 5px;
+ }
+
+ pre code {
+     display: block;
+     padding: 20px;
+     white-space: pre-wrap;
+     font-size: 14px;
+ }
+
+ blockquote {
+     border-left: 1px solid #999;
+     color: #ccc;
+     padding-left: 20px;
+     font-style: italic;
+ }
+
+ footer {
+     padding: 25px;
+     text-align: center;
+     color:#808080;
+ }
+
+ .helptext {
+     font-size: small;
+ }
+
+ .errorlist {
+     color: #eba613;
+     font-size: small;
+ }
+
+  
+ ul.blog-posts {
+     list-style-type: none;
+     padding: unset;
+ }
+
+ ul.blog-posts li {
+     display: flex;
+     padding: 2px;
+ }
+
+ ul.blog-posts li span {
+     flex: 0 0 130px;
+ }
+
+ ul.blog-posts li a:visited {
+     color: #8b6fcb;
+ }
+
+
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ strong,
+ b {
+     color: #eee;
+ }
+
+ a {
+     color: #8cc2dd;
+ }
+
+ code {
+     background-color: #282c34;
+ }
+
+ pre code {
+     color: #ddd;
+ }
+
+ 
+ textarea,
+ input {
+     background-color: #252525;
+     color: #ddd;
+ }
+
+ .helptext {
+     color: #aaa;
+ }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Umar Ahmad</h2>
+</a>
+<nav><a href="/">Blog</a>
+
+<a href="/about">About</a>
+</nav>
+</header>
+  <main>
+<h1>Fixing Brightness Problems in Linux</h1>
+<p>
+  <i>
+    <time datetime='2014-03-04' pubdate>
+      04 Mar, 2014
+    </time>
+  </i>
+</p>
+<content>
+  <p><em>You can find the said applications/scripts in my <a href="https://github.com/Gleek/linux-brightness-hack">github repository</a></em></p>
+<p><img src="https://lh3.googleusercontent.com/FtDEhFz8XUmpm-kK2gXko-Y6y9SojmlX8TQPmFht1Xx15GY__hKAANFn9kcI-6wuC1sXVfRpIBE3oo-20kHJqkk0DKtQoliaT9_ruWfQVdYOEE3COC0Sc1uHL5q0X8UoCMTZuYUfNeFT1Yoe6wJVK8OOY3QlLGfvUSaUlK32PUnIb-5isnpWbwi2ZfedUYUaFmLJU1MNR3MgslxbJ4Q0TSX2BcSRWu2l_ilCf2CB3zPmXNPkOlPXLPhADIJUVlZsqtNhv7q4s8t9uvTZuMU0NpsXOooN7s7VyvpJ3YOQEYimyMB1Pz7YMNSo3nV5lCXPBn63XkIkigQ9HoYZn5oKW5CLTu3wSqMh2zYoEfvbZIrB0KEA6EMTjiirc4BnKvcs0IOTYahm5r2Ws2x7N2Pr6KnSlOWB1rHVA7dw9cRCKV2qA_tJsjKJSvlPUngWn2STRtuprHvigclTX-hMn7V24P6QTHbPilB3uQRN91iYOrNo7pkLhgo-WmGo6sABukUM4ETwUVSUUgTSsxYrD9aBoZz7WOOZo0Z4awGcDQgNXCzg5Rza81TVmRxa7cwbIEMu21TZUaaEN9Kot3f6q1iaYnos_zFTMhrau4lQVzZRNbrVxx5pY8IjT8i3dix8zPDv-RZgcpm7ExPrxr8_zcSXJbdgay-9cN7AP7yFZxbR9w=s240-no" alt=""></p>
+<p>This is a problem which I faced since the beginning I installed Linux. My system neither recognized my display settings nor those damn shortcut keys (the combination of <code>fn</code> keys) worked , so I ended up getting a dark screen (with zero brightness) every time the system starts-up. I couldn&rsquo;t even change the brightness with those faulty shortcut keys!!</p>
+<p>So the obvious question was:</p>
+<h4 id="how-the-hell-did-i-work-with-no-display">How the hell did I work with no display?</h4>
+<p>I worked in recovery mode!! To be honest I started to hate my Fedora &lsquo;cause of that bulgy screen I would get in 800×600 resolution mode. Since I was a noobier noob at that time I decided to work with that. Later I found a silly workaround by &ldquo;practicing&rdquo; changing brightness in recovery mode and then &ldquo;actually&rdquo; changing brightness without the display on normal mode to get the display :astonished: &hellip;Yeah..Lame!</p>
+<h2 id="the-actual-workaround">The actual workaround..</h2>
+<p>I had to find a way to change the brightness of the display by a script of some sort, which can be automated later by a keyboard shortcut or at system start-up.</p>
+<h3 id="method-i--editing-the-brightness-file">Method I : Editing the brightness file</h3>
+<p>I found out that the actual brightness file was</p>
+<p><code>/sys/class/backlight/acpi_video0/brightness</code></p>
+<p>or</p>
+<p><code>/sys/class/backlight/intel_backlight/brightness</code></p>
+<p>and changing them with root access changes the brightness.
+The problem here was that I wasn&rsquo;t able to give a script root access without it prompting for a password. I moved the other way since I couldn&rsquo;t figure that out.</p>
+<p>Recently, I figured out the way to give the scripts root access by editing <code>/etc/sudoers/</code> file and adding</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$user ALL<span style="color:#f92672">=(</span>ALL<span style="color:#f92672">)</span> NOPASSWD: $path_to_script
+</code></pre></div><p>where <code>$user</code> is the user-name and <code>$path_to_script</code> is what it says it is!</p>
+<h3 id="method-ii-making-a-python-script">Method II: Making a Python Script</h3>
+<p>After some researching I found out about the <a href="http://www.freedesktop.org/wiki/Software/dbus/">dbus module of python</a>, which basically could help me <code>get</code> or <code>set</code> the brightness. Using this and a little argument parsing I was successfully able to make a script which changed the brightness.
+<strong>Update:</strong> <em>This method doesn&rsquo;t work on Gnome-Shell v3.10 :worried: . I will update a patch soon.</em></p>
+<h3 id="method-iii-emulating-brightness-keys-with-xdotool">Method III :Emulating brightness keys with xdotool</h3>
+<p>The <a href="http://www.semicomplete.com/projects/xdotool/">Xdotool</a> can be used to emulate the brightness virtual key <code>xdotool key XF86MonBrightnessUp</code> to increase the brightness and <code>xdotool key XF86MonBrightnessDown</code> to decrease the brightness.</p>
+<h3 id="method-iv-using-xbacklight">Method IV :Using xbacklight</h3>
+<p><a href="http://linux.die.net/man/1/xbacklight">xbacklight</a> is a tool adjust backlight brightness using RandR extension. It&rsquo;s the easiest way to change the brightness, without getting into details. It can be installed from the repository by a simple <code>yum</code> or <code>apt-get</code> command. Brightness can be changed using <code>xbacklight inc 10</code> to increase brightness by 10% and <code>xbacklight dec 10</code> to decrease the brightness by the same amount.</p>
+<h3 id="method-v-when-everything-else-failsusing-xrandr">Method V :When everything else fails&hellip;(using xrandr)</h3>
+<p>Recently one of my friends brought his laptop to me with a problem with similar nature, yet was very different. His brightness keys were fully functional but due to some bug his brightness didn&rsquo;t change on changing the brightness through the default applet or the keys. On googling about it a bit, I found that it was a known <a href="https://bugzilla.redhat.com/show_bug.cgi?id=753012">bug</a> with a shell script solution in one of the [comments](<a href="https://bugzilla.redhat.com/show_bug.cgi?id=753012#">https://bugzilla.redhat.com/show_bug.cgi?id=753012#</a> c10) using <code>xrandr</code>. I modified the shell script to make it work with keyboard shortcuts and it solved his problem 8) .</p>
+<h2 id="finallyadding-keyboard-shortcut">Finally&hellip;Adding keyboard shortcut</h2>
+<p>Once you&rsquo;ve got your script ready and working you need to automate it using a keyboard shortcut.
+This can easily be done by Settings&gt;Keyboard&gt;Shortcuts&gt;Custom Shortcuts
+and add your application
+(Warning:Your keyboard shortcut shouldn&rsquo;t overlap with already mapped shortcuts. Example: You can set options such as <code>Ctrl</code> + <code>F3</code> to increase and <code>Ctrl</code>+<code>F2</code> to decrease brightness)
+**Tip:**You can use <code>gconf-editor</code> for advanced options.</p>
+<h3 id="adding-scripts-at-start-up">Adding Scripts at start-up</h3>
+<p>If you&rsquo;re having problems with your default brightness setting i.e. your brightness is either too low or too high or maybe you don&rsquo;t require a keyboard shortcut, just a way to change script automatically at start-up. You can add applications at start-up without worrying to add keyboard shortcuts like in the previous method.</p>
+<p>There are many ways you can add application at start-up they are given <a href="http://askubuntu.com/questions/48321/how-do-i-start-applications-automatically-on-login">here</a> and <a href="http://stackoverflow.com/questions/7221757/run-automatically-program-on-startup-under-linux-ubuntu">here</a> but what I find simplest is using <code>gnome-session-properties</code> and simply adding the application.
+Once you&rsquo;ve made those changes, you&rsquo;re ready to feel the magic of automatic brightness.</p>
+<p><img src="https://lh3.googleusercontent.com/FCv0ym7w-1XAVZasBSuIjfElzXyEn-SG1N9WwSY7ai_OV2zeRHKS0-g00vmgLwlf1XyLlQHilYRjXbGIXxxsod4gmAfCIxdCDAj_xH7rUjCErdkJWlTbmoMBwO0ldFFZiMjgbbz4wFxk-DVU73iO3sKvjp6ykgGFHMaPaJhYlzZ9COxGmYYPRG1qGzw12NbYHj3fnoU1HNEDDPDqpUODtLofFzMNcMHj8plG9vtcUfK_Aw-RzZ_bmE-x1-c7F_EUtUYa5AOGiOW3h3moyjE53CQBd2vb1lxrByEVsfx-c8RJ-JYKjfbLcvAOu-ZWdgavz6Sg6WQduWRV-0ls6XErcPDQsXaVFiQ2rBgQeOoFu-YnbsIzK7Pm5pQ6d9EwN5ZCfswhpQyNJ1lP1wxof5bhZQJWLGPZQSIKGg5ItL72GaDpH0hPjmTmQHe8eHF0k9KCe84PKoB61cFXt9R1G8Y8ToRg2uDWadbMgMKw7Zpm2Jk6y2-687qeMexmGzexIpVge5-sJhOC7aQu6pt7AbqEvustP7x3cmNVq0s230U7z3PkfsDS_SWzJ6kNFVX6FZDOioNKcc8FGg3xcnhID16FkrpNOqM6wEmuDfnwx9FVWvx56FZU2pFYv8L2VVEBjcdszDk4FwYcGavpUE3iHk8jZPj_CUID_JDcC4ChGSOcgQ=s256-no" alt="Joda"></p>
+</content>
+<p>
+  
+</p>
+<script src="https://utteranc.es/client.js"
+        repo="gleek/gleek.github.io"
+        issue-term="pathname"
+        label="comment"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+  </main>
+  <footer><small>Copyright(c) - Umar Ahmad. Under GPL or CC BY-SA</small>
+</footer>
+
+    
+</body>
+
+</html>

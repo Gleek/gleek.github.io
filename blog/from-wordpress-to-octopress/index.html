@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>From WordPress to Octopress | Umar Ahmad</title>
+<meta name="title" content="From WordPress to Octopress" />
+<meta name="description" content="Why I moved from WordPress hosted blog to Octopress" />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="From WordPress to Octopress" />
+<meta property="og:description" content="Why I moved from WordPress hosted blog to Octopress" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://umarahmad.xyz/blog/from-wordpress-to-octopress/" />
+<meta property="article:published_time" content="2014-04-18T20:07:03+05:30" />
+<meta property="article:modified_time" content="2014-04-18T20:07:03+05:30" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="From WordPress to Octopress"/>
+<meta name="twitter:description" content="Why I moved from WordPress hosted blog to Octopress"/>
+
+
+
+<meta itemprop="name" content="From WordPress to Octopress">
+<meta itemprop="description" content="Why I moved from WordPress hosted blog to Octopress">
+<meta itemprop="datePublished" content="2014-04-18T20:07:03+05:30" />
+<meta itemprop="dateModified" content="2014-04-18T20:07:03+05:30" />
+<meta itemprop="wordCount" content="533">
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+ body {
+     font-family: Verdana, sans-serif;
+     margin: auto;
+     padding: 20px;
+     max-width: 720px;
+     text-align: left;
+     word-wrap: break-word;
+     overflow-wrap: break-word;
+     line-height: 1.5;
+     background-color: #333;
+     color: #ddd;
+ }
+
+ 
+ 
+ .title {
+     text-decoration: none;
+     border: 0;
+ }
+
+ .title span {
+     font-weight: 400;
+ }
+
+ nav a {
+     margin-right: 10px;
+ }
+
+ textarea {
+     width: 100%;
+     font-size: 16px;
+ }
+
+ input {
+     font-size: 16px;
+ }
+
+ content {
+     line-height: 1.6;
+ }
+
+ table {
+     width: 100%;
+ }
+
+ img {
+     max-width: 100%;
+ }
+
+ code {
+     padding: 2px 5px;
+ }
+
+ pre code {
+     display: block;
+     padding: 20px;
+     white-space: pre-wrap;
+     font-size: 14px;
+ }
+
+ blockquote {
+     border-left: 1px solid #999;
+     color: #ccc;
+     padding-left: 20px;
+     font-style: italic;
+ }
+
+ footer {
+     padding: 25px;
+     text-align: center;
+     color:#808080;
+ }
+
+ .helptext {
+     font-size: small;
+ }
+
+ .errorlist {
+     color: #eba613;
+     font-size: small;
+ }
+
+  
+ ul.blog-posts {
+     list-style-type: none;
+     padding: unset;
+ }
+
+ ul.blog-posts li {
+     display: flex;
+     padding: 2px;
+ }
+
+ ul.blog-posts li span {
+     flex: 0 0 130px;
+ }
+
+ ul.blog-posts li a:visited {
+     color: #8b6fcb;
+ }
+
+
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ strong,
+ b {
+     color: #eee;
+ }
+
+ a {
+     color: #8cc2dd;
+ }
+
+ code {
+     background-color: #282c34;
+ }
+
+ pre code {
+     color: #ddd;
+ }
+
+ 
+ textarea,
+ input {
+     background-color: #252525;
+     color: #ddd;
+ }
+
+ .helptext {
+     color: #aaa;
+ }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Umar Ahmad</h2>
+</a>
+<nav><a href="/">Blog</a>
+
+<a href="/about">About</a>
+</nav>
+</header>
+  <main>
+<h1>From WordPress to Octopress</h1>
+<p>
+  <i>
+    <time datetime='2014-04-18' pubdate>
+      18 Apr, 2014
+    </time>
+  </i>
+</p>
+<content>
+  <p><em>This post is about choosing Octopress over <strong>WordPress hosted</strong> blog, it does not talk about WordPress as a framework.</em></p>
+<p>It has been a very few days I started this blog. Now I feel a bit of a weird pride in announcing that this may be the last post on the wordpress, it&rsquo;s now hosted on github - <a href="http://gleek.github.io/">http://gleek.github.io</a> , and powered by Octopress.</p>
+<h3 id="why-i-chose-wordpress">Why I chose WordPress?</h3>
+<p>When I first thought about blogging, the first thing that came to my mind was choosing the right framework for it. Three of them came to my mind, namely Drupal, Wordpress and Octopress. Since I didn&rsquo;t have any reliable hosting at that time and had previous experience with WordPress, I decided to go with blog hosted on Wordpress.com.</p>
+<h3 id="the-problems">The problems</h3>
+<p>What I didn&rsquo;t realize at that time was that <strong>installing and using wordpress, on an owned server, was a lot different that hosting a blog on Wordpress.com.</strong></p>
+<p>The main problem is that <strong>I have no desire to empty my pockets on a blog, but still demand full control over it.</strong></p>
+<p>WordPress sets up a free blog with a theme, but I had to pay even for the slightest tweak. So most of my problems which weren&rsquo;t expected initially were:</p>
+<ul>
+<li>There are a lot of themes which were usable for free, but tweaking the themes is not tolerated without costing you some bucks.</li>
+<li>I couldn&rsquo;t control the back-end of the blog. (I expected that, actually :grin: )</li>
+<li>You can&rsquo;t write JavaScript</li>
+<li>You can&rsquo;t write your CSS without paying a little something. I had to write some inline CSS to make something a little prettier.</li>
+<li>WordPress puts its advertisements at the end of every blog post.</li>
+<li>Custom WordPress plugins cannot be used in the blog.</li>
+</ul>
+<h3 id="switching-to-octopress">Switching to Octopress</h3>
+<p>Disappointed by WordPress, hosting my blog on Github or Heroku with Octopress seemed to be the only option. Since I keep almost all my projects on github, I chose the same for the blog. There were some initial problems while setting up the blog. But <a href="https://github.com/imathis/octopress/issues">issue queue</a> helped me in solving them.</p>
+<p><strong>Pros</strong></p>
+<ul>
+<li>I get the content control over my website. Above mentioned problems in wordpress site such as no JS/CSS support is now solved.</li>
+<li>It&rsquo;s not necessary to be online while you write the blog</li>
+<li>Git is used to manage the blog which makes it easy to manage.</li>
+<li>Static pages makes it incredibly fast.</li>
+<li>Posts are written in Markdown</li>
+</ul>
+<p><strong>Cons</strong></p>
+<ul>
+<li>Initial installation and setup is a bit time-taking.</li>
+<li>Your blog is restricted to your local machine. To use a different machine to blog, you&rsquo;ll have to clone entire blog on it.(Which also eliminates using mobiles for blogging)</li>
+<li>For large websites generating the pages can take some time, though using <code>rake isolate[path/to/post.markdown]</code> and <code>rake integrate</code> may solve the problem if you are working on a single post. Find more on <a href="http://blog.pixelingene.com/2011/09/tips-for-speeding-up-octopress-site-generation/">Pavan&rsquo;s blog</a></li>
+</ul>
+<p>You can take a look at performance aspect of Octopress on <a href="http://decodize.com/html/moving-from-wordpress-to-octopress/">Praveen&rsquo;s Blog</a>.</p>
+<h3 id="summary">Summary</h3>
+<p>Choosing a framework for a Blog is a matter of choice. As far as I am concerned I&rsquo;m satisfied with the results Octopress is giving me. I might remind you that this post was on my experience in blogging at <a href="http://noobpanic.wordpress.com">WordPress</a> and on <a href="http://gleek.github.io">Octopress</a>.</p>
+</content>
+<p>
+  
+</p>
+<script src="https://utteranc.es/client.js"
+        repo="gleek/gleek.github.io"
+        issue-term="pathname"
+        label="comment"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+  </main>
+  <footer><small>Copyright(c) - Umar Ahmad. Under GPL or CC BY-SA</small>
+</footer>
+
+    
+</body>
+
+</html>

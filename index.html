@@ -1,875 +1,372 @@
 <!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<html lang="en-us">
+
 <head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
-  <title>Umar Ahmad</title>
-  <meta name="author" content="Umar Ahmad">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Blog | Umar Ahmad</title>
+<meta name="title" content="Blog" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
 
-  <meta name="description" content=" Software engineering, Web Hacking, Emacs, Tips and Tricks. ">
+
+<meta property="og:title" content="Blog" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://umarahmad.xyz/" />
+<meta property="og:updated_time" content="2017-04-11T22:56:54+05:30" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Blog"/>
+<meta name="twitter:description" content=""/>
+
+
+
+<meta itemprop="name" content="Blog">
+<meta itemprop="description" content="">
+
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <link rel="alternate" type="application/rss+xml" href="https://umarahmad.xyz/index.xml" title="Umar Ahmad" />
+  <style>
+ body {
+     font-family: Verdana, sans-serif;
+     margin: auto;
+     padding: 20px;
+     max-width: 720px;
+     text-align: left;
+     word-wrap: break-word;
+     overflow-wrap: break-word;
+     line-height: 1.5;
+     background-color: #333;
+     color: #ddd;
+ }
+
+ 
+ 
+ .title {
+     text-decoration: none;
+     border: 0;
+ }
+
+ .title span {
+     font-weight: 400;
+ }
+
+ nav a {
+     margin-right: 10px;
+ }
+
+ textarea {
+     width: 100%;
+     font-size: 16px;
+ }
+
+ input {
+     font-size: 16px;
+ }
+
+ content {
+     line-height: 1.6;
+ }
+
+ table {
+     width: 100%;
+ }
+
+ img {
+     max-width: 100%;
+ }
+
+ code {
+     padding: 2px 5px;
+ }
+
+ pre code {
+     display: block;
+     padding: 20px;
+     white-space: pre-wrap;
+     font-size: 14px;
+ }
+
+ blockquote {
+     border-left: 1px solid #999;
+     color: #ccc;
+     padding-left: 20px;
+     font-style: italic;
+ }
+
+ footer {
+     padding: 25px;
+     text-align: center;
+     color:#808080;
+ }
+
+ .helptext {
+     font-size: small;
+ }
+
+ .errorlist {
+     color: #eba613;
+     font-size: small;
+ }
 
   
-  <meta name="keywords" content="">
+ ul.blog-posts {
+     list-style-type: none;
+     padding: unset;
+ }
 
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+ ul.blog-posts li {
+     display: flex;
+     padding: 2px;
+ }
 
-  
-  <link rel="canonical" href="http://gleek.github.io">
-  <link href="/favicon.png" type="image/png" rel="icon">
-  <link href="http://feeds.feedburner.com/UmarAhmad" rel="alternate" title="Umar Ahmad" type="application/atom+xml">
-  <script type="text/javascript">
-   function loadScript(url, callback, requireJquery) {
-     requireJquery = requireJquery || false;
-     callback = callback || function() {};
-     var script = document.createElement("script")
-     script.type = "text/javascript";
+ ul.blog-posts li span {
+     flex: 0 0 130px;
+ }
 
-     if (script.readyState){  //IE
-       script.onreadystatechange = function(){
-         if (script.readyState == "loaded" ||
-             script.readyState == "complete"){
-           script.onreadystatechange = null;
-           if (requireJquery) {
-             deferJquery(callback);
-           } else {
-             callback();
-           }
-         }
-       };
-     } else {  //Others
-       script.onload = function(){
-         if (requireJquery) {
-           deferJquery(callback);
-         } else {
-           callback();
-         }
-       };
-     }
-     script.src = url;
-     document.body.appendChild(script);
-   }
-   function deferJquery(method) {
-     if (window.jQuery) {
-       method();
-     } else {
-       setTimeout(function() { deferJquery(method) }, 50);
-     }
-   }
-
-   function loadStyle(url) {
-     var cb = function() {
-       var l = document.createElement('link'); l.rel = 'stylesheet';
-       l.href = url;
-       var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-     };
-     var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-               webkitRequestAnimationFrame || msRequestAnimationFrame;
-     if (raf) raf(cb);
-     else window.addEventListener('load', cb);
-   }
-
-   function deferStyleLoad() {
-     var styleloaded = document.readyState == 'interactive' &&
-                       getComputedStyle(document.getElementsByClassName('navbar')[0]).position == 'relative';
-     if (styleloaded) {
-       document.getElementsByClassName('navbar')[0].style.display = 'block'
-     } else {
-       setTimeout(function() {deferStyleLoad()}, 50);
-     }
-   }
-  </script>
-
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css" /> -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/simplex/bootstrap.min.css" />
-<!-- <link href="/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
-<!-- <link href="/assets/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"> -->
-<!-- <link href="/assets/bootstrap/dist/css/simplex.min.css" rel="stylesheet" type="text/css"> -->
-<!-- <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css"> -->
-<script type="text/javascript">
- loadStyle("/stylesheets/screen.css");
- /*  loadStyle("https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/simplex/bootstrap.min.css");*/
- /*  deferStyleLoad();*/
-</script>
-
-  <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <!-- <script src="/javascripts/libs/jquery/jquery-2.0.3.min.js"></script> -->
-  
-  <script async type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-49953720-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
+ ul.blog-posts li a:visited {
+     color: #8b6fcb;
+ }
 
 
-  
-<script id="search-results-template" type="text/x-handlebars-template">
-  {{#entries}}
-    <article>
-      <h3>
-         <small><time datetime="{{date}}" pubdate>{{date}}</time></small>
-         <a href="{{url}}">{{title}}</a>
-         <!-- <p>tagged: {{ tags }} | category: <a href="/categories/{{category }}">{{category}}</a></p> -->
-      </h3>
-    </article>
-  {{/entries}}
-</script>
 
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ strong,
+ b {
+     color: #eee;
+ }
+
+ a {
+     color: #8cc2dd;
+ }
+
+ code {
+     background-color: #282c34;
+ }
+
+ pre code {
+     color: #ddd;
+ }
+
+ 
+ textarea,
+ input {
+     background-color: #252525;
+     color: #ddd;
+ }
+
+ .helptext {
+     color: #aaa;
+ }
+
+</style>
 
 </head>
 
-  <body   >
-    <div id="wrap" itemtype="http://schema.org/Article">
-      <header role="banner">
-        <nav class="navbar navbar-default" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">Umar Ahmad</a>
-        </div>
+<body>
+  <header><a href="/" class="title">
+  <h2>Umar Ahmad</h2>
+</a>
+<nav><a href="/">Blog</a>
 
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li class="active">
-                    <a href="/">Blog</a>
-                </li>
-		<li >
-                    <a href="/about/">About Me</a>
-                </li>
-                <li >
-                    <a href="/blog/archives">Archives</a>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a class="subscribe-rss" href="http://feeds.feedburner.com/UmarAhmad" title="subscribe via RSS">
-                        <span class="visible-xs">RSS</span>
-                        <img class="hidden-xs" src="/images/rss.png" alt="RSS">
-                    </a>
-                </li>
-                
-                <li>
-                    <a class="subscribe-email" href="https://feedburner.google.com/fb/a/mailverify?uri=UmarAhmad&amp;loc=en_US" title="subscribe via email">
-                        <span class="visible-xs">Email</span>
-                        <img class="hidden-xs" src="/images/email.png" alt="Email">
-                    </a>
-                </li>
-                
-            </ul>
-            
-            
-              <form class="search navbar-form navbar-right" action="/search" method="get">
-  <fieldset role ="search">
-      <input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off" class="search form-control" />
-  </fieldset>
-</form>
-
-            
-	        
-            <script async type="text/javascript">console.log("%c\n\n\n\t\t\tHi there geek!\n\n\t\t\tYou can find the complete source of this blog on http://www.github.com/gleek/gleek.github.io\n\t\t\tRefer to humans.txt for more details\n\n\t\t\tThanks!\n\n\n\n","color: brown; font-size: 18px");</script>
-        </div>
-    </div>
+<a href="/about">About</a>
 </nav>
-
-
-      </header>
-      <div id="main" class="container">
-        <div id="content">
-          <div class="row">
-  <div class="page-content col-md-9">
-    <div class="blog-index">
-      
-      
-      
-        <article class="post">
-          
-  <header class="page-header">
+</header>
+  <main>
+<content>
+  
+  <ul class="blog-posts">
     
-      <p class="meta text-muted text-uppercase">
+    <li>
+      <span>
+        <i>
+          <time datetime='2017-04-11' pubdate>
+            11 Apr, 2017
+          </time>
+        </i>
+      </span>
+      <a href="https://umarahmad.xyz/blog/editing-remote-code-with-emacs/">Editing remote code with Emacs</a>
+
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2017-04-09' pubdate>
+            09 Apr, 2017
+          </time>
+        </i>
+      </span>
+      <a href="https://umarahmad.xyz/blog/installing-fedora-on-macbook/">Installing Fedora on MacBook</a>
+
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2014-09-27' pubdate>
+            27 Sep, 2014
+          </time>
+        </i>
+      </span>
+      <a href="https://umarahmad.xyz/blog/things-to-do-after-installing-fedora/">Things to do after installing Fedora</a>
+
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2014-09-05' pubdate>
+            05 Sep, 2014
+          </time>
+        </i>
+      </span>
+      <a href="https://umarahmad.xyz/blog/gsoc-meetup-2014/">GSOC Meetup 2014</a>
+
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2014-07-09' pubdate>
+            09 Jul, 2014
+          </time>
+        </i>
+      </span>
+      <a href="https://umarahmad.xyz/blog/drush-it/">Drush It!</a>
+
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2014-06-29' pubdate>
+            29 Jun, 2014
+          </time>
+        </i>
+      </span>
+      <a href="https://umarahmad.xyz/blog/gsoc-midterms-half-over-is-half-left/">GSOC Midterms: Half Over is Half Left</a>
+
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2014-06-12' pubdate>
+            12 Jun, 2014
+          </time>
+        </i>
+      </span>
+      <a href="https://umarahmad.xyz/blog/gsoc-here-we-go/">GSOC - Here We Go</a>
+
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2014-05-08' pubdate>
+            08 May, 2014
+          </time>
+        </i>
+      </span>
+      <a href="https://umarahmad.xyz/blog/gsf-hacks/">GSF Hacks</a>
+
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2014-04-18' pubdate>
+            18 Apr, 2014
+          </time>
+        </i>
+      </span>
+      <a href="https://umarahmad.xyz/blog/from-wordpress-to-octopress/">From WordPress to Octopress</a>
+
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2014-04-10' pubdate>
+            10 Apr, 2014
+          </time>
+        </i>
+      </span>
+      <a href="https://umarahmad.xyz/blog/customizing-emacs/">Customizing Emacs</a>
+
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2014-03-26' pubdate>
+            26 Mar, 2014
+          </time>
+        </i>
+      </span>
+      <a href="https://umarahmad.xyz/blog/automatically-changing-desktop-background-on-gnome-shell/">Automatically Changing desktop background on gnome-shell</a>
+
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2014-03-24' pubdate>
+            24 Mar, 2014
+          </time>
+        </i>
+      </span>
+      <a href="https://umarahmad.xyz/blog/adding-drupal-irc-bot-to-number-jmilug/">Adding Drupal IRC-Bot to # jmilug</a>
+
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2014-03-24' pubdate>
+            24 Mar, 2014
+          </time>
+        </i>
+      </span>
+      <a href="https://umarahmad.xyz/blog/migrating-to-fedora-20/">Migrating to Fedora 20</a>
+
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2014-03-04' pubdate>
+            04 Mar, 2014
+          </time>
+        </i>
+      </span>
+      <a href="https://umarahmad.xyz/blog/fixing-brightness/">Fixing Brightness Problems in Linux</a>
+
+    
+    <li>
+      <span>
+        <i>
+          <time datetime='2014-02-19' pubdate>
+            19 Feb, 2014
+          </time>
+        </i>
+      </span>
+      <a href="https://umarahmad.xyz/blog/hello-blogging/">Hello Blogging....</a>
+
+    
+  </ul>
+  
+    <small>
+      <div>
         
-
-
-
-
-
-
-
-
-  
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2017-04-11T22:56:54+05:30" pubdate data-updated="true"  class="published">Apr 11<span>th</span>, 2017</time>
-        
-           | <a href="/blog/2017/04/11/editing-remote-code-with-emacs/#disqus_thread"
-             data-disqus-identifier="http://gleek.github.io/blog/2017/04/11/editing-remote-code-with-emacs/">Comments</a>
-        
-      </p>
-    
-    
-      <h1 class="entry-title"><a href="/blog/2017/04/11/editing-remote-code-with-emacs/">Editing Remote Code With Emacs</a></h1>
-    
-  </header>
-
-
-  <div class="entry-content clearfix"><p>Lately, I&rsquo;ve been working on a code-base situated remotely on a server accessible over <code>ssh</code>.
-The network latency and size of the code repository prompted me to reconsider the method
-to edit such files. I discovered a few options I could use and finally settled with one of them.</p>
-
-</div>
-  
-  
-    <footer>
-      <a class="btn btn-default" rel="full-article" href="/blog/2017/04/11/editing-remote-code-with-emacs/">Read on &rarr;</a>
-    </footer>
-  
-
-
-        </article>
-      
-      
-        <article class="post">
-          
-  <header class="page-header">
-    
-      <p class="meta text-muted text-uppercase">
-        
-
-
-
-
-
-
-
-
-  
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2017-04-09T17:03:02+05:30" pubdate data-updated="true"  class="published">Apr 9<span>th</span>, 2017</time>
-        
-           | <a href="/blog/2017/04/09/installing-fedora-on-macbook/#disqus_thread"
-             data-disqus-identifier="http://gleek.github.io/blog/2017/04/09/installing-fedora-on-macbook/">Comments</a>
-        
-      </p>
-    
-    
-      <h1 class="entry-title"><a href="/blog/2017/04/09/installing-fedora-on-macbook/">Installing Fedora on MacBook</a></h1>
-    
-  </header>
-
-
-  <div class="entry-content clearfix"><p>Recently, I&rsquo;ve been using MacBook Air along with its default OS <a href="https://www.apple.com/in/macos/sierra/">macOS Sierra</a> for about a year.
-I decided to switch back to <a href="https://getfedora.org/">Fedora</a> once I started noticing the decreasing customizability after every update.
-Also there were a lot of API level changes that somehow always ended up breaking my workflow.</div>
-  
-  
-    <footer>
-      <a class="btn btn-default" rel="full-article" href="/blog/2017/04/09/installing-fedora-on-macbook/">Read on &rarr;</a>
-    </footer>
-  
-
-
-        </article>
-      
-      
-        <article class="post">
-          
-  <header class="page-header">
-    
-      <p class="meta text-muted text-uppercase">
-        
-
-
-
-
-
-
-
-
-  
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-09-27T18:34:37+05:30" pubdate data-updated="true"  class="published">Sep 27<span>th</span>, 2014</time>
-        
-           | <a href="/blog/2014/09/27/things-to-do-after-installing-fedora/#disqus_thread"
-             data-disqus-identifier="http://gleek.github.io/blog/2014/09/27/things-to-do-after-installing-fedora/">Comments</a>
-        
-      </p>
-    
-    
-      <h1 class="entry-title"><a href="/blog/2014/09/27/things-to-do-after-installing-fedora/">Things to Do After Installing Fedora</a></h1>
-    
-  </header>
-
-
-  <div class="entry-content clearfix"><p> <img style=" display:block;margin:auto;height:240px" src="https://lh3.googleusercontent.com/JCYMcJb5M-08b9FtHvKDsX8hedPz5UsD_rXxeSm0LkLl16YJuizEG2EuEFhi1CXOprcc6hesH8E8YPOd2sIfZbB6rfZm8h0eO-CDHhw4YQ_HHNqR3rU7d2OzSs1nSnhwvxZmXHpqTwTsaQSxYx4mcsi2QFIrJ9o3s3MQPIgg3qbqOusdJxjmuylQePuNm-aKMF4vTXwd_Xl7Sl9PQWUFG7GttxkbPa9sEJP-qm0velNcDh_Frzcd69SKLBjup-AV33ddUs_nat19pITobGS3MGk1BEYOfIzj8KfZzESeisvysiionFZfcbk6oaAhzsdoogfIPE2WIjH8x8MS23__AfKysOiZ6Cr7jTw5nMjdR7STzbLKZEslHyCKlvmXoIMrjkI9ZGrJ_54-cPMw0IFnXa1myCf3ob_AkgrjxhEPmGeu_cbnQG6wlQr_9SnObOJOyiDfc66epMTz_pOBSOdcJ74RLoqeqvBXIeK8yMCQ6fJTx9X0Zr5Do8ax_Harh-Mr_B5LewIqDo_pXiForMCBOJW9yPwnheM4SjIHX6WPm5voc5qsqcBW57y3hePPbZiNul4QzNMRfcXaC_DiIXCdAyyKJqVD6a3RpXsQM6gxKOdVuiHeRGeV3fdqKyJZWA5goDuqTZ9em9ku7zia6faJ9nLbshesjnXL9SoMCaDaUQ=w600-h700-no"   alt="Keep Calm and yum install" /><br>
-Getting the right packages after a fresh install is a headache. That is exactly what I had when I had to do a fresh installation of my Fedora after I accidentally corrupted my entire disk <img alt="frowning" src="/images/emoji/frowning.png" class="emoji no-border" />.</p>
-
-<p>I didn&rsquo;t want to spend days installing the packages this time. This time I wanted to do it smart and quick.</p>
-
-<p>The problem here was that I couldn&rsquo;t just <code>yum install</code> everything, that&rsquo;s because Fedora community adheres to free software principles and doesn’t offer non-free codecs and drivers from it’s repositories. But there are 3rd party repositories which allow Fedora users to get non-free components.</p>
-
-</div>
-  
-  
-    <footer>
-      <a class="btn btn-default" rel="full-article" href="/blog/2014/09/27/things-to-do-after-installing-fedora/">Read on &rarr;</a>
-    </footer>
-  
-
-
-        </article>
-      
-      
-        <article class="post">
-          
-  <header class="page-header">
-    
-      <p class="meta text-muted text-uppercase">
-        
-
-
-
-
-
-
-
-
-  
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-09-05T04:20:39+05:30" pubdate data-updated="true"  class="published">Sep 5<span>th</span>, 2014</time>
-        
-           | <a href="/blog/2014/09/05/gsoc-meetup-2014/#disqus_thread"
-             data-disqus-identifier="http://gleek.github.io/blog/2014/09/05/gsoc-meetup-2014/">Comments</a>
-        
-      </p>
-    
-    
-      <h1 class="entry-title"><a href="/blog/2014/09/05/gsoc-meetup-2014/">GSOC Meetup 2014</a></h1>
-    
-  </header>
-
-
-  <div class="entry-content clearfix"><p><img src="https://lh3.googleusercontent.com/e2fih0IuM8f-R7zU5rhRsdQx2DY8T_izv8XnDl3yRyAGZPMxo8QimbtUty0_U3b1HqsSfNk7Ts70lkZV9nADD65cTXw3sC8FhJKk6TPzw4kBHpIjPRmcMwkSseqM_5FFnPUm1tybTMD-Jp8O_LVfhAVccNbWnKwqIH24-Nupobe8C-qa8SfW3LSH3QrfrDiSzcy-OGq-VJmItUzzB0OKzoiGBzMEs0s23LDwtK-anp3r2plwmXsC55UYG7QeqW794LAl_tC6fWiObFrTMRNFAPRR0aJN4F5C438X8gnoWs27TJQEOHjEMIx1ONmBKhPtWAeLgjcIivKAQfwjCUzMepMYMepBLXSW3h1FIyW1GXZK7j0J244UTjJ42hfnmTawIvr1DD7zX8tLJxEf9x_E8VYIogAKywJweEzN100W9rW-KjpbsY4mLTPBAfaBoyIatMocLZGi1RtXF1y8gHQAdNOC9E3vnwFAxey2Lw30l1cSnPw8YYBHZecjekuvR0LwAlq0Lpo8nTsSsZU6blgXFFd1kg8Wd7ybr9WzuXlpdSOD6VEiD85_fFErPSoYsfSRJzn_N1J3P7T53hNBERYpx92D_D0R1YRGbVGx07gds_dnO_uiOrD_ujwedi1ucvWexIoIPgzmDZLOTbyKHeQtZwDZM-GNeqpriCYuaaInqQ=h450-no" style="display:block;margin:auto;"></p>
-
-<br>
-
-
-<p>On August 23rd, we, at <a href="http://jmilug.org/">JMILUG</a>, hosted a GSOC Meetup at <a href="http://jmi.ac.in/">Jamia Millia Millia Islamia University, New Delhi</a>, home of JMILUG. The GSOC meetup was an opportunity to meet and learn from past and present GSOC students who’ve actively contributed to Open Source projects in collaboration with developers from all over the world.</p>
-
-</div>
-  
-  
-    <footer>
-      <a class="btn btn-default" rel="full-article" href="/blog/2014/09/05/gsoc-meetup-2014/">Read on &rarr;</a>
-    </footer>
-  
-
-
-        </article>
-      
-      
-        <article class="post">
-          
-  <header class="page-header">
-    
-      <p class="meta text-muted text-uppercase">
-        
-
-
-
-
-
-
-
-
-  
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-07-09T00:54:05+05:30" pubdate data-updated="true"  class="published">Jul 9<span>th</span>, 2014</time>
-        
-           | <a href="/blog/2014/07/09/drush-it/#disqus_thread"
-             data-disqus-identifier="http://gleek.github.io/blog/2014/07/09/drush-it/">Comments</a>
-        
-      </p>
-    
-    
-      <h1 class="entry-title"><a href="/blog/2014/07/09/drush-it/">Drush It!</a></h1>
-    
-  </header>
-
-
-  <div class="entry-content clearfix"><p><img src="https://lh3.googleusercontent.com/LWK3VdQ8CcrC4bIDnlrJRCJAZpjBDvFg-SnX0lZNu1GXNcKi2j0jA8ubCdBZIoz6hFOBzJmJ75OD2DvGfvxi1sGRY6qdrT4-iwgxAnRZFTOb3OE5-N33y4lEJBMfDhGYWWQAroZ9Wbe2Ho1dy4MI8ZntRVO1DrSyCS8AjMcil_m3UrJhsjz9IqMyMny1sIZ6JSJIfx7Pp6CN_iVgXO9ccpZf_aZC-0MGq8i5VGUTVGoy7asAHBnQPbbZJK4X8WilpFVqPmJAwsNKXoA-9GZasxjG9Kw3HyEK0jN83K3bRYYDYUAqZeLf5fJckpY8NZztQ0EoDGxHjb7UsD_aLYwMQmsg-U5e3ziv7Rs7POTkljWBngT4yMWy6HtCNJhr92xF7OLriyu3VdtRz3m1S_OrPcTOltWa4LlSiwAqVYR0-0JhYu1Ewq4fQvCoTy6ywEBbC7D-eGYk9plS2tiCTSH2WISVGTGZwh0ihUSgjsXSl6EZ22xnXd8zySzczp4WDzeabJfat97e7PFanrQn5Y5sxsiqYpCbbQgJx_bPaZF01xP2UqRLK2lEGiLS23cMlDOTrGCMJDWbRv3-grYVIApMzdw-nOkEmF26YpCTc_WQo-R_8dhBzmTcHKTswD2GadtGOg3LwqZFNwoxCw5TpnKHz9IdwTi9kjn6soBNF8xcjw=w218-h215-no" alt="Drush" /></p>
-
-<br>
-
-
-<p>In the words of the maintainers of Drush:</p>
-
-<blockquote><p>Drush is a command-line shell and scripting interface for Drupal,
-a veritable Swiss Army knife designed to make life easier for those who spend
-their working hours hacking away at the command prompt.</p></blockquote>
-
-<p>It&rsquo;s just been few weeks I&rsquo;ve started using Drush and I&rsquo;m already a fan.
-If you are a drupal developer or a site maintainer and still haven&rsquo;t heard of Drush <a href="https://github.com/drush-ops/drush">go check it out</a>.</p>
-
-</div>
-  
-  
-    <footer>
-      <a class="btn btn-default" rel="full-article" href="/blog/2014/07/09/drush-it/">Read on &rarr;</a>
-    </footer>
-  
-
-
-        </article>
-      
-      
-        <article class="post">
-          
-  <header class="page-header">
-    
-      <p class="meta text-muted text-uppercase">
-        
-
-
-
-
-
-
-
-
-  
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-06-29T16:30:07+05:30" pubdate data-updated="true"  class="published">Jun 29<span>th</span>, 2014</time>
-        
-           | <a href="/blog/2014/06/29/gsoc-midterms-half-over-is-half-left/#disqus_thread"
-             data-disqus-identifier="http://gleek.github.io/blog/2014/06/29/gsoc-midterms-half-over-is-half-left/">Comments</a>
-        
-      </p>
-    
-    
-      <h1 class="entry-title"><a href="/blog/2014/06/29/gsoc-midterms-half-over-is-half-left/">GSOC Midterms: Half Over Is Half Left</a></h1>
-    
-  </header>
-
-
-  <div class="entry-content clearfix"><div align="center">
-<img src="https://lh3.googleusercontent.com/O2hQSeV_aZFFQH0PQgh-AV5c9b3Gvzx8U3_O2OLidJXUOCnWGPLN6DyE7KdOXXWG1KZuSGer-0sDzHXoHjv2bGtPnXtE4jVoygB7IhFoharxvP-GGul4UAe68sL7Jp8O0y7PG9VneRwmhFOuIFFeXAVy4fpBbJ-DDV4ymv-VwnQFh31BEMokAHwDb2E2jB3R4PHWKN-GptRNHWG8SGbndLXREoi-lyRUo9DSMEAeiUyrCwhc4-UFU4hvE8JksEs8tXSL-rQ6dgO9Qjw7u1jYidXRX8kRKaj1t0RV0R4PjvJhkn6-u_1ODqWfIMGfx_MQ_uCS1FQv503oAC1BArzbRwEjLX0sp7RhKf0-EeWuna3UDLlbanOJd5alAFbj0Z2HKRmD58rStwQIvLheLpjCGmKdeXEo3xB5fHHtx8zJLksjU2cCxFgAC71tXiUeeLZ2WYWups5Q7U72B1mXzGqXUQFH1E-GtfXaD1tZuHJ5I-n13A-lKvPCEK5hWYF8ImRAa3Kg2vv3tVnvUIPWcMcuoQO1RJDZik5YImF8F7SU_FCHavtaEJz5AGaQYn3r8DVYHM2WePN_htsPV7Gt-KNPfd9wMbVHY5keT_iTRQ0rYPhhKPojx2Rq7mkGPtq_SVdOScX5quCjjRzaFzx836GLqeyhim7cn9RB9KHvQu_b8g=w600-h160-no"/>
-</div>
-
-
-<br>
-
-
-<p>GSOC Midterms ended few days back and it&rsquo;s been fun so far. In my previous post I briefly touched upon my project, <strong><a href="https://www.github.com/gleek/fluxpocket">fluxpocket</a></strong> , which is an extended service for <strong><a href="http://www.drupal.org/project/fluxservice">fluxservices</a></strong>, which is based upon <strong><a href="http://www.fluxkraft.com">fluxkraft</a></strong>, which runs on <strong><a href="http://www.drupal.org/project/rules">rules</a></strong>, which is based on <strong><a href="http://www.drupal.org">Drupal</a></strong>!!</p>
-
-</div>
-  
-  
-    <footer>
-      <a class="btn btn-default" rel="full-article" href="/blog/2014/06/29/gsoc-midterms-half-over-is-half-left/">Read on &rarr;</a>
-    </footer>
-  
-
-
-        </article>
-      
-      
-        <article class="post">
-          
-  <header class="page-header">
-    
-      <p class="meta text-muted text-uppercase">
-        
-
-
-
-
-
-
-
-
-  
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-06-12T05:45:04+05:30" pubdate data-updated="true"  class="published">Jun 12<span>th</span>, 2014</time>
-        
-           | <a href="/blog/2014/06/12/gsoc-here-we-go/#disqus_thread"
-             data-disqus-identifier="http://gleek.github.io/blog/2014/06/12/gsoc-here-we-go/">Comments</a>
-        
-      </p>
-    
-    
-      <h1 class="entry-title"><a href="/blog/2014/06/12/gsoc-here-we-go/">GSOC - Here We Go</a></h1>
-    
-  </header>
-
-
-  <div class="entry-content clearfix"><p><img src="https://lh3.googleusercontent.com/-_eXnV87hecb2o5FZfatpmppOXSBupYVE2Xr8WIdxbi4tJqYW-iH-Y-ptJ2zDItA3N8XYuT71fmdxkP5RBWMJIxh2wGEPnOyaohoLbxxaT8cSNc67QQH2581_7ov2-rTPC5t9ro1UxN92jY8eNCF1mw-m879yjWX_H9vhZJVdVnrQRCEw5GHLL_k_Any-hYsIhOl06Paafst7kd4e-1rTORw6-TReVjZZQs6uYZSS2HTqB0g-_h2Zkp9g3UXcrrKcNucr-CYtilEIK_PRi_lUeRdNtU1rsGWrakkMDUXMuKy-ReIlBxUgc5Mj8iDde1RGqFf663lKQ5JhZb6nIiQuTnnqzg1MoynXFkqJsDaztSanuEm7uSWhwQ_gVDQjcGK7eVykXCa4JBZnucDlZBYVurJDk7wfUASCp5LvPXD3Ord3kAyLVZupq9bdjC28zGyGc8H6QC-LrUTxOkgyAoxjaifSlxTbcFao5snSSYPf-Whxj73Vzt2c2p0uHR_ySuBfRlSJL6Ul8cnp3KYEkiMQbAwYuAVlTSka-0Ch3uppYGS57dztOpyVawV-v2W4ipXj3fpmRYSC7jJA29ztsrCYZQKahhBaQREqrtJRgG5_zqCryLyn7vrzgoVXYOeX5MUW_P--Np4KEChrnTGp1C0Of2H4Jn26Ja4_Its7XEC_A=w924-h156-no" alt="GSOC 2014" /></p>
-
-<br>
-
-
-<h4>What?</h4>
-
-<p>Google Summer of Code is happening this year with over <a href="http://www.google-melange.com/gsoc/org/list/public/google/gsoc2014">190 participating organizations</a> and with a total of <a href="http://google-opensource.blogspot.in/2014/05/google-summer-of-code-2014-by-numbers.html">1307 students</a> selected all round the globe, and being one of them is truly awesome <img alt="sunglasses" src="/images/emoji/sunglasses.png" class="emoji no-border" />. </div>
-  
-  
-    <footer>
-      <a class="btn btn-default" rel="full-article" href="/blog/2014/06/12/gsoc-here-we-go/">Read on &rarr;</a>
-    </footer>
-  
-
-
-        </article>
-      
-      
-        <article class="post">
-          
-  <header class="page-header">
-    
-      <p class="meta text-muted text-uppercase">
-        
-
-
-
-
-
-
-
-
-  
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-05-08T03:01:30+05:30" pubdate data-updated="true"  class="published">May 8<span>th</span>, 2014</time>
-        
-           | <a href="/blog/2014/05/08/gsf-hacks/#disqus_thread"
-             data-disqus-identifier="http://gleek.github.io/blog/2014/05/08/gsf-hacks/">Comments</a>
-        
-      </p>
-    
-    
-      <h1 class="entry-title"><a href="/blog/2014/05/08/gsf-hacks/">GSF Hacks</a></h1>
-    
-  </header>
-
-
-  <div class="entry-content clearfix"><p><img src="https://lh3.googleusercontent.com/7zBCup0aXx-KUJveJNOxISqBj3JXPaPY9u05q9Akw3EqIICRgExww1BMImw25FkodIVfACX6cC7OepuQz4kpvkniONdYjrb9fwTqRI06e3OwMtQyzew9zviROsNkWi49fC_5C0wb3AVEGg55HvpBLTkVdMT1nsu2HwaleXumrALCPmbaNjsO_dcnNoVwmNmVALbXuMUDM87MSpz9Lt746gU1HiV8XnFxroGCv_AdQ3rA3h7eNWjQIyS-wqFiuamL7EF6jdXo0LUVGDJWSuzShCwHGXKwwZ4ixY3RVerIG8jJ7zupxT94DshLMzMU_jYQk6pLm7qLFnCntEB8hakWZWLShUpKrBl_4gJ4RlW9dH3fVsqbnzOKW3HnVZpIAErQOctUDtbmqgW-_WGrmBbFI8Jk5cfBjCC9SXs9wAqZt2R-BwvYXR__ahl9rDiJRdPXB1GQQNpnRgB_dCyMTBrW-KnqWoI_KN4kwSHI1ARYDNC3v1OM-tc_3nPIsjy_JwoxZ4sG4cTsHbefXt6BL2HnETD77GmYCx9TWZb-j_wnnY0xHRBNU8kOHOZCFJ8_B0Z3S4rhTKBCV9U9s6B5UgChO_DhtlOdv1dgisSgPYXahpo1chmtSNluBBIfdSQ5odHBNJVITuLRDqUod8Dm-LzmJdcBQmpgse-VUDvCFe7qMA=s370" style=" display:block;margin:auto;" width="370"/></p>
-
-<p>Last month some of my friends and I went to a hackathon organized by <a href="http://www.gsfindia.com/hacks/">GSF India</a>. This hackathon was particularly interesting since almost all the participants were amongst the top ranked from <a href="http://www.hackerearth.com/">Hacker Earth</a> and thus a tough competition was expected.</p>
-
-</div>
-  
-  
-    <footer>
-      <a class="btn btn-default" rel="full-article" href="/blog/2014/05/08/gsf-hacks/">Read on &rarr;</a>
-    </footer>
-  
-
-
-        </article>
-      
-      
-        <article class="post">
-          
-  <header class="page-header">
-    
-      <p class="meta text-muted text-uppercase">
-        
-
-
-
-
-
-
-
-
-  
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-04-18T20:07:03+05:30" pubdate data-updated="true"  class="published">Apr 18<span>th</span>, 2014</time>
-        
-           | <a href="/blog/2014/04/18/from-wordpress-to-octopress/#disqus_thread"
-             data-disqus-identifier="http://gleek.github.io/blog/2014/04/18/from-wordpress-to-octopress/">Comments</a>
-        
-      </p>
-    
-    
-      <h1 class="entry-title"><a href="/blog/2014/04/18/from-wordpress-to-octopress/">From WordPress to Octopress</a></h1>
-    
-  </header>
-
-
-  <div class="entry-content clearfix"><p><em>This post is about choosing Octopress over <strong>WordPress hosted</strong> blog, it does not talk about WordPress as a framework.</em></p>
-
-<p>It has been a very few days I started this blog. Now I feel a bit of a weird pride in announcing that this may be the last post on the wordpress, it&rsquo;s now hosted on github &ndash; <a href="http://gleek.github.io/">http://gleek.github.io</a> , and powered by Octopress.</p>
-
-</div>
-  
-  
-    <footer>
-      <a class="btn btn-default" rel="full-article" href="/blog/2014/04/18/from-wordpress-to-octopress/">Read on &rarr;</a>
-    </footer>
-  
-
-
-        </article>
-      
-      
-        <article class="post">
-          
-  <header class="page-header">
-    
-      <p class="meta text-muted text-uppercase">
-        
-
-
-
-
-
-
-
-
-  
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-04-10T18:32:50+05:30" pubdate data-updated="true"  class="published">Apr 10<span>th</span>, 2014</time>
-        
-           | <a href="/blog/2014/04/10/customizing-emacs/#disqus_thread"
-             data-disqus-identifier="http://gleek.github.io/blog/2014/04/10/customizing-emacs/">Comments</a>
-        
-      </p>
-    
-    
-      <h1 class="entry-title"><a href="/blog/2014/04/10/customizing-emacs/">Customizing Emacs</a></h1>
-    
-  </header>
-
-
-  <div class="entry-content clearfix"><p><img src="https://lh3.googleusercontent.com/ARlXYE_wnAvftBBl2UEvu-z9SpH-q3lyYNukRnNRwbUnXt6fGTP304OloJ3sJ3pSlMr_9QnPr_RxKamv65BFkEUqUEKB0TftIzNuOaiabipF1DNMYLzYReB_40Qr2TbbDndKYzeY5-MPUNmyzH9xmsuhWxmpywT4U5ayHJo2-dGy1W7wRlY2kY7QtTvneNt4OqGGZlqsSZLYM3WVcVwWFxBeJzPxirItCLPzRoRNPfdZZRy6k31JS65TU3WYW-7hvOcTuoZ6vDJSj2K3HyD73dpJ7YjNUwmJB9tjNzy7bqUXm5ftnuG14qPKs1Gtz1jpAGESfgafhUeLQL1pvDWP-VBQDLIwYaXr-XFTatPTgalAAPNd66J-cJ_J0O1OkF1DM-KM4RjqDhLkMOT9-RM5fkrG5_Rnibw32yJho_cGYTyk7523_CnePswMWjMtmMrTI4zyrsaRYVqBjfRxwznHExq1nAwuR-NSmP2EeeLvPYFP6ZSyMWyZCga2K0LH6J9-Qa8aHdkneuQ9ti6w0QGEJHr9HinsGuWBuALKd2H0ZlPxrwhOdKSyEIaWgq2mkt0vL653PCK4sN5zGZZte3kc7LL3I4WZhlN1oaRsXbIRTJaLEYhQTYj4BrRDS-59IHAwl2Ddf_AzsF9r7c6cKs-A2DQL2QpM2Nb5gU5Ae05pIw=w270-h217-no" style="display:block;margin:auto; "><br>
-I believe the environment in which one works is directly responsible for one&rsquo;s productivity. It&rsquo;s the reason I think, it&rsquo;s important to choose the right editor, font, etc.</p>
-
-</div>
-  
-  
-    <footer>
-      <a class="btn btn-default" rel="full-article" href="/blog/2014/04/10/customizing-emacs/">Read on &rarr;</a>
-    </footer>
-  
-
-
-        </article>
-      
-    </div>
-
-    <ul class="pager">
-      
-        <li class="previous"><a href="/blog/page/2/">&larr;&nbsp;Older</a></li>
-      
-      <li><a href="/blog/archives">Blog Archives</a></li>
-      
-        <li class="next disabled"><a href="#">Newer&nbsp;&rarr;</a></li>
-      
-    </ul>
-  </div>
-
-  
-    <aside class="sidebar col-md-3">
-      
-        <section class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">About Me</h3>
-  </div>
-  <div class="panel-body">
-    <img src="https://www.gravatar.com/avatar/4e1fea590dae0abb4fcb5a256e7b8a2f.png" alt="Me" class="img-circle" style="display: block; float: left; margin-right: 10px;">
-    <span>Hi,I&#8217;m Umar, a web geek!</span><br>
-    <a href="/about/index.html">Read all the boring stuff&#8230;</a>
-    <div style="display: none;">
-      
-    </div>
-  </div>
-</section>
-<section class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Recent Posts</h3>
-  </div>
-  
-  <div id="recent_posts" class="list-group">
-    
-    <a class="list-group-item " href="/blog/2017/04/11/editing-remote-code-with-emacs/">Editing Remote Code With Emacs</a>
-    
-    <a class="list-group-item " href="/blog/2017/04/09/installing-fedora-on-macbook/">Installing Fedora on MacBook</a>
-    
-    <a class="list-group-item " href="/blog/2014/09/27/things-to-do-after-installing-fedora/">Things to Do After Installing Fedora</a>
-    
-    <a class="list-group-item " href="/blog/2014/09/05/gsoc-meetup-2014/">GSOC Meetup 2014</a>
-    
-    <a class="list-group-item " href="/blog/2014/07/09/drush-it/">Drush It!</a>
-    
-  </div>
-</section>
-<section class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Tags</h3>
-  </div>
-  <div class="panel-body">
-
- <ul class="tag-cloud list-inline">
-<li><a style="font-size: 150%" href="/blog/tags/drupal/">drupal</a></li>
-<li><a style="font-size: 105%" href="/blog/tags/emacs/">emacs</a></li>
-<li><a style="font-size: 165%" href="/blog/tags/fedora/">fedora</a></li>
-<li><a style="font-size: 105%" href="/blog/tags/gnome-shell/">gnome-shell</a></li>
-<li><a style="font-size: 132%" href="/blog/tags/gsoc/">gsoc</a></li>
-<li><a style="font-size: 105%" href="/blog/tags/jmilug/">jmilug</a></li>
-<li><a style="font-size: 105%" href="/blog/tags/linux/">linux</a></li>
-<li><a style="font-size: 105%" href="/blog/tags/ubuntu/">ubuntu</a></li>
-
- </ul>
-<a href="/blog/archives/tags.html"><strong>More&gt;&gt;</strong></a>
-</section>
-
-<section class="panel panel-default clearfix">
-  <div class="panel-heading">
-      <h3 class="panel-title">GitHub Repos</h3>
-  </div>
-  <div class="list-group" id="gh_repos">
-    <p class="loading">Status updating&#8230;</p>
-  </div>
-  
-    <div class="gh-profile-link pull-right text-muted">
-      <a href="https://github.com/gleek">@gleek</a> on GitHub
-    </div>
-  
-  <script defer type="text/javascript">
-   loadScript("/javascripts/github.js", function() {
-       $(document).ready(function(){
-           github.showRepos({
-               user: 'gleek',
-               count: 10,
-               skip_forks: true,
-               target: '#gh_repos'
-           });
-       });
-   }, true);
-  </script>
-</section>
-
-
-
-
-<section class="googleplus googleplus-hidden panel panel-default">
-  <div class="panel-body">
-    <h1>
-      <a href="https://plus.google.com/103949851787406544998?rel=author">
-        <img src="https://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
-        Google+
-      </a>
-    </h1>
-  </div>
-</section>
-
-
-
-      
-    </aside>
-  
-</div>
-
-        </div>
       </div>
-    </div>
-    <footer role="contentinfo"><div class="container">
-    <p class="text-muted credits">
-  Copyleft <span style="-moz-transform: scaleX(-1); -o-transform: scaleX(-1); -webkit-transform: scaleX(-1); transform: scaleX(-1); display: inline-block;">©</span> 2017 - Umar Ahmad<br>
-  <small>
-      <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>,
-  </small>
-</p>
+    </small>
+    
+</content>
 
-</div>
+  </main>
+  <footer><small>Copyright(c) - Umar Ahmad. Under GPL or CC BY-SA</small>
 </footer>
-    <!-- <script async src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script> -->
-<!-- <script async src="/javascripts/modernizr-2.0.js"></script> -->
-<script async src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
-<script defer type="text/javascript">
- deferJquery(function() {loadScript("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js")});
-</script>
 
+    
+</body>
 
-<script async type="text/javascript">
-      var disqus_shortname = 'umar-ahmad';
-      
-        
-        var disqus_script = 'count.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
-
-
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) {return;}
-  js = d.createElement(s); js.id = id; js.async = true;
-  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-
-
-  <script type="text/javascript">
-    (function() {
-      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
-      script.src = 'https://apis.google.com/js/plusone.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
-    })();
-  </script>
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-  </body>
 </html>
