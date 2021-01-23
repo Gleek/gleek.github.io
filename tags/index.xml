@@ -5,6 +5,16 @@
     <link>https://umarahmad.xyz/tags/</link>
     <description>Recent content in Tags on Umar Ahmad</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://umarahmad.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sat, 23 Jan 2021 19:39:03 +0530</lastBuildDate><atom:link href="https://umarahmad.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>blog</title>
+      <link>https://umarahmad.xyz/tags/blog/</link>
+      <pubDate>Sat, 23 Jan 2021 19:39:03 +0530</pubDate>
+      
+      <guid>https://umarahmad.xyz/tags/blog/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

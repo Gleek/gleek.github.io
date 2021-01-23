@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on Umar Ahmad</title>
+    <link>https://umarahmad.xyz/tags/blog/</link>
+    <description>Recent content in blog on Umar Ahmad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 23 Jan 2021 19:39:03 +0530</lastBuildDate><atom:link href="https://umarahmad.xyz/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting up the blog again</title>
+      <link>https://umarahmad.xyz/blog/setting-up-the-blog-again/</link>
+      <pubDate>Sat, 23 Jan 2021 19:39:03 +0530</pubDate>
+      
+      <guid>https://umarahmad.xyz/blog/setting-up-the-blog-again/</guid>
+      <description>I recently acquired umarahmad.xyz and move my old blog there.
+ The earlier version of this blog was based on octopress with a lot of handcrafted code. The architecture of octopress along with my excitement of setting up the blog made this a cocktail of all possible plugins and tweaks that I could manage to squeeze into a static site. Copy pasted rake snippets and hacked together web and ruby code gave me what I wanted at the time.</description>
+    </item>
+    
+  </channel>
+</rss>

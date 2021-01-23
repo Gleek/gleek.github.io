@@ -6,7 +6,17 @@
     <description>Recent content in Blog on Umar Ahmad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Apr 2017 22:56:54 +0530</lastBuildDate><atom:link href="https://umarahmad.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Jan 2021 19:39:03 +0530</lastBuildDate><atom:link href="https://umarahmad.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting up the blog again</title>
+      <link>https://umarahmad.xyz/blog/setting-up-the-blog-again/</link>
+      <pubDate>Sat, 23 Jan 2021 19:39:03 +0530</pubDate>
+      
+      <guid>https://umarahmad.xyz/blog/setting-up-the-blog-again/</guid>
+      <description>I recently acquired umarahmad.xyz and move my old blog there.
+ The earlier version of this blog was based on octopress with a lot of handcrafted code. The architecture of octopress along with my excitement of setting up the blog made this a cocktail of all possible plugins and tweaks that I could manage to squeeze into a static site. Copy pasted rake snippets and hacked together web and ruby code gave me what I wanted at the time.</description>
+    </item>
+    
     <item>
       <title>Editing remote code with Emacs</title>
       <link>https://umarahmad.xyz/blog/editing-remote-code-with-emacs/</link>
@@ -170,12 +180,6 @@ I found &lt;a href=&#34;http://en.wikipedia.org/wiki/Comparison_of_Internet_Rela
       
       <guid>https://umarahmad.xyz/blog/hello-blogging/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/8KrC30EJ7aomCKVOKCcPj7PwvqroHH_uuQ0MJKZJwRyptJGUTm9Q_euyV1RvHmPu6CXqxTApGgAgZcjMeQn2lEE3XI6q7pU--tbzNIdEYqLbY6c-6HTdr6V5cdlxgPdSS-duaLd899h1elO3gJRodqnOENLeehHLbJAxQRqDnk9_B8Hl5IVQUmBVtoy-5tr284-n2Radm70OUhZWL1863I_53wLLxKd0TxGWCwpCc7UX4rwj0nZ5A-CjZn3eLJYUx1i6fQoik64eR7wuWyRui8sj2vPCUMQ4N0TKXmt2E1dpfocJwQ6pP2ImkgTNqrRG1cCN_FHl7R_Gd5Z9bk_-YcXE1O3P2qObS9BqzssCldbSrtLvYmDUOvfAiM1uuissxiqBx5pmmLU89wiuh9QSvKy5TwF233oMlCCIS-hDBY7TEKBlgUhFfzpG-ZJNB3xa_R4-f4qeWocPNZ1Bg7Qb1LXweGisES3eYXUV48CrIZ0EJnIxx8IH6K9nrEi4LdARzFxuJIoowVkESQfp4lMzNaZDUzcCShtfdbGAn0eVH-lsrj5-gtIzNy576S0Yk-fQqGuNuXw9Fb2d-bwOuOMe4aSfAkQXwm8RpFabwZ6jZDluKtSdAevA4iC3v8RZgnhodPSu0s2YMPP3RPUzPNL6Gvdnlk3bDh-ze4UiTHtd-w=s300&#34; alt=&#34;Hello World&#34;&gt;&lt;/p&gt;
-&lt;p&gt;So how did it start&amp;hellip;Well what can I say, it was nothing more than a small pulse that waved through my brain&amp;hellip;.&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
-KXmt2E1dpfocJwQ6pP2ImkgTNqrRG1cCN_FHl7R_Gd5Z9bk_-YcXE1O3P2qObS9BqzssCldbSrtLvYmDUOvfAiM1uuissxiqBx5pmmLU89wiuh9QSvKy5TwF233oMlCCIS-hDBY7TEKBlgUhFfzpG-ZJNB3xa_R4-f4qeWocPNZ1Bg7Qb1LXweGisES3eYXUV48CrIZ0EJnIxx8IH6K9nrEi4LdARzFxuJIoowVkESQfp4lMzNaZDUzcCShtfdbGAn0eVH-lsrj5-gtIzNy576S0Yk-fQqGuNuXw9Fb2d-bwOuOMe4aSfAkQXwm8RpFabwZ6jZDluKtSdAevA4iC3v8RZgnhodPSu0s2YMPP3RPUzPNL6Gvdnlk3bDh-ze4UiTHtd-w=s300&#34; alt=&#34;Hello World&#34;&gt;&lt;/p&gt;
 &lt;p&gt;So how did it start&amp;hellip;Well what can I say, it was nothing more than a small pulse that waved through my brain&amp;hellip;.&lt;/p&gt;</description>
     </item>
     
