@@ -14,7 +14,7 @@
       
       <guid>https://umarahmad.xyz/blog/using-emacs-to-port-my-blog/</guid>
       <description>In my previous post I explained my motivations to move this blog to hugo.
- This post is focused on how I did this in Emacs. As a matter of fact, this post is actually on how I do any such task from the within the comforts of Emacs. This post is therefore task agnostic and should be a basic demonstration of the capabilities of Emacs that I use.</description>
+ This post focuses on how I did this in Emacs. As a matter of fact, this post is actually on how I do any such task from the within the comforts of Emacs. The post is therefore task agnostic and should be a basic demonstration of the capabilities of Emacs that I use.</description>
     </item>
     
     <item>
