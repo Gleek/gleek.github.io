@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Using Emacs to port my blog from Octopress to Hugo | Umar Ahmad</title>
+<meta name="title" content="Using Emacs to port my blog from Octopress to Hugo" />
+<meta name="description" content="In my previous post I explained my motivations to move this blog to hugo.
+ This post is focused on how I did this in Emacs. As a matter of fact, this post is actually on how I do any such task from the within the comforts of Emacs. This post is therefore task agnostic and should be a basic demonstration of the capabilities of Emacs that I use." />
+<meta name="keywords" content="emacs,blog," />
+
+
+<meta property="og:title" content="Using Emacs to port my blog from Octopress to Hugo" />
+<meta property="og:description" content="In my previous post I explained my motivations to move this blog to hugo.
+ This post is focused on how I did this in Emacs. As a matter of fact, this post is actually on how I do any such task from the within the comforts of Emacs. This post is therefore task agnostic and should be a basic demonstration of the capabilities of Emacs that I use." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://umarahmad.xyz/blog/using-emacs-to-port-my-blog/" />
+<meta property="article:published_time" content="2021-01-24T16:17:08+05:30" />
+<meta property="article:modified_time" content="2021-01-24T16:17:08+05:30" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Using Emacs to port my blog from Octopress to Hugo"/>
+<meta name="twitter:description" content="In my previous post I explained my motivations to move this blog to hugo.
+ This post is focused on how I did this in Emacs. As a matter of fact, this post is actually on how I do any such task from the within the comforts of Emacs. This post is therefore task agnostic and should be a basic demonstration of the capabilities of Emacs that I use."/>
+
+
+
+<meta itemprop="name" content="Using Emacs to port my blog from Octopress to Hugo">
+<meta itemprop="description" content="In my previous post I explained my motivations to move this blog to hugo.
+ This post is focused on how I did this in Emacs. As a matter of fact, this post is actually on how I do any such task from the within the comforts of Emacs. This post is therefore task agnostic and should be a basic demonstration of the capabilities of Emacs that I use.">
+<meta itemprop="datePublished" content="2021-01-24T16:17:08+05:30" />
+<meta itemprop="dateModified" content="2021-01-24T16:17:08+05:30" />
+<meta itemprop="wordCount" content="1128">
+
+
+
+<meta itemprop="keywords" content="emacs,blog," />
+
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+ body {
+     font-family: Verdana, sans-serif;
+     margin: auto;
+     padding: 20px;
+     max-width: 720px;
+     text-align: left;
+     word-wrap: break-word;
+     overflow-wrap: break-word;
+     line-height: 1.5;
+     background-color: #333;
+     color: #ddd;
+ }
+
+
+
+ .title {
+     text-decoration: none;
+     border: 0;
+ }
+
+ .title span {
+     font-weight: 400;
+ }
+
+ nav a {
+     margin-right: 10px;
+ }
+
+ textarea {
+     width: 100%;
+     font-size: 16px;
+ }
+
+ input {
+     font-size: 16px;
+ }
+
+ content {
+     line-height: 1.6;
+ }
+
+ table {
+     width: 100%;
+ }
+
+ img {
+     max-width: 100%;
+ }
+
+ code {
+     padding: 2px 5px;
+ }
+
+ pre code {
+     display: block;
+     padding: 20px;
+     white-space: pre-wrap;
+     font-size: 14px;
+ }
+
+ blockquote {
+     border-left: 1px solid #999;
+     color: #ccc;
+     padding-left: 20px;
+     font-style: italic;
+ }
+
+ footer {
+     padding: 25px;
+     text-align: center;
+     color:#808080;
+ }
+
+ .helptext {
+     font-size: small;
+ }
+
+ .errorlist {
+     color: #eba613;
+     font-size: small;
+ }
+
+  
+ ul.blog-posts {
+     list-style-type: none;
+     padding: unset;
+ }
+
+ ul.blog-posts li {
+     display: flex;
+     padding: 2px;
+ }
+
+ ul.blog-posts li span {
+     flex: 0 0 130px;
+ }
+
+ ul.blog-posts li a:visited {
+     color: #8b6fcb;
+ }
+
+
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ strong,
+ b {
+     color: #eee;
+ }
+
+ a {
+     color: #8cc2dd;
+ }
+
+ code {
+     background-color: #282c34;
+ }
+
+ pre code {
+     color: #ddd;
+ }
+
+
+ textarea,
+ input {
+     background-color: #252525;
+     color: #ddd;
+ }
+
+ .helptext {
+     color: #aaa;
+ }
+
+ video.video {
+     display: block;
+     margin: 0 auto;
+     max-width: 100%;
+ }
+ p.video-fallback {
+     font-size: 80%;
+     margin-bottom: 15px;
+     color:#808080;
+ }
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Umar Ahmad</h2>
+</a>
+<nav><a href="/">Blog</a>
+
+<a href="/about">About</a>
+</nav>
+</header>
+  <main>
+<h1>Using Emacs to port my blog from Octopress to Hugo</h1>
+<p>
+  <i>
+    <time datetime='2021-01-24' pubdate>
+      24 Jan, 2021
+    </time>
+  </i>
+</p>
+<content>
+  
+<p>
+In my <a href="/blog/setting-up-the-blog-again">previous post</a> I explained my motivations to move this blog to hugo.</p>
+<p>
+This post is focused on how I did this in Emacs. As a matter of fact,
+this post is actually on how I do any such task from the within the
+comforts of Emacs. This post is therefore task agnostic and should be
+a basic demonstration of the capabilities of Emacs that I use.</p>
+<p>
+The purpose of this post is also to list down my workflow in detail
+for me to see gaps in it. The workflow can later be improved to fix
+some of these gaps.</p>
+<p>
+This is in no way a comprehensive post for porting the mentioned
+framework and I&#39;ve deliberately skipped steps that were either too
+straightforward to perform or used a technique that I&#39;ve already
+covered in doing something else. For a more detailed understanding of
+the process, please refer to <a href="https://retifrav.github.io/blog/2019/03/17/migrating-from-octopress-to-hugo/">this</a> blog post by someone else.</p>
+<p>
+For the sake of brevity I’ll only cover these topics:</p>
+<ul>
+<li>
+<p>Setting up the environment, i.e., setting up the directory structure
+git repositories and tooling.</p>
+</li>
+<li>
+<p>Port my markdown files so that they work with hugo</p>
+</li>
+</ul>
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+Setting up the environment
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<p>Hugo is a static site generator that works by by converting the
+&#34;content&#34; files written in many of the formats it supports, such as
+markdown or org into a set of html files.</p>
+<p>
+It uses a simple layout system mainly comprising of single pages and
+list pages to save the developer any repetitive work by reusing
+components across multiple places.</p>
+<div id="outline-container-headline-2" class="outline-3">
+<h3 id="headline-2">
+Installing hugo
+</h3>
+<div id="outline-text-headline-2" class="outline-text-3">
+<p><code class="verbatim">system-packages</code> package makes it possible to install any package from
+withing emacs.</p>
+<p>
+Pressing <code class="verbatim">C-c P i</code> bound to <code class="verbatim">system-packages-install</code> and
+typing hugo in the minibuffer installs it using your preferred package
+manager.</p>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-3">
+<h3 id="headline-3">
+Setting up the directories and repositories
+</h3>
+<div id="outline-text-headline-3" class="outline-text-3">
+<p>I planned on having two repositories for the blog. One would be the
+source repository having hugo files and the other would be for the
+generated html.</p>
+<p>
+I usually do directory operations from inside <code class="verbatim">dired</code> but I feel
+<code class="verbatim">counsel-find-file</code> is more intuitive when creating new files, in a
+different locations.</p>
+<ul>
+<li>
+<p><code class="verbatim">C-x C-f</code> bound to <code class="verbatim">counsel-find-file</code></p>
+</li>
+<li>
+<p>Type in <code class="verbatim">blog/blog-src</code> followed by <code class="verbatim">C-M-o</code></p>
+</li>
+<li>
+<p><code class="verbatim">d</code> to create a directory</p>
+</li>
+<li>
+<p>Type in <code class="verbatim">blog-gen</code> and <code class="verbatim">M-o</code> then <code class="verbatim">d</code> again to create another directory
+and quit to ivy buffer</p>
+<p>
+This is how it looks in practice:
+<video autoplay loop class="video">
+    <source src="/videos/create-directories.mp4">
+</video>
+
+<p class="video-fallback">Click <a href="/videos/create-directories.mp4">here</a> to download or view the video in a full browser window</p>
+</p>
+</li>
+</ul>
+<p>Initializing repositories can be done via <code class="verbatim">magit</code></p>
+<ul>
+<li>
+<p><code class="verbatim">C-x m</code>  bound to <code class="verbatim">magit-status</code> a directory will create a
+repository if one does not exist already and open magit-status buffer</p>
+</li>
+<li>
+<p><code class="verbatim">M a</code> from there adds a remote and fetches it</p>
+</li>
+<li>
+<p><code class="verbatim">b c</code> checkouts a new branch from another branch</p>
+</li>
+</ul>
+<p>
+After setting up the environment I can start porting my blog there.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-2">
+<h2 id="headline-4">
+Porting content files from old blog
+</h2>
+<div id="outline-text-headline-4" class="outline-text-2">
+<p>Moving my files from octopress to hugo required a few minor
+transformations to happen.</p>
+<ul>
+<li>
+<p><code class="verbatim">2014-02-19-hello-blogging.markdown</code> to be renamed to <code class="verbatim">hello-blogging.md</code></p>
+</li>
+<li>
+<p>Adding <code class="verbatim">aliases</code> to maintain the older links working</p>
+</li>
+<li>
+<p>Fixing invalid markdown that was valid in the older spec</p>
+</li>
+<li>
+<p>Removing few unnecessary meta tags from the header files</p>
+</li>
+</ul>
+<p>
+These need to happen on every file.</p>
+<div id="outline-container-headline-5" class="outline-3">
+<h3 id="headline-5">
+Bulk renaming
+</h3>
+<div id="outline-text-headline-5" class="outline-text-3">
+<p><code class="verbatim">dired-mode</code> and <code class="verbatim">wdired</code> are great for such tasks. Wdired makes any
+directory list editable like any other file.</p>
+<ul>
+<li>
+<p>Opening the dired buffer and pressing <code class="verbatim">W</code> to switch to wdired</p>
+</li>
+<li>
+<p><code class="verbatim">C-x h</code> to select all the lines followed by <code class="verbatim">C-n</code> to limit it to the only files</p>
+</li>
+<li>
+<p><code class="verbatim">C-S-c C-S-c</code>  bound to <code class="verbatim">mc/edit-lines</code> to get a cursor on every line.</p>
+</li>
+<li>
+<p>Edit the files names accordingly and <code class="verbatim">C-c C-c</code> to save the changes to disk.</p>
+<p>
+This is how it looks in practice:
+<video autoplay loop class="video">
+    <source src="/videos/wdired-multi-rename.mp4">
+</video>
+
+<p class="video-fallback">Click <a href="/videos/wdired-multi-rename.mp4">here</a> to download or view the video in a full browser window</p>
+</p>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-3">
+<h3 id="headline-6">
+Updating meta
+</h3>
+<div id="outline-text-headline-6" class="outline-text-3">
+<p>Aliases provide a way for hugo to create multiple links for one single
+post. The path for posts in my older blog was in
+<code class="verbatim">year/month/day/blog-title</code> format. There&#39;s a way to do this for <a href="https://gohugo.io/content-management/urls/#permalinks-configuration-example">all
+posts in hugo</a>, but I only wanted to retain this format for the older posts
+and would be happy with <code class="verbatim">/blog/blog-title</code> format that hugo uses by default.</p>
+<p>
+To do this I use the <code class="verbatim">date</code> field in the header of the octopress
+markdown files. These can be manipulated to create the date
+<code class="verbatim">year/month/day/</code> part in the <code class="verbatim">aliases</code> field. The <code class="verbatim">blog-title</code> can be
+derived from the file name, by writing some lisp code and running
+<code class="verbatim">eval-and-replace</code> (custom function in my config). Macros can then be
+used to do the same for all the files</p>
+<p>
+Macros in emacs allow an edit to replicated any number of times after
+recording them once. If we open the first file from dired, make the
+necessary changes and switch back to the dired buffer, we can make
+emacs do the change for all the files sequentially with just a single
+keystroke.</p>
+<p>
+A demonstration may give a better idea</p>
+<p>
+<video autoplay loop class="video">
+    <source src="/videos/macro-multi-file-edits.mp4">
+</video>
+
+<p class="video-fallback">Click <a href="/videos/macro-multi-file-edits.mp4">here</a> to download or view the video in a full browser window</p>
+</p>
+<p>
+This can be followed by running <code class="verbatim">C-c p s</code> bound to
+<code class="verbatim">projectile-save-project-buffers</code> to save all the modified buffers</p>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-3">
+<h3 id="headline-7">
+Fixing invalid spec
+</h3>
+<div id="outline-text-headline-7" class="outline-text-3">
+<p>One of the few incompatibilities in the markdown spec was how
+markdown to handled headings. Earlier</p>
+<div class="src src-text">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">#H1#
+##H2##
+###H3###
+####H4####
+#H1
+##H2
+###H3
+####H4</code></pre></div>
+</div>
+<p>
+were considered valid markdown headings which
+now had to be changed to</p>
+<div class="src src-text">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text"># H1
+## H2
+### H3
+#### H4</code></pre></div>
+</div>
+<p>This again needs to be done across all the files.</p>
+<p>
+Macros can be used here as well but macros can quickly get complex
+considering the keystrokes should be generic enough to work with all
+the files. I instead used a feature in emacs which allows me to search
+for terms from across multiple files and edit them in a single buffer,
+as if I&#39;m editing a single file. Emacs can then cleverly apply those
+changes to the original files.</p>
+<p>
+I did this by:</p>
+<ul>
+<li>
+<p><code class="verbatim">C-u C-c s s</code> bound to <code class="verbatim">counsel-rg</code> to search through the current directory</p>
+</li>
+<li>
+<p><code class="verbatim">C-c C-o</code> bound to <code class="verbatim">ivy-occur</code> to get the search results in a buffer</p>
+</li>
+<li>
+<p><code class="verbatim">w</code> bound to <code class="verbatim">ivy-wgrep-change-to-wgrep-mode</code> makes the buffer editable</p>
+</li>
+<li>
+<p>Editing them and running <code class="verbatim">C-c C-c</code> to save these changes</p>
+</li>
+</ul>
+<p>
+To make this simple it is done twice once to remove the preceding <code class="verbatim">#</code> and once to remove the following <code class="verbatim">#</code></p>
+<p>
+This is how it looks:</p>
+<p>
+<video autoplay loop class="video">
+    <source src="/videos/rg-occur-wgrep-edit.mp4">
+</video>
+
+<p class="video-fallback">Click <a href="/videos/rg-occur-wgrep-edit.mp4">here</a> to download or view the video in a full browser window</p>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-2">
+<h2 id="headline-8">
+Conclusion
+</h2>
+<div id="outline-text-headline-8" class="outline-text-2">
+<p>These steps allowed me to have a working hugo blog with all the posts
+ported from the older blog system.</p>
+<p>
+As I mentioned earlier, the purpose of this post was not to be a
+comprehensive guide of porting to hugo but instead a demonstration for
+how these tasks that might have required writing complex
+shell scripts or doing repetitive effort were done easily from within emacs.</p>
+<p>
+My emacs configuration can be found <a href="https://github.com/Gleek/emacs.d">on github</a> for people who are interested
+in replicating some of the features described here.</p>
+</div>
+</div>
+
+</content>
+<p>
+  
+  <a href="https://umarahmad.xyz/tags/emacs/">#emacs</a>
+  
+  <a href="https://umarahmad.xyz/tags/blog/">#blog</a>
+  
+</p>
+<script src="https://utteranc.es/client.js"
+        repo="gleek/gleek.github.io"
+        issue-term="pathname"
+        label="comment"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+  </main>
+  <footer><small>Copyright(c) - Umar Ahmad. Under GPL or CC BY-SA</small>
+</footer>
+
+    
+
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "71b7fde8b0a14726b3fe6fa23f7c7e20"}'></script>
+</body>
+
+</html>

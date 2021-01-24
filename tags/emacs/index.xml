@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>emacs on Umar Ahmad</title>
+    <link>https://umarahmad.xyz/tags/emacs/</link>
+    <description>Recent content in emacs on Umar Ahmad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Jan 2021 16:17:08 +0530</lastBuildDate><atom:link href="https://umarahmad.xyz/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Emacs to port my blog from Octopress to Hugo</title>
+      <link>https://umarahmad.xyz/blog/using-emacs-to-port-my-blog/</link>
+      <pubDate>Sun, 24 Jan 2021 16:17:08 +0530</pubDate>
+      
+      <guid>https://umarahmad.xyz/blog/using-emacs-to-port-my-blog/</guid>
+      <description>In my previous post I explained my motivations to move this blog to hugo.
+ This post is focused on how I did this in Emacs. As a matter of fact, this post is actually on how I do any such task from the within the comforts of Emacs. This post is therefore task agnostic and should be a basic demonstration of the capabilities of Emacs that I use.</description>
+    </item>
+    
+    <item>
+      <title>Editing remote code with Emacs</title>
+      <link>https://umarahmad.xyz/blog/editing-remote-code-with-emacs/</link>
+      <pubDate>Tue, 11 Apr 2017 22:56:54 +0530</pubDate>
+      
+      <guid>https://umarahmad.xyz/blog/editing-remote-code-with-emacs/</guid>
+      <description>&lt;p&gt;Lately, I&amp;rsquo;ve been working on a code-base situated remotely on a server accessible over &lt;code&gt;ssh&lt;/code&gt;.
+The network latency and size of the code repository prompted me to reconsider the method
+to edit such files. I discovered a few options I could use and finally settled with one of them.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Customizing Emacs</title>
+      <link>https://umarahmad.xyz/blog/customizing-emacs/</link>
+      <pubDate>Thu, 10 Apr 2014 18:32:50 +0530</pubDate>
+      
+      <guid>https://umarahmad.xyz/blog/customizing-emacs/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/ARlXYE_wnAvftBBl2UEvu-z9SpH-q3lyYNukRnNRwbUnXt6fGTP304OloJ3sJ3pSlMr_9QnPr_RxKamv65BFkEUqUEKB0TftIzNuOaiabipF1DNMYLzYReB_40Qr2TbbDndKYzeY5-MPUNmyzH9xmsuhWxmpywT4U5ayHJo2-dGy1W7wRlY2kY7QtTvneNt4OqGGZlqsSZLYM3WVcVwWFxBeJzPxirItCLPzRoRNPfdZZRy6k31JS65TU3WYW-7hvOcTuoZ6vDJSj2K3HyD73dpJ7YjNUwmJB9tjNzy7bqUXm5ftnuG14qPKs1Gtz1jpAGESfgafhUeLQL1pvDWP-VBQDLIwYaXr-XFTatPTgalAAPNd66J-cJ_J0O1OkF1DM-KM4RjqDhLkMOT9-RM5fkrG5_Rnibw32yJho_cGYTyk7523_CnePswMWjMtmMrTI4zyrsaRYVqBjfRxwznHExq1nAwuR-NSmP2EeeLvPYFP6ZSyMWyZCga2K0LH6J9-Qa8aHdkneuQ9ti6w0QGEJHr9HinsGuWBuALKd2H0ZlPxrwhOdKSyEIaWgq2mkt0vL653PCK4sN5zGZZte3kc7LL3I4WZhlN1oaRsXbIRTJaLEYhQTYj4BrRDS-59IHAwl2Ddf_AzsF9r7c6cKs-A2DQL2QpM2Nb5gU5Ae05pIw=w270-h217-no&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I believe the environment in which one works is directly responsible for one&amp;rsquo;s productivity. It&amp;rsquo;s the reason I think, it&amp;rsquo;s important to choose the right editor, font, etc.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

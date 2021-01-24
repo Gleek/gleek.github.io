@@ -6,7 +6,17 @@
     <description>Recent content in Blog on Umar Ahmad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 23 Jan 2021 19:39:03 +0530</lastBuildDate><atom:link href="https://umarahmad.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Jan 2021 16:17:08 +0530</lastBuildDate><atom:link href="https://umarahmad.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Emacs to port my blog from Octopress to Hugo</title>
+      <link>https://umarahmad.xyz/blog/using-emacs-to-port-my-blog/</link>
+      <pubDate>Sun, 24 Jan 2021 16:17:08 +0530</pubDate>
+      
+      <guid>https://umarahmad.xyz/blog/using-emacs-to-port-my-blog/</guid>
+      <description>In my previous post I explained my motivations to move this blog to hugo.
+ This post is focused on how I did this in Emacs. As a matter of fact, this post is actually on how I do any such task from the within the comforts of Emacs. This post is therefore task agnostic and should be a basic demonstration of the capabilities of Emacs that I use.</description>
+    </item>
+    
     <item>
       <title>Setting up the blog again</title>
       <link>https://umarahmad.xyz/blog/setting-up-the-blog-again/</link>

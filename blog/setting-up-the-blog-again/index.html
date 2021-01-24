@@ -33,7 +33,7 @@
  The earlier version of this blog was based on octopress with a lot of handcrafted code. The architecture of octopress along with my excitement of setting up the blog made this a cocktail of all possible plugins and tweaks that I could manage to squeeze into a static site. Copy pasted rake snippets and hacked together web and ruby code gave me what I wanted at the time.">
 <meta itemprop="datePublished" content="2021-01-23T19:39:03+05:30" />
 <meta itemprop="dateModified" content="2021-01-23T19:39:03+05:30" />
-<meta itemprop="wordCount" content="629">
+<meta itemprop="wordCount" content="644">
 
 
 
@@ -55,8 +55,8 @@
      color: #ddd;
  }
 
- 
- 
+
+
  .title {
      text-decoration: none;
      border: 0;
@@ -168,7 +168,7 @@
      color: #ddd;
  }
 
- 
+
  textarea,
  input {
      background-color: #252525;
@@ -179,6 +179,16 @@
      color: #aaa;
  }
 
+ video.video {
+     display: block;
+     margin: 0 auto;
+     max-width: 100%;
+ }
+ p.video-fallback {
+     font-size: 80%;
+     margin-bottom: 15px;
+     color:#808080;
+ }
 </style>
 
 </head>
@@ -215,7 +225,7 @@ what I wanted at the time. I was happy with that.</p>
 Although, setting up those bells and whistles was fun, this made it a
 nightmare to manage. Since I rarely update the blog, I never actually
 remembered how things worked. Every time I wanted to make a change I
-had to go through the documentation and the hacks I made again just to
+had to go through the documentation and the hacks I made, just to
 figure out the full system again.</p>
 <p>
 Setting up the domain and blog again gave me an opportunity to
@@ -223,7 +233,7 @@ resolve few of these issues.</p>
 <p>
 I wanted something simple and straightforward to manage. I also wanted
 to stay in the comfort of Emacs as much as possible and avoid any
-extra tooling as much as possible.</p>
+extra tooling.</p>
 <p>
 Hugo seems to have a simple architecture for me to wrap my head around
 and also has good org-mode support.</p>
@@ -233,12 +243,12 @@ to have more control over how things are but for now Hugo seems to
 work just fine.</p>
 <p>
 The quick start guide from hugo and <a href="https://retifrav.github.io/blog/2019/03/17/migrating-from-octopress-to-hugo/">this blogpost</a> helped me in
-understanding the full process.</p>
+understanding the process.</p>
 <p>
-I did the full process in Emacs which I’ll cover in another post in
-complete detail.</p>
+I did the this while staying almost completely in Emacs which I’ll
+cover in <a href="/blog/using-emacs-to-port-my-blog">another post</a> in complete detail.</p>
 <p>
-Broadly these are the filtered down steps to reach to that stage.</p>
+Broadly these are the filtered down steps to get to that point.</p>
 <ul>
 <li>
 <p><strong>Getting the domain</strong>: <a href="https://www.namecheap.com/">Namecheap</a> seemed like the best option to me,
@@ -256,21 +266,22 @@ you don’t need cloudflare to manage the traffic(<a href="https://www.namecheap
 <p><strong>Setting up Comment system</strong>: Hugo ships with Disqus but I wanted a
 lighter comment system with less lock-in. <a href="https://utteranc.es/">Utterances</a> provides a way
 for this. They use github issues to manage the comments. One
-drawback is that people will require a github account to post a
+drawback is that people will need a github account to post a
 comment. Considering that most of the posts here will be tech
-related. It should cover atleast 80% of the userbase.</p>
+related, it shouldn&#39;t be a problem for most of them.</p>
 </li>
 </ul>
-<p>I also didn’t want bootstrap with analytics and social media plugins
-plaguing the site. I went for the <a href="https://github.com/janraasch/hugo-bearblog">smallest theme</a> which suited my
-needs, removed few unnecessary styles from it. It’s a Pure HTML and
-CSS theme which also makes it ideal for viewing in text based browsers
-such as eww</p>
+<p>I also didn’t want any web frameworks, invasive analytics and social
+media plugins plaguing the site. I went for the <a href="https://github.com/janraasch/hugo-bearblog">smallest theme</a> which
+suited my needs, removed few unnecessary styles from it and updated
+some code in order for it to work in my accordance. It’s a Pure HTML
+and CSS theme which also makes it ideal for viewing in text based
+browsers such as eww</p>
 <p>
-I removed google analytics. I realized that I neither need to know
-detailed impressions and click paths nor do I want to ever have ads on
-this blog. The adblockers would anyways not let google count the
-correct impressions.</p>
+I removed google analytics. I realized that neither do I need to know
+the detailed impressions and click paths nor do I want to ever have
+ads on this blog. The adblockers would anyways not let google count
+the correct impressions.</p>
 <p>
 The total requests that cloudflare provides along with the path based
 analytics with a JS plugin is about the all analytics I’ll ever need
@@ -279,7 +290,7 @@ would add any value. I might remove it later. I just don’t want to
 bother removing it now considering their claim to be a privacy
 friendly analytics along with only 6KB of extra payload.</p>
 <p>
-I plan on detailing the move from octopress to hugo in a second part
+I plan on detailing the move from octopress to hugo in a <a href="/blog/using-emacs-to-port-my-blog">second part</a>
 of this blog, but since there are multiple posts about this already
 I’m planning to keep that Emacs focused and demonstrate on how I
 accomplish similar tasks in emacs.</p>
