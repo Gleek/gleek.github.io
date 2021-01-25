@@ -13,9 +13,8 @@
       <pubDate>Sun, 24 Jan 2021 16:17:08 +0530</pubDate>
       
       <guid>https://umarahmad.xyz/blog/using-emacs-to-port-my-blog/</guid>
-      <description>In my previous post I explained my motivations to move this blog to hugo.
- This post focuses on how I did this in Emacs. As a matter of fact, this post is actually on how I do any such task from within the comforts of Emacs. The post is therefore task agnostic and should be a basic demonstration of the capabilities of Emacs that I use.
- The purpose of this post is also to list down my workflow in detail for me to see any gaps in it.</description>
+      <description>A few days ago I ported my blog to hugo. I did this mostly while staying inside Emacs and switching to the web browser every now and then.
+ Doing this required me to use Emacs to edit and manage multiple files at once and this post demonstrates few of these techniques. The post is therefore mostly task agnostic and the techniques explained here should be usable for any such tasks.</description>
     </item>
     
     <item>

@@ -6,16 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Using Emacs to port my blog from Octopress to Hugo | Umar Ahmad</title>
 <meta name="title" content="Using Emacs to port my blog from Octopress to Hugo" />
-<meta name="description" content="In my previous post I explained my motivations to move this blog to hugo.
- This post focuses on how I did this in Emacs. As a matter of fact, this post is actually on how I do any such task from within the comforts of Emacs. The post is therefore task agnostic and should be a basic demonstration of the capabilities of Emacs that I use.
- The purpose of this post is also to list down my workflow in detail for me to see any gaps in it." />
+<meta name="description" content="A few days ago I ported my blog to hugo. I did this mostly while staying inside Emacs and switching to the web browser every now and then.
+ Doing this required me to use Emacs to edit and manage multiple files at once and this post demonstrates few of these techniques. The post is therefore mostly task agnostic and the techniques explained here should be usable for any such tasks." />
 <meta name="keywords" content="emacs,blog," />
 
 
 <meta property="og:title" content="Using Emacs to port my blog from Octopress to Hugo" />
-<meta property="og:description" content="In my previous post I explained my motivations to move this blog to hugo.
- This post focuses on how I did this in Emacs. As a matter of fact, this post is actually on how I do any such task from within the comforts of Emacs. The post is therefore task agnostic and should be a basic demonstration of the capabilities of Emacs that I use.
- The purpose of this post is also to list down my workflow in detail for me to see any gaps in it." />
+<meta property="og:description" content="A few days ago I ported my blog to hugo. I did this mostly while staying inside Emacs and switching to the web browser every now and then.
+ Doing this required me to use Emacs to edit and manage multiple files at once and this post demonstrates few of these techniques. The post is therefore mostly task agnostic and the techniques explained here should be usable for any such tasks." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://umarahmad.xyz/blog/using-emacs-to-port-my-blog/" />
 <meta property="article:published_time" content="2021-01-24T16:17:08+05:30" />
@@ -25,19 +23,17 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Emacs to port my blog from Octopress to Hugo"/>
-<meta name="twitter:description" content="In my previous post I explained my motivations to move this blog to hugo.
- This post focuses on how I did this in Emacs. As a matter of fact, this post is actually on how I do any such task from within the comforts of Emacs. The post is therefore task agnostic and should be a basic demonstration of the capabilities of Emacs that I use.
- The purpose of this post is also to list down my workflow in detail for me to see any gaps in it."/>
+<meta name="twitter:description" content="A few days ago I ported my blog to hugo. I did this mostly while staying inside Emacs and switching to the web browser every now and then.
+ Doing this required me to use Emacs to edit and manage multiple files at once and this post demonstrates few of these techniques. The post is therefore mostly task agnostic and the techniques explained here should be usable for any such tasks."/>
 
 
 
 <meta itemprop="name" content="Using Emacs to port my blog from Octopress to Hugo">
-<meta itemprop="description" content="In my previous post I explained my motivations to move this blog to hugo.
- This post focuses on how I did this in Emacs. As a matter of fact, this post is actually on how I do any such task from within the comforts of Emacs. The post is therefore task agnostic and should be a basic demonstration of the capabilities of Emacs that I use.
- The purpose of this post is also to list down my workflow in detail for me to see any gaps in it.">
+<meta itemprop="description" content="A few days ago I ported my blog to hugo. I did this mostly while staying inside Emacs and switching to the web browser every now and then.
+ Doing this required me to use Emacs to edit and manage multiple files at once and this post demonstrates few of these techniques. The post is therefore mostly task agnostic and the techniques explained here should be usable for any such tasks.">
 <meta itemprop="datePublished" content="2021-01-24T16:17:08+05:30" />
 <meta itemprop="dateModified" content="2021-01-24T16:17:08+05:30" />
-<meta itemprop="wordCount" content="1125">
+<meta itemprop="wordCount" content="1182">
 
 
 
@@ -218,19 +214,21 @@
 <content>
   
 <p>
-In my <a href="/blog/setting-up-the-blog-again">previous post</a> I explained my motivations to move this blog to hugo.</p>
+A few days ago <a href="/blog/setting-up-the-blog-again">I ported my blog to hugo</a>. I did this mostly while
+staying inside Emacs and switching to the web browser every now and
+then.</p>
 <p>
-This post focuses on how I did this in Emacs. As a matter of fact,
-this post is actually on how I do any such task from within the
-comforts of Emacs. The post is therefore task agnostic and should be
-a basic demonstration of the capabilities of Emacs that I use.</p>
+Doing this required me to use Emacs to edit and manage multiple files
+at once and this post demonstrates few of these techniques. The post
+is therefore mostly task agnostic and the techniques explained here
+should be usable for any such tasks.</p>
 <p>
 The purpose of this post is also to list down my workflow in detail
-for me to see any gaps in it. The workflow can later be improved to fix
-some of these gaps.</p>
+for me to see any gaps in possible optimizations. These optimizations
+can later me worked upon and introduced in my workflow.</p>
 <p>
-This is in no way a comprehensive post for porting the mentioned
-framework and I&#39;ve deliberately skipped steps that were either too
+This is in no way a comprehensive post for porting any blog to
+hugo and I&#39;ve deliberately skipped steps that were either too
 straightforward to perform or used a technique that I&#39;ve already
 covered in doing something else. For a more detailed understanding of
 the process, please refer to <a href="https://retifrav.github.io/blog/2019/03/17/migrating-from-octopress-to-hugo/">this</a> blog post by someone else.</p>
@@ -280,7 +278,7 @@ source repository having hugo files and the other would be for the
 generated html.</p>
 <p>
 I usually do directory operations from inside <code class="verbatim">dired</code> but I feel
-<code class="verbatim">counsel-find-file</code> is more intuitive when creating new files, in a
+<code class="verbatim">counsel-find-file</code> is more intuitive when creating new files, in
 different locations.</p>
 <ul>
 <li>
@@ -295,17 +293,17 @@ different locations.</p>
 <li>
 <p>Type in <code class="verbatim">blog-gen</code> and <code class="verbatim">M-o</code> then <code class="verbatim">d</code> again to create another directory
 and quit to ivy buffer</p>
-<p>
-This is how it looks in practice:
+</li>
+</ul>
+<p>This is how it looks in practice:
 <video autoplay loop class="video">
     <source src="/videos/create-directories.mp4">
 </video>
 
 <p class="video-fallback">Click <a href="/videos/create-directories.mp4">here</a> to download or view the video in a full browser window</p>
 </p>
-</li>
-</ul>
-<p>Initializing repositories can be done via <code class="verbatim">magit</code></p>
+<p>
+Initializing repositories can be done via <code class="verbatim">magit</code></p>
 <ul>
 <li>
 <p><code class="verbatim">C-x m</code>  bound to <code class="verbatim">magit-status</code> a directory will create a
@@ -383,7 +381,7 @@ This is how it looks in practice:
 Updating meta
 </h3>
 <div id="outline-text-headline-6" class="outline-text-3">
-<p>Aliases provide a way for hugo to create multiple links for one single
+<p><code class="verbatim">aliases</code> provide a way for hugo to create multiple links for one single
 post. The path for posts in my older blog was in
 <code class="verbatim">year/month/day/blog-title</code> format. There&#39;s a way to do this for <a href="https://gohugo.io/content-management/urls/#permalinks-configuration-example">all
 posts in hugo</a>, but I only wanted to retain this format for the older posts
@@ -492,6 +490,12 @@ As I mentioned earlier, the purpose of this post was not to be a
 comprehensive guide of porting to hugo but instead a demonstration for
 how these tasks that might have required writing complex
 shell scripts or doing repetitive effort were done easily from within emacs.</p>
+<p>
+Emacs provides other ways to manage multiple files together as
+well. Dired, LSP, Projectile can all be used to manage multiple files
+at once in ways not covered in this post and each demanding an article
+on it&#39;s own. I therefore, only covered the features that I used in this
+particular task.</p>
 <p>
 My emacs configuration can be found <a href="https://github.com/Gleek/emacs.d">on github</a> for people who are interested
 in replicating some of the features described here.</p>
