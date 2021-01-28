@@ -6,7 +6,17 @@
     <description>Recent content on Umar Ahmad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Jan 2021 16:17:08 +0530</lastBuildDate><atom:link href="https://umarahmad.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Jan 2021 15:43:20 +0530</lastBuildDate><atom:link href="https://umarahmad.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Improve ranking of files in projectile</title>
+      <link>https://umarahmad.xyz/blog/improved-ranking-for-projectile-find-file/</link>
+      <pubDate>Thu, 28 Jan 2021 15:43:20 +0530</pubDate>
+      
+      <guid>https://umarahmad.xyz/blog/improved-ranking-for-projectile-find-file/</guid>
+      <description>I&amp;#39;ve been using projectile, and more recently counsel-projectile, to manage my project files and it has been a life saver. projectile-find-file is probably among my most used commands.
+ Despite my fondness for this package, a thing that has bothered me is the default sorting of the files while searching. As the project becomes larger and the files become sparse, some extra typing needs to be done to filter down to the intended file.</description>
+    </item>
+    
     <item>
       <title>Porting my blog to Hugo from inside Emacs</title>
       <link>https://umarahmad.xyz/blog/using-emacs-to-port-my-blog/</link>

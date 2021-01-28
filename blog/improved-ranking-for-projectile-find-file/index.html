@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Improve ranking of files in projectile | Umar Ahmad</title>
+<meta name="title" content="Improve ranking of files in projectile" />
+<meta name="description" content="I&#39;ve been using projectile, and more recently counsel-projectile, to manage my project files and it has been a life saver. projectile-find-file is probably among my most used commands.
+ Despite my fondness for this package, a thing that has bothered me is the default sorting of the files while searching. As the project becomes larger and the files become sparse, some extra typing needs to be done to filter down to the intended file." />
+<meta name="keywords" content="emacs," />
+
+
+<meta property="og:title" content="Improve ranking of files in projectile" />
+<meta property="og:description" content="I&#39;ve been using projectile, and more recently counsel-projectile, to manage my project files and it has been a life saver. projectile-find-file is probably among my most used commands.
+ Despite my fondness for this package, a thing that has bothered me is the default sorting of the files while searching. As the project becomes larger and the files become sparse, some extra typing needs to be done to filter down to the intended file." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://umarahmad.xyz/blog/improved-ranking-for-projectile-find-file/" />
+<meta property="article:published_time" content="2021-01-28T15:43:20+05:30" />
+<meta property="article:modified_time" content="2021-01-28T15:43:20+05:30" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Improve ranking of files in projectile"/>
+<meta name="twitter:description" content="I&#39;ve been using projectile, and more recently counsel-projectile, to manage my project files and it has been a life saver. projectile-find-file is probably among my most used commands.
+ Despite my fondness for this package, a thing that has bothered me is the default sorting of the files while searching. As the project becomes larger and the files become sparse, some extra typing needs to be done to filter down to the intended file."/>
+
+
+
+<meta itemprop="name" content="Improve ranking of files in projectile">
+<meta itemprop="description" content="I&#39;ve been using projectile, and more recently counsel-projectile, to manage my project files and it has been a life saver. projectile-find-file is probably among my most used commands.
+ Despite my fondness for this package, a thing that has bothered me is the default sorting of the files while searching. As the project becomes larger and the files become sparse, some extra typing needs to be done to filter down to the intended file.">
+<meta itemprop="datePublished" content="2021-01-28T15:43:20+05:30" />
+<meta itemprop="dateModified" content="2021-01-28T15:43:20+05:30" />
+<meta itemprop="wordCount" content="1537">
+
+
+
+<meta itemprop="keywords" content="emacs," />
+
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+ body {
+     font-family: Verdana, sans-serif;
+     margin: auto;
+     padding: 20px;
+     max-width: 720px;
+     text-align: left;
+     word-wrap: break-word;
+     overflow-wrap: break-word;
+     line-height: 1.5;
+     background-color: #333;
+     color: #ddd;
+ }
+
+
+
+ .title {
+     text-decoration: none;
+     border: 0;
+ }
+
+ .title span {
+     font-weight: 400;
+ }
+
+ nav a {
+     margin-right: 10px;
+ }
+
+ textarea {
+     width: 100%;
+     font-size: 16px;
+ }
+
+ input {
+     font-size: 16px;
+ }
+
+ content {
+     line-height: 1.6;
+ }
+
+ table {
+     width: 100%;
+ }
+
+ img {
+     max-width: 100%;
+ }
+
+ code {
+     padding: 2px 5px;
+ }
+
+ pre code {
+     display: block;
+     padding: 20px;
+     white-space: pre-wrap;
+     font-size: 14px;
+ }
+
+ blockquote {
+     border-left: 1px solid #999;
+     color: #ccc;
+     padding-left: 20px;
+     font-style: italic;
+ }
+
+ footer {
+     padding: 25px;
+     text-align: center;
+     color:#808080;
+ }
+
+ .helptext {
+     font-size: small;
+ }
+
+ .errorlist {
+     color: #eba613;
+     font-size: small;
+ }
+
+  
+ ul.blog-posts {
+     list-style-type: none;
+     padding: unset;
+ }
+
+ ul.blog-posts li {
+     display: flex;
+     padding: 2px;
+ }
+
+ ul.blog-posts li span {
+     flex: 0 0 130px;
+ }
+
+ ul.blog-posts li a:visited {
+     color: #8b6fcb;
+ }
+
+
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ strong,
+ b {
+     color: #eee;
+ }
+
+ a {
+     color: #8cc2dd;
+ }
+
+ code {
+     background-color: #282c34;
+ }
+
+ pre code {
+     color: #ddd;
+ }
+
+
+ textarea,
+ input {
+     background-color: #252525;
+     color: #ddd;
+ }
+
+ .helptext {
+     color: #aaa;
+ }
+
+ video.video {
+     display: block;
+     margin: 0 auto;
+     max-width: 100%;
+ }
+ p.video-fallback {
+     font-size: 80%;
+     margin-bottom: 15px;
+     color:#808080;
+ }
+ 
+ figcaption {
+     font-size: 80%;
+     margin-bottom: 15px;
+     color:#808080;
+ }
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Umar Ahmad</h2>
+</a>
+<nav><a href="/">Blog</a>
+
+<a href="/about">About</a>
+</nav>
+</header>
+  <main>
+<h1>Improve ranking of files in projectile</h1>
+<p>
+  <i>
+    <time datetime='2021-01-28' pubdate>
+      28 Jan, 2021
+    </time>
+  </i>
+</p>
+<content>
+  
+<p>
+I&#39;ve been using <code class="verbatim">projectile</code>, and more recently <code class="verbatim">counsel-projectile</code>, to
+manage my project files and it has been a life saver.
+<code class="verbatim">projectile-find-file</code> is probably among my most used commands.</p>
+<p>
+Despite my fondness for this package, a thing that has bothered me is
+the default sorting of the files while searching. As the project
+becomes larger and the files become sparse, some extra typing needs to
+be done to filter down to the intended file.</p>
+<p>
+This post explores an improvement which should make the experience of
+searching for files better by providing a more relevant list of files.</p>
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+Why not use <code class="verbatim">counsel-fzf</code>?
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<p>
+There are packages that integrate external searching tools such as
+<code class="verbatim">counsel-fzf</code>. They usually provide better ranking than the out of the
+box experience from projectile. These can work asynchronously and are
+also faster than any native emacs implementation.</p>
+<p>
+Therefore, <code class="verbatim">counsel-fzf</code> alone should be sufficient for most people unhappy with
+the default search ranking in projectile.</p>
+<p>
+That being said, I&#39;ve a few reasons for not using fzf</p>
+<div id="outline-container-headline-2" class="outline-3">
+<h3 id="headline-2">
+fzf is not specifically built to search files
+</h3>
+<div id="outline-text-headline-2" class="outline-text-3">
+<p>Even though, arguably, fzf is mostly used to filter a large list of
+files, it is not specifically built for it. It
+will work the same way when provided with any arbitrary list.</p>
+<p>
+This feature of fzf limits the optimizations that could have been
+made for the specific problem of searching filenames.</p>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-3">
+<h3 id="headline-3">
+fzf lacks context
+</h3>
+<div id="outline-text-headline-3" class="outline-text-3">
+<p>fzf, like any other external tool, lacks the context from inside
+Emacs. It isn&#39;t aware of the recent files or the buffers that are open.</p>
+<p>
+Integrating these might be possible but certainly not easy.</p>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-3">
+<h3 id="headline-4">
+fzf has fuzzy search
+</h3>
+<div id="outline-text-headline-4" class="outline-text-3">
+<p>This might be an unpopular opinion, but I don&#39;t think fuzzy searching is
+superior to it&#39;s alternatives.</p>
+<p>
+Fuzzy search would seem much faster than it&#39;s alternatives in
+filtering down the lists in theory. But, at least for me, in practice
+I&#39;ve always been able to filter more quickly and reliably when using
+the default ivy filtering.</p>
+<p>
+Fuzzy search works roughly by adding <code class="verbatim">.*</code> after every character
+whereas the ivy works by substituting the space with <code class="verbatim">.*</code></p>
+<p>
+So searching for <code class="verbatim">search term</code> would expand to <code class="verbatim">s.*e.*a.*…</code> for a
+generic fuzzy searching algorithm but <code class="verbatim">search.*term</code> for ivy.</p>
+<p>
+Fuzzy searching algorithms usually do have a scoring system which
+makes them do their magic but nonetheless, predicting this magic is
+hard. Many a times I see no correlation between the input and the
+results without really trying to find it.</p>
+<p>
+Also, as is obvious from the regex, fuzzy search would return a
+super-set of what a normal ivy search would, so you&#39;re almost always
+dealing with more results.</p>
+<p>
+Even when a fuzzy searching system is built specifically search files and has
+the context, it might not work as intended. Issue queue of VSCode, for
+example, has multiple examples of it failing for users(<a href="https://github.com/microsoft/vscode/issues/2705">such</a> <a href="https://github.com/microsoft/vscode/issues/99171">as</a> <a href="https://github.com/microsoft/vscode/issues/103889">these</a>).</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-2">
+<h2 id="headline-5">
+Adding a ranking system
+</h2>
+<div id="outline-text-headline-5" class="outline-text-2">
+<p>Considering ivy already provides a good searching framework, what we
+need is a good ranking system.</p>
+<p>
+A generic search ranking system works by giving a <em>score</em> to each search
+element which can then be used to sort the results.</p>
+<p>
+A basic scoring system could give scores on these factors</p>
+<div id="outline-container-headline-6" class="outline-3">
+<h3 id="headline-6">
+Static factors
+</h3>
+<div id="outline-text-headline-6" class="outline-text-3">
+<p>These factors are such that they are not affected by the search term
+but can be derived from the file.</p>
+<ul>
+<li>
+<p><strong>Buffer files</strong>: If a file in the project is currently open there’s a
+high chance that I’m searching for this file. The older the buffer
+gets the less score boost it should get.</p>
+</li>
+<li>
+<p><strong>Recent files</strong>: If a file in a project has been recently visited that
+should contribute to increasing it’s score.</p>
+</li>
+<li>
+<p><strong>Length of file path</strong>: Considering a file with a longer path can
+afford more characters to get filtered, a file with shorter path
+should get a better score.</p>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-3">
+<h3 id="headline-7">
+Dynamic factors
+</h3>
+<div id="outline-text-headline-7" class="outline-text-3">
+<p>The scores due to these factors vary with the search term</p>
+<ul>
+<li>
+<p><strong>File non-directory name match</strong>: If the non-directory name of the file
+exactly matches the search term then it gets a score
+boost. Eg. <code class="verbatim">file.ext</code> in <code class="verbatim">path/of/file.ext</code></p>
+</li>
+<li>
+<p><strong>File basename match</strong>: If the basename of the file exactly matches the
+search term then it gets a score boost. Eg. <code class="verbatim">file</code> in <code class="verbatim">path/of/file.ext</code></p>
+</li>
+<li>
+<p><strong>File prefix match</strong>: If the prefix of the file basename  matches with the
+search term then the score increased. Eg. <code class="verbatim">fi</code> in <code class="verbatim">path/of/file.ext</code></p>
+</li>
+<li>
+<p><strong>File name loose match</strong>: If the file name loosely matches the search
+term then give it a higher score than when only directory name
+matches. Eg. <code class="verbatim">ile</code> in <code class="verbatim">path/of/file.ext</code>.</p>
+</li>
+</ul>
+<p>
+As you might have guessed, these are ordered here in decreasing order
+of their scores.</p>
+<p>
+Considering the nature of the factors, only the best matching dynamic
+factor is chosen while choosing all the static factors while scoring.
+The reasoning for this is purely intuitive.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-2">
+<h2 id="headline-8">
+Demo
+</h2>
+<div id="outline-text-headline-8" class="outline-text-2">
+<p>The following videos demo <code class="verbatim">counsel-projectile-find-file</code>, <code class="verbatim">counsel-fzf</code>
+and our newly written <code class="verbatim">+projectile-find-file</code>, based on the scoring model above.</p>
+<p>
+This is the project tree that is used</p>
+<div class="src src-text">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">.
+├── a-somedirectory
+│   ├── afile-suffix.txt
+│   └── suffix.txt
+├── suffix-directory
+│   └── unrelated-file.txt
+├── suffix-postfix.txt
+└── suffix.txt</code></pre></div>
+</div>
+<p>
+We’ll be searching for &#34;<code class="verbatim">suffix</code>&#34;, and analyzing the results for each framework.</p>
+<div id="outline-container-headline-9" class="outline-3">
+<h3 id="headline-9">
+counsel-projectile-find-file
+</h3>
+<div id="outline-text-headline-9" class="outline-text-3">
+<ul>
+<li>
+<p>Default sorting seems alphabetic</p>
+</li>
+<li>
+<p>Retains sorting when searching</p>
+<p>
+<video autoplay loop class="video">
+    <source src="/videos/counsel-projectile-find-file-limitation.mp4">
+</video>
+
+<p class="video-fallback">Click <a href="/videos/counsel-projectile-find-file-limitation.mp4">here</a> to download or view the video in a full browser window</p>
+</p>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-10" class="outline-3">
+<h3 id="headline-10">
+counsel-fzf
+</h3>
+<div id="outline-text-headline-10" class="outline-text-3">
+<ul>
+<li>
+<p>No apparent default sorting</p>
+</li>
+<li>
+<p>File basenames exactly matching the search term are not pushed up.</p>
+<p>
+<video autoplay loop class="video">
+    <source src="/videos/counsel-fzf-limitation.mp4">
+</video>
+
+<p class="video-fallback">Click <a href="/videos/counsel-fzf-limitation.mp4">here</a> to download or view the video in a full browser window</p>
+</p>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-11" class="outline-3">
+<h3 id="headline-11">
++projectile-find-file
+</h3>
+<div id="outline-text-headline-11" class="outline-text-3">
+<ul>
+<li>
+<p>Default sorting considers recent files and buffers and falls back on
+alphabetic sorting</p>
+</li>
+<li>
+<p>Searching for <code class="verbatim">suffix</code> brings the file base names exactly matching
+<code class="verbatim">suffix</code> to the top</p>
+</li>
+<li>
+<p>File is ranked higher if already open as a buffer</p>
+<p>
+<video autoplay loop class="video">
+    <source src="/videos/&#43;projectile-find-file-demo.mp4">
+</video>
+
+<p class="video-fallback">Click <a href="/videos/&#43;projectile-find-file-demo.mp4">here</a> to download or view the video in a full browser window</p>
+</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-12" class="outline-2">
+<h2 id="headline-12">
+Code
+</h2>
+<div id="outline-text-headline-12" class="outline-text-2">
+<p>You can find the code <a href="https://github.com/Gleek/emacs.d/blob/49875ba2ae8a3390408b582d0697d6237dd86fdb/packages/%2Bprojectile-find-file.el">here</a> in my config. This is a permalink to the
+commit at the time of writing this. The latest version can be found on
+<a href="https://github.com/Gleek/emacs.d/search?q=projectile-find-file">the master branch</a>.</p>
+<div id="outline-container-headline-13" class="outline-3">
+<h3 id="headline-13">
+Working
+</h3>
+<div id="outline-text-headline-13" class="outline-text-3">
+<ul>
+<li>
+<p>It starts by populating hashtables with project recent files and
+project buffer files with their base scores. Buffers get a linearly
+decreasing score on the basis of their &#34;oldness&#34;.</p>
+</li>
+<li>
+<p>Projectile is invoked and the files are ranked and sorted using the
+static factors. Length of the file is not considered at this time.</p>
+</li>
+<li>
+<p>Once the user starts searching</p>
+<ul>
+<li>
+<p>The <code class="verbatim">counsel--find-file-matcher</code> is used to filter down the list</p>
+</li>
+<li>
+<p>Both static and dynamic factors are applied to calculate the
+scores</p>
+</li>
+<li>
+<p>The files are then sorted on the basis of scores they have</p>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-14" class="outline-3">
+<h3 id="headline-14">
+Few considerations
+</h3>
+<div id="outline-text-headline-14" class="outline-text-3">
+<p>The code above depends on <code class="verbatim">counsel-projectile</code>, but it is not a hard
+requirement. I only add it to provide few extra actions on the
+files. Those actions can be removed to remove that dependency.</p>
+<p>
+Most of the users should be well off with <code class="verbatim">(setq
+projectile-completion-system &#39;ivy)</code> anyway.</p>
+<p>
+I’d just mention that even though this code has worked well for me on
+my projects and in my workflow, I haven’t tested it specifically outside of
+my usage. Also, considering that the code has evolved just before this
+post, I’d suggest the user be ready to tackle a few bugs in their usage.</p>
+<p>
+Also note that the scores for each of the factor is completely intuitive and is not
+backed by data. Feel free to modify them. They should be easily
+modifiable by changing the variable defined on top of the linked file.</p>
+<p>
+To completely replace counsel-projectile with this add this snippet:</p>
+<div class="src src-elisp">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(advice-add <span style="color:#e6db74">&#39;counsel-projectile-switch-project-action</span> :override <span style="color:#e6db74">&#39;counsel-projectile-switch-project-action-find-file</span>)
+(advice-add <span style="color:#e6db74">&#39;counsel-projectile-find-file</span> :override <span style="color:#e6db74">&#39;+projectile-find-file</span>)</code></pre></div>
+</div>
+<p>
+To get file icons if you have <a href="https://github.com/asok/all-the-icons-ivy">all-the-icons-ivy</a> installed, add this:</p>
+<div class="src src-elisp">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(eval-after-load <span style="color:#e6db74">&#39;all-the-icons-ivy</span>
+  (progn (add-to-list <span style="color:#e6db74">&#39;all-the-icons-ivy-file-commands</span> <span style="color:#e6db74">&#39;+projectile-find-file</span>)
+  (all-the-icons-ivy-setup)))</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-15" class="outline-2">
+<h2 id="headline-15">
+Future improvements
+</h2>
+<div id="outline-text-headline-15" class="outline-text-2">
+<p>
+There are multiple improvements that I can think of already.</p>
+<p>
+These haven’t bothered me enough to actually solve for them right
+now. I might work on them later and update the code in my config
+accordingly.</p>
+<div id="outline-container-headline-16" class="outline-3">
+<h3 id="headline-16">
+Asynchronous running
+</h3>
+<div id="outline-text-headline-16" class="outline-text-3">
+<p>There’s a slight lag when listing a considerably large project
+files.</p>
+<p>
+An implementation I can think of is using emacs-async to populate the
+file list in a separate buffer and running a timer to transfer the
+content to ivy.</p>
+<p>
+I can think of few other similar hacks, each with caveats of their own. I’m
+not sure if there’s a way to achieve this in ivy natively.</p>
+</div>
+</div>
+<div id="outline-container-headline-17" class="outline-3">
+<h3 id="headline-17">
+Ranking exact subword match higher
+</h3>
+<div id="outline-text-headline-17" class="outline-text-3">
+<p>Search terms matching subwords inside files should rank higher. An
+example of subword can be <code class="verbatim">file</code> in <code class="verbatim">myFile</code> / <code class="verbatim">my-file</code> / <code class="verbatim">my_file</code> etc.</p>
+</div>
+</div>
+<div id="outline-container-headline-18" class="outline-3">
+<h3 id="headline-18">
+Handling spaces in search query
+</h3>
+<div id="outline-text-headline-18" class="outline-text-3">
+<p>All the dynamic factors for scoring are pretty much useless if the
+user adds space to their search query. Handling those to match
+subwords or directory names should improve the ranking further.</p>
+</div>
+</div>
+<div id="outline-container-headline-19" class="outline-3">
+<h3 id="headline-19">
+Making it easier to add new scoring factors
+</h3>
+<div id="outline-text-headline-19" class="outline-text-3">
+<p>The scoring factors are embedded in the code and there’s no easy way
+to add new ones. This is not an issue now considering the few factors
+we have currently, but this might have to be done to make this generic
+enough for other people to use it.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-20" class="outline-2">
+<h2 id="headline-20">
+Outro
+</h2>
+<div id="outline-text-headline-20" class="outline-text-2">
+<p>As I said earlier, this code has worked great for the few projects I
+had but hasn’t been tested extensively. Please treat it likewise.</p>
+<p>
+This has only been possible because of the work of people like
+<a href="https://metaredux.com/about/">Bozhidar</a> and <a href="https://oremacs.com/about/">Oleh</a>. They both have had immense contribution to the
+emacs community. Please consider donating through the links on their
+respective websites, if you feel likewise and are able to.</p>
+</div>
+</div>
+
+</content>
+<p>
+  
+  <a href="https://umarahmad.xyz/tags/emacs/">#emacs</a>
+  
+</p>
+<script src="https://utteranc.es/client.js"
+        repo="gleek/gleek.github.io"
+        issue-term="pathname"
+        label="comment"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+  </main>
+  <footer><small>Copyright(c) - Umar Ahmad. Under GPL or CC BY-SA</small>
+</footer>
+
+    
+
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "71b7fde8b0a14726b3fe6fa23f7c7e20"}'></script>
+</body>
+
+</html>
