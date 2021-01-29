@@ -33,7 +33,7 @@
  Despite my fondness for this package, a thing that has bothered me is the default sorting of the files while searching. As the project becomes larger and the files become sparse, some extra typing needs to be done to filter down to the intended file.">
 <meta itemprop="datePublished" content="2021-01-28T15:43:20+05:30" />
 <meta itemprop="dateModified" content="2021-01-28T15:43:20+05:30" />
-<meta itemprop="wordCount" content="1537">
+<meta itemprop="wordCount" content="1597">
 
 
 
@@ -599,9 +599,21 @@ subwords or directory names should improve the ranking further.</p>
 </div>
 <div id="outline-container-headline-19" class="outline-3">
 <h3 id="headline-19">
-Making it easier to add new scoring factors
+Adding prescient.el as a scoring factor
 </h3>
 <div id="outline-text-headline-19" class="outline-text-3">
+<p><a href="https://github.com/raxod502/prescient.el">Prescient.el</a> is an effective enhancement to all your completing-read
+frameworks by ranking them in descending order of their usage. It
+works in a similar way, by having the scores of the recently chosen
+elements in decreasing order of their usage. This score can be used as
+a factor for scoring project files even better.</p>
+</div>
+</div>
+<div id="outline-container-headline-20" class="outline-3">
+<h3 id="headline-20">
+Making it easier to add new scoring factors
+</h3>
+<div id="outline-text-headline-20" class="outline-text-3">
 <p>The scoring factors are embedded in the code and there’s no easy way
 to add new ones. This is not an issue now considering the few factors
 we have currently, but this might have to be done to make this generic
@@ -610,11 +622,11 @@ enough for other people to use it.</p>
 </div>
 </div>
 </div>
-<div id="outline-container-headline-20" class="outline-2">
-<h2 id="headline-20">
+<div id="outline-container-headline-21" class="outline-2">
+<h2 id="headline-21">
 Outro
 </h2>
-<div id="outline-text-headline-20" class="outline-text-2">
+<div id="outline-text-headline-21" class="outline-text-2">
 <p>As I said earlier, this code has worked great for the few projects I
 had but hasn’t been tested extensively. Please treat it likewise.</p>
 <p>
