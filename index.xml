@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on Umar Ahmad</title>
+    <title>Umar Ahmad</title>
     <link>https://umarahmad.xyz/</link>
-    <description>Recent content in Blog on Umar Ahmad</description>
+    <description>Recent content on Umar Ahmad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 Jan 2021 15:43:20 +0530</lastBuildDate><atom:link href="https://umarahmad.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Apr 2021 15:49:21 +0530</lastBuildDate><atom:link href="https://umarahmad.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quick persistent scratch buffers</title>
+      <link>https://umarahmad.xyz/blog/quick-scratch-buffers/</link>
+      <pubDate>Sat, 03 Apr 2021 15:49:21 +0530</pubDate>
+      
+      <guid>https://umarahmad.xyz/blog/quick-scratch-buffers/</guid>
+      <description>Emacs has a feature where you can quickly open a buffer to paste or keep text temporarily. It can be done by calling switch-to-buffer and typing out any name and pressing return. If a buffer with such a name exists it shows up, otherwise an empty buffer with no associated file is created. I discovered this accidentally years ago and have been using this feature a lot since.
+ The problem with this is that the buffers created only last till your emacs session lasts.</description>
+    </item>
+    
     <item>
       <title>Improve ranking of files in projectile</title>
       <link>https://umarahmad.xyz/blog/improved-ranking-for-projectile-find-file/</link>
@@ -35,6 +45,18 @@
       <guid>https://umarahmad.xyz/blog/setting-up-the-blog-again/</guid>
       <description>I recently acquired umarahmad.xyz and moved my old blog there.
  The earlier version of this blog was based on octopress with a lot of handcrafted code. The architecture of octopress along with my excitement of setting up the blog made this a cocktail of all possible plugins and tweaks that I could manage to squeeze into a static site. Copy pasted rake snippets and hacked together web and ruby code gave me what I wanted at the time.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://umarahmad.xyz/about/</link>
+      <pubDate>Sat, 23 Jan 2021 05:35:22 +0530</pubDate>
+      
+      <guid>https://umarahmad.xyz/about/</guid>
+      <description>My name is Umar Ahmad. I work as a software engineer in Zomato.
+ I spend most of my time inside Emacs. Discovering and learning something new almost every time I sit down for change in my config. Hopefully, this blog will contain some of those learnings.
+ Speaking of config, you can find my dotfiles and my emacs config on github
+Blog   This blog is built with Hugo and uses a slightly modified BearBlog theme.</description>
     </item>
     
     <item>

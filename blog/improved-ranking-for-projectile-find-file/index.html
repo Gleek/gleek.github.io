@@ -15,9 +15,10 @@
 <meta property="og:description" content="I&#39;ve been using projectile, and more recently counsel-projectile, to manage my project files and it has been a life saver. projectile-find-file is probably among my most used commands.
  Despite my fondness for this package, a thing that has bothered me is the default sorting of the files while searching. As the project becomes larger and the files become sparse, some extra typing needs to be done to filter down to the intended file." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://umarahmad.xyz/blog/improved-ranking-for-projectile-find-file/" />
-<meta property="article:published_time" content="2021-01-28T15:43:20+05:30" />
-<meta property="article:modified_time" content="2021-01-28T15:43:20+05:30" />
+<meta property="og:url" content="https://umarahmad.xyz/blog/improved-ranking-for-projectile-find-file/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2021-01-28T15:43:20&#43;05:30" />
+<meta property="article:modified_time" content="2021-01-28T15:43:20&#43;05:30" />
+
 
 
 
@@ -30,15 +31,10 @@
 
 <meta itemprop="name" content="Improve ranking of files in projectile">
 <meta itemprop="description" content="I&#39;ve been using projectile, and more recently counsel-projectile, to manage my project files and it has been a life saver. projectile-find-file is probably among my most used commands.
- Despite my fondness for this package, a thing that has bothered me is the default sorting of the files while searching. As the project becomes larger and the files become sparse, some extra typing needs to be done to filter down to the intended file.">
-<meta itemprop="datePublished" content="2021-01-28T15:43:20+05:30" />
-<meta itemprop="dateModified" content="2021-01-28T15:43:20+05:30" />
-<meta itemprop="wordCount" content="1596">
-
-
-
+ Despite my fondness for this package, a thing that has bothered me is the default sorting of the files while searching. As the project becomes larger and the files become sparse, some extra typing needs to be done to filter down to the intended file."><meta itemprop="datePublished" content="2021-01-28T15:43:20&#43;05:30" />
+<meta itemprop="dateModified" content="2021-01-28T15:43:20&#43;05:30" />
+<meta itemprop="wordCount" content="1598">
 <meta itemprop="keywords" content="emacs," />
-
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
   <style>
@@ -298,9 +294,10 @@ Also, as is obvious from the regex, fuzzy search would return a
 super-set of what a normal ivy search would, so you&#39;re almost always
 dealing with more results.</p>
 <p>
-Even when a fuzzy searching system is built specifically search files and has
-the context, it might not work as intended. Issue queue of VSCode, for
-example, has multiple examples of it failing for users(<a href="https://github.com/microsoft/vscode/issues/2705">such</a> <a href="https://github.com/microsoft/vscode/issues/99171">as</a> <a href="https://github.com/microsoft/vscode/issues/103889">these</a>).</p>
+Even when a fuzzy searching system is built specifically to search
+files and has the context, it might not work as intended. Issue queue
+of VSCode, for example, has multiple examples of it failing for
+users(<a href="https://github.com/microsoft/vscode/issues/2705">such</a> <a href="https://github.com/microsoft/vscode/issues/99171">as</a> <a href="https://github.com/microsoft/vscode/issues/103889">these</a>).</p>
 </div>
 </div>
 </div>
@@ -360,7 +357,7 @@ search term then it gets a score boost. Eg. <code class="verbatim">file</code> i
 </li>
 <li>
 <p><strong>File prefix match</strong>: If the prefix of the file basename  matches with the
-search term then the score increased. Eg. <code class="verbatim">fi</code> in <code class="verbatim">path/of/file.ext</code></p>
+search term then the score is increased. Eg. <code class="verbatim">fi</code> in <code class="verbatim">path/of/file.ext</code></p>
 </li>
 <li>
 <p><strong>File name loose match</strong>: If the file name loosely matches the search

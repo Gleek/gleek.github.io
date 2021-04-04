@@ -1,129 +1,82 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://umarahmad.xyz/</loc>
-    <lastmod>2021-01-28T15:43:20+05:30</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-04-03T15:49:21+05:30</lastmod>
+  </url><url>
     <loc>https://umarahmad.xyz/tags/emacs/</loc>
-    <lastmod>2021-01-28T15:43:20+05:30</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-04-03T15:49:21+05:30</lastmod>
+  </url><url>
+    <loc>https://umarahmad.xyz/blog/quick-scratch-buffers/</loc>
+    <lastmod>2021-04-03T15:49:21+05:30</lastmod>
+  </url><url>
+    <loc>https://umarahmad.xyz/tags/</loc>
+    <lastmod>2021-04-03T15:49:21+05:30</lastmod>
+  </url><url>
+    <loc>https://umarahmad.xyz/</loc>
+    <lastmod>2021-04-03T15:49:21+05:30</lastmod>
+  </url><url>
     <loc>https://umarahmad.xyz/blog/improved-ranking-for-projectile-find-file/</loc>
     <lastmod>2021-01-28T15:43:20+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://umarahmad.xyz/tags/</loc>
-    <lastmod>2021-01-28T15:43:20+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://umarahmad.xyz/</loc>
-    <lastmod>2021-01-28T15:43:20+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://umarahmad.xyz/tags/blog/</loc>
     <lastmod>2021-01-24T16:17:08+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://umarahmad.xyz/blog/using-emacs-to-port-my-blog/</loc>
     <lastmod>2021-01-24T16:17:08+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://umarahmad.xyz/blog/setting-up-the-blog-again/</loc>
     <lastmod>2021-01-23T19:39:03+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://umarahmad.xyz/about/</loc>
     <lastmod>2021-01-23T05:35:22+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://umarahmad.xyz/blog/editing-remote-code-with-emacs/</loc>
     <lastmod>2017-04-11T22:56:54+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://umarahmad.xyz/blog/installing-fedora-on-macbook/</loc>
     <lastmod>2017-04-09T17:03:02+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://umarahmad.xyz/blog/things-to-do-after-installing-fedora/</loc>
     <lastmod>2014-09-27T18:34:37+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://umarahmad.xyz/blog/gsoc-meetup-2014/</loc>
     <lastmod>2014-09-05T04:20:39+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://umarahmad.xyz/blog/drush-it/</loc>
     <lastmod>2014-07-09T00:54:05+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://umarahmad.xyz/blog/gsoc-midterms-half-over-is-half-left/</loc>
     <lastmod>2014-06-29T16:30:07+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://umarahmad.xyz/blog/gsoc-here-we-go/</loc>
     <lastmod>2014-06-12T05:45:04+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://umarahmad.xyz/blog/gsf-hacks/</loc>
     <lastmod>2014-05-08T03:01:30+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://umarahmad.xyz/blog/from-wordpress-to-octopress/</loc>
     <lastmod>2014-04-18T20:07:03+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://umarahmad.xyz/blog/customizing-emacs/</loc>
     <lastmod>2014-04-10T18:32:50+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://umarahmad.xyz/blog/automatically-changing-desktop-background-on-gnome-shell/</loc>
     <lastmod>2014-03-26T17:53:27+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://umarahmad.xyz/blog/adding-drupal-irc-bot-to-number-jmilug/</loc>
     <lastmod>2014-03-24T22:45:47+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://umarahmad.xyz/blog/migrating-to-fedora-20/</loc>
     <lastmod>2014-03-24T20:32:50+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://umarahmad.xyz/blog/fixing-brightness/</loc>
     <lastmod>2014-03-04T23:51:09+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://umarahmad.xyz/blog/hello-blogging/</loc>
     <lastmod>2014-02-19T16:20:21+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://umarahmad.xyz/categories/</loc>
   </url>
-  
 </urlset>

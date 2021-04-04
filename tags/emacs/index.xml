@@ -6,7 +6,17 @@
     <description>Recent content in emacs on Umar Ahmad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 Jan 2021 15:43:20 +0530</lastBuildDate><atom:link href="https://umarahmad.xyz/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Apr 2021 15:49:21 +0530</lastBuildDate><atom:link href="https://umarahmad.xyz/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quick persistent scratch buffers</title>
+      <link>https://umarahmad.xyz/blog/quick-scratch-buffers/</link>
+      <pubDate>Sat, 03 Apr 2021 15:49:21 +0530</pubDate>
+      
+      <guid>https://umarahmad.xyz/blog/quick-scratch-buffers/</guid>
+      <description>Emacs has a feature where you can quickly open a buffer to paste or keep text temporarily. It can be done by calling switch-to-buffer and typing out any name and pressing return. If a buffer with such a name exists it shows up, otherwise an empty buffer with no associated file is created. I discovered this accidentally years ago and have been using this feature a lot since.
+ The problem with this is that the buffers created only last till your emacs session lasts.</description>
+    </item>
+    
     <item>
       <title>Improve ranking of files in projectile</title>
       <link>https://umarahmad.xyz/blog/improved-ranking-for-projectile-find-file/</link>
