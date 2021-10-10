@@ -14,8 +14,8 @@
 <meta property="og:description" content="My encounter with the drush utility of drupal" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://umarahmad.xyz/blog/drush-it/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2014-07-09T00:54:05&#43;05:30" />
-<meta property="article:modified_time" content="2014-07-09T00:54:05&#43;05:30" />
+<meta property="article:published_time" content="2014-07-09T00:54:05+05:30" />
+<meta property="article:modified_time" content="2014-07-09T00:54:05+05:30" />
 
 
 
@@ -27,8 +27,8 @@
 
 
 <meta itemprop="name" content="Drush It!">
-<meta itemprop="description" content="My encounter with the drush utility of drupal"><meta itemprop="datePublished" content="2014-07-09T00:54:05&#43;05:30" />
-<meta itemprop="dateModified" content="2014-07-09T00:54:05&#43;05:30" />
+<meta itemprop="description" content="My encounter with the drush utility of drupal"><meta itemprop="datePublished" content="2014-07-09T00:54:05+05:30" />
+<meta itemprop="dateModified" content="2014-07-09T00:54:05+05:30" />
 <meta itemprop="wordCount" content="505">
 <meta itemprop="keywords" content="" />
 <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -225,7 +225,7 @@ If you are a drupal developer or a site maintainer and still haven&rsquo;t heard
 <p><strong>Aliases</strong> greatly improve the productivity by assigning short names to complex commands and for commands you use a lot and need a shorter version of them.
 This can be done by using <code>alias</code> builtin. The aliases are normally created inside <code>.bashrc</code> or <code>.bash_profile</code>.
 Some of the aliases I use are:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">alias dr<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;drush&#39;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">alias dr<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;drush&#39;</span>
 alias drcc<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;drush cache-clear all&#39;</span>
 alias drdb<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;drush updb &amp;&amp; drush cc all&#39;</span>
 alias dren<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;drush pm-enable&#39;</span>
@@ -248,7 +248,7 @@ but there are some reported problems of it on large databases. That&rsquo;s wher
 <p><code>drush sql-dump --gzip --result-file</code></p>
 <p>There is also an awesome drush utility - <a href="https://www.drupal.org/project/drush_sql_sync_pipe">Drush Sql Sync Pipe</a> for importing databases.</p>
 <p>You can even install drupal from scratch using</p>
-<pre><code>drush dl drupal
+<pre tabindex="0"><code>drush dl drupal
 drush si standard --db-url=mysql://[dbuser]:[dbpass]@localhost/[dbname]
 </code></pre><p>with the username and password as <em>admin</em> and <em>admin</em>.
 You can later create login links with <code>drush uli</code> which are also great for testing.</p>

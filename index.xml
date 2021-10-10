@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Umar Ahmad</title>
+    <title>Blog on Umar Ahmad</title>
     <link>https://umarahmad.xyz/</link>
-    <description>Recent content on Umar Ahmad</description>
+    <description>Recent content in Blog on Umar Ahmad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Apr 2021 15:49:21 +0530</lastBuildDate><atom:link href="https://umarahmad.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Oct 2021 16:12:11 +0530</lastBuildDate><atom:link href="https://umarahmad.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Faster php syntax highlighting with tree-sitter</title>
+      <link>https://umarahmad.xyz/blog/faster-php-mode-with-tree-sitter/</link>
+      <pubDate>Sun, 10 Oct 2021 16:12:11 +0530</pubDate>
+      
+      <guid>https://umarahmad.xyz/blog/faster-php-mode-with-tree-sitter/</guid>
+      <description>PHP mode in emacs sadly has slow performance for large files. In my work, I have to sometimes deal with large PHP code bases and in certain cases, it becomes so slow that it is practically useless for me to use php-mode. I grudgingly have to switch to fundamental-mode to make smaller changes, in that case. There are alternatives like web-mode that is better suited for mixed syntax highlighting with files containing multiple web languages but there are other php-mode goodies like support for different coding styles and better indentation that make it worthy enough to not be discarded completely.</description>
+    </item>
+    
     <item>
       <title>Quick persistent scratch buffers</title>
       <link>https://umarahmad.xyz/blog/quick-scratch-buffers/</link>
@@ -45,18 +54,6 @@
       <guid>https://umarahmad.xyz/blog/setting-up-the-blog-again/</guid>
       <description>I recently acquired umarahmad.xyz and moved my old blog there.
  The earlier version of this blog was based on octopress with a lot of handcrafted code. The architecture of octopress along with my excitement of setting up the blog made this a cocktail of all possible plugins and tweaks that I could manage to squeeze into a static site. Copy pasted rake snippets and hacked together web and ruby code gave me what I wanted at the time.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://umarahmad.xyz/about/</link>
-      <pubDate>Sat, 23 Jan 2021 05:35:22 +0530</pubDate>
-      
-      <guid>https://umarahmad.xyz/about/</guid>
-      <description>My name is Umar Ahmad. I work as a software engineer in Zomato.
- I spend most of my time inside Emacs. Discovering and learning something new almost every time I sit down for change in my config. Hopefully, this blog will contain some of those learnings.
- Speaking of config, you can find my dotfiles and my emacs config on github
-Blog   This blog is built with Hugo and uses a slightly modified BearBlog theme.</description>
     </item>
     
     <item>

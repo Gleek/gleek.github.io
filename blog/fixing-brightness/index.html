@@ -14,8 +14,8 @@
 <meta property="og:description" content="Tutorial to fix the screen backlight problems with linux" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://umarahmad.xyz/blog/fixing-brightness/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2014-03-04T23:51:09&#43;05:30" />
-<meta property="article:modified_time" content="2014-03-04T23:51:09&#43;05:30" />
+<meta property="article:published_time" content="2014-03-04T23:51:09+05:30" />
+<meta property="article:modified_time" content="2014-03-04T23:51:09+05:30" />
 
 
 
@@ -27,8 +27,8 @@
 
 
 <meta itemprop="name" content="Fixing Brightness Problems in Linux">
-<meta itemprop="description" content="Tutorial to fix the screen backlight problems with linux"><meta itemprop="datePublished" content="2014-03-04T23:51:09&#43;05:30" />
-<meta itemprop="dateModified" content="2014-03-04T23:51:09&#43;05:30" />
+<meta itemprop="description" content="Tutorial to fix the screen backlight problems with linux"><meta itemprop="datePublished" content="2014-03-04T23:51:09+05:30" />
+<meta itemprop="dateModified" content="2014-03-04T23:51:09+05:30" />
 <meta itemprop="wordCount" content="708">
 <meta itemprop="keywords" content="" />
 <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -226,7 +226,7 @@
 <p>and changing them with root access changes the brightness.
 The problem here was that I wasn&rsquo;t able to give a script root access without it prompting for a password. I moved the other way since I couldn&rsquo;t figure that out.</p>
 <p>Recently, I figured out the way to give the scripts root access by editing <code>/etc/sudoers/</code> file and adding</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$user ALL<span style="color:#f92672">=(</span>ALL<span style="color:#f92672">)</span> NOPASSWD: $path_to_script
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$user ALL<span style="color:#f92672">=(</span>ALL<span style="color:#f92672">)</span> NOPASSWD: $path_to_script
 </code></pre></div><p>where <code>$user</code> is the user-name and <code>$path_to_script</code> is what it says it is!</p>
 <h3 id="method-ii-making-a-python-script">Method II: Making a Python Script</h3>
 <p>After some researching I found out about the <a href="http://www.freedesktop.org/wiki/Software/dbus/">dbus module of python</a>, which basically could help me <code>get</code> or <code>set</code> the brightness. Using this and a little argument parsing I was successfully able to make a script which changed the brightness.

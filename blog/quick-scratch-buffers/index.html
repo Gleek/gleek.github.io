@@ -16,8 +16,8 @@
  The problem with this is that the buffers created only last till your emacs session lasts." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://umarahmad.xyz/blog/quick-scratch-buffers/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2021-04-03T15:49:21&#43;05:30" />
-<meta property="article:modified_time" content="2021-04-03T15:49:21&#43;05:30" />
+<meta property="article:published_time" content="2021-04-03T15:49:21+05:30" />
+<meta property="article:modified_time" content="2021-04-03T15:49:21+05:30" />
 
 
 
@@ -31,8 +31,8 @@
 
 <meta itemprop="name" content="Quick persistent scratch buffers">
 <meta itemprop="description" content="Emacs has a feature where you can quickly open a buffer to paste or keep text temporarily. It can be done by calling switch-to-buffer and typing out any name and pressing return. If a buffer with such a name exists it shows up, otherwise an empty buffer with no associated file is created. I discovered this accidentally years ago and have been using this feature a lot since.
- The problem with this is that the buffers created only last till your emacs session lasts."><meta itemprop="datePublished" content="2021-04-03T15:49:21&#43;05:30" />
-<meta itemprop="dateModified" content="2021-04-03T15:49:21&#43;05:30" />
+ The problem with this is that the buffers created only last till your emacs session lasts."><meta itemprop="datePublished" content="2021-04-03T15:49:21+05:30" />
+<meta itemprop="dateModified" content="2021-04-03T15:49:21+05:30" />
 <meta itemprop="wordCount" content="514">
 <meta itemprop="keywords" content="emacs," />
 <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -245,7 +245,7 @@ I added a function that does exactly this. All temporary buffers starting
 with <code class="verbatim">*scratch:</code> are treated as candidates for getting persisted. The
 function is a one liner and is as follows</p>
 <div class="src src-elisp">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(defun persistent-scratch-buffer-identifier()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(defun persistent-scratch-buffer-identifier()
     (<span style="color:#a6e22e">string-match</span> <span style="color:#e6db74">&#34;^*scratch:&#34;</span> (<span style="color:#a6e22e">buffer-name</span>)))</code></pre></div>
 </div>
 <p>
@@ -258,7 +258,7 @@ could be entered if required.</p>
 <p>
 It works by getting a list of scratches from here</p>
 <div class="src src-elisp">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(defun persistent-scratch-get-scratches()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(defun persistent-scratch-get-scratches()
     (let ((scratch-buffers)
           (save-data
            (<span style="color:#a6e22e">read</span>
@@ -273,7 +273,7 @@ It works by getting a list of scratches from here</p>
 <p>
 and uses it to quickly open a scratch buffer</p>
 <div class="src src-elisp">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(defun persistent-scratch-quick-open()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(defun persistent-scratch-quick-open()
     (interactive)
     (let* ((scratch-buffers (persistent-scratch-get-scratches))
           (chosen-scratch (<span style="color:#a6e22e">concat</span> <span style="color:#e6db74">&#34;*scratch:&#34;</span>
@@ -299,7 +299,7 @@ for all overriding any unsaved changes for other buffers.</p>
 <p>
 Here’s the relevant portion of the code</p>
 <div class="src src-elisp">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(defun persistent-scratch-restore-this(<span style="color:#66d9ef">&amp;optional</span> file)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(defun persistent-scratch-restore-this(<span style="color:#66d9ef">&amp;optional</span> file)
     (interactive)
       <span style="color:#75715e">;; ...</span>
       (dolist (saved-buffer save-data)

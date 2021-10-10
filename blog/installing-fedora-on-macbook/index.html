@@ -14,8 +14,8 @@
 <meta property="og:description" content="Installing Fedora on Macbook" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://umarahmad.xyz/blog/installing-fedora-on-macbook/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2017-04-09T17:03:02&#43;05:30" />
-<meta property="article:modified_time" content="2017-04-09T17:03:02&#43;05:30" />
+<meta property="article:published_time" content="2017-04-09T17:03:02+05:30" />
+<meta property="article:modified_time" content="2017-04-09T17:03:02+05:30" />
 
 
 
@@ -27,8 +27,8 @@
 
 
 <meta itemprop="name" content="Installing Fedora on MacBook">
-<meta itemprop="description" content="Installing Fedora on Macbook"><meta itemprop="datePublished" content="2017-04-09T17:03:02&#43;05:30" />
-<meta itemprop="dateModified" content="2017-04-09T17:03:02&#43;05:30" />
+<meta itemprop="description" content="Installing Fedora on Macbook"><meta itemprop="datePublished" content="2017-04-09T17:03:02+05:30" />
+<meta itemprop="dateModified" content="2017-04-09T17:03:02+05:30" />
 <meta itemprop="wordCount" content="565">
 <meta itemprop="keywords" content="" />
 <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -219,7 +219,7 @@ Also there were a lot of API level changes that somehow always ended up breaking
 <li>Get <a href="https://getfedora.org/fmw/FedoraMediaWriter-osx-4.0.8.dmg">Fedora Media Writer</a> and <a href="https://download.fedoraproject.org/pub/fedora/linux/releases/25/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-25-1.3.iso">Fedora Workstation</a> and install the disk image onto a USB</li>
 </ul>
 <p>Alternatively, you can use <code>dd</code> utility to do the same without the Fedora Media Writer by doing</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
     diskutil list <span style="color:#75715e"># get the disk name from the output which is something like /dev/disk1</span>
     diskutil unmountDisk /dev/disk1
     sudo dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/Users/umar/Downloads/Fedora-Workstation.iso of<span style="color:#f92672">=</span>/dev/rdisk1 bs<span style="color:#f92672">=</span>512k <span style="color:#75715e"># notice the prepended r in the disk name</span>
@@ -256,7 +256,7 @@ Mac Hardrive &gt; Partition &gt; + &gt;  Name= Fedora, Size = 30~50 GB</li>
 <p>Fix the camera by installing the reverse-engineered <a href="https://github.com/patjak/bcwc_pcie">FaceTime HD drivers</a> by running the following</p>
 </li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
 cd /usr/src
 wget https://github.com/patjak/bcwc_pcie/archive/master.zip
 unzip master.zip
@@ -275,11 +275,11 @@ sudo modprobe facetimehd
 <ul>
 <li>Run the following commands to fix the keyboard bugs</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">xmodmap -e <span style="color:#e6db74">&#34;keycode  94 = grave asciitilde&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">xmodmap -e <span style="color:#e6db74">&#34;keycode  94 = grave asciitilde&#34;</span>
 xset r rate <span style="color:#ae81ff">200</span> <span style="color:#ae81ff">38</span> <span style="color:#75715e"># Increase keyboard repeat rate</span>
 </code></pre></div><p>You can optionally switch control and CapsLock and make Return act like control when long-pressed by installing <a href="https://github.com/alols/xcape">xcape</a>
 and running</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">setxkbmap -option ctrl:nocaps
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">setxkbmap -option ctrl:nocaps
 xmodmap -e <span style="color:#e6db74">&#34;remove Control = Control_R&#34;</span>
 xmodmap -e <span style="color:#e6db74">&#34;keycode 0x69 = Return&#34;</span>
 xmodmap -e <span style="color:#e6db74">&#34;keycode 0x24 = Control_R&#34;</span>
@@ -298,7 +298,7 @@ xcape -t <span style="color:#ae81ff">10000</span> -e <span style="color:#e6db74"
 </li>
 </ul>
 <p>Create <code>/etc/systemd/system/powertop.service</code> with this content</p>
-<pre><code>[Unit]
+<pre tabindex="0"><code>[Unit]
 Description=Powertop tunings
 
 [Service]
