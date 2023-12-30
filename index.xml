@@ -48,7 +48,7 @@
       <link>https://umarahmad.xyz/about/</link>
       <pubDate>Sat, 23 Jan 2021 05:35:22 +0530</pubDate>
       <guid>https://umarahmad.xyz/about/</guid>
-      <description>My name is Umar Ahmad. I work as a software engineer in Zomato.&#xA;I spend most of my time inside Emacs. Discovering and learning something new almost every time I sit down for change in my config. Hopefully, this blog will contain some of those learnings.&#xA;Speaking of config, you can find my dotfiles and my emacs config on github&#xA;Blog This blog is built with Hugo and uses a slightly modified BearBlog theme.</description>
+      <description>My name is Umar Ahmad. I&amp;#39;m currently working in Zomato, a food delivery company and more, to help it scale to serve millions of customers daily.&#xA;This is me in the photo above in the year 2020.&#xA;This is my personal blog which I aspire to update regularly with the things I learn mostly around computers and maybe also the other genres of life.&#xA;Many of the posts on this blog are about Emacs.</description>
     </item>
     <item>
       <title>Editing remote code with Emacs</title>
