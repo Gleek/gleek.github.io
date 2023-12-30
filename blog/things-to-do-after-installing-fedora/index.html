@@ -20,8 +20,7 @@
 
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Things to do after installing Fedora"/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Things to do after installing Fedora"/>
 <meta name="twitter:description" content="Installing proprietary packages quickly after installing fedora 20"/>
 
 
@@ -33,162 +32,10 @@
 <meta itemprop="keywords" content="" />
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
-  <style>
- body {
-     font-family: Verdana, sans-serif;
-     margin: auto;
-     padding: 20px;
-     max-width: 720px;
-     text-align: left;
-     word-wrap: break-word;
-     overflow-wrap: break-word;
-     line-height: 1.5;
-     background-color: #333;
-     color: #ddd;
- }
-
-
-
- .title {
-     text-decoration: none;
-     border: 0;
- }
-
- .title span {
-     font-weight: 400;
- }
-
- nav a {
-     margin-right: 10px;
- }
-
- textarea {
-     width: 100%;
-     font-size: 16px;
- }
-
- input {
-     font-size: 16px;
- }
-
- content {
-     line-height: 1.6;
- }
-
- table {
-     width: 100%;
- }
-
- img {
-     max-width: 100%;
- }
-
- code {
-     padding: 2px 5px;
- }
-
- pre code {
-     display: block;
-     padding: 20px;
-     white-space: pre-wrap;
-     font-size: 14px;
- }
-
- blockquote {
-     border-left: 1px solid #999;
-     color: #ccc;
-     padding-left: 20px;
-     font-style: italic;
- }
-
- footer {
-     padding: 25px;
-     text-align: center;
-     color:#808080;
- }
-
- .helptext {
-     font-size: small;
- }
-
- .errorlist {
-     color: #eba613;
-     font-size: small;
- }
+  
+  <link crossorigin="anonymous" href="/main.min.css" rel="preload stylesheet">
 
   
- ul.blog-posts {
-     list-style-type: none;
-     padding: unset;
- }
-
- ul.blog-posts li {
-     display: flex;
-     padding: 2px;
- }
-
- ul.blog-posts li span {
-     flex: 0 0 130px;
- }
-
- ul.blog-posts li a:visited {
-     color: #8b6fcb;
- }
-
-
-
- h1,
- h2,
- h3,
- h4,
- h5,
- h6,
- strong,
- b {
-     color: #eee;
- }
-
- a {
-     color: #8cc2dd;
- }
-
- code {
-     background-color: #282c34;
- }
-
- pre code {
-     color: #ddd;
- }
-
-
- textarea,
- input {
-     background-color: #252525;
-     color: #ddd;
- }
-
- .helptext {
-     color: #aaa;
- }
-
- video.video {
-     display: block;
-     margin: 0 auto;
-     max-width: 100%;
- }
- p.video-fallback {
-     font-size: 80%;
-     margin-bottom: 15px;
-     color:#808080;
- }
- 
- figcaption {
-     font-size: 80%;
-     margin-bottom: 15px;
-     color:#808080;
- }
-</style>
-
 </head>
 
 <body>
@@ -221,8 +68,8 @@
 <p>Fedy lets you install multimedia codecs and additional software that Fedora doesn&rsquo;t want to ship, like mp3 support, Adobe Flash, Oracle Java etc., and much more with just a few clicks.</p>
 </blockquote>
 <p>Install it via</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">su -c <span style="color:#e6db74">&#34;curl https://satya164.github.io/fedy/fedy-installer -o fedy-installer &amp;&amp; chmod +x fedy-installer &amp;&amp; ./fedy-installer&#34;</span>
-</code></pre></div><p>You can download any of the packages from this point onwards but I feel some of them are essential:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>su -c <span style="color:#d88200">&#34;curl https://satya164.github.io/fedy/fedy-installer -o fedy-installer &amp;&amp; chmod +x fedy-installer &amp;&amp; ./fedy-installer&#34;</span>
+</span></span></code></pre></div><p>You can download any of the packages from this point onwards but I feel some of them are essential:</p>
 <ul>
 <li>Tweaks and Task
 <ul>
@@ -243,8 +90,8 @@
 <h3 id="creating-a-template-file">Creating a Template File</h3>
 <p>Template file is a file in the <code>Templates</code> folder of the home directory. Files added here will appear in the <em>New Documents Menu</em>.
 Do it via typing this in the terminal</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">touch ~/Templates/Empty<span style="color:#ae81ff">\ </span>File
-</code></pre></div><p>You can add other types of files in the templates folder and add some default content to it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>touch ~/Templates/Empty<span style="color:#8045ff">\ </span>File
+</span></span></code></pre></div><p>You can add other types of files in the templates folder and add some default content to it.</p>
 <p>For example you can add a <code>new.c</code> file there and write various header files, you usually use, in it.
 This would **save the hassle of writing it yourself everytime you create a new &lsquo;c&rsquo; file.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
@@ -252,8 +99,8 @@ This would **save the hassle of writing it yourself everytime you create a new &
 <p>I personally don&rsquo;t like the new Software manager in Fedora. It has nice UI but often takes a lot of time in loading packages and installing them.
 Yumex (Yum Extender) on the other hand is a graphical package management tool** which utilizes the power of yum and makes it a bit &lsquo;user-friendly&rsquo;.
 I also feel it&rsquo;s much more easy to use and is a bit more transparent in it&rsquo;s functionality than the former manager</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo yum install yumex
-</code></pre></div><p>You might update your full system after this, as yumex will prompt you for that on it&rsquo;s start.</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo yum install yumex
+</span></span></code></pre></div><p>You might update your full system after this, as yumex will prompt you for that on it&rsquo;s start.</p>
 <p>From this point onward you can simply search for a package inside yumex, instead of googling the exact package name to be used with <code>yum install</code>.
 <!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <h3 id="gnome-tweak-tool">Gnome-Tweak Tool</h3>
@@ -302,7 +149,7 @@ It also provides some customizations of gnome shell and other applications.</p>
         repo="gleek/gleek.github.io"
         issue-term="pathname"
         label="comment"
-        theme="github-dark"
+        theme="github-light"
         crossorigin="anonymous"
         async>
 </script>

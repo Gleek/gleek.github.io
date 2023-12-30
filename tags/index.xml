@@ -6,24 +6,21 @@
     <description>Recent content in Tags on Umar Ahmad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Oct 2021 16:12:11 +0530</lastBuildDate><atom:link href="https://umarahmad.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Oct 2021 16:12:11 +0530</lastBuildDate>
+    <atom:link href="https://umarahmad.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>emacs</title>
       <link>https://umarahmad.xyz/tags/emacs/</link>
       <pubDate>Sun, 10 Oct 2021 16:12:11 +0530</pubDate>
-      
       <guid>https://umarahmad.xyz/tags/emacs/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>blog</title>
       <link>https://umarahmad.xyz/tags/blog/</link>
       <pubDate>Sun, 24 Jan 2021 16:17:08 +0530</pubDate>
-      
       <guid>https://umarahmad.xyz/tags/blog/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

@@ -20,8 +20,7 @@
 
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Drush It!"/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Drush It!"/>
 <meta name="twitter:description" content="My encounter with the drush utility of drupal"/>
 
 
@@ -33,162 +32,10 @@
 <meta itemprop="keywords" content="" />
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
-  <style>
- body {
-     font-family: Verdana, sans-serif;
-     margin: auto;
-     padding: 20px;
-     max-width: 720px;
-     text-align: left;
-     word-wrap: break-word;
-     overflow-wrap: break-word;
-     line-height: 1.5;
-     background-color: #333;
-     color: #ddd;
- }
-
-
-
- .title {
-     text-decoration: none;
-     border: 0;
- }
-
- .title span {
-     font-weight: 400;
- }
-
- nav a {
-     margin-right: 10px;
- }
-
- textarea {
-     width: 100%;
-     font-size: 16px;
- }
-
- input {
-     font-size: 16px;
- }
-
- content {
-     line-height: 1.6;
- }
-
- table {
-     width: 100%;
- }
-
- img {
-     max-width: 100%;
- }
-
- code {
-     padding: 2px 5px;
- }
-
- pre code {
-     display: block;
-     padding: 20px;
-     white-space: pre-wrap;
-     font-size: 14px;
- }
-
- blockquote {
-     border-left: 1px solid #999;
-     color: #ccc;
-     padding-left: 20px;
-     font-style: italic;
- }
-
- footer {
-     padding: 25px;
-     text-align: center;
-     color:#808080;
- }
-
- .helptext {
-     font-size: small;
- }
-
- .errorlist {
-     color: #eba613;
-     font-size: small;
- }
+  
+  <link crossorigin="anonymous" href="/main.min.css" rel="preload stylesheet">
 
   
- ul.blog-posts {
-     list-style-type: none;
-     padding: unset;
- }
-
- ul.blog-posts li {
-     display: flex;
-     padding: 2px;
- }
-
- ul.blog-posts li span {
-     flex: 0 0 130px;
- }
-
- ul.blog-posts li a:visited {
-     color: #8b6fcb;
- }
-
-
-
- h1,
- h2,
- h3,
- h4,
- h5,
- h6,
- strong,
- b {
-     color: #eee;
- }
-
- a {
-     color: #8cc2dd;
- }
-
- code {
-     background-color: #282c34;
- }
-
- pre code {
-     color: #ddd;
- }
-
-
- textarea,
- input {
-     background-color: #252525;
-     color: #ddd;
- }
-
- .helptext {
-     color: #aaa;
- }
-
- video.video {
-     display: block;
-     margin: 0 auto;
-     max-width: 100%;
- }
- p.video-fallback {
-     font-size: 80%;
-     margin-bottom: 15px;
-     color:#808080;
- }
- 
- figcaption {
-     font-size: 80%;
-     margin-bottom: 15px;
-     color:#808080;
- }
-</style>
-
 </head>
 
 <body>
@@ -225,12 +72,12 @@ If you are a drupal developer or a site maintainer and still haven&rsquo;t heard
 <p><strong>Aliases</strong> greatly improve the productivity by assigning short names to complex commands and for commands you use a lot and need a shorter version of them.
 This can be done by using <code>alias</code> builtin. The aliases are normally created inside <code>.bashrc</code> or <code>.bash_profile</code>.
 Some of the aliases I use are:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">alias dr<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;drush&#39;</span>
-alias drcc<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;drush cache-clear all&#39;</span>
-alias drdb<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;drush updb &amp;&amp; drush cc all&#39;</span>
-alias dren<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;drush pm-enable&#39;</span>
-alias drdis<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;drush pm-disable&#39;</span>
-</code></pre></div><p>You may add other aliases depending on the <a href="http://drush.ws/">other commands</a> you frequently use.</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#111">alias</span> <span style="color:#111">dr</span><span style="color:#f92672">=</span><span style="color:#d88200">&#39;drush&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">alias</span> <span style="color:#111">drcc</span><span style="color:#f92672">=</span><span style="color:#d88200">&#39;drush cache-clear all&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">alias</span> <span style="color:#111">drdb</span><span style="color:#f92672">=</span><span style="color:#d88200">&#39;drush updb &amp;&amp; drush cc all&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">alias</span> <span style="color:#111">dren</span><span style="color:#f92672">=</span><span style="color:#d88200">&#39;drush pm-enable&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">alias</span> <span style="color:#111">drdis</span><span style="color:#f92672">=</span><span style="color:#d88200">&#39;drush pm-disable&#39;</span>
+</span></span></code></pre></div><p>You may add other aliases depending on the <a href="http://drush.ws/">other commands</a> you frequently use.</p>
 <p>The <strong>Autocompletion</strong> is also another great option <a href="">bash</a>. This option requires you to only partially enter the commands and pressing <code>TAB</code> to complete it.</p>
 <p>There is already a script for autocompletion on a <a href="https://www.drupal.org/node/437568">drupal issue page</a> which simply needs to be added in your <code>/etc/bash_completion.d/</code> directory.</p>
 <p>You might find <a href="http://www.debian-administration.org/articles/316">this textbook for bash completions</a> helpful if you want a farther insight.</p>
@@ -264,7 +111,7 @@ Till then,</p>
         repo="gleek/gleek.github.io"
         issue-term="pathname"
         label="comment"
-        theme="github-dark"
+        theme="github-light"
         crossorigin="anonymous"
         async>
 </script>

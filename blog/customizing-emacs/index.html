@@ -20,8 +20,7 @@
 
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Customizing Emacs"/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Customizing Emacs"/>
 <meta name="twitter:description" content="customize emacs for better and faster development"/>
 
 
@@ -29,166 +28,14 @@
 <meta itemprop="name" content="Customizing Emacs">
 <meta itemprop="description" content="customize emacs for better and faster development"><meta itemprop="datePublished" content="2014-04-10T18:32:50+05:30" />
 <meta itemprop="dateModified" content="2014-04-10T18:32:50+05:30" />
-<meta itemprop="wordCount" content="511">
+<meta itemprop="wordCount" content="513">
 <meta itemprop="keywords" content="emacs," />
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
-  <style>
- body {
-     font-family: Verdana, sans-serif;
-     margin: auto;
-     padding: 20px;
-     max-width: 720px;
-     text-align: left;
-     word-wrap: break-word;
-     overflow-wrap: break-word;
-     line-height: 1.5;
-     background-color: #333;
-     color: #ddd;
- }
-
-
-
- .title {
-     text-decoration: none;
-     border: 0;
- }
-
- .title span {
-     font-weight: 400;
- }
-
- nav a {
-     margin-right: 10px;
- }
-
- textarea {
-     width: 100%;
-     font-size: 16px;
- }
-
- input {
-     font-size: 16px;
- }
-
- content {
-     line-height: 1.6;
- }
-
- table {
-     width: 100%;
- }
-
- img {
-     max-width: 100%;
- }
-
- code {
-     padding: 2px 5px;
- }
-
- pre code {
-     display: block;
-     padding: 20px;
-     white-space: pre-wrap;
-     font-size: 14px;
- }
-
- blockquote {
-     border-left: 1px solid #999;
-     color: #ccc;
-     padding-left: 20px;
-     font-style: italic;
- }
-
- footer {
-     padding: 25px;
-     text-align: center;
-     color:#808080;
- }
-
- .helptext {
-     font-size: small;
- }
-
- .errorlist {
-     color: #eba613;
-     font-size: small;
- }
+  
+  <link crossorigin="anonymous" href="/main.min.css" rel="preload stylesheet">
 
   
- ul.blog-posts {
-     list-style-type: none;
-     padding: unset;
- }
-
- ul.blog-posts li {
-     display: flex;
-     padding: 2px;
- }
-
- ul.blog-posts li span {
-     flex: 0 0 130px;
- }
-
- ul.blog-posts li a:visited {
-     color: #8b6fcb;
- }
-
-
-
- h1,
- h2,
- h3,
- h4,
- h5,
- h6,
- strong,
- b {
-     color: #eee;
- }
-
- a {
-     color: #8cc2dd;
- }
-
- code {
-     background-color: #282c34;
- }
-
- pre code {
-     color: #ddd;
- }
-
-
- textarea,
- input {
-     background-color: #252525;
-     color: #ddd;
- }
-
- .helptext {
-     color: #aaa;
- }
-
- video.video {
-     display: block;
-     margin: 0 auto;
-     max-width: 100%;
- }
- p.video-fallback {
-     font-size: 80%;
-     margin-bottom: 15px;
-     color:#808080;
- }
- 
- figcaption {
-     font-size: 80%;
-     margin-bottom: 15px;
-     color:#808080;
- }
-</style>
-
 </head>
 
 <body>
@@ -224,12 +71,12 @@
 <li><strong>Choosing the right font</strong>: This is more of a personal choice actually. Any monospace font would do the job. You can refer to <a href="http://hivelogic.com/articles/top-10-programming-fonts">Dan&rsquo;s article</a> or <a href="http://blog.codinghorror.com/revisiting-programming-fonts">Jeff&rsquo;s Blog</a> for more details.</li>
 <li><strong>Making your scroll smooth</strong>: Emacs Scroll will seem a bit weird to some people who are new to it. To remove the jumpy effect of scroll you can add following lines in your .emacs file</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scheme" data-lang="scheme">(<span style="color:#a6e22e">setq</span> redisplay-dont-pause t
-  scroll-margin <span style="color:#ae81ff">1</span>
-  scroll-step <span style="color:#ae81ff">1</span>
-  scroll-conservatively <span style="color:#ae81ff">10000</span>
-  scroll-preserve-screen-position <span style="color:#ae81ff">1</span>)
-</code></pre></div><p>Well these are some basic customization which should be done by everyone using Emacs. You can add more features to Emacs by simply searching the package archive.</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scheme" data-lang="scheme"><span style="display:flex;"><span><span style="color:#111">(</span><span style="color:#75af00">setq</span> <span style="color:#111">redisplay-dont-pause</span> <span style="color:#111">t</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">scroll-margin</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">scroll-step</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">scroll-conservatively</span> <span style="color:#ae81ff">10000</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">scroll-preserve-screen-position</span> <span style="color:#ae81ff">1</span><span style="color:#111">)</span>
+</span></span></code></pre></div><p>Well these are some basic customization which should be done by everyone using Emacs. You can add more features to Emacs by simply searching the package archive.</p>
 <p>If you&rsquo;re a confused with the basic key-bindings for navigation, you may refer to the <a href="http://www.emacswiki.org/emacs/EmacsNewbieKeyReference">Emacs Wiki page</a>.</p>
 <p>Finally, once you really get the hang of Emacs, it&rsquo;s basically like dark magic. Check out some videos on the <a href="http://emacsrocks.com">Emacs rocks page</a> to see this magic in action.</p>
 <p>If you&rsquo;re addicted to vi there&rsquo;s a funny song on GNU&rsquo;s website : <a href="http://www.gnu.org/fun/jokes/vi.song.html">&lsquo;Addicted to vi&rsquo;</a> :stuck_out_tongue:</p>
@@ -243,7 +90,7 @@
         repo="gleek/gleek.github.io"
         issue-term="pathname"
         label="comment"
-        theme="github-dark"
+        theme="github-light"
         crossorigin="anonymous"
         async>
 </script>

@@ -20,8 +20,7 @@
 
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Faster php syntax highlighting with tree-sitter"/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Faster php syntax highlighting with tree-sitter"/>
 <meta name="twitter:description" content="PHP mode in emacs sadly has slow performance for large files. In my work, I have to sometimes deal with large PHP code bases and in certain cases, it becomes so slow that it is practically useless for me to use php-mode. I grudgingly have to switch to fundamental-mode to make smaller changes, in that case. There are alternatives like web-mode that is better suited for mixed syntax highlighting with files containing multiple web languages but there are other php-mode goodies like support for different coding styles and better indentation that make it worthy enough to not be discarded completely."/>
 
 
@@ -33,162 +32,10 @@
 <meta itemprop="keywords" content="emacs," />
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
-  <style>
- body {
-     font-family: Verdana, sans-serif;
-     margin: auto;
-     padding: 20px;
-     max-width: 720px;
-     text-align: left;
-     word-wrap: break-word;
-     overflow-wrap: break-word;
-     line-height: 1.5;
-     background-color: #333;
-     color: #ddd;
- }
-
-
-
- .title {
-     text-decoration: none;
-     border: 0;
- }
-
- .title span {
-     font-weight: 400;
- }
-
- nav a {
-     margin-right: 10px;
- }
-
- textarea {
-     width: 100%;
-     font-size: 16px;
- }
-
- input {
-     font-size: 16px;
- }
-
- content {
-     line-height: 1.6;
- }
-
- table {
-     width: 100%;
- }
-
- img {
-     max-width: 100%;
- }
-
- code {
-     padding: 2px 5px;
- }
-
- pre code {
-     display: block;
-     padding: 20px;
-     white-space: pre-wrap;
-     font-size: 14px;
- }
-
- blockquote {
-     border-left: 1px solid #999;
-     color: #ccc;
-     padding-left: 20px;
-     font-style: italic;
- }
-
- footer {
-     padding: 25px;
-     text-align: center;
-     color:#808080;
- }
-
- .helptext {
-     font-size: small;
- }
-
- .errorlist {
-     color: #eba613;
-     font-size: small;
- }
+  
+  <link crossorigin="anonymous" href="/main.min.css" rel="preload stylesheet">
 
   
- ul.blog-posts {
-     list-style-type: none;
-     padding: unset;
- }
-
- ul.blog-posts li {
-     display: flex;
-     padding: 2px;
- }
-
- ul.blog-posts li span {
-     flex: 0 0 130px;
- }
-
- ul.blog-posts li a:visited {
-     color: #8b6fcb;
- }
-
-
-
- h1,
- h2,
- h3,
- h4,
- h5,
- h6,
- strong,
- b {
-     color: #eee;
- }
-
- a {
-     color: #8cc2dd;
- }
-
- code {
-     background-color: #282c34;
- }
-
- pre code {
-     color: #ddd;
- }
-
-
- textarea,
- input {
-     background-color: #252525;
-     color: #ddd;
- }
-
- .helptext {
-     color: #aaa;
- }
-
- video.video {
-     display: block;
-     margin: 0 auto;
-     max-width: 100%;
- }
- p.video-fallback {
-     font-size: 80%;
-     margin-bottom: 15px;
-     color:#808080;
- }
- 
- figcaption {
-     font-size: 80%;
-     margin-bottom: 15px;
-     color:#808080;
- }
-</style>
-
 </head>
 
 <body>
@@ -226,27 +73,27 @@ reduced the latency considerably in writing larger files.</p>
 <p>
 This is what I ended up doing to achieve that:</p>
 <div class="src src-elisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(advice-add <span style="color:#e6db74">&#39;php-syntax-propertize-function</span> :override <span style="color:#a6e22e">#&#39;</span>return-false)
-(advice-add <span style="color:#e6db74">&#39;php-syntax-propertize-extend-region</span> :override <span style="color:#a6e22e">#&#39;</span>return-false)
-(remove-hook <span style="color:#e6db74">&#39;syntax-propertize-extend-region-functions</span> <span style="color:#a6e22e">#&#39;</span>php-syntax-propertize-extend-region)</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-elisp" data-lang="elisp"><span style="display:flex;"><span><span style="color:#111">(</span><span style="color:#111">advice-add</span> <span style="color:#d88200">&#39;php-syntax-propertize-function</span> <span style="color:#111">:override</span> <span style="color:#75af00">#&#39;</span><span style="color:#111">return-false</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">(</span><span style="color:#111">advice-add</span> <span style="color:#d88200">&#39;php-syntax-propertize-extend-region</span> <span style="color:#111">:override</span> <span style="color:#75af00">#&#39;</span><span style="color:#111">return-false</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#111">(</span><span style="color:#111">remove-hook</span> <span style="color:#d88200">&#39;syntax-propertize-extend-region-functions</span> <span style="color:#75af00">#&#39;</span><span style="color:#111">php-syntax-propertize-extend-region</span><span style="color:#111">)</span></span></span></code></pre></div>
 </div>
 <p>
 Here the <code class="verbatim">return-false</code> is a small utility function and is defined as follows:</p>
 <div class="src src-elisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(defun return-false(<span style="color:#66d9ef">&amp;rest</span> _)
-  <span style="color:#e6db74">&#34;Return nil no matter what the inputs here.
-</span><span style="color:#e6db74">Useful to override functions to become empty&#34;</span>
-  <span style="color:#66d9ef">nil</span>)</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-elisp" data-lang="elisp"><span style="display:flex;"><span><span style="color:#111">(</span><span style="color:#111">defun</span> <span style="color:#111">return-false</span><span style="color:#111">(</span><span style="color:#00a8c8">&amp;rest</span> <span style="color:#111">_</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#d88200">&#34;Return nil no matter what the inputs here.
+</span></span></span><span style="display:flex;"><span><span style="color:#d88200">Useful to override functions to become empty&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00a8c8">nil</span><span style="color:#111">)</span></span></span></code></pre></div>
 </div>
 <p>
 The tree sitter configuration is as follows</p>
 <div class="src src-elisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(use-package tree-sitter
-  :ensure tree-sitter
-  :ensure tree-sitter-langs
-  :defer <span style="color:#ae81ff">2</span>
-  :config
-  (add-hook <span style="color:#e6db74">&#39;tree-sitter-after-on-hook</span> <span style="color:#a6e22e">#&#39;</span>tree-sitter-hl-mode))</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-elisp" data-lang="elisp"><span style="display:flex;"><span><span style="color:#111">(</span><span style="color:#111">use-package</span> <span style="color:#111">tree-sitter</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">:ensure</span> <span style="color:#111">tree-sitter</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">:ensure</span> <span style="color:#111">tree-sitter-langs</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">:defer</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">:config</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#111">(</span><span style="color:#111">add-hook</span> <span style="color:#d88200">&#39;tree-sitter-after-on-hook</span> <span style="color:#75af00">#&#39;</span><span style="color:#111">tree-sitter-hl-mode</span><span style="color:#111">))</span></span></span></code></pre></div>
 </div>
 <p>
 For the sake of comparison my typing latency reduced from 600ms-2500ms to 35-50ms. This is closer to
@@ -282,7 +129,7 @@ such issues.</p>
         repo="gleek/gleek.github.io"
         issue-term="pathname"
         label="comment"
-        theme="github-dark"
+        theme="github-light"
         crossorigin="anonymous"
         async>
 </script>

@@ -1,226 +1,159 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on Umar Ahmad</title>
+    <title>Umar Ahmad</title>
     <link>https://umarahmad.xyz/</link>
-    <description>Recent content in Blog on Umar Ahmad</description>
+    <description>Recent content on Umar Ahmad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Oct 2021 16:12:11 +0530</lastBuildDate><atom:link href="https://umarahmad.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Oct 2021 16:12:11 +0530</lastBuildDate>
+    <atom:link href="https://umarahmad.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Faster php syntax highlighting with tree-sitter</title>
       <link>https://umarahmad.xyz/blog/faster-php-mode-with-tree-sitter/</link>
       <pubDate>Sun, 10 Oct 2021 16:12:11 +0530</pubDate>
-      
       <guid>https://umarahmad.xyz/blog/faster-php-mode-with-tree-sitter/</guid>
       <description>PHP mode in emacs sadly has slow performance for large files. In my work, I have to sometimes deal with large PHP code bases and in certain cases, it becomes so slow that it is practically useless for me to use php-mode. I grudgingly have to switch to fundamental-mode to make smaller changes, in that case. There are alternatives like web-mode that is better suited for mixed syntax highlighting with files containing multiple web languages but there are other php-mode goodies like support for different coding styles and better indentation that make it worthy enough to not be discarded completely.</description>
     </item>
-    
     <item>
       <title>Quick persistent scratch buffers</title>
       <link>https://umarahmad.xyz/blog/quick-scratch-buffers/</link>
       <pubDate>Sat, 03 Apr 2021 15:49:21 +0530</pubDate>
-      
       <guid>https://umarahmad.xyz/blog/quick-scratch-buffers/</guid>
-      <description>Emacs has a feature where you can quickly open a buffer to paste or keep text temporarily. It can be done by calling switch-to-buffer and typing out any name and pressing return. If a buffer with such a name exists it shows up, otherwise an empty buffer with no associated file is created. I discovered this accidentally years ago and have been using this feature a lot since.
- The problem with this is that the buffers created only last till your emacs session lasts.</description>
+      <description>Emacs has a feature where you can quickly open a buffer to paste or keep text temporarily. It can be done by calling switch-to-buffer and typing out any name and pressing return. If a buffer with such a name exists it shows up, otherwise an empty buffer with no associated file is created. I discovered this accidentally years ago and have been using this feature a lot since.&#xA;The problem with this is that the buffers created only last till your emacs session lasts.</description>
     </item>
-    
     <item>
       <title>Improve ranking of files in projectile</title>
       <link>https://umarahmad.xyz/blog/improved-ranking-for-projectile-find-file/</link>
       <pubDate>Thu, 28 Jan 2021 15:43:20 +0530</pubDate>
-      
       <guid>https://umarahmad.xyz/blog/improved-ranking-for-projectile-find-file/</guid>
-      <description>I&amp;#39;ve been using projectile, and more recently counsel-projectile, to manage my project files and it has been a life saver. projectile-find-file is probably among my most used commands.
- Despite my fondness for this package, a thing that has bothered me is the default sorting of the files while searching. As the project becomes larger and the files become sparse, some extra typing needs to be done to filter down to the intended file.</description>
+      <description>I&amp;#39;ve been using projectile, and more recently counsel-projectile, to manage my project files and it has been a life saver. projectile-find-file is probably among my most used commands.&#xA;Despite my fondness for this package, a thing that has bothered me is the default sorting of the files while searching. As the project becomes larger and the files become sparse, some extra typing needs to be done to filter down to the intended file.</description>
     </item>
-    
     <item>
       <title>Porting my blog to Hugo from inside Emacs</title>
       <link>https://umarahmad.xyz/blog/using-emacs-to-port-my-blog/</link>
       <pubDate>Sun, 24 Jan 2021 16:17:08 +0530</pubDate>
-      
       <guid>https://umarahmad.xyz/blog/using-emacs-to-port-my-blog/</guid>
-      <description>A few days ago I ported my blog to hugo. I did this mostly while staying inside Emacs and switching to the web browser every now and then.
- Doing this required me to use Emacs to edit and manage multiple files at once and this post demonstrates a few of these techniques. The post is therefore mostly task agnostic and the techniques explained here should be usable for any such tasks.</description>
+      <description>A few days ago I ported my blog to hugo. I did this mostly while staying inside Emacs and switching to the web browser every now and then.&#xA;Doing this required me to use Emacs to edit and manage multiple files at once and this post demonstrates a few of these techniques. The post is therefore mostly task agnostic and the techniques explained here should be usable for any such tasks.</description>
     </item>
-    
     <item>
       <title>Setting up the blog again</title>
       <link>https://umarahmad.xyz/blog/setting-up-the-blog-again/</link>
       <pubDate>Sat, 23 Jan 2021 19:39:03 +0530</pubDate>
-      
       <guid>https://umarahmad.xyz/blog/setting-up-the-blog-again/</guid>
-      <description>I recently acquired umarahmad.xyz and moved my old blog there.
- The earlier version of this blog was based on octopress with a lot of handcrafted code. The architecture of octopress along with my excitement of setting up the blog made this a cocktail of all possible plugins and tweaks that I could manage to squeeze into a static site. Copy pasted rake snippets and hacked together web and ruby code gave me what I wanted at the time.</description>
+      <description>I recently acquired umarahmad.xyz and moved my old blog there.&#xA;The earlier version of this blog was based on octopress with a lot of handcrafted code. The architecture of octopress along with my excitement of setting up the blog made this a cocktail of all possible plugins and tweaks that I could manage to squeeze into a static site. Copy pasted rake snippets and hacked together web and ruby code gave me what I wanted at the time.</description>
     </item>
-    
+    <item>
+      <title>About</title>
+      <link>https://umarahmad.xyz/about/</link>
+      <pubDate>Sat, 23 Jan 2021 05:35:22 +0530</pubDate>
+      <guid>https://umarahmad.xyz/about/</guid>
+      <description>My name is Umar Ahmad. I work as a software engineer in Zomato.&#xA;I spend most of my time inside Emacs. Discovering and learning something new almost every time I sit down for change in my config. Hopefully, this blog will contain some of those learnings.&#xA;Speaking of config, you can find my dotfiles and my emacs config on github&#xA;Blog This blog is built with Hugo and uses a slightly modified BearBlog theme.</description>
+    </item>
     <item>
       <title>Editing remote code with Emacs</title>
       <link>https://umarahmad.xyz/blog/editing-remote-code-with-emacs/</link>
       <pubDate>Tue, 11 Apr 2017 22:56:54 +0530</pubDate>
-      
       <guid>https://umarahmad.xyz/blog/editing-remote-code-with-emacs/</guid>
-      <description>&lt;p&gt;Lately, I&amp;rsquo;ve been working on a code-base situated remotely on a server accessible over &lt;code&gt;ssh&lt;/code&gt;.
-The network latency and size of the code repository prompted me to reconsider the method
-to edit such files. I discovered a few options I could use and finally settled with one of them.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Lately, I&amp;rsquo;ve been working on a code-base situated remotely on a server accessible over &lt;code&gt;ssh&lt;/code&gt;.&#xA;The network latency and size of the code repository prompted me to reconsider the method&#xA;to edit such files. I discovered a few options I could use and finally settled with one of them.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Installing Fedora on MacBook</title>
       <link>https://umarahmad.xyz/blog/installing-fedora-on-macbook/</link>
       <pubDate>Sun, 09 Apr 2017 17:03:02 +0530</pubDate>
-      
       <guid>https://umarahmad.xyz/blog/installing-fedora-on-macbook/</guid>
-      <description>&lt;p&gt;Recently, I&amp;rsquo;ve been using MacBook Air along with its default OS &lt;a href=&#34;https://www.apple.com/in/macos/sierra/&#34;&gt;macOS Sierra&lt;/a&gt; for about a year.
-I decided to switch back to &lt;a href=&#34;https://getfedora.org/&#34;&gt;Fedora&lt;/a&gt; once I started noticing the decreasing customizability after every update.
-Also there were a lot of API level changes that somehow always ended up breaking my workflow.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Recently, I&amp;rsquo;ve been using MacBook Air along with its default OS &lt;a href=&#34;https://www.apple.com/in/macos/sierra/&#34;&gt;macOS Sierra&lt;/a&gt; for about a year.&#xA;I decided to switch back to &lt;a href=&#34;https://getfedora.org/&#34;&gt;Fedora&lt;/a&gt; once I started noticing the decreasing customizability after every update.&#xA;Also there were a lot of API level changes that somehow always ended up breaking my workflow.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Things to do after installing Fedora</title>
       <link>https://umarahmad.xyz/blog/things-to-do-after-installing-fedora/</link>
       <pubDate>Sat, 27 Sep 2014 18:34:37 +0530</pubDate>
-      
       <guid>https://umarahmad.xyz/blog/things-to-do-after-installing-fedora/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/JCYMcJb5M-08b9FtHvKDsX8hedPz5UsD_rXxeSm0LkLl16YJuizEG2EuEFhi1CXOprcc6hesH8E8YPOd2sIfZbB6rfZm8h0eO-CDHhw4YQ_HHNqR3rU7d2OzSs1nSnhwvxZmXHpqTwTsaQSxYx4mcsi2QFIrJ9o3s3MQPIgg3qbqOusdJxjmuylQePuNm-aKMF4vTXwd_Xl7Sl9PQWUFG7GttxkbPa9sEJP-qm0velNcDh_Frzcd69SKLBjup-AV33ddUs_nat19pITobGS3MGk1BEYOfIzj8KfZzESeisvysiionFZfcbk6oaAhzsdoogfIPE2WIjH8x8MS23__AfKysOiZ6Cr7jTw5nMjdR7STzbLKZEslHyCKlvmXoIMrjkI9ZGrJ_54-cPMw0IFnXa1myCf3ob_AkgrjxhEPmGeu_cbnQG6wlQr_9SnObOJOyiDfc66epMTz_pOBSOdcJ74RLoqeqvBXIeK8yMCQ6fJTx9X0Zr5Do8ax_Harh-Mr_B5LewIqDo_pXiForMCBOJW9yPwnheM4SjIHX6WPm5voc5qsqcBW57y3hePPbZiNul4QzNMRfcXaC_DiIXCdAyyKJqVD6a3RpXsQM6gxKOdVuiHeRGeV3fdqKyJZWA5goDuqTZ9em9ku7zia6faJ9nLbshesjnXL9SoMCaDaUQ=w300-h700-no&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Getting the right packages after a fresh install is a headache. That is exactly what I had when I had to do a fresh installation of my Fedora after I accidentally corrupted my entire disk :frowning:.&lt;/p&gt;
-&lt;p&gt;I didn&amp;rsquo;t want to spend days installing the packages this time. This time I wanted to do it smart and quick.&lt;/p&gt;
-&lt;p&gt;The problem here was that I couldn&amp;rsquo;t just &lt;code&gt;yum install&lt;/code&gt; everything, that&amp;rsquo;s because Fedora community adheres to free software principles and doesn’t offer non-free codecs and drivers from it’s repositories. But there are 3rd party repositories which allow Fedora users to get non-free components.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/JCYMcJb5M-08b9FtHvKDsX8hedPz5UsD_rXxeSm0LkLl16YJuizEG2EuEFhi1CXOprcc6hesH8E8YPOd2sIfZbB6rfZm8h0eO-CDHhw4YQ_HHNqR3rU7d2OzSs1nSnhwvxZmXHpqTwTsaQSxYx4mcsi2QFIrJ9o3s3MQPIgg3qbqOusdJxjmuylQePuNm-aKMF4vTXwd_Xl7Sl9PQWUFG7GttxkbPa9sEJP-qm0velNcDh_Frzcd69SKLBjup-AV33ddUs_nat19pITobGS3MGk1BEYOfIzj8KfZzESeisvysiionFZfcbk6oaAhzsdoogfIPE2WIjH8x8MS23__AfKysOiZ6Cr7jTw5nMjdR7STzbLKZEslHyCKlvmXoIMrjkI9ZGrJ_54-cPMw0IFnXa1myCf3ob_AkgrjxhEPmGeu_cbnQG6wlQr_9SnObOJOyiDfc66epMTz_pOBSOdcJ74RLoqeqvBXIeK8yMCQ6fJTx9X0Zr5Do8ax_Harh-Mr_B5LewIqDo_pXiForMCBOJW9yPwnheM4SjIHX6WPm5voc5qsqcBW57y3hePPbZiNul4QzNMRfcXaC_DiIXCdAyyKJqVD6a3RpXsQM6gxKOdVuiHeRGeV3fdqKyJZWA5goDuqTZ9em9ku7zia6faJ9nLbshesjnXL9SoMCaDaUQ=w300-h700-no&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Getting the right packages after a fresh install is a headache. That is exactly what I had when I had to do a fresh installation of my Fedora after I accidentally corrupted my entire disk :frowning:.&lt;/p&gt;&#xA;&lt;p&gt;I didn&amp;rsquo;t want to spend days installing the packages this time. This time I wanted to do it smart and quick.&lt;/p&gt;&#xA;&lt;p&gt;The problem here was that I couldn&amp;rsquo;t just &lt;code&gt;yum install&lt;/code&gt; everything, that&amp;rsquo;s because Fedora community adheres to free software principles and doesn’t offer non-free codecs and drivers from it’s repositories. But there are 3rd party repositories which allow Fedora users to get non-free components.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>GSOC Meetup 2014</title>
       <link>https://umarahmad.xyz/blog/gsoc-meetup-2014/</link>
       <pubDate>Fri, 05 Sep 2014 04:20:39 +0530</pubDate>
-      
       <guid>https://umarahmad.xyz/blog/gsoc-meetup-2014/</guid>
       <description>On August 23rd, we, at JMILUG, hosted a GSOC Meetup at Jamia Millia Millia Islamia University, New Delhi, home of JMILUG. The GSOC meetup was an opportunity to meet and learn from past and present GSOC students who’ve actively contributed to Open Source projects in collaboration with developers from all over the world. This acted as a platform for other budding developers who’re ready to get their hands dirty and contribute to real time projects.</description>
     </item>
-    
     <item>
       <title>Drush It!</title>
       <link>https://umarahmad.xyz/blog/drush-it/</link>
       <pubDate>Wed, 09 Jul 2014 00:54:05 +0530</pubDate>
-      
       <guid>https://umarahmad.xyz/blog/drush-it/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/LWK3VdQ8CcrC4bIDnlrJRCJAZpjBDvFg-SnX0lZNu1GXNcKi2j0jA8ubCdBZIoz6hFOBzJmJ75OD2DvGfvxi1sGRY6qdrT4-iwgxAnRZFTOb3OE5-N33y4lEJBMfDhGYWWQAroZ9Wbe2Ho1dy4MI8ZntRVO1DrSyCS8AjMcil_m3UrJhsjz9IqMyMny1sIZ6JSJIfx7Pp6CN_iVgXO9ccpZf_aZC-0MGq8i5VGUTVGoy7asAHBnQPbbZJK4X8WilpFVqPmJAwsNKXoA-9GZasxjG9Kw3HyEK0jN83K3bRYYDYUAqZeLf5fJckpY8NZztQ0EoDGxHjb7UsD_aLYwMQmsg-U5e3ziv7Rs7POTkljWBngT4yMWy6HtCNJhr92xF7OLriyu3VdtRz3m1S_OrPcTOltWa4LlSiwAqVYR0-0JhYu1Ewq4fQvCoTy6ywEBbC7D-eGYk9plS2tiCTSH2WISVGTGZwh0ihUSgjsXSl6EZ22xnXd8zySzczp4WDzeabJfat97e7PFanrQn5Y5sxsiqYpCbbQgJx_bPaZF01xP2UqRLK2lEGiLS23cMlDOTrGCMJDWbRv3-grYVIApMzdw-nOkEmF26YpCTc_WQo-R_8dhBzmTcHKTswD2GadtGOg3LwqZFNwoxCw5TpnKHz9IdwTi9kjn6soBNF8xcjw=w218-h215-no&#34; alt=&#34;Drush&#34;&gt;&lt;/p&gt;
-&lt;p&gt;In the words of the maintainers of Drush:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Drush is a command-line shell and scripting interface for Drupal,
-a veritable Swiss Army knife designed to make life easier for those who spend
-their working hours hacking away at the command prompt.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;It&amp;rsquo;s just been few weeks I&amp;rsquo;ve started using Drush and I&amp;rsquo;m already a fan.
-If you are a drupal developer or a site maintainer and still haven&amp;rsquo;t heard of Drush &lt;a href=&#34;https://github.com/drush-ops/drush&#34;&gt;go check it out&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/LWK3VdQ8CcrC4bIDnlrJRCJAZpjBDvFg-SnX0lZNu1GXNcKi2j0jA8ubCdBZIoz6hFOBzJmJ75OD2DvGfvxi1sGRY6qdrT4-iwgxAnRZFTOb3OE5-N33y4lEJBMfDhGYWWQAroZ9Wbe2Ho1dy4MI8ZntRVO1DrSyCS8AjMcil_m3UrJhsjz9IqMyMny1sIZ6JSJIfx7Pp6CN_iVgXO9ccpZf_aZC-0MGq8i5VGUTVGoy7asAHBnQPbbZJK4X8WilpFVqPmJAwsNKXoA-9GZasxjG9Kw3HyEK0jN83K3bRYYDYUAqZeLf5fJckpY8NZztQ0EoDGxHjb7UsD_aLYwMQmsg-U5e3ziv7Rs7POTkljWBngT4yMWy6HtCNJhr92xF7OLriyu3VdtRz3m1S_OrPcTOltWa4LlSiwAqVYR0-0JhYu1Ewq4fQvCoTy6ywEBbC7D-eGYk9plS2tiCTSH2WISVGTGZwh0ihUSgjsXSl6EZ22xnXd8zySzczp4WDzeabJfat97e7PFanrQn5Y5sxsiqYpCbbQgJx_bPaZF01xP2UqRLK2lEGiLS23cMlDOTrGCMJDWbRv3-grYVIApMzdw-nOkEmF26YpCTc_WQo-R_8dhBzmTcHKTswD2GadtGOg3LwqZFNwoxCw5TpnKHz9IdwTi9kjn6soBNF8xcjw=w218-h215-no&#34; alt=&#34;Drush&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;In the words of the maintainers of Drush:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Drush is a command-line shell and scripting interface for Drupal,&#xA;a veritable Swiss Army knife designed to make life easier for those who spend&#xA;their working hours hacking away at the command prompt.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;It&amp;rsquo;s just been few weeks I&amp;rsquo;ve started using Drush and I&amp;rsquo;m already a fan.&#xA;If you are a drupal developer or a site maintainer and still haven&amp;rsquo;t heard of Drush &lt;a href=&#34;https://github.com/drush-ops/drush&#34;&gt;go check it out&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>GSOC Midterms: Half Over is Half Left</title>
       <link>https://umarahmad.xyz/blog/gsoc-midterms-half-over-is-half-left/</link>
       <pubDate>Sun, 29 Jun 2014 16:30:07 +0530</pubDate>
-      
       <guid>https://umarahmad.xyz/blog/gsoc-midterms-half-over-is-half-left/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/O2hQSeV_aZFFQH0PQgh-AV5c9b3Gvzx8U3_O2OLidJXUOCnWGPLN6DyE7KdOXXWG1KZuSGer-0sDzHXoHjv2bGtPnXtE4jVoygB7IhFoharxvP-GGul4UAe68sL7Jp8O0y7PG9VneRwmhFOuIFFeXAVy4fpBbJ-DDV4ymv-VwnQFh31BEMokAHwDb2E2jB3R4PHWKN-GptRNHWG8SGbndLXREoi-lyRUo9DSMEAeiUyrCwhc4-UFU4hvE8JksEs8tXSL-rQ6dgO9Qjw7u1jYidXRX8kRKaj1t0RV0R4PjvJhkn6-u_1ODqWfIMGfx_MQ_uCS1FQv503oAC1BArzbRwEjLX0sp7RhKf0-EeWuna3UDLlbanOJd5alAFbj0Z2HKRmD58rStwQIvLheLpjCGmKdeXEo3xB5fHHtx8zJLksjU2cCxFgAC71tXiUeeLZ2WYWups5Q7U72B1mXzGqXUQFH1E-GtfXaD1tZuHJ5I-n13A-lKvPCEK5hWYF8ImRAa3Kg2vv3tVnvUIPWcMcuoQO1RJDZik5YImF8F7SU_FCHavtaEJz5AGaQYn3r8DVYHM2WePN_htsPV7Gt-KNPfd9wMbVHY5keT_iTRQ0rYPhhKPojx2Rq7mkGPtq_SVdOScX5quCjjRzaFzx836GLqeyhim7cn9RB9KHvQu_b8g=w600-h160-no&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;GSOC Midterms ended few days back and it&amp;rsquo;s been fun so far. In my previous post I briefly touched upon my project, &lt;strong&gt;&lt;a href=&#34;https://www.github.com/gleek/fluxpocket&#34;&gt;fluxpocket&lt;/a&gt;&lt;/strong&gt; , which is an extended service for &lt;strong&gt;&lt;a href=&#34;http://www.drupal.org/project/fluxservice&#34;&gt;fluxservices&lt;/a&gt;&lt;/strong&gt;, which is based upon &lt;strong&gt;&lt;a href=&#34;http://www.fluxkraft.com&#34;&gt;fluxkraft&lt;/a&gt;&lt;/strong&gt;, which runs on &lt;strong&gt;&lt;a href=&#34;http://www.drupal.org/project/rules&#34;&gt;rules&lt;/a&gt;&lt;/strong&gt;, which is based on &lt;strong&gt;&lt;a href=&#34;http://www.drupal.org&#34;&gt;Drupal&lt;/a&gt;&lt;/strong&gt;!!&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/O2hQSeV_aZFFQH0PQgh-AV5c9b3Gvzx8U3_O2OLidJXUOCnWGPLN6DyE7KdOXXWG1KZuSGer-0sDzHXoHjv2bGtPnXtE4jVoygB7IhFoharxvP-GGul4UAe68sL7Jp8O0y7PG9VneRwmhFOuIFFeXAVy4fpBbJ-DDV4ymv-VwnQFh31BEMokAHwDb2E2jB3R4PHWKN-GptRNHWG8SGbndLXREoi-lyRUo9DSMEAeiUyrCwhc4-UFU4hvE8JksEs8tXSL-rQ6dgO9Qjw7u1jYidXRX8kRKaj1t0RV0R4PjvJhkn6-u_1ODqWfIMGfx_MQ_uCS1FQv503oAC1BArzbRwEjLX0sp7RhKf0-EeWuna3UDLlbanOJd5alAFbj0Z2HKRmD58rStwQIvLheLpjCGmKdeXEo3xB5fHHtx8zJLksjU2cCxFgAC71tXiUeeLZ2WYWups5Q7U72B1mXzGqXUQFH1E-GtfXaD1tZuHJ5I-n13A-lKvPCEK5hWYF8ImRAa3Kg2vv3tVnvUIPWcMcuoQO1RJDZik5YImF8F7SU_FCHavtaEJz5AGaQYn3r8DVYHM2WePN_htsPV7Gt-KNPfd9wMbVHY5keT_iTRQ0rYPhhKPojx2Rq7mkGPtq_SVdOScX5quCjjRzaFzx836GLqeyhim7cn9RB9KHvQu_b8g=w600-h160-no&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;GSOC Midterms ended few days back and it&amp;rsquo;s been fun so far. In my previous post I briefly touched upon my project, &lt;strong&gt;&lt;a href=&#34;https://www.github.com/gleek/fluxpocket&#34;&gt;fluxpocket&lt;/a&gt;&lt;/strong&gt; , which is an extended service for &lt;strong&gt;&lt;a href=&#34;http://www.drupal.org/project/fluxservice&#34;&gt;fluxservices&lt;/a&gt;&lt;/strong&gt;, which is based upon &lt;strong&gt;&lt;a href=&#34;http://www.fluxkraft.com&#34;&gt;fluxkraft&lt;/a&gt;&lt;/strong&gt;, which runs on &lt;strong&gt;&lt;a href=&#34;http://www.drupal.org/project/rules&#34;&gt;rules&lt;/a&gt;&lt;/strong&gt;, which is based on &lt;strong&gt;&lt;a href=&#34;http://www.drupal.org&#34;&gt;Drupal&lt;/a&gt;&lt;/strong&gt;!!&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>GSOC - Here We Go</title>
       <link>https://umarahmad.xyz/blog/gsoc-here-we-go/</link>
       <pubDate>Thu, 12 Jun 2014 05:45:04 +0530</pubDate>
-      
       <guid>https://umarahmad.xyz/blog/gsoc-here-we-go/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/-_eXnV87hecb2o5FZfatpmppOXSBupYVE2Xr8WIdxbi4tJqYW-iH-Y-ptJ2zDItA3N8XYuT71fmdxkP5RBWMJIxh2wGEPnOyaohoLbxxaT8cSNc67QQH2581_7ov2-rTPC5t9ro1UxN92jY8eNCF1mw-m879yjWX_H9vhZJVdVnrQRCEw5GHLL_k_Any-hYsIhOl06Paafst7kd4e-1rTORw6-TReVjZZQs6uYZSS2HTqB0g-_h2Zkp9g3UXcrrKcNucr-CYtilEIK_PRi_lUeRdNtU1rsGWrakkMDUXMuKy-ReIlBxUgc5Mj8iDde1RGqFf663lKQ5JhZb6nIiQuTnnqzg1MoynXFkqJsDaztSanuEm7uSWhwQ_gVDQjcGK7eVykXCa4JBZnucDlZBYVurJDk7wfUASCp5LvPXD3Ord3kAyLVZupq9bdjC28zGyGc8H6QC-LrUTxOkgyAoxjaifSlxTbcFao5snSSYPf-Whxj73Vzt2c2p0uHR_ySuBfRlSJL6Ul8cnp3KYEkiMQbAwYuAVlTSka-0Ch3uppYGS57dztOpyVawV-v2W4ipXj3fpmRYSC7jJA29ztsrCYZQKahhBaQREqrtJRgG5_zqCryLyn7vrzgoVXYOeX5MUW_P--Np4KEChrnTGp1C0Of2H4Jn26Ja4_Its7XEC_A=w924-h156-no&#34; alt=&#34;GSOC 2014&#34;&gt;&lt;/p&gt;
-&lt;h4 id=&#34;what&#34;&gt;What?&lt;/h4&gt;
-&lt;p&gt;Google Summer of Code is happening this year with over &lt;a href=&#34;http://www.google-melange.com/gsoc/org/list/public/google/gsoc2014&#34;&gt;190 participating organizations&lt;/a&gt; and with a total of &lt;a href=&#34;http://google-opensource.blogspot.in/2014/05/google-summer-of-code-2014-by-numbers.html&#34;&gt;1307 students&lt;/a&gt; selected all round the globe, and being one of them is truly awesome :sunglasses:.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/-_eXnV87hecb2o5FZfatpmppOXSBupYVE2Xr8WIdxbi4tJqYW-iH-Y-ptJ2zDItA3N8XYuT71fmdxkP5RBWMJIxh2wGEPnOyaohoLbxxaT8cSNc67QQH2581_7ov2-rTPC5t9ro1UxN92jY8eNCF1mw-m879yjWX_H9vhZJVdVnrQRCEw5GHLL_k_Any-hYsIhOl06Paafst7kd4e-1rTORw6-TReVjZZQs6uYZSS2HTqB0g-_h2Zkp9g3UXcrrKcNucr-CYtilEIK_PRi_lUeRdNtU1rsGWrakkMDUXMuKy-ReIlBxUgc5Mj8iDde1RGqFf663lKQ5JhZb6nIiQuTnnqzg1MoynXFkqJsDaztSanuEm7uSWhwQ_gVDQjcGK7eVykXCa4JBZnucDlZBYVurJDk7wfUASCp5LvPXD3Ord3kAyLVZupq9bdjC28zGyGc8H6QC-LrUTxOkgyAoxjaifSlxTbcFao5snSSYPf-Whxj73Vzt2c2p0uHR_ySuBfRlSJL6Ul8cnp3KYEkiMQbAwYuAVlTSka-0Ch3uppYGS57dztOpyVawV-v2W4ipXj3fpmRYSC7jJA29ztsrCYZQKahhBaQREqrtJRgG5_zqCryLyn7vrzgoVXYOeX5MUW_P--Np4KEChrnTGp1C0Of2H4Jn26Ja4_Its7XEC_A=w924-h156-no&#34; alt=&#34;GSOC 2014&#34;&gt;&lt;/p&gt;&#xA;&lt;h4 id=&#34;what&#34;&gt;What?&lt;/h4&gt;&#xA;&lt;p&gt;Google Summer of Code is happening this year with over &lt;a href=&#34;http://www.google-melange.com/gsoc/org/list/public/google/gsoc2014&#34;&gt;190 participating organizations&lt;/a&gt; and with a total of &lt;a href=&#34;http://google-opensource.blogspot.in/2014/05/google-summer-of-code-2014-by-numbers.html&#34;&gt;1307 students&lt;/a&gt; selected all round the globe, and being one of them is truly awesome :sunglasses:.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>GSF Hacks</title>
       <link>https://umarahmad.xyz/blog/gsf-hacks/</link>
       <pubDate>Thu, 08 May 2014 03:01:30 +0530</pubDate>
-      
       <guid>https://umarahmad.xyz/blog/gsf-hacks/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/7zBCup0aXx-KUJveJNOxISqBj3JXPaPY9u05q9Akw3EqIICRgExww1BMImw25FkodIVfACX6cC7OepuQz4kpvkniONdYjrb9fwTqRI06e3OwMtQyzew9zviROsNkWi49fC_5C0wb3AVEGg55HvpBLTkVdMT1nsu2HwaleXumrALCPmbaNjsO_dcnNoVwmNmVALbXuMUDM87MSpz9Lt746gU1HiV8XnFxroGCv_AdQ3rA3h7eNWjQIyS-wqFiuamL7EF6jdXo0LUVGDJWSuzShCwHGXKwwZ4ixY3RVerIG8jJ7zupxT94DshLMzMU_jYQk6pLm7qLFnCntEB8hakWZWLShUpKrBl_4gJ4RlW9dH3fVsqbnzOKW3HnVZpIAErQOctUDtbmqgW-_WGrmBbFI8Jk5cfBjCC9SXs9wAqZt2R-BwvYXR__ahl9rDiJRdPXB1GQQNpnRgB_dCyMTBrW-KnqWoI_KN4kwSHI1ARYDNC3v1OM-tc_3nPIsjy_JwoxZ4sG4cTsHbefXt6BL2HnETD77GmYCx9TWZb-j_wnnY0xHRBNU8kOHOZCFJ8_B0Z3S4rhTKBCV9U9s6B5UgChO_DhtlOdv1dgisSgPYXahpo1chmtSNluBBIfdSQ5odHBNJVITuLRDqUod8Dm-LzmJdcBQmpgse-VUDvCFe7qMA=s370&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Last month some of my friends and I went to a hackathon organized by &lt;a href=&#34;http://www.gsfindia.com/hacks/&#34;&gt;GSF India&lt;/a&gt;. This hackathon was particularly interesting since almost all the participants were amongst the top ranked from &lt;a href=&#34;http://www.hackerearth.com/&#34;&gt;Hacker Earth&lt;/a&gt; and thus a tough competition was expected.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/7zBCup0aXx-KUJveJNOxISqBj3JXPaPY9u05q9Akw3EqIICRgExww1BMImw25FkodIVfACX6cC7OepuQz4kpvkniONdYjrb9fwTqRI06e3OwMtQyzew9zviROsNkWi49fC_5C0wb3AVEGg55HvpBLTkVdMT1nsu2HwaleXumrALCPmbaNjsO_dcnNoVwmNmVALbXuMUDM87MSpz9Lt746gU1HiV8XnFxroGCv_AdQ3rA3h7eNWjQIyS-wqFiuamL7EF6jdXo0LUVGDJWSuzShCwHGXKwwZ4ixY3RVerIG8jJ7zupxT94DshLMzMU_jYQk6pLm7qLFnCntEB8hakWZWLShUpKrBl_4gJ4RlW9dH3fVsqbnzOKW3HnVZpIAErQOctUDtbmqgW-_WGrmBbFI8Jk5cfBjCC9SXs9wAqZt2R-BwvYXR__ahl9rDiJRdPXB1GQQNpnRgB_dCyMTBrW-KnqWoI_KN4kwSHI1ARYDNC3v1OM-tc_3nPIsjy_JwoxZ4sG4cTsHbefXt6BL2HnETD77GmYCx9TWZb-j_wnnY0xHRBNU8kOHOZCFJ8_B0Z3S4rhTKBCV9U9s6B5UgChO_DhtlOdv1dgisSgPYXahpo1chmtSNluBBIfdSQ5odHBNJVITuLRDqUod8Dm-LzmJdcBQmpgse-VUDvCFe7qMA=s370&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Last month some of my friends and I went to a hackathon organized by &lt;a href=&#34;http://www.gsfindia.com/hacks/&#34;&gt;GSF India&lt;/a&gt;. This hackathon was particularly interesting since almost all the participants were amongst the top ranked from &lt;a href=&#34;http://www.hackerearth.com/&#34;&gt;Hacker Earth&lt;/a&gt; and thus a tough competition was expected.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>From WordPress to Octopress</title>
       <link>https://umarahmad.xyz/blog/from-wordpress-to-octopress/</link>
       <pubDate>Fri, 18 Apr 2014 20:07:03 +0530</pubDate>
-      
       <guid>https://umarahmad.xyz/blog/from-wordpress-to-octopress/</guid>
-      <description>&lt;p&gt;&lt;em&gt;This post is about choosing Octopress over &lt;strong&gt;WordPress hosted&lt;/strong&gt; blog, it does not talk about WordPress as a framework.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;It has been a very few days I started this blog. Now I feel a bit of a weird pride in announcing that this may be the last post on the wordpress, it&amp;rsquo;s now hosted on github - &lt;a href=&#34;http://gleek.github.io/&#34;&gt;http://gleek.github.io&lt;/a&gt; , and powered by Octopress.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;em&gt;This post is about choosing Octopress over &lt;strong&gt;WordPress hosted&lt;/strong&gt; blog, it does not talk about WordPress as a framework.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;It has been a very few days I started this blog. Now I feel a bit of a weird pride in announcing that this may be the last post on the wordpress, it&amp;rsquo;s now hosted on github - &lt;a href=&#34;http://gleek.github.io/&#34;&gt;http://gleek.github.io&lt;/a&gt; , and powered by Octopress.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Customizing Emacs</title>
       <link>https://umarahmad.xyz/blog/customizing-emacs/</link>
       <pubDate>Thu, 10 Apr 2014 18:32:50 +0530</pubDate>
-      
       <guid>https://umarahmad.xyz/blog/customizing-emacs/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/ARlXYE_wnAvftBBl2UEvu-z9SpH-q3lyYNukRnNRwbUnXt6fGTP304OloJ3sJ3pSlMr_9QnPr_RxKamv65BFkEUqUEKB0TftIzNuOaiabipF1DNMYLzYReB_40Qr2TbbDndKYzeY5-MPUNmyzH9xmsuhWxmpywT4U5ayHJo2-dGy1W7wRlY2kY7QtTvneNt4OqGGZlqsSZLYM3WVcVwWFxBeJzPxirItCLPzRoRNPfdZZRy6k31JS65TU3WYW-7hvOcTuoZ6vDJSj2K3HyD73dpJ7YjNUwmJB9tjNzy7bqUXm5ftnuG14qPKs1Gtz1jpAGESfgafhUeLQL1pvDWP-VBQDLIwYaXr-XFTatPTgalAAPNd66J-cJ_J0O1OkF1DM-KM4RjqDhLkMOT9-RM5fkrG5_Rnibw32yJho_cGYTyk7523_CnePswMWjMtmMrTI4zyrsaRYVqBjfRxwznHExq1nAwuR-NSmP2EeeLvPYFP6ZSyMWyZCga2K0LH6J9-Qa8aHdkneuQ9ti6w0QGEJHr9HinsGuWBuALKd2H0ZlPxrwhOdKSyEIaWgq2mkt0vL653PCK4sN5zGZZte3kc7LL3I4WZhlN1oaRsXbIRTJaLEYhQTYj4BrRDS-59IHAwl2Ddf_AzsF9r7c6cKs-A2DQL2QpM2Nb5gU5Ae05pIw=w270-h217-no&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I believe the environment in which one works is directly responsible for one&amp;rsquo;s productivity. It&amp;rsquo;s the reason I think, it&amp;rsquo;s important to choose the right editor, font, etc.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/ARlXYE_wnAvftBBl2UEvu-z9SpH-q3lyYNukRnNRwbUnXt6fGTP304OloJ3sJ3pSlMr_9QnPr_RxKamv65BFkEUqUEKB0TftIzNuOaiabipF1DNMYLzYReB_40Qr2TbbDndKYzeY5-MPUNmyzH9xmsuhWxmpywT4U5ayHJo2-dGy1W7wRlY2kY7QtTvneNt4OqGGZlqsSZLYM3WVcVwWFxBeJzPxirItCLPzRoRNPfdZZRy6k31JS65TU3WYW-7hvOcTuoZ6vDJSj2K3HyD73dpJ7YjNUwmJB9tjNzy7bqUXm5ftnuG14qPKs1Gtz1jpAGESfgafhUeLQL1pvDWP-VBQDLIwYaXr-XFTatPTgalAAPNd66J-cJ_J0O1OkF1DM-KM4RjqDhLkMOT9-RM5fkrG5_Rnibw32yJho_cGYTyk7523_CnePswMWjMtmMrTI4zyrsaRYVqBjfRxwznHExq1nAwuR-NSmP2EeeLvPYFP6ZSyMWyZCga2K0LH6J9-Qa8aHdkneuQ9ti6w0QGEJHr9HinsGuWBuALKd2H0ZlPxrwhOdKSyEIaWgq2mkt0vL653PCK4sN5zGZZte3kc7LL3I4WZhlN1oaRsXbIRTJaLEYhQTYj4BrRDS-59IHAwl2Ddf_AzsF9r7c6cKs-A2DQL2QpM2Nb5gU5Ae05pIw=w270-h217-no&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I believe the environment in which one works is directly responsible for one&amp;rsquo;s productivity. It&amp;rsquo;s the reason I think, it&amp;rsquo;s important to choose the right editor, font, etc.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Automatically Changing desktop background on gnome-shell</title>
       <link>https://umarahmad.xyz/blog/automatically-changing-desktop-background-on-gnome-shell/</link>
       <pubDate>Wed, 26 Mar 2014 17:53:27 +0530</pubDate>
-      
       <guid>https://umarahmad.xyz/blog/automatically-changing-desktop-background-on-gnome-shell/</guid>
-      <description>&lt;p&gt;&lt;em&gt;Click &lt;a href=&#34;https://github.com/Gleek/gnome_wall_changer/archive/master.zip&#34; title=&#34;gnome_wall_change.zip(Github)&#34;&gt;here&lt;/a&gt; to download the scripts directly, or view them on &lt;a href=&#34;https://github.com/Gleek/gnome_wall_changer&#34;&gt;Github&lt;/a&gt;&lt;/em&gt;
-&lt;img src=&#34;https://lh3.googleusercontent.com/NGCDBc6q7d4KsJ5OQft2nhe0RnglzsBVbgOGZpdEMunjopdwxg5CmzMbgYA-7GpkHX3P5xVFOOR2k300r3smFScPSX-xWsaBOmHuJL5r24OstQDIuqFbsUZ0pxwjcCoV0jQvD2azdKkCWwX7IB4wB78M8_xlW6wb4fLTn26uHzSHltTAtuapfJE5pMvzuPAMb5Af0A2I8bn-6KvjoVazUT_qMhBFcIqBLT_OjSKK8f04sDbVarExlNA5cvxwujLgNLFKrLneYNkXBV72g_8AiY3Sj20vEOG-Nqbt4FY0sxBavgWuE62bfngKaWpcIuEdlgJDzXVb0hLsO_XHulyWKZqsEnZmPTpeZTXbgwXOW831bU7FU9zWamsCxDAyQJP9361V-xqMIut-5jnT2g86ESIks1xVZxkO83RClmKiwmM3b1rq9hZuMR9DVuVFjDBdQcvVBIEWyKPAIi39-26AkblTir_AXZcEeAju_dNamBiyQuZ6-Pf_wykzTNZlXt1aR8LzoIYABCc5CrZxrft4rnj2U7M3_v4-SVmzq3bqqV5OKIONgZkMHpAZxTnGEzToNThcyxZt1Q_lr050p-a8opmObnudB6UElg2x_MdrztotI6Dpsjs6TiHIdLWfur4Zh92uvsedkmV1zY5TKazLMTttGY2yMkVY3YpVAy64gQ=s370&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;One of the main attractions about a system is the desktop background. We tend to choose our background which identifies our interests , are aesthetically pleasing or remind us of our good times.&lt;/p&gt;
-&lt;p&gt;But the thing with consistency is that it gets boring with time. Wallpapers we once loved, becomes a burden and we find it hard to come back to that wallpaper after getting it on 24×7.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;em&gt;Click &lt;a href=&#34;https://github.com/Gleek/gnome_wall_changer/archive/master.zip&#34; title=&#34;gnome_wall_change.zip(Github)&#34;&gt;here&lt;/a&gt; to download the scripts directly, or view them on &lt;a href=&#34;https://github.com/Gleek/gnome_wall_changer&#34;&gt;Github&lt;/a&gt;&lt;/em&gt;&#xA;&lt;img src=&#34;https://lh3.googleusercontent.com/NGCDBc6q7d4KsJ5OQft2nhe0RnglzsBVbgOGZpdEMunjopdwxg5CmzMbgYA-7GpkHX3P5xVFOOR2k300r3smFScPSX-xWsaBOmHuJL5r24OstQDIuqFbsUZ0pxwjcCoV0jQvD2azdKkCWwX7IB4wB78M8_xlW6wb4fLTn26uHzSHltTAtuapfJE5pMvzuPAMb5Af0A2I8bn-6KvjoVazUT_qMhBFcIqBLT_OjSKK8f04sDbVarExlNA5cvxwujLgNLFKrLneYNkXBV72g_8AiY3Sj20vEOG-Nqbt4FY0sxBavgWuE62bfngKaWpcIuEdlgJDzXVb0hLsO_XHulyWKZqsEnZmPTpeZTXbgwXOW831bU7FU9zWamsCxDAyQJP9361V-xqMIut-5jnT2g86ESIks1xVZxkO83RClmKiwmM3b1rq9hZuMR9DVuVFjDBdQcvVBIEWyKPAIi39-26AkblTir_AXZcEeAju_dNamBiyQuZ6-Pf_wykzTNZlXt1aR8LzoIYABCc5CrZxrft4rnj2U7M3_v4-SVmzq3bqqV5OKIONgZkMHpAZxTnGEzToNThcyxZt1Q_lr050p-a8opmObnudB6UElg2x_MdrztotI6Dpsjs6TiHIdLWfur4Zh92uvsedkmV1zY5TKazLMTttGY2yMkVY3YpVAy64gQ=s370&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;One of the main attractions about a system is the desktop background. We tend to choose our background which identifies our interests , are aesthetically pleasing or remind us of our good times.&lt;/p&gt;&#xA;&lt;p&gt;But the thing with consistency is that it gets boring with time. Wallpapers we once loved, becomes a burden and we find it hard to come back to that wallpaper after getting it on 24×7.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Adding Drupal IRC-Bot to # jmilug</title>
       <link>https://umarahmad.xyz/blog/adding-drupal-irc-bot-to-number-jmilug/</link>
       <pubDate>Mon, 24 Mar 2014 22:45:47 +0530</pubDate>
-      
       <guid>https://umarahmad.xyz/blog/adding-drupal-irc-bot-to-number-jmilug/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/AsBXtPDzWf-Mf9c5sMP4TdzOU_S7dZK7bl8Ly69FFn_wXGoPvos3kPOpmWMaWvMjjItBzbuZwZ-rbhshyasU9RUN_2mLswzfJWsBbmFGReZ-epr8F68KTaEK39qscEeqDIyx9os_4PXNNH-uT_iUuv49_buca3ViqEmKXGJvq0N23fmgj7Lx0zy5SQGQBoCzpbIKMNczMIeIM1ihIx1xyp5TvRblxqDpA-y0mEM34cXIKk1PoMJyt0iT4RSEEhAxWuPIwHECdUP8v2mC5OqaAKDVkIKH8DK7JX8XF19hcNTbtWIHxNXdHEbVC5lf3phrZpmdArWIfga3jOTuRFEmz5Xp8Sqan54h9S62I1n_Lf3__rqT0kawXR3NS0OVUlv45xh-0UUguym2sg1PLaVtXVxiaVtw6vGGko7mSVH6lM5WoUq9XTs3Po7Cz_fdxbsI-dkUIX7mP8Ry1fQ4ltwQXz1DJSDoEeRDMmbqyOkWnBDeSQMxXeaUWYcTqkzxYliASsPuB4CPhEi5pRwPlMjLKaZV1x_xm2BOCwugMNx_p_L1jJh1CtAQXV5WY9-SHgq8Fzc1QZ6oDCpTJVgSGZWZFcXkWSs9l44ISI1FVZtm-RuBJ99Zcrtx=w256-h159-no&#34; alt=&#34;IRC&#34; title=&#34;IRC Screen&#34;&gt;&lt;/p&gt;
-&lt;p&gt;One of the main drawbacks of IRC-chat is the absence of logging. This was the main reason why our community JMI-LUG almost stopped using the channel for any discussion, as there was nothing to refer to later.
-There was a need for a kind of a bot which could save all the logs of the chats we had. Hence, I began my search for any open-source IRC bot to cater our needs.
-I found &lt;a href=&#34;http://en.wikipedia.org/wiki/Comparison_of_Internet_Relay_Chat_bots&#34;&gt;many bots&lt;/a&gt; which could do the task.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/AsBXtPDzWf-Mf9c5sMP4TdzOU_S7dZK7bl8Ly69FFn_wXGoPvos3kPOpmWMaWvMjjItBzbuZwZ-rbhshyasU9RUN_2mLswzfJWsBbmFGReZ-epr8F68KTaEK39qscEeqDIyx9os_4PXNNH-uT_iUuv49_buca3ViqEmKXGJvq0N23fmgj7Lx0zy5SQGQBoCzpbIKMNczMIeIM1ihIx1xyp5TvRblxqDpA-y0mEM34cXIKk1PoMJyt0iT4RSEEhAxWuPIwHECdUP8v2mC5OqaAKDVkIKH8DK7JX8XF19hcNTbtWIHxNXdHEbVC5lf3phrZpmdArWIfga3jOTuRFEmz5Xp8Sqan54h9S62I1n_Lf3__rqT0kawXR3NS0OVUlv45xh-0UUguym2sg1PLaVtXVxiaVtw6vGGko7mSVH6lM5WoUq9XTs3Po7Cz_fdxbsI-dkUIX7mP8Ry1fQ4ltwQXz1DJSDoEeRDMmbqyOkWnBDeSQMxXeaUWYcTqkzxYliASsPuB4CPhEi5pRwPlMjLKaZV1x_xm2BOCwugMNx_p_L1jJh1CtAQXV5WY9-SHgq8Fzc1QZ6oDCpTJVgSGZWZFcXkWSs9l44ISI1FVZtm-RuBJ99Zcrtx=w256-h159-no&#34; alt=&#34;IRC&#34; title=&#34;IRC Screen&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;One of the main drawbacks of IRC-chat is the absence of logging. This was the main reason why our community JMI-LUG almost stopped using the channel for any discussion, as there was nothing to refer to later.&#xA;There was a need for a kind of a bot which could save all the logs of the chats we had. Hence, I began my search for any open-source IRC bot to cater our needs.&#xA;I found &lt;a href=&#34;http://en.wikipedia.org/wiki/Comparison_of_Internet_Relay_Chat_bots&#34;&gt;many bots&lt;/a&gt; which could do the task.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Migrating to Fedora 20</title>
       <link>https://umarahmad.xyz/blog/migrating-to-fedora-20/</link>
       <pubDate>Mon, 24 Mar 2014 20:32:50 +0530</pubDate>
-      
       <guid>https://umarahmad.xyz/blog/migrating-to-fedora-20/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/uqGbIS_J6m_AloaEhWeG0IZ6G4iWSYBUDMJ8kX3aRRxLHhiruma365lgbRW877VHiSbMP1ivNISekZl1aUQGw13Z6SIcZEJ2nqp_Lt-I0UuPfmiypBz7iM8m3vvWD9ijUSB8u0Fa4IbJaXgQdlGCjAP1hBVvPcfVvDgQ4--LvLl18fOLV-5vk-l4zPU4calXUlOaNDGw_dCPLM0RO42YllDiAN669vFCR1g9PIftUhKCE271lXeOZmo4hp_AICCQNppWpQS-mD7I8zYx_BAqvTPdwhPzkHYG-ZU33Jz2N3-uqEGpefU7QaklxXVpBG3-_VmOmwXUNBhOa0LHUVpcTa4JA_lz2D5AcwhwAGMyEbjaTAAOjI2zxrg9wuF6R8nitmQREcfs4R1I5DwLjuOlHLYdgWLHx_AHSd-aB4Lp6Slx29vUvVtgD6MIMQUB_sH60bvT81LM-OTlQbO35yyHXI5ETyePfzcSeblRUN96Ecu3D67xMLdujDfje3t8_7gQkC5IcUpfgYVOukd_bi6kgqMaF2c5_KXD1tpt7PhbnZ9N7hQ8W1uveUdurWZik1NcFs7hMMmJgZjf-0eSqo56vX12_k4D391EAxe1L6hSE9UHzmYFKSZj_FDtD_Q97yg5hn2CC6exVqQZSnVRqkKPXO1vvQRnZFHpvhGapvPIgg=w200-h100-no&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;ve been a Fedora Fan-boy ever-since I started using it three years ago and Fedora 17 is the only Linux Based Distro which lasted for more than a year on my laptop. But just as every good thing has to come to an end, my company with Fedora 17 had completed it&amp;rsquo;s lifetime.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/uqGbIS_J6m_AloaEhWeG0IZ6G4iWSYBUDMJ8kX3aRRxLHhiruma365lgbRW877VHiSbMP1ivNISekZl1aUQGw13Z6SIcZEJ2nqp_Lt-I0UuPfmiypBz7iM8m3vvWD9ijUSB8u0Fa4IbJaXgQdlGCjAP1hBVvPcfVvDgQ4--LvLl18fOLV-5vk-l4zPU4calXUlOaNDGw_dCPLM0RO42YllDiAN669vFCR1g9PIftUhKCE271lXeOZmo4hp_AICCQNppWpQS-mD7I8zYx_BAqvTPdwhPzkHYG-ZU33Jz2N3-uqEGpefU7QaklxXVpBG3-_VmOmwXUNBhOa0LHUVpcTa4JA_lz2D5AcwhwAGMyEbjaTAAOjI2zxrg9wuF6R8nitmQREcfs4R1I5DwLjuOlHLYdgWLHx_AHSd-aB4Lp6Slx29vUvVtgD6MIMQUB_sH60bvT81LM-OTlQbO35yyHXI5ETyePfzcSeblRUN96Ecu3D67xMLdujDfje3t8_7gQkC5IcUpfgYVOukd_bi6kgqMaF2c5_KXD1tpt7PhbnZ9N7hQ8W1uveUdurWZik1NcFs7hMMmJgZjf-0eSqo56vX12_k4D391EAxe1L6hSE9UHzmYFKSZj_FDtD_Q97yg5hn2CC6exVqQZSnVRqkKPXO1vvQRnZFHpvhGapvPIgg=w200-h100-no&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve been a Fedora Fan-boy ever-since I started using it three years ago and Fedora 17 is the only Linux Based Distro which lasted for more than a year on my laptop. But just as every good thing has to come to an end, my company with Fedora 17 had completed it&amp;rsquo;s lifetime.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Fixing Brightness Problems in Linux</title>
       <link>https://umarahmad.xyz/blog/fixing-brightness/</link>
       <pubDate>Tue, 04 Mar 2014 23:51:09 +0530</pubDate>
-      
       <guid>https://umarahmad.xyz/blog/fixing-brightness/</guid>
-      <description>&lt;p&gt;&lt;em&gt;You can find the said applications/scripts in my &lt;a href=&#34;https://github.com/Gleek/linux-brightness-hack&#34;&gt;github repository&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/FtDEhFz8XUmpm-kK2gXko-Y6y9SojmlX8TQPmFht1Xx15GY__hKAANFn9kcI-6wuC1sXVfRpIBE3oo-20kHJqkk0DKtQoliaT9_ruWfQVdYOEE3COC0Sc1uHL5q0X8UoCMTZuYUfNeFT1Yoe6wJVK8OOY3QlLGfvUSaUlK32PUnIb-5isnpWbwi2ZfedUYUaFmLJU1MNR3MgslxbJ4Q0TSX2BcSRWu2l_ilCf2CB3zPmXNPkOlPXLPhADIJUVlZsqtNhv7q4s8t9uvTZuMU0NpsXOooN7s7VyvpJ3YOQEYimyMB1Pz7YMNSo3nV5lCXPBn63XkIkigQ9HoYZn5oKW5CLTu3wSqMh2zYoEfvbZIrB0KEA6EMTjiirc4BnKvcs0IOTYahm5r2Ws2x7N2Pr6KnSlOWB1rHVA7dw9cRCKV2qA_tJsjKJSvlPUngWn2STRtuprHvigclTX-hMn7V24P6QTHbPilB3uQRN91iYOrNo7pkLhgo-WmGo6sABukUM4ETwUVSUUgTSsxYrD9aBoZz7WOOZo0Z4awGcDQgNXCzg5Rza81TVmRxa7cwbIEMu21TZUaaEN9Kot3f6q1iaYnos_zFTMhrau4lQVzZRNbrVxx5pY8IjT8i3dix8zPDv-RZgcpm7ExPrxr8_zcSXJbdgay-9cN7AP7yFZxbR9w=s240-no&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;This is a problem which I faced since the beginning I installed Linux. My system neither recognized my display settings nor those damn shortcut keys (the combination of &lt;code&gt;fn&lt;/code&gt; keys) worked , so I ended up getting a dark screen (with zero brightness) every time the system starts-up. I couldn&amp;rsquo;t even change the brightness with those faulty shortcut keys!!&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;em&gt;You can find the said applications/scripts in my &lt;a href=&#34;https://github.com/Gleek/linux-brightness-hack&#34;&gt;github repository&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/FtDEhFz8XUmpm-kK2gXko-Y6y9SojmlX8TQPmFht1Xx15GY__hKAANFn9kcI-6wuC1sXVfRpIBE3oo-20kHJqkk0DKtQoliaT9_ruWfQVdYOEE3COC0Sc1uHL5q0X8UoCMTZuYUfNeFT1Yoe6wJVK8OOY3QlLGfvUSaUlK32PUnIb-5isnpWbwi2ZfedUYUaFmLJU1MNR3MgslxbJ4Q0TSX2BcSRWu2l_ilCf2CB3zPmXNPkOlPXLPhADIJUVlZsqtNhv7q4s8t9uvTZuMU0NpsXOooN7s7VyvpJ3YOQEYimyMB1Pz7YMNSo3nV5lCXPBn63XkIkigQ9HoYZn5oKW5CLTu3wSqMh2zYoEfvbZIrB0KEA6EMTjiirc4BnKvcs0IOTYahm5r2Ws2x7N2Pr6KnSlOWB1rHVA7dw9cRCKV2qA_tJsjKJSvlPUngWn2STRtuprHvigclTX-hMn7V24P6QTHbPilB3uQRN91iYOrNo7pkLhgo-WmGo6sABukUM4ETwUVSUUgTSsxYrD9aBoZz7WOOZo0Z4awGcDQgNXCzg5Rza81TVmRxa7cwbIEMu21TZUaaEN9Kot3f6q1iaYnos_zFTMhrau4lQVzZRNbrVxx5pY8IjT8i3dix8zPDv-RZgcpm7ExPrxr8_zcSXJbdgay-9cN7AP7yFZxbR9w=s240-no&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This is a problem which I faced since the beginning I installed Linux. My system neither recognized my display settings nor those damn shortcut keys (the combination of &lt;code&gt;fn&lt;/code&gt; keys) worked , so I ended up getting a dark screen (with zero brightness) every time the system starts-up. I couldn&amp;rsquo;t even change the brightness with those faulty shortcut keys!!&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Hello Blogging....</title>
       <link>https://umarahmad.xyz/blog/hello-blogging/</link>
       <pubDate>Wed, 19 Feb 2014 16:20:21 +0530</pubDate>
-      
       <guid>https://umarahmad.xyz/blog/hello-blogging/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/8KrC30EJ7aomCKVOKCcPj7PwvqroHH_uuQ0MJKZJwRyptJGUTm9Q_euyV1RvHmPu6CXqxTApGgAgZcjMeQn2lEE3XI6q7pU--tbzNIdEYqLbY6c-6HTdr6V5cdlxgPdSS-duaLd899h1elO3gJRodqnOENLeehHLbJAxQRqDnk9_B8Hl5IVQUmBVtoy-5tr284-n2Radm70OUhZWL1863I_53wLLxKd0TxGWCwpCc7UX4rwj0nZ5A-CjZn3eLJYUx1i6fQoik64eR7wuWyRui8sj2vPCUMQ4N0TKXmt2E1dpfocJwQ6pP2ImkgTNqrRG1cCN_FHl7R_Gd5Z9bk_-YcXE1O3P2qObS9BqzssCldbSrtLvYmDUOvfAiM1uuissxiqBx5pmmLU89wiuh9QSvKy5TwF233oMlCCIS-hDBY7TEKBlgUhFfzpG-ZJNB3xa_R4-f4qeWocPNZ1Bg7Qb1LXweGisES3eYXUV48CrIZ0EJnIxx8IH6K9nrEi4LdARzFxuJIoowVkESQfp4lMzNaZDUzcCShtfdbGAn0eVH-lsrj5-gtIzNy576S0Yk-fQqGuNuXw9Fb2d-bwOuOMe4aSfAkQXwm8RpFabwZ6jZDluKtSdAevA4iC3v8RZgnhodPSu0s2YMPP3RPUzPNL6Gvdnlk3bDh-ze4UiTHtd-w=s300&#34; alt=&#34;Hello World&#34;&gt;&lt;/p&gt;
-&lt;p&gt;So how did it start&amp;hellip;Well what can I say, it was nothing more than a small pulse that waved through my brain&amp;hellip;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/8KrC30EJ7aomCKVOKCcPj7PwvqroHH_uuQ0MJKZJwRyptJGUTm9Q_euyV1RvHmPu6CXqxTApGgAgZcjMeQn2lEE3XI6q7pU--tbzNIdEYqLbY6c-6HTdr6V5cdlxgPdSS-duaLd899h1elO3gJRodqnOENLeehHLbJAxQRqDnk9_B8Hl5IVQUmBVtoy-5tr284-n2Radm70OUhZWL1863I_53wLLxKd0TxGWCwpCc7UX4rwj0nZ5A-CjZn3eLJYUx1i6fQoik64eR7wuWyRui8sj2vPCUMQ4N0TKXmt2E1dpfocJwQ6pP2ImkgTNqrRG1cCN_FHl7R_Gd5Z9bk_-YcXE1O3P2qObS9BqzssCldbSrtLvYmDUOvfAiM1uuissxiqBx5pmmLU89wiuh9QSvKy5TwF233oMlCCIS-hDBY7TEKBlgUhFfzpG-ZJNB3xa_R4-f4qeWocPNZ1Bg7Qb1LXweGisES3eYXUV48CrIZ0EJnIxx8IH6K9nrEi4LdARzFxuJIoowVkESQfp4lMzNaZDUzcCShtfdbGAn0eVH-lsrj5-gtIzNy576S0Yk-fQqGuNuXw9Fb2d-bwOuOMe4aSfAkQXwm8RpFabwZ6jZDluKtSdAevA4iC3v8RZgnhodPSu0s2YMPP3RPUzPNL6Gvdnlk3bDh-ze4UiTHtd-w=s300&#34; alt=&#34;Hello World&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;So how did it start&amp;hellip;Well what can I say, it was nothing more than a small pulse that waved through my brain&amp;hellip;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

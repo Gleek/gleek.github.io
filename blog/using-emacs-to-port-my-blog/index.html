@@ -7,13 +7,13 @@
 <title>Porting my blog to Hugo from inside Emacs | Umar Ahmad</title>
 <meta name="title" content="Porting my blog to Hugo from inside Emacs" />
 <meta name="description" content="A few days ago I ported my blog to hugo. I did this mostly while staying inside Emacs and switching to the web browser every now and then.
- Doing this required me to use Emacs to edit and manage multiple files at once and this post demonstrates a few of these techniques. The post is therefore mostly task agnostic and the techniques explained here should be usable for any such tasks." />
+Doing this required me to use Emacs to edit and manage multiple files at once and this post demonstrates a few of these techniques. The post is therefore mostly task agnostic and the techniques explained here should be usable for any such tasks." />
 <meta name="keywords" content="emacs,blog," />
 
 
 <meta property="og:title" content="Porting my blog to Hugo from inside Emacs" />
 <meta property="og:description" content="A few days ago I ported my blog to hugo. I did this mostly while staying inside Emacs and switching to the web browser every now and then.
- Doing this required me to use Emacs to edit and manage multiple files at once and this post demonstrates a few of these techniques. The post is therefore mostly task agnostic and the techniques explained here should be usable for any such tasks." />
+Doing this required me to use Emacs to edit and manage multiple files at once and this post demonstrates a few of these techniques. The post is therefore mostly task agnostic and the techniques explained here should be usable for any such tasks." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://umarahmad.xyz/blog/using-emacs-to-port-my-blog/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2021-01-24T16:17:08+05:30" />
@@ -22,177 +22,24 @@
 
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Porting my blog to Hugo from inside Emacs"/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Porting my blog to Hugo from inside Emacs"/>
 <meta name="twitter:description" content="A few days ago I ported my blog to hugo. I did this mostly while staying inside Emacs and switching to the web browser every now and then.
- Doing this required me to use Emacs to edit and manage multiple files at once and this post demonstrates a few of these techniques. The post is therefore mostly task agnostic and the techniques explained here should be usable for any such tasks."/>
+Doing this required me to use Emacs to edit and manage multiple files at once and this post demonstrates a few of these techniques. The post is therefore mostly task agnostic and the techniques explained here should be usable for any such tasks."/>
 
 
 
 <meta itemprop="name" content="Porting my blog to Hugo from inside Emacs">
 <meta itemprop="description" content="A few days ago I ported my blog to hugo. I did this mostly while staying inside Emacs and switching to the web browser every now and then.
- Doing this required me to use Emacs to edit and manage multiple files at once and this post demonstrates a few of these techniques. The post is therefore mostly task agnostic and the techniques explained here should be usable for any such tasks."><meta itemprop="datePublished" content="2021-01-24T16:17:08+05:30" />
+Doing this required me to use Emacs to edit and manage multiple files at once and this post demonstrates a few of these techniques. The post is therefore mostly task agnostic and the techniques explained here should be usable for any such tasks."><meta itemprop="datePublished" content="2021-01-24T16:17:08+05:30" />
 <meta itemprop="dateModified" content="2021-01-24T16:17:08+05:30" />
 <meta itemprop="wordCount" content="1148">
 <meta itemprop="keywords" content="emacs,blog," />
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
-  <style>
- body {
-     font-family: Verdana, sans-serif;
-     margin: auto;
-     padding: 20px;
-     max-width: 720px;
-     text-align: left;
-     word-wrap: break-word;
-     overflow-wrap: break-word;
-     line-height: 1.5;
-     background-color: #333;
-     color: #ddd;
- }
-
-
-
- .title {
-     text-decoration: none;
-     border: 0;
- }
-
- .title span {
-     font-weight: 400;
- }
-
- nav a {
-     margin-right: 10px;
- }
-
- textarea {
-     width: 100%;
-     font-size: 16px;
- }
-
- input {
-     font-size: 16px;
- }
-
- content {
-     line-height: 1.6;
- }
-
- table {
-     width: 100%;
- }
-
- img {
-     max-width: 100%;
- }
-
- code {
-     padding: 2px 5px;
- }
-
- pre code {
-     display: block;
-     padding: 20px;
-     white-space: pre-wrap;
-     font-size: 14px;
- }
-
- blockquote {
-     border-left: 1px solid #999;
-     color: #ccc;
-     padding-left: 20px;
-     font-style: italic;
- }
-
- footer {
-     padding: 25px;
-     text-align: center;
-     color:#808080;
- }
-
- .helptext {
-     font-size: small;
- }
-
- .errorlist {
-     color: #eba613;
-     font-size: small;
- }
+  
+  <link crossorigin="anonymous" href="/main.min.css" rel="preload stylesheet">
 
   
- ul.blog-posts {
-     list-style-type: none;
-     padding: unset;
- }
-
- ul.blog-posts li {
-     display: flex;
-     padding: 2px;
- }
-
- ul.blog-posts li span {
-     flex: 0 0 130px;
- }
-
- ul.blog-posts li a:visited {
-     color: #8b6fcb;
- }
-
-
-
- h1,
- h2,
- h3,
- h4,
- h5,
- h6,
- strong,
- b {
-     color: #eee;
- }
-
- a {
-     color: #8cc2dd;
- }
-
- code {
-     background-color: #282c34;
- }
-
- pre code {
-     color: #ddd;
- }
-
-
- textarea,
- input {
-     background-color: #252525;
-     color: #ddd;
- }
-
- .helptext {
-     color: #aaa;
- }
-
- video.video {
-     display: block;
-     margin: 0 auto;
-     max-width: 100%;
- }
- p.video-fallback {
-     font-size: 80%;
-     margin-bottom: 15px;
-     color:#808080;
- }
- 
- figcaption {
-     font-size: 80%;
-     margin-bottom: 15px;
-     color:#808080;
- }
-</style>
-
 </head>
 
 <body>
@@ -233,13 +80,9 @@ the process, please refer to <a href="https://retifrav.github.io/blog/2019/03/17
 <p>
 For the sake of brevity I’ll only cover these topics:</p>
 <ul>
-<li>
-<p>Setting up the environment, i.e., setting up the directory
-structure, git repositories and tooling.</p>
-</li>
-<li>
-<p>Port my markdown files so that they work with hugo</p>
-</li>
+<li>Setting up the environment, i.e., setting up the directory
+structure, git repositories and tooling.</li>
+<li>Port my markdown files so that they work with hugo</li>
 </ul>
 <div id="outline-container-headline-1" class="outline-2">
 <h2 id="headline-1">
@@ -279,19 +122,11 @@ I usually do directory operations from inside <code class="verbatim">dired</code
 <code class="verbatim">counsel-find-file</code> is more intuitive when creating new files, in
 different locations.</p>
 <ul>
-<li>
-<p><code class="verbatim">C-x C-f</code> bound to <code class="verbatim">counsel-find-file</code></p>
-</li>
-<li>
-<p>Type in <code class="verbatim">blog/blog-src</code> followed by <code class="verbatim">C-M-o</code></p>
-</li>
-<li>
-<p><code class="verbatim">d</code> to create a directory</p>
-</li>
-<li>
-<p>Type in <code class="verbatim">blog-gen</code> and <code class="verbatim">M-o</code> then <code class="verbatim">d</code> again to create another directory
-and quit to ivy buffer</p>
-</li>
+<li><code class="verbatim">C-x C-f</code> bound to <code class="verbatim">counsel-find-file</code></li>
+<li>Type in <code class="verbatim">blog/blog-src</code> followed by <code class="verbatim">C-M-o</code></li>
+<li><code class="verbatim">d</code> to create a directory</li>
+<li>Type in <code class="verbatim">blog-gen</code> and <code class="verbatim">M-o</code> then <code class="verbatim">d</code> again to create another directory
+and quit to ivy buffer</li>
 </ul>
 <p>This is how it looks in practice:
 <video autoplay loop controls class="video">
@@ -303,16 +138,10 @@ and quit to ivy buffer</p>
 <p>
 Initializing repositories can be done via <code class="verbatim">magit</code></p>
 <ul>
-<li>
-<p><code class="verbatim">C-x m</code>  bound to <code class="verbatim">magit-status</code> a directory will create a
-repository if one does not exist already and open magit-status buffer</p>
-</li>
-<li>
-<p><code class="verbatim">M a</code> from there adds a remote and fetches it</p>
-</li>
-<li>
-<p><code class="verbatim">b c</code> checkouts a new branch from another branch</p>
-</li>
+<li><code class="verbatim">C-x m</code>  bound to <code class="verbatim">magit-status</code> a directory will create a
+repository if one does not exist already and open magit-status buffer</li>
+<li><code class="verbatim">M a</code> from there adds a remote and fetches it</li>
+<li><code class="verbatim">b c</code> checkouts a new branch from another branch</li>
 </ul>
 <p>
 After setting up the environment I can start porting my blog there.</p>
@@ -328,18 +157,10 @@ Porting content files from old blog
 <p>Moving my files from octopress to hugo required a few minor
 transformations to happen.</p>
 <ul>
-<li>
-<p><code class="verbatim">2014-02-19-hello-blogging.markdown</code> to be renamed to <code class="verbatim">hello-blogging.md</code></p>
-</li>
-<li>
-<p>Adding <code class="verbatim">aliases</code> to maintain the older links working</p>
-</li>
-<li>
-<p>Fixing invalid markdown that was valid in the older spec</p>
-</li>
-<li>
-<p>Removing few unnecessary meta tags from the header files</p>
-</li>
+<li><code class="verbatim">2014-02-19-hello-blogging.markdown</code> to be renamed to <code class="verbatim">hello-blogging.md</code></li>
+<li>Adding <code class="verbatim">aliases</code> to maintain the older links working</li>
+<li>Fixing invalid markdown that was valid in the older spec</li>
+<li>Removing few unnecessary meta tags from the header files</li>
 </ul>
 <p>
 These need to happen on every file.</p>
@@ -351,25 +172,17 @@ Bulk renaming
 <p><code class="verbatim">dired-mode</code> and <code class="verbatim">wdired</code> are great for such tasks. Wdired makes any
 directory list editable like any other file.</p>
 <ul>
-<li>
-<p>Opening the dired buffer and pressing <code class="verbatim">W</code> to switch to wdired</p>
-</li>
-<li>
-<p><code class="verbatim">C-x h</code> to select all the lines followed by <code class="verbatim">C-n</code> to limit it to the only files</p>
-</li>
-<li>
-<p><code class="verbatim">C-S-c C-S-c</code>  bound to <code class="verbatim">mc/edit-lines</code> to get a cursor on every line.</p>
-</li>
-<li>
-<p>Edit the files names accordingly and <code class="verbatim">C-c C-c</code> to save the changes to disk.</p>
-<p>
+<li>Opening the dired buffer and pressing <code class="verbatim">W</code> to switch to wdired</li>
+<li><code class="verbatim">C-x h</code> to select all the lines followed by <code class="verbatim">C-n</code> to limit it to the only files</li>
+<li><code class="verbatim">C-S-c C-S-c</code>  bound to <code class="verbatim">mc/edit-lines</code> to get a cursor on every line.</li>
+<li>Edit the files names accordingly and <code class="verbatim">C-c C-c</code> to save the changes to disk.
+
 This is how it looks in practice:
 <video autoplay loop controls class="video">
-    <source src="/videos/wdired-multi-rename.mp4">
-</video>
-
-<p class="video-fallback">Click <a href="/videos/wdired-multi-rename.mp4">here</a> to download or view the video in a full browser window</p>
-</p>
+      <source src="/videos/wdired-multi-rename.mp4">
+  </video>
+  
+  <p class="video-fallback">Click <a href="/videos/wdired-multi-rename.mp4">here</a> to download or view the video in a full browser window</p>
 </li>
 </ul>
 </div>
@@ -419,23 +232,23 @@ Fixing invalid spec
 <p>One of the few incompatibilities in the markdown spec was how
 markdown handled headings. Earlier</p>
 <div class="src src-text">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">#H1#
-##H2##
-###H3###
-####H4####
-#H1
-##H2
-###H3
-####H4</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>#H1#
+</span></span><span style="display:flex;"><span>##H2##
+</span></span><span style="display:flex;"><span>###H3###
+</span></span><span style="display:flex;"><span>####H4####
+</span></span><span style="display:flex;"><span>#H1
+</span></span><span style="display:flex;"><span>##H2
+</span></span><span style="display:flex;"><span>###H3
+</span></span><span style="display:flex;"><span>####H4</span></span></code></pre></div>
 </div>
 <p>
 were considered valid markdown headings which
 now had to be changed to</p>
 <div class="src src-text">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text"># H1
-## H2
-### H3
-#### H4</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span># H1
+</span></span><span style="display:flex;"><span>## H2
+</span></span><span style="display:flex;"><span>### H3
+</span></span><span style="display:flex;"><span>#### H4</span></span></code></pre></div>
 </div>
 <p>This again needs to be done across all the files.</p>
 <p>
@@ -448,18 +261,10 @@ changes to the original files.</p>
 <p>
 I did this by:</p>
 <ul>
-<li>
-<p><code class="verbatim">C-u C-c s s</code> bound to <code class="verbatim">counsel-rg</code> to search through the current directory</p>
-</li>
-<li>
-<p><code class="verbatim">C-c C-o</code> bound to <code class="verbatim">ivy-occur</code> to get the search results in a buffer</p>
-</li>
-<li>
-<p><code class="verbatim">w</code> bound to <code class="verbatim">ivy-wgrep-change-to-wgrep-mode</code> makes the buffer editable</p>
-</li>
-<li>
-<p>Editing them and running <code class="verbatim">C-c C-c</code> to save these changes</p>
-</li>
+<li><code class="verbatim">C-u C-c s s</code> bound to <code class="verbatim">counsel-rg</code> to search through the current directory</li>
+<li><code class="verbatim">C-c C-o</code> bound to <code class="verbatim">ivy-occur</code> to get the search results in a buffer</li>
+<li><code class="verbatim">w</code> bound to <code class="verbatim">ivy-wgrep-change-to-wgrep-mode</code> makes the buffer editable</li>
+<li>Editing them and running <code class="verbatim">C-c C-c</code> to save these changes</li>
 </ul>
 <p>
 To keep this simple it is done twice once to remove the preceding <code class="verbatim">#</code> and once to remove the following <code class="verbatim">#</code></p>
@@ -512,7 +317,7 @@ in replicating some of the features described here.</p>
         repo="gleek/gleek.github.io"
         issue-term="pathname"
         label="comment"
-        theme="github-dark"
+        theme="github-light"
         crossorigin="anonymous"
         async>
 </script>

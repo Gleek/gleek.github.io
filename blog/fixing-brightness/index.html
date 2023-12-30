@@ -20,8 +20,7 @@
 
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Fixing Brightness Problems in Linux"/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Fixing Brightness Problems in Linux"/>
 <meta name="twitter:description" content="Tutorial to fix the screen backlight problems with linux"/>
 
 
@@ -33,162 +32,10 @@
 <meta itemprop="keywords" content="" />
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
-  <style>
- body {
-     font-family: Verdana, sans-serif;
-     margin: auto;
-     padding: 20px;
-     max-width: 720px;
-     text-align: left;
-     word-wrap: break-word;
-     overflow-wrap: break-word;
-     line-height: 1.5;
-     background-color: #333;
-     color: #ddd;
- }
-
-
-
- .title {
-     text-decoration: none;
-     border: 0;
- }
-
- .title span {
-     font-weight: 400;
- }
-
- nav a {
-     margin-right: 10px;
- }
-
- textarea {
-     width: 100%;
-     font-size: 16px;
- }
-
- input {
-     font-size: 16px;
- }
-
- content {
-     line-height: 1.6;
- }
-
- table {
-     width: 100%;
- }
-
- img {
-     max-width: 100%;
- }
-
- code {
-     padding: 2px 5px;
- }
-
- pre code {
-     display: block;
-     padding: 20px;
-     white-space: pre-wrap;
-     font-size: 14px;
- }
-
- blockquote {
-     border-left: 1px solid #999;
-     color: #ccc;
-     padding-left: 20px;
-     font-style: italic;
- }
-
- footer {
-     padding: 25px;
-     text-align: center;
-     color:#808080;
- }
-
- .helptext {
-     font-size: small;
- }
-
- .errorlist {
-     color: #eba613;
-     font-size: small;
- }
+  
+  <link crossorigin="anonymous" href="/main.min.css" rel="preload stylesheet">
 
   
- ul.blog-posts {
-     list-style-type: none;
-     padding: unset;
- }
-
- ul.blog-posts li {
-     display: flex;
-     padding: 2px;
- }
-
- ul.blog-posts li span {
-     flex: 0 0 130px;
- }
-
- ul.blog-posts li a:visited {
-     color: #8b6fcb;
- }
-
-
-
- h1,
- h2,
- h3,
- h4,
- h5,
- h6,
- strong,
- b {
-     color: #eee;
- }
-
- a {
-     color: #8cc2dd;
- }
-
- code {
-     background-color: #282c34;
- }
-
- pre code {
-     color: #ddd;
- }
-
-
- textarea,
- input {
-     background-color: #252525;
-     color: #ddd;
- }
-
- .helptext {
-     color: #aaa;
- }
-
- video.video {
-     display: block;
-     margin: 0 auto;
-     max-width: 100%;
- }
- p.video-fallback {
-     font-size: 80%;
-     margin-bottom: 15px;
-     color:#808080;
- }
- 
- figcaption {
-     font-size: 80%;
-     margin-bottom: 15px;
-     color:#808080;
- }
-</style>
-
 </head>
 
 <body>
@@ -226,8 +73,8 @@
 <p>and changing them with root access changes the brightness.
 The problem here was that I wasn&rsquo;t able to give a script root access without it prompting for a password. I moved the other way since I couldn&rsquo;t figure that out.</p>
 <p>Recently, I figured out the way to give the scripts root access by editing <code>/etc/sudoers/</code> file and adding</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$user ALL<span style="color:#f92672">=(</span>ALL<span style="color:#f92672">)</span> NOPASSWD: $path_to_script
-</code></pre></div><p>where <code>$user</code> is the user-name and <code>$path_to_script</code> is what it says it is!</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#111">$user</span> <span style="color:#111">ALL</span><span style="color:#f92672">=(</span>ALL<span style="color:#f92672">)</span> NOPASSWD: <span style="color:#111">$path_to_script</span>
+</span></span></code></pre></div><p>where <code>$user</code> is the user-name and <code>$path_to_script</code> is what it says it is!</p>
 <h3 id="method-ii-making-a-python-script">Method II: Making a Python Script</h3>
 <p>After some researching I found out about the <a href="http://www.freedesktop.org/wiki/Software/dbus/">dbus module of python</a>, which basically could help me <code>get</code> or <code>set</code> the brightness. Using this and a little argument parsing I was successfully able to make a script which changed the brightness.
 <strong>Update:</strong> <em>This method doesn&rsquo;t work on Gnome-Shell v3.10 :worried: . I will update a patch soon.</em></p>
@@ -256,7 +103,7 @@ Once you&rsquo;ve made those changes, you&rsquo;re ready to feel the magic of au
         repo="gleek/gleek.github.io"
         issue-term="pathname"
         label="comment"
-        theme="github-dark"
+        theme="github-light"
         crossorigin="anonymous"
         async>
 </script>

@@ -7,13 +7,13 @@
 <title>Quick persistent scratch buffers | Umar Ahmad</title>
 <meta name="title" content="Quick persistent scratch buffers" />
 <meta name="description" content="Emacs has a feature where you can quickly open a buffer to paste or keep text temporarily. It can be done by calling switch-to-buffer and typing out any name and pressing return. If a buffer with such a name exists it shows up, otherwise an empty buffer with no associated file is created. I discovered this accidentally years ago and have been using this feature a lot since.
- The problem with this is that the buffers created only last till your emacs session lasts." />
+The problem with this is that the buffers created only last till your emacs session lasts." />
 <meta name="keywords" content="emacs," />
 
 
 <meta property="og:title" content="Quick persistent scratch buffers" />
 <meta property="og:description" content="Emacs has a feature where you can quickly open a buffer to paste or keep text temporarily. It can be done by calling switch-to-buffer and typing out any name and pressing return. If a buffer with such a name exists it shows up, otherwise an empty buffer with no associated file is created. I discovered this accidentally years ago and have been using this feature a lot since.
- The problem with this is that the buffers created only last till your emacs session lasts." />
+The problem with this is that the buffers created only last till your emacs session lasts." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://umarahmad.xyz/blog/quick-scratch-buffers/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2021-04-03T15:49:21+05:30" />
@@ -22,177 +22,24 @@
 
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Quick persistent scratch buffers"/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Quick persistent scratch buffers"/>
 <meta name="twitter:description" content="Emacs has a feature where you can quickly open a buffer to paste or keep text temporarily. It can be done by calling switch-to-buffer and typing out any name and pressing return. If a buffer with such a name exists it shows up, otherwise an empty buffer with no associated file is created. I discovered this accidentally years ago and have been using this feature a lot since.
- The problem with this is that the buffers created only last till your emacs session lasts."/>
+The problem with this is that the buffers created only last till your emacs session lasts."/>
 
 
 
 <meta itemprop="name" content="Quick persistent scratch buffers">
 <meta itemprop="description" content="Emacs has a feature where you can quickly open a buffer to paste or keep text temporarily. It can be done by calling switch-to-buffer and typing out any name and pressing return. If a buffer with such a name exists it shows up, otherwise an empty buffer with no associated file is created. I discovered this accidentally years ago and have been using this feature a lot since.
- The problem with this is that the buffers created only last till your emacs session lasts."><meta itemprop="datePublished" content="2021-04-03T15:49:21+05:30" />
+The problem with this is that the buffers created only last till your emacs session lasts."><meta itemprop="datePublished" content="2021-04-03T15:49:21+05:30" />
 <meta itemprop="dateModified" content="2021-04-03T15:49:21+05:30" />
 <meta itemprop="wordCount" content="514">
 <meta itemprop="keywords" content="emacs," />
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
-  <style>
- body {
-     font-family: Verdana, sans-serif;
-     margin: auto;
-     padding: 20px;
-     max-width: 720px;
-     text-align: left;
-     word-wrap: break-word;
-     overflow-wrap: break-word;
-     line-height: 1.5;
-     background-color: #333;
-     color: #ddd;
- }
-
-
-
- .title {
-     text-decoration: none;
-     border: 0;
- }
-
- .title span {
-     font-weight: 400;
- }
-
- nav a {
-     margin-right: 10px;
- }
-
- textarea {
-     width: 100%;
-     font-size: 16px;
- }
-
- input {
-     font-size: 16px;
- }
-
- content {
-     line-height: 1.6;
- }
-
- table {
-     width: 100%;
- }
-
- img {
-     max-width: 100%;
- }
-
- code {
-     padding: 2px 5px;
- }
-
- pre code {
-     display: block;
-     padding: 20px;
-     white-space: pre-wrap;
-     font-size: 14px;
- }
-
- blockquote {
-     border-left: 1px solid #999;
-     color: #ccc;
-     padding-left: 20px;
-     font-style: italic;
- }
-
- footer {
-     padding: 25px;
-     text-align: center;
-     color:#808080;
- }
-
- .helptext {
-     font-size: small;
- }
-
- .errorlist {
-     color: #eba613;
-     font-size: small;
- }
+  
+  <link crossorigin="anonymous" href="/main.min.css" rel="preload stylesheet">
 
   
- ul.blog-posts {
-     list-style-type: none;
-     padding: unset;
- }
-
- ul.blog-posts li {
-     display: flex;
-     padding: 2px;
- }
-
- ul.blog-posts li span {
-     flex: 0 0 130px;
- }
-
- ul.blog-posts li a:visited {
-     color: #8b6fcb;
- }
-
-
-
- h1,
- h2,
- h3,
- h4,
- h5,
- h6,
- strong,
- b {
-     color: #eee;
- }
-
- a {
-     color: #8cc2dd;
- }
-
- code {
-     background-color: #282c34;
- }
-
- pre code {
-     color: #ddd;
- }
-
-
- textarea,
- input {
-     background-color: #252525;
-     color: #ddd;
- }
-
- .helptext {
-     color: #aaa;
- }
-
- video.video {
-     display: block;
-     margin: 0 auto;
-     max-width: 100%;
- }
- p.video-fallback {
-     font-size: 80%;
-     margin-bottom: 15px;
-     color:#808080;
- }
- 
- figcaption {
-     font-size: 80%;
-     margin-bottom: 15px;
-     color:#808080;
- }
-</style>
-
 </head>
 
 <body>
@@ -245,8 +92,8 @@ I added a function that does exactly this. All temporary buffers starting
 with <code class="verbatim">*scratch:</code> are treated as candidates for getting persisted. The
 function is a one liner and is as follows</p>
 <div class="src src-elisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(defun persistent-scratch-buffer-identifier()
-    (<span style="color:#a6e22e">string-match</span> <span style="color:#e6db74">&#34;^*scratch:&#34;</span> (<span style="color:#a6e22e">buffer-name</span>)))</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-elisp" data-lang="elisp"><span style="display:flex;"><span><span style="color:#111">(</span><span style="color:#111">defun</span> <span style="color:#111">persistent-scratch-buffer-identifier</span><span style="color:#111">()</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">(</span><span style="color:#75af00">string-match</span> <span style="color:#d88200">&#34;^*scratch:&#34;</span> <span style="color:#111">(</span><span style="color:#75af00">buffer-name</span><span style="color:#111">)))</span></span></span></code></pre></div>
 </div>
 <p>
 I also added a few utility functions that enhance the experience of
@@ -258,34 +105,34 @@ could be entered if required.</p>
 <p>
 It works by getting a list of scratches from here</p>
 <div class="src src-elisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(defun persistent-scratch-get-scratches()
-    (let ((scratch-buffers)
-          (save-data
-           (<span style="color:#a6e22e">read</span>
-            (with-temp-buffer
-              (let ((coding-system-for-read <span style="color:#e6db74">&#39;utf-8-unix</span>))
-                (<span style="color:#a6e22e">insert-file-contents</span> persistent-scratch-save-file))
-              (<span style="color:#a6e22e">buffer-string</span>)))))
-      (dolist (saved-buffer save-data)
-        (push (<span style="color:#a6e22e">substring</span> (<span style="color:#a6e22e">aref</span> saved-buffer <span style="color:#ae81ff">0</span>) (<span style="color:#a6e22e">length</span> <span style="color:#e6db74">&#34;*scratch:&#34;</span>)) scratch-buffers))
-      scratch-buffers))</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-elisp" data-lang="elisp"><span style="display:flex;"><span><span style="color:#111">(</span><span style="color:#111">defun</span> <span style="color:#111">persistent-scratch-get-scratches</span><span style="color:#111">()</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">(</span><span style="color:#111">let</span> <span style="color:#111">((</span><span style="color:#111">scratch-buffers</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#111">(</span><span style="color:#111">save-data</span>
+</span></span><span style="display:flex;"><span>           <span style="color:#111">(</span><span style="color:#75af00">read</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#111">(</span><span style="color:#111">with-temp-buffer</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#111">(</span><span style="color:#111">let</span> <span style="color:#111">((</span><span style="color:#111">coding-system-for-read</span> <span style="color:#d88200">&#39;utf-8-unix</span><span style="color:#111">))</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#111">(</span><span style="color:#75af00">insert-file-contents</span> <span style="color:#111">persistent-scratch-save-file</span><span style="color:#111">))</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#111">(</span><span style="color:#75af00">buffer-string</span><span style="color:#111">)))))</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#111">(</span><span style="color:#111">dolist</span> <span style="color:#111">(</span><span style="color:#111">saved-buffer</span> <span style="color:#111">save-data</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">(</span><span style="color:#111">push</span> <span style="color:#111">(</span><span style="color:#75af00">substring</span> <span style="color:#111">(</span><span style="color:#75af00">aref</span> <span style="color:#111">saved-buffer</span> <span style="color:#ae81ff">0</span><span style="color:#111">)</span> <span style="color:#111">(</span><span style="color:#75af00">length</span> <span style="color:#d88200">&#34;*scratch:&#34;</span><span style="color:#111">))</span> <span style="color:#111">scratch-buffers</span><span style="color:#111">))</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#111">scratch-buffers</span><span style="color:#111">))</span></span></span></code></pre></div>
 </div>
 <p>
 and uses it to quickly open a scratch buffer</p>
 <div class="src src-elisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(defun persistent-scratch-quick-open()
-    (interactive)
-    (let* ((scratch-buffers (persistent-scratch-get-scratches))
-          (chosen-scratch (<span style="color:#a6e22e">concat</span> <span style="color:#e6db74">&#34;*scratch:&#34;</span>
-                                  (<span style="color:#a6e22e">completing-read</span>
-                                   <span style="color:#e6db74">&#34;Choose a scratch: &#34;</span>
-                                   scratch-buffers <span style="color:#66d9ef">nil</span> <span style="color:#66d9ef">nil</span> <span style="color:#66d9ef">nil</span> <span style="color:#66d9ef">nil</span>
-                                   (random-alnum <span style="color:#ae81ff">4</span>))))
-          (buffer-exists-p (<span style="color:#a6e22e">get-buffer</span> chosen-scratch)))
-      (pop-to-buffer chosen-scratch)
-      (unless buffer-exists-p
-        (persistent-scratch-restore-this))
-      (persistent-scratch-mode)))</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-elisp" data-lang="elisp"><span style="display:flex;"><span><span style="color:#111">(</span><span style="color:#111">defun</span> <span style="color:#111">persistent-scratch-quick-open</span><span style="color:#111">()</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">(</span><span style="color:#111">interactive</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">(</span><span style="color:#111">let*</span> <span style="color:#111">((</span><span style="color:#111">scratch-buffers</span> <span style="color:#111">(</span><span style="color:#111">persistent-scratch-get-scratches</span><span style="color:#111">))</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#111">(</span><span style="color:#111">chosen-scratch</span> <span style="color:#111">(</span><span style="color:#75af00">concat</span> <span style="color:#d88200">&#34;*scratch:&#34;</span>
+</span></span><span style="display:flex;"><span>                                  <span style="color:#111">(</span><span style="color:#75af00">completing-read</span>
+</span></span><span style="display:flex;"><span>                                   <span style="color:#d88200">&#34;Choose a scratch: &#34;</span>
+</span></span><span style="display:flex;"><span>                                   <span style="color:#111">scratch-buffers</span> <span style="color:#00a8c8">nil</span> <span style="color:#00a8c8">nil</span> <span style="color:#00a8c8">nil</span> <span style="color:#00a8c8">nil</span>
+</span></span><span style="display:flex;"><span>                                   <span style="color:#111">(</span><span style="color:#111">random-alnum</span> <span style="color:#ae81ff">4</span><span style="color:#111">))))</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#111">(</span><span style="color:#111">buffer-exists-p</span> <span style="color:#111">(</span><span style="color:#75af00">get-buffer</span> <span style="color:#111">chosen-scratch</span><span style="color:#111">)))</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#111">(</span><span style="color:#111">pop-to-buffer</span> <span style="color:#111">chosen-scratch</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#111">(</span><span style="color:#111">unless</span> <span style="color:#111">buffer-exists-p</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">(</span><span style="color:#111">persistent-scratch-restore-this</span><span style="color:#111">))</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#111">(</span><span style="color:#111">persistent-scratch-mode</span><span style="color:#111">)))</span></span></span></code></pre></div>
 </div>
 <p>
 It uses a new function <code class="verbatim">persistent-scratch-restore-this</code> to restore the
@@ -299,13 +146,13 @@ for all overriding any unsaved changes for other buffers.</p>
 <p>
 Here’s the relevant portion of the code</p>
 <div class="src src-elisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(defun persistent-scratch-restore-this(<span style="color:#66d9ef">&amp;optional</span> file)
-    (interactive)
-      <span style="color:#75715e">;; ...</span>
-      (dolist (saved-buffer save-data)
-        (when (string= current-buf (<span style="color:#a6e22e">aref</span> saved-buffer <span style="color:#ae81ff">0</span>))
-          (with-current-buffer (<span style="color:#a6e22e">get-buffer-create</span> (<span style="color:#a6e22e">aref</span> saved-buffer <span style="color:#ae81ff">0</span>))
-            <span style="color:#75715e">;; ...</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-elisp" data-lang="elisp"><span style="display:flex;"><span><span style="color:#111">(</span><span style="color:#111">defun</span> <span style="color:#111">persistent-scratch-restore-this</span><span style="color:#111">(</span><span style="color:#00a8c8">&amp;optional</span> <span style="color:#111">file</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#111">(</span><span style="color:#111">interactive</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">;; ...</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#111">(</span><span style="color:#111">dolist</span> <span style="color:#111">(</span><span style="color:#111">saved-buffer</span> <span style="color:#111">save-data</span><span style="color:#111">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#111">(</span><span style="color:#111">when</span> <span style="color:#111">(</span><span style="color:#111">string=</span> <span style="color:#111">current-buf</span> <span style="color:#111">(</span><span style="color:#75af00">aref</span> <span style="color:#111">saved-buffer</span> <span style="color:#ae81ff">0</span><span style="color:#111">))</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#111">(</span><span style="color:#111">with-current-buffer</span> <span style="color:#111">(</span><span style="color:#75af00">get-buffer-create</span> <span style="color:#111">(</span><span style="color:#75af00">aref</span> <span style="color:#111">saved-buffer</span> <span style="color:#ae81ff">0</span><span style="color:#111">))</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">;; ...</span></span></span></code></pre></div>
 </div>
 <p>
 Full code can be found <a href="https://github.com/Gleek/emacs.d/blob/761dad7e97accd6d1537a201c5d447a6be1d155c/core/core-session.el#L11-L69">here</a>. It uses a function(<code class="verbatim">random-alnum</code>)
@@ -321,7 +168,7 @@ to generate random name for the buffer from <a href="https://github.com/Gleek/em
         repo="gleek/gleek.github.io"
         issue-term="pathname"
         label="comment"
-        theme="github-dark"
+        theme="github-light"
         crossorigin="anonymous"
         async>
 </script>

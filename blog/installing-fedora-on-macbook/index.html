@@ -20,8 +20,7 @@
 
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Installing Fedora on MacBook"/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Installing Fedora on MacBook"/>
 <meta name="twitter:description" content="Installing Fedora on Macbook"/>
 
 
@@ -33,162 +32,10 @@
 <meta itemprop="keywords" content="" />
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
-  <style>
- body {
-     font-family: Verdana, sans-serif;
-     margin: auto;
-     padding: 20px;
-     max-width: 720px;
-     text-align: left;
-     word-wrap: break-word;
-     overflow-wrap: break-word;
-     line-height: 1.5;
-     background-color: #333;
-     color: #ddd;
- }
-
-
-
- .title {
-     text-decoration: none;
-     border: 0;
- }
-
- .title span {
-     font-weight: 400;
- }
-
- nav a {
-     margin-right: 10px;
- }
-
- textarea {
-     width: 100%;
-     font-size: 16px;
- }
-
- input {
-     font-size: 16px;
- }
-
- content {
-     line-height: 1.6;
- }
-
- table {
-     width: 100%;
- }
-
- img {
-     max-width: 100%;
- }
-
- code {
-     padding: 2px 5px;
- }
-
- pre code {
-     display: block;
-     padding: 20px;
-     white-space: pre-wrap;
-     font-size: 14px;
- }
-
- blockquote {
-     border-left: 1px solid #999;
-     color: #ccc;
-     padding-left: 20px;
-     font-style: italic;
- }
-
- footer {
-     padding: 25px;
-     text-align: center;
-     color:#808080;
- }
-
- .helptext {
-     font-size: small;
- }
-
- .errorlist {
-     color: #eba613;
-     font-size: small;
- }
+  
+  <link crossorigin="anonymous" href="/main.min.css" rel="preload stylesheet">
 
   
- ul.blog-posts {
-     list-style-type: none;
-     padding: unset;
- }
-
- ul.blog-posts li {
-     display: flex;
-     padding: 2px;
- }
-
- ul.blog-posts li span {
-     flex: 0 0 130px;
- }
-
- ul.blog-posts li a:visited {
-     color: #8b6fcb;
- }
-
-
-
- h1,
- h2,
- h3,
- h4,
- h5,
- h6,
- strong,
- b {
-     color: #eee;
- }
-
- a {
-     color: #8cc2dd;
- }
-
- code {
-     background-color: #282c34;
- }
-
- pre code {
-     color: #ddd;
- }
-
-
- textarea,
- input {
-     background-color: #252525;
-     color: #ddd;
- }
-
- .helptext {
-     color: #aaa;
- }
-
- video.video {
-     display: block;
-     margin: 0 auto;
-     max-width: 100%;
- }
- p.video-fallback {
-     font-size: 80%;
-     margin-bottom: 15px;
-     color:#808080;
- }
- 
- figcaption {
-     font-size: 80%;
-     margin-bottom: 15px;
-     color:#808080;
- }
-</style>
-
 </head>
 
 <body>
@@ -219,12 +66,12 @@ Also there were a lot of API level changes that somehow always ended up breaking
 <li>Get <a href="https://getfedora.org/fmw/FedoraMediaWriter-osx-4.0.8.dmg">Fedora Media Writer</a> and <a href="https://download.fedoraproject.org/pub/fedora/linux/releases/25/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-25-1.3.iso">Fedora Workstation</a> and install the disk image onto a USB</li>
 </ul>
 <p>Alternatively, you can use <code>dd</code> utility to do the same without the Fedora Media Writer by doing</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
-    diskutil list <span style="color:#75715e"># get the disk name from the output which is something like /dev/disk1</span>
-    diskutil unmountDisk /dev/disk1
-    sudo dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/Users/umar/Downloads/Fedora-Workstation.iso of<span style="color:#f92672">=</span>/dev/rdisk1 bs<span style="color:#f92672">=</span>512k <span style="color:#75715e"># notice the prepended r in the disk name</span>
-    diskutil unmountDisk /dev/disk1
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    diskutil list <span style="color:#75715e"># get the disk name from the output which is something like /dev/disk1</span>
+</span></span><span style="display:flex;"><span>    diskutil unmountDisk /dev/disk1
+</span></span><span style="display:flex;"><span>    sudo dd <span style="color:#00a8c8">if</span><span style="color:#f92672">=</span>/Users/umar/Downloads/Fedora-Workstation.iso <span style="color:#111">of</span><span style="color:#f92672">=</span>/dev/rdisk1 <span style="color:#111">bs</span><span style="color:#f92672">=</span>512k <span style="color:#75715e"># notice the prepended r in the disk name</span>
+</span></span><span style="display:flex;"><span>    diskutil unmountDisk /dev/disk1
+</span></span></code></pre></div><ul>
 <li>Create a partition using DiskUtility
 Mac Hardrive &gt; Partition &gt; + &gt;  Name= Fedora, Size = 30~50 GB</li>
 </ul>
@@ -256,36 +103,35 @@ Mac Hardrive &gt; Partition &gt; + &gt;  Name= Fedora, Size = 30~50 GB</li>
 <p>Fix the camera by installing the reverse-engineered <a href="https://github.com/patjak/bcwc_pcie">FaceTime HD drivers</a> by running the following</p>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
-cd /usr/src
-wget https://github.com/patjak/bcwc_pcie/archive/master.zip
-unzip master.zip
-mv bcwc_pcie-master bcwc_pcie
-cd /usr/src/bcwc_pcie/firmware
-make
-sudo make install
-cd /usr/src/bcwc_pcie/
-make clean
-make
-sudo make install
-sudo depmod
-sudo modprobe facetimehd
-
-</code></pre></div><p>Check it by running <a href="https://wiki.gnome.org/Apps/Cheese">Cheese</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#111">cd</span> /usr/src
+</span></span><span style="display:flex;"><span>wget https://github.com/patjak/bcwc_pcie/archive/master.zip
+</span></span><span style="display:flex;"><span>unzip master.zip
+</span></span><span style="display:flex;"><span>mv bcwc_pcie-master bcwc_pcie
+</span></span><span style="display:flex;"><span><span style="color:#111">cd</span> /usr/src/bcwc_pcie/firmware
+</span></span><span style="display:flex;"><span>make
+</span></span><span style="display:flex;"><span>sudo make install
+</span></span><span style="display:flex;"><span><span style="color:#111">cd</span> /usr/src/bcwc_pcie/
+</span></span><span style="display:flex;"><span>make clean
+</span></span><span style="display:flex;"><span>make
+</span></span><span style="display:flex;"><span>sudo make install
+</span></span><span style="display:flex;"><span>sudo depmod
+</span></span><span style="display:flex;"><span>sudo modprobe facetimehd
+</span></span></code></pre></div><p>Check it by running <a href="https://wiki.gnome.org/Apps/Cheese">Cheese</a>.</p>
 <ul>
 <li>Run the following commands to fix the keyboard bugs</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">xmodmap -e <span style="color:#e6db74">&#34;keycode  94 = grave asciitilde&#34;</span>
-xset r rate <span style="color:#ae81ff">200</span> <span style="color:#ae81ff">38</span> <span style="color:#75715e"># Increase keyboard repeat rate</span>
-</code></pre></div><p>You can optionally switch control and CapsLock and make Return act like control when long-pressed by installing <a href="https://github.com/alols/xcape">xcape</a>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>xmodmap -e <span style="color:#d88200">&#34;keycode  94 = grave asciitilde&#34;</span>
+</span></span><span style="display:flex;"><span>xset r rate <span style="color:#ae81ff">200</span> <span style="color:#ae81ff">38</span> <span style="color:#75715e"># Increase keyboard repeat rate</span>
+</span></span></code></pre></div><p>You can optionally switch control and CapsLock and make Return act like control when long-pressed by installing <a href="https://github.com/alols/xcape">xcape</a>
 and running</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">setxkbmap -option ctrl:nocaps
-xmodmap -e <span style="color:#e6db74">&#34;remove Control = Control_R&#34;</span>
-xmodmap -e <span style="color:#e6db74">&#34;keycode 0x69 = Return&#34;</span>
-xmodmap -e <span style="color:#e6db74">&#34;keycode 0x24 = Control_R&#34;</span>
-xmodmap -e <span style="color:#e6db74">&#34;add Control = Control_R&#34;</span>
-xcape -t <span style="color:#ae81ff">10000</span> -e <span style="color:#e6db74">&#34;Control_R=Return&#34;</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>setxkbmap -option ctrl:nocaps
+</span></span><span style="display:flex;"><span>xmodmap -e <span style="color:#d88200">&#34;remove Control = Control_R&#34;</span>
+</span></span><span style="display:flex;"><span>xmodmap -e <span style="color:#d88200">&#34;keycode 0x69 = Return&#34;</span>
+</span></span><span style="display:flex;"><span>xmodmap -e <span style="color:#d88200">&#34;keycode 0x24 = Control_R&#34;</span>
+</span></span><span style="display:flex;"><span>xmodmap -e <span style="color:#d88200">&#34;add Control = Control_R&#34;</span>
+</span></span><span style="display:flex;"><span>xcape -t <span style="color:#ae81ff">10000</span> -e <span style="color:#d88200">&#34;Control_R=Return&#34;</span>
+</span></span></code></pre></div><ul>
 <li>Install Gnome Tweak tool by <code>sudo dnf install gnome-tweak-tool</code></li>
 </ul>
 <p>Typing &gt; Alt/Win behavior &gt; Alt is Swapped with Win</p>
@@ -336,7 +182,7 @@ WantedBy=multi-user.target
         repo="gleek/gleek.github.io"
         issue-term="pathname"
         label="comment"
-        theme="github-dark"
+        theme="github-light"
         crossorigin="anonymous"
         async>
 </script>

@@ -6,66 +6,49 @@
     <description>Recent content in emacs on Umar Ahmad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Oct 2021 16:12:11 +0530</lastBuildDate><atom:link href="https://umarahmad.xyz/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Oct 2021 16:12:11 +0530</lastBuildDate>
+    <atom:link href="https://umarahmad.xyz/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Faster php syntax highlighting with tree-sitter</title>
       <link>https://umarahmad.xyz/blog/faster-php-mode-with-tree-sitter/</link>
       <pubDate>Sun, 10 Oct 2021 16:12:11 +0530</pubDate>
-      
       <guid>https://umarahmad.xyz/blog/faster-php-mode-with-tree-sitter/</guid>
       <description>PHP mode in emacs sadly has slow performance for large files. In my work, I have to sometimes deal with large PHP code bases and in certain cases, it becomes so slow that it is practically useless for me to use php-mode. I grudgingly have to switch to fundamental-mode to make smaller changes, in that case. There are alternatives like web-mode that is better suited for mixed syntax highlighting with files containing multiple web languages but there are other php-mode goodies like support for different coding styles and better indentation that make it worthy enough to not be discarded completely.</description>
     </item>
-    
     <item>
       <title>Quick persistent scratch buffers</title>
       <link>https://umarahmad.xyz/blog/quick-scratch-buffers/</link>
       <pubDate>Sat, 03 Apr 2021 15:49:21 +0530</pubDate>
-      
       <guid>https://umarahmad.xyz/blog/quick-scratch-buffers/</guid>
-      <description>Emacs has a feature where you can quickly open a buffer to paste or keep text temporarily. It can be done by calling switch-to-buffer and typing out any name and pressing return. If a buffer with such a name exists it shows up, otherwise an empty buffer with no associated file is created. I discovered this accidentally years ago and have been using this feature a lot since.
- The problem with this is that the buffers created only last till your emacs session lasts.</description>
+      <description>Emacs has a feature where you can quickly open a buffer to paste or keep text temporarily. It can be done by calling switch-to-buffer and typing out any name and pressing return. If a buffer with such a name exists it shows up, otherwise an empty buffer with no associated file is created. I discovered this accidentally years ago and have been using this feature a lot since.&#xA;The problem with this is that the buffers created only last till your emacs session lasts.</description>
     </item>
-    
     <item>
       <title>Improve ranking of files in projectile</title>
       <link>https://umarahmad.xyz/blog/improved-ranking-for-projectile-find-file/</link>
       <pubDate>Thu, 28 Jan 2021 15:43:20 +0530</pubDate>
-      
       <guid>https://umarahmad.xyz/blog/improved-ranking-for-projectile-find-file/</guid>
-      <description>I&amp;#39;ve been using projectile, and more recently counsel-projectile, to manage my project files and it has been a life saver. projectile-find-file is probably among my most used commands.
- Despite my fondness for this package, a thing that has bothered me is the default sorting of the files while searching. As the project becomes larger and the files become sparse, some extra typing needs to be done to filter down to the intended file.</description>
+      <description>I&amp;#39;ve been using projectile, and more recently counsel-projectile, to manage my project files and it has been a life saver. projectile-find-file is probably among my most used commands.&#xA;Despite my fondness for this package, a thing that has bothered me is the default sorting of the files while searching. As the project becomes larger and the files become sparse, some extra typing needs to be done to filter down to the intended file.</description>
     </item>
-    
     <item>
       <title>Porting my blog to Hugo from inside Emacs</title>
       <link>https://umarahmad.xyz/blog/using-emacs-to-port-my-blog/</link>
       <pubDate>Sun, 24 Jan 2021 16:17:08 +0530</pubDate>
-      
       <guid>https://umarahmad.xyz/blog/using-emacs-to-port-my-blog/</guid>
-      <description>A few days ago I ported my blog to hugo. I did this mostly while staying inside Emacs and switching to the web browser every now and then.
- Doing this required me to use Emacs to edit and manage multiple files at once and this post demonstrates a few of these techniques. The post is therefore mostly task agnostic and the techniques explained here should be usable for any such tasks.</description>
+      <description>A few days ago I ported my blog to hugo. I did this mostly while staying inside Emacs and switching to the web browser every now and then.&#xA;Doing this required me to use Emacs to edit and manage multiple files at once and this post demonstrates a few of these techniques. The post is therefore mostly task agnostic and the techniques explained here should be usable for any such tasks.</description>
     </item>
-    
     <item>
       <title>Editing remote code with Emacs</title>
       <link>https://umarahmad.xyz/blog/editing-remote-code-with-emacs/</link>
       <pubDate>Tue, 11 Apr 2017 22:56:54 +0530</pubDate>
-      
       <guid>https://umarahmad.xyz/blog/editing-remote-code-with-emacs/</guid>
-      <description>&lt;p&gt;Lately, I&amp;rsquo;ve been working on a code-base situated remotely on a server accessible over &lt;code&gt;ssh&lt;/code&gt;.
-The network latency and size of the code repository prompted me to reconsider the method
-to edit such files. I discovered a few options I could use and finally settled with one of them.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Lately, I&amp;rsquo;ve been working on a code-base situated remotely on a server accessible over &lt;code&gt;ssh&lt;/code&gt;.&#xA;The network latency and size of the code repository prompted me to reconsider the method&#xA;to edit such files. I discovered a few options I could use and finally settled with one of them.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Customizing Emacs</title>
       <link>https://umarahmad.xyz/blog/customizing-emacs/</link>
       <pubDate>Thu, 10 Apr 2014 18:32:50 +0530</pubDate>
-      
       <guid>https://umarahmad.xyz/blog/customizing-emacs/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/ARlXYE_wnAvftBBl2UEvu-z9SpH-q3lyYNukRnNRwbUnXt6fGTP304OloJ3sJ3pSlMr_9QnPr_RxKamv65BFkEUqUEKB0TftIzNuOaiabipF1DNMYLzYReB_40Qr2TbbDndKYzeY5-MPUNmyzH9xmsuhWxmpywT4U5ayHJo2-dGy1W7wRlY2kY7QtTvneNt4OqGGZlqsSZLYM3WVcVwWFxBeJzPxirItCLPzRoRNPfdZZRy6k31JS65TU3WYW-7hvOcTuoZ6vDJSj2K3HyD73dpJ7YjNUwmJB9tjNzy7bqUXm5ftnuG14qPKs1Gtz1jpAGESfgafhUeLQL1pvDWP-VBQDLIwYaXr-XFTatPTgalAAPNd66J-cJ_J0O1OkF1DM-KM4RjqDhLkMOT9-RM5fkrG5_Rnibw32yJho_cGYTyk7523_CnePswMWjMtmMrTI4zyrsaRYVqBjfRxwznHExq1nAwuR-NSmP2EeeLvPYFP6ZSyMWyZCga2K0LH6J9-Qa8aHdkneuQ9ti6w0QGEJHr9HinsGuWBuALKd2H0ZlPxrwhOdKSyEIaWgq2mkt0vL653PCK4sN5zGZZte3kc7LL3I4WZhlN1oaRsXbIRTJaLEYhQTYj4BrRDS-59IHAwl2Ddf_AzsF9r7c6cKs-A2DQL2QpM2Nb5gU5Ae05pIw=w270-h217-no&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I believe the environment in which one works is directly responsible for one&amp;rsquo;s productivity. It&amp;rsquo;s the reason I think, it&amp;rsquo;s important to choose the right editor, font, etc.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/ARlXYE_wnAvftBBl2UEvu-z9SpH-q3lyYNukRnNRwbUnXt6fGTP304OloJ3sJ3pSlMr_9QnPr_RxKamv65BFkEUqUEKB0TftIzNuOaiabipF1DNMYLzYReB_40Qr2TbbDndKYzeY5-MPUNmyzH9xmsuhWxmpywT4U5ayHJo2-dGy1W7wRlY2kY7QtTvneNt4OqGGZlqsSZLYM3WVcVwWFxBeJzPxirItCLPzRoRNPfdZZRy6k31JS65TU3WYW-7hvOcTuoZ6vDJSj2K3HyD73dpJ7YjNUwmJB9tjNzy7bqUXm5ftnuG14qPKs1Gtz1jpAGESfgafhUeLQL1pvDWP-VBQDLIwYaXr-XFTatPTgalAAPNd66J-cJ_J0O1OkF1DM-KM4RjqDhLkMOT9-RM5fkrG5_Rnibw32yJho_cGYTyk7523_CnePswMWjMtmMrTI4zyrsaRYVqBjfRxwznHExq1nAwuR-NSmP2EeeLvPYFP6ZSyMWyZCga2K0LH6J9-Qa8aHdkneuQ9ti6w0QGEJHr9HinsGuWBuALKd2H0ZlPxrwhOdKSyEIaWgq2mkt0vL653PCK4sN5zGZZte3kc7LL3I4WZhlN1oaRsXbIRTJaLEYhQTYj4BrRDS-59IHAwl2Ddf_AzsF9r7c6cKs-A2DQL2QpM2Nb5gU5Ae05pIw=w270-h217-no&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I believe the environment in which one works is directly responsible for one&amp;rsquo;s productivity. It&amp;rsquo;s the reason I think, it&amp;rsquo;s important to choose the right editor, font, etc.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
