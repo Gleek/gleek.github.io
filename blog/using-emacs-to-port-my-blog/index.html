@@ -6,34 +6,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Porting my blog to Hugo from inside Emacs | Umar Ahmad</title>
 <meta name="title" content="Porting my blog to Hugo from inside Emacs" />
-<meta name="description" content="A few days ago I ported my blog to hugo. I did this mostly while staying inside Emacs and switching to the web browser every now and then.
-Doing this required me to use Emacs to edit and manage multiple files at once and this post demonstrates a few of these techniques. The post is therefore mostly task agnostic and the techniques explained here should be usable for any such tasks." />
+<meta name="description" content="
+A few days ago I ported my blog to hugo. I did this mostly while
+staying inside Emacs and switching to the web browser every now and
+then.
+
+Doing this required me to use Emacs to edit and manage multiple files
+at once and this post demonstrates a few of these techniques. The post
+is therefore mostly task agnostic and the techniques explained here
+should be usable for any such tasks." />
 <meta name="keywords" content="emacs,blog," />
 
 
-<meta property="og:title" content="Porting my blog to Hugo from inside Emacs" />
-<meta property="og:description" content="A few days ago I ported my blog to hugo. I did this mostly while staying inside Emacs and switching to the web browser every now and then.
-Doing this required me to use Emacs to edit and manage multiple files at once and this post demonstrates a few of these techniques. The post is therefore mostly task agnostic and the techniques explained here should be usable for any such tasks." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://umarahmad.xyz/blog/using-emacs-to-port-my-blog/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2021-01-24T16:17:08+05:30" />
-<meta property="article:modified_time" content="2021-01-24T16:17:08+05:30" />
+<meta property="og:url" content="https://umarahmad.xyz/blog/using-emacs-to-port-my-blog/">
+  <meta property="og:site_name" content="Umar Ahmad">
+  <meta property="og:title" content="Porting my blog to Hugo from inside Emacs">
+  <meta property="og:description" content="A few days ago I ported my blog to hugo. I did this mostly while staying inside Emacs and switching to the web browser every now and then.
+Doing this required me to use Emacs to edit and manage multiple files at once and this post demonstrates a few of these techniques. The post is therefore mostly task agnostic and the techniques explained here should be usable for any such tasks.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2021-01-24T16:17:08+05:30">
+    <meta property="article:modified_time" content="2021-01-24T16:17:08+05:30">
+    <meta property="article:tag" content="Emacs">
+    <meta property="article:tag" content="Blog">
 
 
 
 
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Porting my blog to Hugo from inside Emacs"/>
-<meta name="twitter:description" content="A few days ago I ported my blog to hugo. I did this mostly while staying inside Emacs and switching to the web browser every now and then.
-Doing this required me to use Emacs to edit and manage multiple files at once and this post demonstrates a few of these techniques. The post is therefore mostly task agnostic and the techniques explained here should be usable for any such tasks."/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Porting my blog to Hugo from inside Emacs">
+  <meta name="twitter:description" content="A few days ago I ported my blog to hugo. I did this mostly while staying inside Emacs and switching to the web browser every now and then.
+Doing this required me to use Emacs to edit and manage multiple files at once and this post demonstrates a few of these techniques. The post is therefore mostly task agnostic and the techniques explained here should be usable for any such tasks.">
 
 
 
-<meta itemprop="name" content="Porting my blog to Hugo from inside Emacs">
-<meta itemprop="description" content="A few days ago I ported my blog to hugo. I did this mostly while staying inside Emacs and switching to the web browser every now and then.
-Doing this required me to use Emacs to edit and manage multiple files at once and this post demonstrates a few of these techniques. The post is therefore mostly task agnostic and the techniques explained here should be usable for any such tasks."><meta itemprop="datePublished" content="2021-01-24T16:17:08+05:30" />
-<meta itemprop="dateModified" content="2021-01-24T16:17:08+05:30" />
-<meta itemprop="wordCount" content="1148">
-<meta itemprop="keywords" content="emacs,blog," />
+
+  <meta itemprop="name" content="Porting my blog to Hugo from inside Emacs">
+  <meta itemprop="description" content="A few days ago I ported my blog to hugo. I did this mostly while staying inside Emacs and switching to the web browser every now and then.
+Doing this required me to use Emacs to edit and manage multiple files at once and this post demonstrates a few of these techniques. The post is therefore mostly task agnostic and the techniques explained here should be usable for any such tasks.">
+  <meta itemprop="datePublished" content="2021-01-24T16:17:08+05:30">
+  <meta itemprop="dateModified" content="2021-01-24T16:17:08+05:30">
+  <meta itemprop="wordCount" content="1148">
+  <meta itemprop="keywords" content="Emacs,Blog">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
   
@@ -308,9 +323,9 @@ in replicating some of the features described here.</p>
 </content>
 <p>
   
-  <a href="https://umarahmad.xyz/tags/emacs/">#emacs</a>
+  <a href="https://umarahmad.xyz/tags/emacs/">#Emacs</a>
   
-  <a href="https://umarahmad.xyz/tags/blog/">#blog</a>
+  <a href="https://umarahmad.xyz/tags/blog/">#Blog</a>
   
 </p>
 <script src="https://utteranc.es/client.js"

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>emacs on Umar Ahmad</title>
+    <title>Emacs on Umar Ahmad</title>
     <link>https://umarahmad.xyz/tags/emacs/</link>
-    <description>Recent content in emacs on Umar Ahmad</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Emacs on Umar Ahmad</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 10 Oct 2021 16:12:11 +0530</lastBuildDate>
     <atom:link href="https://umarahmad.xyz/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
@@ -13,28 +13,28 @@
       <link>https://umarahmad.xyz/blog/faster-php-mode-with-tree-sitter/</link>
       <pubDate>Sun, 10 Oct 2021 16:12:11 +0530</pubDate>
       <guid>https://umarahmad.xyz/blog/faster-php-mode-with-tree-sitter/</guid>
-      <description>PHP mode in emacs sadly has slow performance for large files. In my work, I have to sometimes deal with large PHP code bases and in certain cases, it becomes so slow that it is practically useless for me to use php-mode. I grudgingly have to switch to fundamental-mode to make smaller changes, in that case. There are alternatives like web-mode that is better suited for mixed syntax highlighting with files containing multiple web languages but there are other php-mode goodies like support for different coding styles and better indentation that make it worthy enough to not be discarded completely.</description>
+      <description>&lt;p&gt;&#xA;PHP mode in emacs sadly has &lt;a href=&#34;https://github.com/emacs-php/php-mode/issues?q=slow++OR+performance++OR+latency&#34;&gt;slow performance&lt;/a&gt; for large files. In my work, I have to sometimes deal&#xA;with large PHP code bases and in certain cases, it becomes so slow that it is practically useless&#xA;for me to use php-mode. I grudgingly have to switch to &lt;code class=&#34;verbatim&#34;&gt;fundamental-mode&lt;/code&gt; to make smaller changes, in&#xA;that case. There are alternatives like &lt;code class=&#34;verbatim&#34;&gt;web-mode&lt;/code&gt; that is better suited for mixed syntax highlighting&#xA;with files containing multiple web languages but there are other php-mode goodies like support for&#xA;different coding styles and better indentation that make it worthy enough to not be discarded&#xA;completely.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Quick persistent scratch buffers</title>
       <link>https://umarahmad.xyz/blog/quick-scratch-buffers/</link>
       <pubDate>Sat, 03 Apr 2021 15:49:21 +0530</pubDate>
       <guid>https://umarahmad.xyz/blog/quick-scratch-buffers/</guid>
-      <description>Emacs has a feature where you can quickly open a buffer to paste or keep text temporarily. It can be done by calling switch-to-buffer and typing out any name and pressing return. If a buffer with such a name exists it shows up, otherwise an empty buffer with no associated file is created. I discovered this accidentally years ago and have been using this feature a lot since.&#xA;The problem with this is that the buffers created only last till your emacs session lasts.</description>
+      <description>&lt;p&gt;&#xA;Emacs has a feature where you can quickly open a buffer to paste or&#xA;keep text temporarily. It can be done by calling &lt;code class=&#34;verbatim&#34;&gt;switch-to-buffer&lt;/code&gt; and&#xA;typing out any name and pressing return. If a buffer with such a name&#xA;exists it shows up, otherwise an empty buffer with no associated file&#xA;is created. I discovered this accidentally years ago and have been&#xA;using this feature a lot since.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;The problem with this is that the buffers created only last till your&#xA;emacs session lasts. If you exit emacs, these temporary buffers die&#xA;with it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Improve ranking of files in projectile</title>
       <link>https://umarahmad.xyz/blog/improved-ranking-for-projectile-find-file/</link>
       <pubDate>Thu, 28 Jan 2021 15:43:20 +0530</pubDate>
       <guid>https://umarahmad.xyz/blog/improved-ranking-for-projectile-find-file/</guid>
-      <description>I&amp;#39;ve been using projectile, and more recently counsel-projectile, to manage my project files and it has been a life saver. projectile-find-file is probably among my most used commands.&#xA;Despite my fondness for this package, a thing that has bothered me is the default sorting of the files while searching. As the project becomes larger and the files become sparse, some extra typing needs to be done to filter down to the intended file.</description>
+      <description>&lt;p&gt;&#xA;I&amp;#39;ve been using &lt;code class=&#34;verbatim&#34;&gt;projectile&lt;/code&gt;, and more recently &lt;code class=&#34;verbatim&#34;&gt;counsel-projectile&lt;/code&gt;, to&#xA;manage my project files and it has been a life saver.&#xA;&lt;code class=&#34;verbatim&#34;&gt;projectile-find-file&lt;/code&gt; is probably among my most used commands.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Despite my fondness for this package, a thing that has bothered me is&#xA;the default sorting of the files while searching. As the project&#xA;becomes larger and the files become sparse, some extra typing needs to&#xA;be done to filter down to the intended file.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Porting my blog to Hugo from inside Emacs</title>
       <link>https://umarahmad.xyz/blog/using-emacs-to-port-my-blog/</link>
       <pubDate>Sun, 24 Jan 2021 16:17:08 +0530</pubDate>
       <guid>https://umarahmad.xyz/blog/using-emacs-to-port-my-blog/</guid>
-      <description>A few days ago I ported my blog to hugo. I did this mostly while staying inside Emacs and switching to the web browser every now and then.&#xA;Doing this required me to use Emacs to edit and manage multiple files at once and this post demonstrates a few of these techniques. The post is therefore mostly task agnostic and the techniques explained here should be usable for any such tasks.</description>
+      <description>&lt;p&gt;&#xA;A few days ago &lt;a href=&#34;https://umarahmad.xyz/blog/setting-up-the-blog-again&#34;&gt;I ported my blog to hugo&lt;/a&gt;. I did this mostly while&#xA;staying inside Emacs and switching to the web browser every now and&#xA;then.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Doing this required me to use Emacs to edit and manage multiple files&#xA;at once and this post demonstrates a few of these techniques. The post&#xA;is therefore mostly task agnostic and the techniques explained here&#xA;should be usable for any such tasks.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Editing remote code with Emacs</title>

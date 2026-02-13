@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>blog on Umar Ahmad</title>
+    <title>Blog on Umar Ahmad</title>
     <link>https://umarahmad.xyz/tags/blog/</link>
-    <description>Recent content in blog on Umar Ahmad</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Blog on Umar Ahmad</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Jan 2021 16:17:08 +0530</lastBuildDate>
     <atom:link href="https://umarahmad.xyz/tags/blog/index.xml" rel="self" type="application/rss+xml" />
@@ -13,14 +13,14 @@
       <link>https://umarahmad.xyz/blog/using-emacs-to-port-my-blog/</link>
       <pubDate>Sun, 24 Jan 2021 16:17:08 +0530</pubDate>
       <guid>https://umarahmad.xyz/blog/using-emacs-to-port-my-blog/</guid>
-      <description>A few days ago I ported my blog to hugo. I did this mostly while staying inside Emacs and switching to the web browser every now and then.&#xA;Doing this required me to use Emacs to edit and manage multiple files at once and this post demonstrates a few of these techniques. The post is therefore mostly task agnostic and the techniques explained here should be usable for any such tasks.</description>
+      <description>&lt;p&gt;&#xA;A few days ago &lt;a href=&#34;https://umarahmad.xyz/blog/setting-up-the-blog-again&#34;&gt;I ported my blog to hugo&lt;/a&gt;. I did this mostly while&#xA;staying inside Emacs and switching to the web browser every now and&#xA;then.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Doing this required me to use Emacs to edit and manage multiple files&#xA;at once and this post demonstrates a few of these techniques. The post&#xA;is therefore mostly task agnostic and the techniques explained here&#xA;should be usable for any such tasks.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Setting up the blog again</title>
       <link>https://umarahmad.xyz/blog/setting-up-the-blog-again/</link>
       <pubDate>Sat, 23 Jan 2021 19:39:03 +0530</pubDate>
       <guid>https://umarahmad.xyz/blog/setting-up-the-blog-again/</guid>
-      <description>I recently acquired umarahmad.xyz and moved my old blog there.&#xA;The earlier version of this blog was based on octopress with a lot of handcrafted code. The architecture of octopress along with my excitement of setting up the blog made this a cocktail of all possible plugins and tweaks that I could manage to squeeze into a static site. Copy pasted rake snippets and hacked together web and ruby code gave me what I wanted at the time.</description>
+      <description>&lt;p&gt;&#xA;I recently acquired &lt;a href=&#34;https://umarahmad.xyz&#34;&gt;umarahmad.xyz&lt;/a&gt; and moved my old blog there.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;The earlier version of this blog was based on octopress with a lot of&#xA;handcrafted code. The architecture of octopress along with my&#xA;excitement of setting up the blog made this a cocktail of all possible&#xA;plugins and tweaks that I could manage to squeeze into a static site.&#xA;Copy pasted rake snippets and hacked together web and ruby code gave me&#xA;what I wanted at the time. I was happy with that.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
