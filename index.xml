@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on Umar Ahmad</title>
+    <title>Umar Ahmad</title>
     <link>https://umarahmad.xyz/</link>
-    <description>Recent content in Blog on Umar Ahmad</description>
+    <description>Recent content on Umar Ahmad</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 10 Oct 2021 16:12:11 +0530</lastBuildDate>
@@ -42,6 +42,13 @@
       <pubDate>Sat, 23 Jan 2021 19:39:03 +0530</pubDate>
       <guid>https://umarahmad.xyz/blog/setting-up-the-blog-again/</guid>
       <description>&lt;p&gt;&#xA;I recently acquired &lt;a href=&#34;https://umarahmad.xyz&#34;&gt;umarahmad.xyz&lt;/a&gt; and moved my old blog there.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;The earlier version of this blog was based on octopress with a lot of&#xA;handcrafted code. The architecture of octopress along with my&#xA;excitement of setting up the blog made this a cocktail of all possible&#xA;plugins and tweaks that I could manage to squeeze into a static site.&#xA;Copy pasted rake snippets and hacked together web and ruby code gave me&#xA;what I wanted at the time. I was happy with that.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://umarahmad.xyz/about/</link>
+      <pubDate>Sat, 23 Jan 2021 05:35:22 +0530</pubDate>
+      <guid>https://umarahmad.xyz/about/</guid>
+      <description>&lt;p&gt;&#xA;&lt;img src=&#34;https://avatars.githubusercontent.com/u/3756804?s=250&amp;amp;u=59ad23af3c347e0d7eef9af35c55c6b157ff9527&amp;amp;v=4.png&#34; alt=&#34;https://avatars.githubusercontent.com/u/3756804?s=250&amp;amp;u=59ad23af3c347e0d7eef9af35c55c6b157ff9527&amp;amp;v=4.png&#34; title=&#34;https://avatars.githubusercontent.com/u/3756804?s=250&amp;amp;u=59ad23af3c347e0d7eef9af35c55c6b157ff9527&amp;amp;v=4.png&#34; /&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Hello, I&amp;#39;m Umar.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;I&amp;#39;m currently based in Bangalore, India and working at &lt;a href=&#34;https://www.zomato.com&#34;&gt;Zomato&lt;/a&gt;, a food delivery company and &lt;a href=&#34;https://www.zomato.com/investor-relations&#34;&gt;more&lt;/a&gt;. I was one of the starting members of the online ordering team there and have contributed to building and scaling systems to serve millions of customers daily.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;More details can be found on my &lt;a href=&#34;https://www.linkedin.com/in/ahmadumar/&#34;&gt;LinkedIn&lt;/a&gt;, in case you are interested.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;The face you see above belongs to me, captured in the year 2020.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Editing remote code with Emacs</title>
@@ -140,17 +147,6 @@
       <pubDate>Tue, 04 Mar 2014 23:51:09 +0530</pubDate>
       <guid>https://umarahmad.xyz/blog/fixing-brightness/</guid>
       <description>&lt;p&gt;&lt;em&gt;You can find the said applications/scripts in my &lt;a href=&#34;https://github.com/Gleek/linux-brightness-hack&#34;&gt;github repository&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/FtDEhFz8XUmpm-kK2gXko-Y6y9SojmlX8TQPmFht1Xx15GY__hKAANFn9kcI-6wuC1sXVfRpIBE3oo-20kHJqkk0DKtQoliaT9_ruWfQVdYOEE3COC0Sc1uHL5q0X8UoCMTZuYUfNeFT1Yoe6wJVK8OOY3QlLGfvUSaUlK32PUnIb-5isnpWbwi2ZfedUYUaFmLJU1MNR3MgslxbJ4Q0TSX2BcSRWu2l_ilCf2CB3zPmXNPkOlPXLPhADIJUVlZsqtNhv7q4s8t9uvTZuMU0NpsXOooN7s7VyvpJ3YOQEYimyMB1Pz7YMNSo3nV5lCXPBn63XkIkigQ9HoYZn5oKW5CLTu3wSqMh2zYoEfvbZIrB0KEA6EMTjiirc4BnKvcs0IOTYahm5r2Ws2x7N2Pr6KnSlOWB1rHVA7dw9cRCKV2qA_tJsjKJSvlPUngWn2STRtuprHvigclTX-hMn7V24P6QTHbPilB3uQRN91iYOrNo7pkLhgo-WmGo6sABukUM4ETwUVSUUgTSsxYrD9aBoZz7WOOZo0Z4awGcDQgNXCzg5Rza81TVmRxa7cwbIEMu21TZUaaEN9Kot3f6q1iaYnos_zFTMhrau4lQVzZRNbrVxx5pY8IjT8i3dix8zPDv-RZgcpm7ExPrxr8_zcSXJbdgay-9cN7AP7yFZxbR9w=s240-no&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This is a problem which I faced since the beginning I installed Linux. My system neither recognized my display settings nor those damn shortcut keys (the combination of &lt;code&gt;fn&lt;/code&gt; keys) worked , so I ended up getting a dark screen (with zero brightness) every time the system starts-up. I couldn&amp;rsquo;t even change the brightness with those faulty shortcut keys!!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Hello Blogging....</title>
-      <link>https://umarahmad.xyz/blog/hello-blogging/</link>
-      <pubDate>Wed, 19 Feb 2014 16:20:21 +0530</pubDate>
-      <guid>https://umarahmad.xyz/blog/hello-blogging/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/8KrC30EJ7aomCKVOKCcPj7PwvqroHH_uuQ0MJKZJwRyptJGUTm9Q_euyV1RvHmPu6CXqxTApGgAgZcjMeQn2lEE3XI6q7pU--tbzNIdEYqLbY6c-6HTdr6V5cdlxgPdSS-duaLd899h1elO3gJRodqnOENLeehHLbJAxQRqDnk9_B8Hl5IVQUmBVtoy-5tr284-n2Radm70OUhZWL1863I_53wLLxKd0TxGWCwpCc7UX4rwj0nZ5A-CjZn3eLJYUx1i6fQoik64eR7wuWyRui8sj2vPCUMQ4N0TKXmt2E1dpfocJwQ6pP2ImkgTNqrRG1cCN_FHl7R_Gd5Z9bk_-YcXE1O3P2qObS9BqzssCldbSrtLvYmDUOvfAiM1uuissxiqBx5pmmLU89wiuh9QSvKy5TwF233oMlCCIS-hDBY7TEKBlgUhFfzpG-ZJNB3xa_R4-f4qeWocPNZ1Bg7Qb1LXweGisES3eYXUV48CrIZ0EJnIxx8IH6K9nrEi4LdARzFxuJIoowVkESQfp4lMzNaZDUzcCShtfdbGAn0eVH-lsrj5-gtIzNy576S0Yk-fQqGuNuXw9Fb2d-bwOuOMe4aSfAkQXwm8RpFabwZ6jZDluKtSdAevA4iC3v8RZgnhodPSu0s2YMPP3RPUzPNL6Gvdnlk3bDh-ze4UiTHtd-w=s300&#34; alt=&#34;Hello World&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;So how did it start&amp;hellip;Well what can I say, it was nothing more than a small pulse that waved through my brain&amp;hellip;.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
-ther recognized my display settings nor those damn shortcut keys (the combination of &lt;code&gt;fn&lt;/code&gt; keys) worked , so I ended up getting a dark screen (with zero brightness) every time the system starts-up. I couldn&amp;rsquo;t even change the brightness with those faulty shortcut keys!!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hello Blogging....</title>
